@@ -16,9 +16,10 @@ class Router: ObservableObject {
         case iosFundamentals
         case swiftUi
         case uiKit
-        case productionBuildAndDeployment
-        case thirdPartyServices
-        case bestPractices
+        case restApi
+        case deployment
+        case packageManager
+        case _temp
     }
     
     // used to programatically control our navigation stack
@@ -30,20 +31,20 @@ class Router: ObservableObject {
         switch route {
             case .home:
                 HomeView()
-//            case .swiftFundamentals:
-//                _View()
-//            case .iosFundamentals:
-//                _View()
-//            case .swiftUi:
-//                _View()
-//            case .uiKit:
-//                _View()
-//            case .productionBuildAndDeployment:
-//                _View()
-//            case .thirdPartyServices:
-//                _View()
-//            case .bestPractices:
-//                _View()
+            case .iosFundamentals:
+                IosFundamentalsView()
+            case .swiftFundamentals:
+                SwiftFundamentalsView()
+            case .swiftUi:
+                SwiftUiView()
+            case .uiKit:
+                UiKitView()
+            case .restApi:
+                RestApiView()
+            case .deployment:
+                DeploymentView()
+            case .packageManager:
+                PackageManagerView()
             default:
                 PageNotFound()
         }
