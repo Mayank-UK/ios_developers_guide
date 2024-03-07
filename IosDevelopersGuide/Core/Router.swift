@@ -76,73 +76,73 @@ class Router: ObservableObject {
             case .iosFundamentals:
                 IosFundamentalsView()
             case .iosImportantConcepts:
-                IosImportantConcepts()
+                IosImportantConceptsView()
             case .iosInstallationAndSetup:
-                PageNotFound()
+                PageNotFoundView()
             case .iosDevelopment:
-                PageNotFound()
+                PageNotFoundView()
             
             case .swiftFundamentals:
                 SwiftFundamentalsView()
             case .swiftInstallation:
-                PageNotFound()
+                PageNotFoundView()
             case .swiftIntroduction:
-                PageNotFound()
+                PageNotFoundView()
             case .swiftVariablesAndConstants:
-                PageNotFound()
+                PageNotFoundView()
             case .swiftDataTypes:
-                PageNotFound()
+                PageNotFoundView()
             case .swiftInputAndOutput:
-                PageNotFound()
+                PageNotFoundView()
             case .swiftExpressionsAndStatements:
-                PageNotFound()
+                PageNotFoundView()
             case .swiftComments:
-                PageNotFound()
+                PageNotFoundView()
             case .swiftOptionals:
-                PageNotFound()
+                PageNotFoundView()
             case .swiftOperators:
-                PageNotFound()
+                PageNotFoundView()
             case .swiftControlFlow:
-                PageNotFound()
+                PageNotFoundView()
             case .swiftCollections:
-                PageNotFound()
+                PageNotFoundView()
             case .swiftFunctions:
-                PageNotFound()
+                PageNotFoundView()
             case .swiftOop:
-                PageNotFound()
+                PageNotFoundView()
             case .swiftEnumAndStructs:
-                PageNotFound()
+                PageNotFoundView()
             case .swiftAdvanced:
-            PageNotFound()
+            PageNotFoundView()
             
             case .swiftUi:
                 SwiftUiView()
             case .swiftUiManipulation:
-                PageNotFound()
+                PageNotFoundView()
             case .swiftUiLifeCycle:
-                PageNotFound()
+                PageNotFoundView()
             case .swiftUiNavigationAndRouting:
-                PageNotFound()
+                PageNotFoundView()
             case .swiftUiStateManagement:
-                PageNotFound()
+                PageNotFoundView()
             case .swiftUiApiHandling:
-                PageNotFound()
+                PageNotFoundView()
             case .swiftUiCodeArchitecture:
-                PageNotFound()
+                PageNotFoundView()
             case .swiftUiViewCatalog:
-                PageNotFound()
+                PageNotFoundView()
             case .swiftUiDebugging:
-                PageNotFound()
+                PageNotFoundView()
             case .swiftUiTesting:
-                PageNotFound()
+                PageNotFoundView()
             case .swiftUiSuppportingClassesAndEnums:
-                PageNotFound()
+                PageNotFoundView()
             case .swiftUiNativeFeaturesHandling:
-                PageNotFound()
+                PageNotFoundView()
             case .swiftUiResponsiveDesign:
-                PageNotFound()
+                PageNotFoundView()
             case .swiftUiBestPractices:
-                PageNotFound()
+                PageNotFoundView()
             
             case .uiKit:
                 UiKitView()
@@ -162,13 +162,13 @@ class Router: ObservableObject {
             case .deployment:
                 DeploymentView()
             case .deploymentTestBuild:
-                PageNotFound()
+                PageNotFoundView()
             case .deploymentProdBuild:
-                PageNotFound()
+                PageNotFoundView()
             
             
             default:
-                PageNotFound()
+                PageNotFoundView()
         }
     }
     
