@@ -8,7 +8,8 @@
 import Foundation
 
 //  use Identifiable for views that need a stable identity (e.g., list items)
-struct LinkData: Identifiable {
+//  use Hashable when you need efficient hashing and equality checks for non-view types
+struct LinkData: Hashable {
     var id = UUID()
     var title: String
     var routePath: Router.routePaths

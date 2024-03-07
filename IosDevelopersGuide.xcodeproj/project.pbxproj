@@ -26,13 +26,16 @@
 		2443B4202B984EF4000FE1FD /* SwiftFundamentalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2443B41F2B984EF4000FE1FD /* SwiftFundamentalsView.swift */; };
 		2443B4232B984F82000FE1FD /* SwiftInstallation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2443B4222B984F82000FE1FD /* SwiftInstallation.swift */; };
 		2443B4252B985017000FE1FD /* LinkData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2443B4242B985017000FE1FD /* LinkData.swift */; };
-		2443B4272B9850FA000FE1FD /* LinksList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2443B4262B9850FA000FE1FD /* LinksList.swift */; };
+		2443B4272B9850FA000FE1FD /* Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2443B4262B9850FA000FE1FD /* Links.swift */; };
 		2443B42B2B9862B9000FE1FD /* IosFundamentalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2443B42A2B9862B9000FE1FD /* IosFundamentalsView.swift */; };
 		2443B42F2B9863A8000FE1FD /* SwiftUiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2443B42E2B9863A8000FE1FD /* SwiftUiView.swift */; };
 		2443B4332B9863DB000FE1FD /* UiKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2443B4322B9863DB000FE1FD /* UiKitView.swift */; };
 		2443B4362B986471000FE1FD /* RestApiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2443B4352B986471000FE1FD /* RestApiView.swift */; };
 		2443B4382B9864B1000FE1FD /* DeploymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2443B4372B9864B1000FE1FD /* DeploymentView.swift */; };
 		2443B4412B986CB7000FE1FD /* PackageManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2443B4402B986CB7000FE1FD /* PackageManagerView.swift */; };
+		2443B4472B988141000FE1FD /* IosImportantConcepts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2443B4462B988141000FE1FD /* IosImportantConcepts.swift */; };
+		245E054C2B99B7DC005FB6E9 /* CodeSnippet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E054B2B99B7DB005FB6E9 /* CodeSnippet.swift */; };
+		245E054E2B99BCCF005FB6E9 /* TextSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E054D2B99BCCF005FB6E9 /* TextSection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,13 +60,16 @@
 		2443B41F2B984EF4000FE1FD /* SwiftFundamentalsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftFundamentalsView.swift; sourceTree = "<group>"; };
 		2443B4222B984F82000FE1FD /* SwiftInstallation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftInstallation.swift; sourceTree = "<group>"; };
 		2443B4242B985017000FE1FD /* LinkData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkData.swift; sourceTree = "<group>"; };
-		2443B4262B9850FA000FE1FD /* LinksList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinksList.swift; sourceTree = "<group>"; };
+		2443B4262B9850FA000FE1FD /* Links.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Links.swift; sourceTree = "<group>"; };
 		2443B42A2B9862B9000FE1FD /* IosFundamentalsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IosFundamentalsView.swift; sourceTree = "<group>"; };
 		2443B42E2B9863A8000FE1FD /* SwiftUiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiView.swift; sourceTree = "<group>"; };
 		2443B4322B9863DB000FE1FD /* UiKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiKitView.swift; sourceTree = "<group>"; };
 		2443B4352B986471000FE1FD /* RestApiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestApiView.swift; sourceTree = "<group>"; };
 		2443B4372B9864B1000FE1FD /* DeploymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeploymentView.swift; sourceTree = "<group>"; };
 		2443B4402B986CB7000FE1FD /* PackageManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageManagerView.swift; sourceTree = "<group>"; };
+		2443B4462B988141000FE1FD /* IosImportantConcepts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IosImportantConcepts.swift; sourceTree = "<group>"; };
+		245E054B2B99B7DB005FB6E9 /* CodeSnippet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeSnippet.swift; sourceTree = "<group>"; };
+		245E054D2B99BCCF005FB6E9 /* TextSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,7 +145,9 @@
 			isa = PBXGroup;
 			children = (
 				2443B4182B972CF2000FE1FD /* PageScaffold.swift */,
-				2443B4262B9850FA000FE1FD /* LinksList.swift */,
+				2443B4262B9850FA000FE1FD /* Links.swift */,
+				245E054B2B99B7DB005FB6E9 /* CodeSnippet.swift */,
+				245E054D2B99BCCF005FB6E9 /* TextSection.swift */,
 			);
 			path = GlobalComponents;
 			sourceTree = "<group>";
@@ -251,6 +259,7 @@
 		2443B43C2B9867D9000FE1FD /* SubViews */ = {
 			isa = PBXGroup;
 			children = (
+				2443B4462B988141000FE1FD /* IosImportantConcepts.swift */,
 			);
 			path = SubViews;
 			sourceTree = "<group>";
@@ -331,7 +340,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1500;
-				LastUpgradeCheck = 1500;
+				LastUpgradeCheck = 1530;
 				TargetAttributes = {
 					2443B3E22B91C092000FE1FD = {
 						CreatedOnToolsVersion = 15.0.1;
@@ -377,16 +386,18 @@
 				2443B4192B972CF2000FE1FD /* PageScaffold.swift in Sources */,
 				2443B4052B91C60A000FE1FD /* SharedDataModel.swift in Sources */,
 				2443B4382B9864B1000FE1FD /* DeploymentView.swift in Sources */,
-				2443B4272B9850FA000FE1FD /* LinksList.swift in Sources */,
+				2443B4272B9850FA000FE1FD /* Links.swift in Sources */,
 				2443B3FF2B91C5D9000FE1FD /* DesignSystem.swift in Sources */,
 				2443B4332B9863DB000FE1FD /* UiKitView.swift in Sources */,
 				2443B3E92B91C093000FE1FD /* HomeView.swift in Sources */,
+				245E054E2B99BCCF005FB6E9 /* TextSection.swift in Sources */,
 				2443B4152B91E573000FE1FD /* PageNotFound.swift in Sources */,
 				2443B40B2B91C660000FE1FD /* LocalStorageService.swift in Sources */,
 				2443B3E72B91C092000FE1FD /* IosDevelopersGuideApp.swift in Sources */,
 				2443B4362B986471000FE1FD /* RestApiView.swift in Sources */,
 				2443B4202B984EF4000FE1FD /* SwiftFundamentalsView.swift in Sources */,
 				2443B4072B91C61A000FE1FD /* Validators.swift in Sources */,
+				2443B4472B988141000FE1FD /* IosImportantConcepts.swift in Sources */,
 				2443B4112B91D06E000FE1FD /* RootView.swift in Sources */,
 				2443B4412B986CB7000FE1FD /* PackageManagerView.swift in Sources */,
 				2443B4092B91C655000FE1FD /* ApiService.swift in Sources */,
@@ -394,6 +405,7 @@
 				2443B4012B91C5E4000FE1FD /* Helpers.swift in Sources */,
 				2443B42B2B9862B9000FE1FD /* IosFundamentalsView.swift in Sources */,
 				2443B4252B985017000FE1FD /* LinkData.swift in Sources */,
+				245E054C2B99B7DC005FB6E9 /* CodeSnippet.swift in Sources */,
 				2443B4032B91C5F8000FE1FD /* Router.swift in Sources */,
 				2443B3FD2B91C5BF000FE1FD /* Constants.swift in Sources */,
 				2443B4232B984F82000FE1FD /* SwiftInstallation.swift in Sources */,
@@ -437,6 +449,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -498,6 +511,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -525,6 +539,7 @@
 				CODE_SIGN_ENTITLEMENTS = IosDevelopersGuide/IosDevelopersGuide.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"IosDevelopersGuide/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -561,6 +576,7 @@
 				CODE_SIGN_ENTITLEMENTS = IosDevelopersGuide/IosDevelopersGuide.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"IosDevelopersGuide/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;

@@ -14,12 +14,15 @@ struct PackageManagerView: View {
     
     var body: some View {
         PageScaffold(
-            isScrollable: false,
             pageTitle: "Package manager",
             content: {
                 Spacer().frame(height: 32)
-                LinksList(links: links)
+                Links(links: links)
             }
         )
     }
+}
+
+#Preview {
+    PackageManagerView()
 }

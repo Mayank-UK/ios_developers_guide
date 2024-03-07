@@ -10,7 +10,6 @@ import SwiftUI
 struct PageNotFound: View {    
     var body: some View {
         PageScaffold(
-            isScrollable: true,
             pageTitle: "Page not found",
             content: {
                 Text("Page not found")
@@ -20,4 +19,8 @@ struct PageNotFound: View {
             }
         )
     }
+}
+
+#Preview {
+    PageNotFound()
 }

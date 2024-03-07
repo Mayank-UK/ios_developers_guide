@@ -14,12 +14,15 @@ struct RestApiView: View {
     
     var body: some View {
         PageScaffold(
-            isScrollable: false,
             pageTitle: "Rest API",
             content: {
                 Spacer().frame(height: 32)
-                LinksList(links: links)
+                Links(links: links)
             }
         )
     }
+}
+
+#Preview {
+    RestApiView()
 }

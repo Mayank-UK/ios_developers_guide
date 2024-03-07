@@ -9,31 +9,34 @@ import SwiftUI
 
 struct SwiftFundamentalsView: View {
     let links: [LinkData] = [
-        LinkData(title: "Installation", routePath: Router.routePaths._temp),
-        LinkData(title: "Introduction", routePath: Router.routePaths._temp),
-        LinkData(title: "Variables & constants", routePath: Router.routePaths._temp),
-        LinkData(title: "Data types", routePath: Router.routePaths._temp),
-        LinkData(title: "Input and output", routePath: Router.routePaths._temp),
-        LinkData(title: "Expressions & statements", routePath: Router.routePaths._temp),
-        LinkData(title: "Comments", routePath: Router.routePaths._temp),
-        LinkData(title: "Optionals", routePath: Router.routePaths._temp),
-        LinkData(title: "Operators", routePath: Router.routePaths._temp),
-        LinkData(title: "Control flow", routePath: Router.routePaths._temp),
-        LinkData(title: "Collections", routePath: Router.routePaths._temp),
-        LinkData(title: "Functions", routePath: Router.routePaths._temp),
-        LinkData(title: "OOP", routePath: Router.routePaths._temp),
-        LinkData(title: "Enum & structs", routePath: Router.routePaths._temp),
-        LinkData(title: "Advanced", routePath: Router.routePaths._temp),
+        LinkData(title: "Installation", routePath: Router.routePaths.swiftInstallation),
+        LinkData(title: "Introduction", routePath: Router.routePaths.swiftIntroduction),
+        LinkData(title: "Variables & constants", routePath: Router.routePaths.swiftVariablesAndConstants),
+        LinkData(title: "Data types", routePath: Router.routePaths.swiftDataTypes),
+        LinkData(title: "Input and output", routePath: Router.routePaths.swiftInputAndOutput),
+        LinkData(title: "Expressions & statements", routePath: Router.routePaths.swiftExpressionsAndStatements),
+        LinkData(title: "Comments", routePath: Router.routePaths.swiftComments),
+        LinkData(title: "Optionals", routePath: Router.routePaths.swiftOptionals),
+        LinkData(title: "Operators", routePath: Router.routePaths.swiftOperators),
+        LinkData(title: "Control flow", routePath: Router.routePaths.swiftControlFlow),
+        LinkData(title: "Collections", routePath: Router.routePaths.swiftCollections),
+        LinkData(title: "Functions", routePath: Router.routePaths.swiftFunctions),
+        LinkData(title: "OOP", routePath: Router.routePaths.swiftOop),
+        LinkData(title: "Enum & structs", routePath: Router.routePaths.swiftEnumAndStructs),
+        LinkData(title: "Advanced", routePath: Router.routePaths.swiftAdvanced),
     ]
     
     var body: some View {
         PageScaffold(
-            isScrollable: false,
             pageTitle: "Swift fundamentals",
             content: {
                 Spacer().frame(height: 32)
-                LinksList(links: links)
+                Links(links: links)
             }
         )
     }
+}
+
+#Preview {
+    SwiftFundamentalsView()
 }
