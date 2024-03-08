@@ -16,7 +16,6 @@ struct UiKitView: View {
         PageScaffold(
             pageTitle: "UIKit",
             content: {
-                Spacer().frame(height: 32)
                 Links(links: links)
             }
         )

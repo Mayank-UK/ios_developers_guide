@@ -58,7 +58,7 @@
 		245E05762B99FDBD005FB6E9 /* SwiftUiStateManagementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E05752B99FDBD005FB6E9 /* SwiftUiStateManagementView.swift */; };
 		245E05782B99FDCC005FB6E9 /* SwiftUiApiHandlingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E05772B99FDCC005FB6E9 /* SwiftUiApiHandlingView.swift */; };
 		245E057A2B99FDE1005FB6E9 /* SwiftUiCodeArchitectureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E05792B99FDE1005FB6E9 /* SwiftUiCodeArchitectureView.swift */; };
-		245E057C2B99FDFA005FB6E9 /* SwiftUiViewsAndModifiersCatalogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E057B2B99FDFA005FB6E9 /* SwiftUiViewsAndModifiersCatalogView.swift */; };
+		245E057C2B99FDFA005FB6E9 /* SwiftUiCatalogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E057B2B99FDFA005FB6E9 /* SwiftUiCatalogView.swift */; };
 		245E057E2B99FE0A005FB6E9 /* SwiftUiDebuggingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E057D2B99FE0A005FB6E9 /* SwiftUiDebuggingView.swift */; };
 		245E05802B99FE19005FB6E9 /* SwiftUiTestingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E057F2B99FE19005FB6E9 /* SwiftUiTestingView.swift */; };
 		245E05822B99FE34005FB6E9 /* SwiftUiSupportingClassesAndEnumsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E05812B99FE34005FB6E9 /* SwiftUiSupportingClassesAndEnumsView.swift */; };
@@ -83,12 +83,67 @@
 		245E05CA2B9A0A95005FB6E9 /* SwiftUiFormInputsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E05C92B9A0A95005FB6E9 /* SwiftUiFormInputsView.swift */; };
 		245E05CC2B9A0AAE005FB6E9 /* SwiftUiMediaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E05CB2B9A0AAE005FB6E9 /* SwiftUiMediaView.swift */; };
 		245E05D02B9A0AEE005FB6E9 /* SwiftUiDesignSystemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E05CF2B9A0AEE005FB6E9 /* SwiftUiDesignSystemView.swift */; };
-		245E05E32B9A0FD6005FB6E9 /* SwiftUiControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E05E22B9A0FD6005FB6E9 /* SwiftUiControlsView.swift */; };
-		245E05E52B9A100D005FB6E9 /* SwiftUiLayoutsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E05E42B9A100D005FB6E9 /* SwiftUiLayoutsView.swift */; };
-		245E05E72B9A1478005FB6E9 /* SwiftUiDisplayElementsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E05E62B9A1478005FB6E9 /* SwiftUiDisplayElementsView.swift */; };
-		245E05E92B9A149E005FB6E9 /* SwiftUiContainersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E05E82B9A149E005FB6E9 /* SwiftUiContainersView.swift */; };
-		245E05EB2B9A14D0005FB6E9 /* SwiftUiModalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E05EA2B9A14D0005FB6E9 /* SwiftUiModalsView.swift */; };
-		245E05ED2B9A1502005FB6E9 /* SwiftUiMiscellaneousView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E05EC2B9A1502005FB6E9 /* SwiftUiMiscellaneousView.swift */; };
+		245E05E32B9A0FD6005FB6E9 /* SwiftUiCatalogControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E05E22B9A0FD6005FB6E9 /* SwiftUiCatalogControlsView.swift */; };
+		245E05E52B9A100D005FB6E9 /* SwiftUiCatalogLayoutsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E05E42B9A100D005FB6E9 /* SwiftUiCatalogLayoutsView.swift */; };
+		245E05E72B9A1478005FB6E9 /* SwiftUiCatalogDisplayElementsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E05E62B9A1478005FB6E9 /* SwiftUiCatalogDisplayElementsView.swift */; };
+		245E05E92B9A149E005FB6E9 /* SwiftUiCatalogContainersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E05E82B9A149E005FB6E9 /* SwiftUiCatalogContainersView.swift */; };
+		245E05EB2B9A14D0005FB6E9 /* SwiftUiCatalogModalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E05EA2B9A14D0005FB6E9 /* SwiftUiCatalogModalsView.swift */; };
+		245E05ED2B9A1502005FB6E9 /* SwiftUiCatalogMiscellaneousView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E05EC2B9A1502005FB6E9 /* SwiftUiCatalogMiscellaneousView.swift */; };
+		245E05F82B9AF368005FB6E9 /* SwiftUiPageLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E05F72B9AF368005FB6E9 /* SwiftUiPageLayoutView.swift */; };
+		245E05FA2B9AF37F005FB6E9 /* SwiftUiBasicLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E05F92B9AF37F005FB6E9 /* SwiftUiBasicLayoutView.swift */; };
+		245E06062B9AF982005FB6E9 /* SwiftUiCatalogButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E06052B9AF982005FB6E9 /* SwiftUiCatalogButtonsView.swift */; };
+		245E06082B9AF990005FB6E9 /* SwiftUiCatalogToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E06072B9AF990005FB6E9 /* SwiftUiCatalogToggleView.swift */; };
+		245E060A2B9AF9CE005FB6E9 /* SwiftUiCatalogTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E06092B9AF9CE005FB6E9 /* SwiftUiCatalogTextFieldView.swift */; };
+		245E060C2B9AF9F2005FB6E9 /* SwiftUiCatalogSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E060B2B9AF9F2005FB6E9 /* SwiftUiCatalogSliderView.swift */; };
+		245E060E2B9AF9FE005FB6E9 /* SwiftUiCatalogPickersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E060D2B9AF9FE005FB6E9 /* SwiftUiCatalogPickersView.swift */; };
+		245E06102B9AFC99005FB6E9 /* SwiftUiCatalogStepperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E060F2B9AFC99005FB6E9 /* SwiftUiCatalogStepperView.swift */; };
+		245E06122B9AFCA6005FB6E9 /* SwiftUiCatalogMenusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E06112B9AFCA6005FB6E9 /* SwiftUiCatalogMenusView.swift */; };
+		245E06142B9AFEC7005FB6E9 /* SwiftUiCatalogTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E06132B9AFEC7005FB6E9 /* SwiftUiCatalogTextView.swift */; };
+		245E06162B9AFED9005FB6E9 /* SwiftUiCatalogImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E06152B9AFED9005FB6E9 /* SwiftUiCatalogImageView.swift */; };
+		245E06182B9AFEED005FB6E9 /* SwiftUiCatalogLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E06172B9AFEED005FB6E9 /* SwiftUiCatalogLinkView.swift */; };
+		245E061A2B9AFEFF005FB6E9 /* SwiftUiCatalogWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E06192B9AFEFF005FB6E9 /* SwiftUiCatalogWebView.swift */; };
+		245E061C2B9B0016005FB6E9 /* SwiftUiCatalogStacksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E061B2B9B0016005FB6E9 /* SwiftUiCatalogStacksView.swift */; };
+		245E06222B9B00AE005FB6E9 /* SwiftUiCatalogGaugeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E06212B9B00AE005FB6E9 /* SwiftUiCatalogGaugeView.swift */; };
+		245E06242B9B00F7005FB6E9 /* SwiftUiCatalogLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E06232B9B00F7005FB6E9 /* SwiftUiCatalogLabelView.swift */; };
+		245E06262B9B010A005FB6E9 /* SwiftUiCatalogProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E06252B9B010A005FB6E9 /* SwiftUiCatalogProgressView.swift */; };
+		245E06282B9B0135005FB6E9 /* SwiftUiCatalogContentUnavailableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E06272B9B0135005FB6E9 /* SwiftUiCatalogContentUnavailableView.swift */; };
+		245E062A2B9B014A005FB6E9 /* SwiftUiCatalogShapesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E06292B9B014A005FB6E9 /* SwiftUiCatalogShapesView.swift */; };
+		245E062E2B9B01AD005FB6E9 /* SwiftUiCatalogPathView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E062D2B9B01AD005FB6E9 /* SwiftUiCatalogPathView.swift */; };
+		245E06302B9B01C2005FB6E9 /* SwiftUiCatalogCanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E062F2B9B01C2005FB6E9 /* SwiftUiCatalogCanvasView.swift */; };
+		245E06322B9B01D2005FB6E9 /* SwiftUiCatalogColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E06312B9B01D2005FB6E9 /* SwiftUiCatalogColorView.swift */; };
+		245E06342B9B01E9005FB6E9 /* SwiftUiCatalogGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E06332B9B01E9005FB6E9 /* SwiftUiCatalogGradientView.swift */; };
+		245E06362B9B0200005FB6E9 /* SwiftUiCatalogChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E06352B9B0200005FB6E9 /* SwiftUiCatalogChartView.swift */; };
+		245E06382B9B020C005FB6E9 /* SwiftUiCatalogMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E06372B9B020C005FB6E9 /* SwiftUiCatalogMapView.swift */; };
+		245E063A2B9B021B005FB6E9 /* SwiftUiCatalogTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E06392B9B021B005FB6E9 /* SwiftUiCatalogTableView.swift */; };
+		245E063C2B9B0250005FB6E9 /* SwiftUiCatalogListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E063B2B9B0250005FB6E9 /* SwiftUiCatalogListView.swift */; };
+		245E063E2B9B0266005FB6E9 /* SwiftUiCatalogForEachView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E063D2B9B0266005FB6E9 /* SwiftUiCatalogForEachView.swift */; };
+		245E06402B9B0273005FB6E9 /* SwiftUiCatalogGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E063F2B9B0273005FB6E9 /* SwiftUiCatalogGridView.swift */; };
+		245E06422B9B02AC005FB6E9 /* SwiftUiCatalogNavigationStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E06412B9B02AC005FB6E9 /* SwiftUiCatalogNavigationStackView.swift */; };
+		245E06442B9B02C3005FB6E9 /* SwiftUiCatalogNavigationSplitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E06432B9B02C3005FB6E9 /* SwiftUiCatalogNavigationSplitView.swift */; };
+		245E06462B9B02D3005FB6E9 /* SwiftUiCatalogTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E06452B9B02D3005FB6E9 /* SwiftUiCatalogTabView.swift */; };
+		245E06482B9B02E6005FB6E9 /* SwiftUiCatalogScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E06472B9B02E6005FB6E9 /* SwiftUiCatalogScrollView.swift */; };
+		245E064A2B9B0302005FB6E9 /* SwiftUiCatalogGeometryReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E06492B9B0302005FB6E9 /* SwiftUiCatalogGeometryReaderView.swift */; };
+		245E064C2B9B0313005FB6E9 /* SwiftUiCatalogSpacerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E064B2B9B0313005FB6E9 /* SwiftUiCatalogSpacerView.swift */; };
+		245E064E2B9B0323005FB6E9 /* SwiftUiCatalogDividerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E064D2B9B0323005FB6E9 /* SwiftUiCatalogDividerView.swift */; };
+		245E06502B9B0335005FB6E9 /* SwiftUiCatalogBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E064F2B9B0335005FB6E9 /* SwiftUiCatalogBackgroundView.swift */; };
+		245E06522B9B0346005FB6E9 /* SwiftUiCatalogOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E06512B9B0346005FB6E9 /* SwiftUiCatalogOverlayView.swift */; };
+		245E06542B9B0357005FB6E9 /* SwiftUiCatalogDisclosureGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E06532B9B0357005FB6E9 /* SwiftUiCatalogDisclosureGroupView.swift */; };
+		245E06562B9B036D005FB6E9 /* SwiftUiCatalogOutlineGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E06552B9B036D005FB6E9 /* SwiftUiCatalogOutlineGroupView.swift */; };
+		245E06582B9B0380005FB6E9 /* SwiftUiCatalogToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E06572B9B0380005FB6E9 /* SwiftUiCatalogToolbarView.swift */; };
+		245E065A2B9B038F005FB6E9 /* SwiftUiCatalogFrameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E06592B9B038F005FB6E9 /* SwiftUiCatalogFrameView.swift */; };
+		245E065C2B9B03A3005FB6E9 /* SwiftUiCatalogSafeAreaInsetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E065B2B9B03A3005FB6E9 /* SwiftUiCatalogSafeAreaInsetView.swift */; };
+		245E065E2B9B03B2005FB6E9 /* SwiftUiCatalogEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E065D2B9B03B2005FB6E9 /* SwiftUiCatalogEmptyView.swift */; };
+		245E06602B9B03E3005FB6E9 /* SwiftUiCatalogGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E065F2B9B03E3005FB6E9 /* SwiftUiCatalogGroupView.swift */; };
+		245E06622B9B03F6005FB6E9 /* SwiftUiCatalogFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E06612B9B03F6005FB6E9 /* SwiftUiCatalogFormView.swift */; };
+		245E06642B9B0409005FB6E9 /* SwiftUiCatalogSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E06632B9B0409005FB6E9 /* SwiftUiCatalogSectionView.swift */; };
+		245E06662B9B047C005FB6E9 /* SwiftUiCatalogViewThatFitsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E06652B9B047C005FB6E9 /* SwiftUiCatalogViewThatFitsView.swift */; };
+		245E06682B9B0498005FB6E9 /* SwiftUiCatalogAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E06672B9B0498005FB6E9 /* SwiftUiCatalogAlertView.swift */; };
+		245E066A2B9B04A7005FB6E9 /* SwiftUiCatalogConfirmationDialogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E06692B9B04A7005FB6E9 /* SwiftUiCatalogConfirmationDialogView.swift */; };
+		245E066C2B9B04BB005FB6E9 /* SwiftUiCatalogNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E066B2B9B04BB005FB6E9 /* SwiftUiCatalogNotificationView.swift */; };
+		245E066E2B9B04D0005FB6E9 /* SwiftUiCatalogSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E066D2B9B04D0005FB6E9 /* SwiftUiCatalogSheetView.swift */; };
+		245E06702B9B04DD005FB6E9 /* SwiftUiCatalogInspectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E066F2B9B04DD005FB6E9 /* SwiftUiCatalogInspectorView.swift */; };
+		245E06722B9B04EF005FB6E9 /* SwiftUiCatalogPopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E06712B9B04EF005FB6E9 /* SwiftUiCatalogPopoverView.swift */; };
+		245E06A82B9B2B44005FB6E9 /* CodeSnippetWithDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E06A72B9B2B44005FB6E9 /* CodeSnippetWithDemo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -145,7 +200,7 @@
 		245E05752B99FDBD005FB6E9 /* SwiftUiStateManagementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiStateManagementView.swift; sourceTree = "<group>"; };
 		245E05772B99FDCC005FB6E9 /* SwiftUiApiHandlingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiApiHandlingView.swift; sourceTree = "<group>"; };
 		245E05792B99FDE1005FB6E9 /* SwiftUiCodeArchitectureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCodeArchitectureView.swift; sourceTree = "<group>"; };
-		245E057B2B99FDFA005FB6E9 /* SwiftUiViewsAndModifiersCatalogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiViewsAndModifiersCatalogView.swift; sourceTree = "<group>"; };
+		245E057B2B99FDFA005FB6E9 /* SwiftUiCatalogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogView.swift; sourceTree = "<group>"; };
 		245E057D2B99FE0A005FB6E9 /* SwiftUiDebuggingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiDebuggingView.swift; sourceTree = "<group>"; };
 		245E057F2B99FE19005FB6E9 /* SwiftUiTestingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiTestingView.swift; sourceTree = "<group>"; };
 		245E05812B99FE34005FB6E9 /* SwiftUiSupportingClassesAndEnumsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiSupportingClassesAndEnumsView.swift; sourceTree = "<group>"; };
@@ -170,12 +225,67 @@
 		245E05C92B9A0A95005FB6E9 /* SwiftUiFormInputsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiFormInputsView.swift; sourceTree = "<group>"; };
 		245E05CB2B9A0AAE005FB6E9 /* SwiftUiMediaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiMediaView.swift; sourceTree = "<group>"; };
 		245E05CF2B9A0AEE005FB6E9 /* SwiftUiDesignSystemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiDesignSystemView.swift; sourceTree = "<group>"; };
-		245E05E22B9A0FD6005FB6E9 /* SwiftUiControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiControlsView.swift; sourceTree = "<group>"; };
-		245E05E42B9A100D005FB6E9 /* SwiftUiLayoutsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiLayoutsView.swift; sourceTree = "<group>"; };
-		245E05E62B9A1478005FB6E9 /* SwiftUiDisplayElementsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiDisplayElementsView.swift; sourceTree = "<group>"; };
-		245E05E82B9A149E005FB6E9 /* SwiftUiContainersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiContainersView.swift; sourceTree = "<group>"; };
-		245E05EA2B9A14D0005FB6E9 /* SwiftUiModalsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiModalsView.swift; sourceTree = "<group>"; };
-		245E05EC2B9A1502005FB6E9 /* SwiftUiMiscellaneousView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiMiscellaneousView.swift; sourceTree = "<group>"; };
+		245E05E22B9A0FD6005FB6E9 /* SwiftUiCatalogControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogControlsView.swift; sourceTree = "<group>"; };
+		245E05E42B9A100D005FB6E9 /* SwiftUiCatalogLayoutsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogLayoutsView.swift; sourceTree = "<group>"; };
+		245E05E62B9A1478005FB6E9 /* SwiftUiCatalogDisplayElementsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogDisplayElementsView.swift; sourceTree = "<group>"; };
+		245E05E82B9A149E005FB6E9 /* SwiftUiCatalogContainersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogContainersView.swift; sourceTree = "<group>"; };
+		245E05EA2B9A14D0005FB6E9 /* SwiftUiCatalogModalsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogModalsView.swift; sourceTree = "<group>"; };
+		245E05EC2B9A1502005FB6E9 /* SwiftUiCatalogMiscellaneousView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogMiscellaneousView.swift; sourceTree = "<group>"; };
+		245E05F72B9AF368005FB6E9 /* SwiftUiPageLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiPageLayoutView.swift; sourceTree = "<group>"; };
+		245E05F92B9AF37F005FB6E9 /* SwiftUiBasicLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiBasicLayoutView.swift; sourceTree = "<group>"; };
+		245E06052B9AF982005FB6E9 /* SwiftUiCatalogButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogButtonsView.swift; sourceTree = "<group>"; };
+		245E06072B9AF990005FB6E9 /* SwiftUiCatalogToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogToggleView.swift; sourceTree = "<group>"; };
+		245E06092B9AF9CE005FB6E9 /* SwiftUiCatalogTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogTextFieldView.swift; sourceTree = "<group>"; };
+		245E060B2B9AF9F2005FB6E9 /* SwiftUiCatalogSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogSliderView.swift; sourceTree = "<group>"; };
+		245E060D2B9AF9FE005FB6E9 /* SwiftUiCatalogPickersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogPickersView.swift; sourceTree = "<group>"; };
+		245E060F2B9AFC99005FB6E9 /* SwiftUiCatalogStepperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogStepperView.swift; sourceTree = "<group>"; };
+		245E06112B9AFCA6005FB6E9 /* SwiftUiCatalogMenusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogMenusView.swift; sourceTree = "<group>"; };
+		245E06132B9AFEC7005FB6E9 /* SwiftUiCatalogTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogTextView.swift; sourceTree = "<group>"; };
+		245E06152B9AFED9005FB6E9 /* SwiftUiCatalogImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogImageView.swift; sourceTree = "<group>"; };
+		245E06172B9AFEED005FB6E9 /* SwiftUiCatalogLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogLinkView.swift; sourceTree = "<group>"; };
+		245E06192B9AFEFF005FB6E9 /* SwiftUiCatalogWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogWebView.swift; sourceTree = "<group>"; };
+		245E061B2B9B0016005FB6E9 /* SwiftUiCatalogStacksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogStacksView.swift; sourceTree = "<group>"; };
+		245E06212B9B00AE005FB6E9 /* SwiftUiCatalogGaugeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogGaugeView.swift; sourceTree = "<group>"; };
+		245E06232B9B00F7005FB6E9 /* SwiftUiCatalogLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogLabelView.swift; sourceTree = "<group>"; };
+		245E06252B9B010A005FB6E9 /* SwiftUiCatalogProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogProgressView.swift; sourceTree = "<group>"; };
+		245E06272B9B0135005FB6E9 /* SwiftUiCatalogContentUnavailableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogContentUnavailableView.swift; sourceTree = "<group>"; };
+		245E06292B9B014A005FB6E9 /* SwiftUiCatalogShapesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogShapesView.swift; sourceTree = "<group>"; };
+		245E062D2B9B01AD005FB6E9 /* SwiftUiCatalogPathView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogPathView.swift; sourceTree = "<group>"; };
+		245E062F2B9B01C2005FB6E9 /* SwiftUiCatalogCanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogCanvasView.swift; sourceTree = "<group>"; };
+		245E06312B9B01D2005FB6E9 /* SwiftUiCatalogColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogColorView.swift; sourceTree = "<group>"; };
+		245E06332B9B01E9005FB6E9 /* SwiftUiCatalogGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogGradientView.swift; sourceTree = "<group>"; };
+		245E06352B9B0200005FB6E9 /* SwiftUiCatalogChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogChartView.swift; sourceTree = "<group>"; };
+		245E06372B9B020C005FB6E9 /* SwiftUiCatalogMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogMapView.swift; sourceTree = "<group>"; };
+		245E06392B9B021B005FB6E9 /* SwiftUiCatalogTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogTableView.swift; sourceTree = "<group>"; };
+		245E063B2B9B0250005FB6E9 /* SwiftUiCatalogListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogListView.swift; sourceTree = "<group>"; };
+		245E063D2B9B0266005FB6E9 /* SwiftUiCatalogForEachView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogForEachView.swift; sourceTree = "<group>"; };
+		245E063F2B9B0273005FB6E9 /* SwiftUiCatalogGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogGridView.swift; sourceTree = "<group>"; };
+		245E06412B9B02AC005FB6E9 /* SwiftUiCatalogNavigationStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogNavigationStackView.swift; sourceTree = "<group>"; };
+		245E06432B9B02C3005FB6E9 /* SwiftUiCatalogNavigationSplitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogNavigationSplitView.swift; sourceTree = "<group>"; };
+		245E06452B9B02D3005FB6E9 /* SwiftUiCatalogTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogTabView.swift; sourceTree = "<group>"; };
+		245E06472B9B02E6005FB6E9 /* SwiftUiCatalogScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogScrollView.swift; sourceTree = "<group>"; };
+		245E06492B9B0302005FB6E9 /* SwiftUiCatalogGeometryReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogGeometryReaderView.swift; sourceTree = "<group>"; };
+		245E064B2B9B0313005FB6E9 /* SwiftUiCatalogSpacerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogSpacerView.swift; sourceTree = "<group>"; };
+		245E064D2B9B0323005FB6E9 /* SwiftUiCatalogDividerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogDividerView.swift; sourceTree = "<group>"; };
+		245E064F2B9B0335005FB6E9 /* SwiftUiCatalogBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogBackgroundView.swift; sourceTree = "<group>"; };
+		245E06512B9B0346005FB6E9 /* SwiftUiCatalogOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogOverlayView.swift; sourceTree = "<group>"; };
+		245E06532B9B0357005FB6E9 /* SwiftUiCatalogDisclosureGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogDisclosureGroupView.swift; sourceTree = "<group>"; };
+		245E06552B9B036D005FB6E9 /* SwiftUiCatalogOutlineGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogOutlineGroupView.swift; sourceTree = "<group>"; };
+		245E06572B9B0380005FB6E9 /* SwiftUiCatalogToolbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogToolbarView.swift; sourceTree = "<group>"; };
+		245E06592B9B038F005FB6E9 /* SwiftUiCatalogFrameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogFrameView.swift; sourceTree = "<group>"; };
+		245E065B2B9B03A3005FB6E9 /* SwiftUiCatalogSafeAreaInsetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogSafeAreaInsetView.swift; sourceTree = "<group>"; };
+		245E065D2B9B03B2005FB6E9 /* SwiftUiCatalogEmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogEmptyView.swift; sourceTree = "<group>"; };
+		245E065F2B9B03E3005FB6E9 /* SwiftUiCatalogGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogGroupView.swift; sourceTree = "<group>"; };
+		245E06612B9B03F6005FB6E9 /* SwiftUiCatalogFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogFormView.swift; sourceTree = "<group>"; };
+		245E06632B9B0409005FB6E9 /* SwiftUiCatalogSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogSectionView.swift; sourceTree = "<group>"; };
+		245E06652B9B047C005FB6E9 /* SwiftUiCatalogViewThatFitsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogViewThatFitsView.swift; sourceTree = "<group>"; };
+		245E06672B9B0498005FB6E9 /* SwiftUiCatalogAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogAlertView.swift; sourceTree = "<group>"; };
+		245E06692B9B04A7005FB6E9 /* SwiftUiCatalogConfirmationDialogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogConfirmationDialogView.swift; sourceTree = "<group>"; };
+		245E066B2B9B04BB005FB6E9 /* SwiftUiCatalogNotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogNotificationView.swift; sourceTree = "<group>"; };
+		245E066D2B9B04D0005FB6E9 /* SwiftUiCatalogSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogSheetView.swift; sourceTree = "<group>"; };
+		245E066F2B9B04DD005FB6E9 /* SwiftUiCatalogInspectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogInspectorView.swift; sourceTree = "<group>"; };
+		245E06712B9B04EF005FB6E9 /* SwiftUiCatalogPopoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogPopoverView.swift; sourceTree = "<group>"; };
+		245E06A72B9B2B44005FB6E9 /* CodeSnippetWithDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeSnippetWithDemo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -254,6 +364,7 @@
 				2443B4262B9850FA000FE1FD /* Links.swift */,
 				245E054B2B99B7DB005FB6E9 /* CodeSnippet.swift */,
 				245E054D2B99BCCF005FB6E9 /* TextSection.swift */,
+				245E06A72B9B2B44005FB6E9 /* CodeSnippetWithDemo.swift */,
 			);
 			path = GlobalComponents;
 			sourceTree = "<group>";
@@ -338,7 +449,7 @@
 				245E05A32B9A055E005FB6E9 /* SwiftUiApiHandling */,
 				245E05A42B9A0575005FB6E9 /* SwiftUiCodeArchitecture */,
 				245E05D12B9A0CCB005FB6E9 /* SwiftUiDesignSystem */,
-				245E05A52B9A0584005FB6E9 /* SwiftUiViewsAndModifiersCatalog */,
+				245E05A52B9A0584005FB6E9 /* SwiftUiCatalog */,
 				245E05A62B9A05D0005FB6E9 /* SwiftUiDebugging */,
 				245E05A72B9A05DD005FB6E9 /* SwiftUiTesting */,
 				245E05A82B9A05EC005FB6E9 /* SwiftUiSupportingClassesAndEnums */,
@@ -643,13 +754,13 @@
 			path = SwiftUiCodeArchitecture;
 			sourceTree = "<group>";
 		};
-		245E05A52B9A0584005FB6E9 /* SwiftUiViewsAndModifiersCatalog */ = {
+		245E05A52B9A0584005FB6E9 /* SwiftUiCatalog */ = {
 			isa = PBXGroup;
 			children = (
 				245E05E12B9A0F8D005FB6E9 /* SubViews */,
-				245E057B2B99FDFA005FB6E9 /* SwiftUiViewsAndModifiersCatalogView.swift */,
+				245E057B2B99FDFA005FB6E9 /* SwiftUiCatalogView.swift */,
 			);
-			path = SwiftUiViewsAndModifiersCatalog;
+			path = SwiftUiCatalog;
 			sourceTree = "<group>";
 		};
 		245E05A62B9A05D0005FB6E9 /* SwiftUiDebugging */ = {
@@ -749,6 +860,7 @@
 		245E05D22B9A0E8A005FB6E9 /* SwiftUiLayout */ = {
 			isa = PBXGroup;
 			children = (
+				245E05F42B9AF308005FB6E9 /* SubViews */,
 				245E05AF2B9A08B7005FB6E9 /* SwiftUiLayoutView.swift */,
 			);
 			path = SwiftUiLayout;
@@ -869,62 +981,603 @@
 		245E05E12B9A0F8D005FB6E9 /* SubViews */ = {
 			isa = PBXGroup;
 			children = (
-				245E05EE2B9A1512005FB6E9 /* SwiftUiControls */,
-				245E05EF2B9A1521005FB6E9 /* SwiftUiLayouts */,
-				245E05F02B9A152C005FB6E9 /* SwiftUiDisplayElements */,
-				245E05F12B9A1537005FB6E9 /* SwiftUiContainers */,
-				245E05F22B9A1541005FB6E9 /* SwiftUiModals */,
-				245E05F32B9A1552005FB6E9 /* SwiftUiMiscellaneous */,
+				245E05EE2B9A1512005FB6E9 /* SwiftUiCatalogControls */,
+				245E05F02B9A152C005FB6E9 /* SwiftUiCatalogDisplayElements */,
+				245E05EF2B9A1521005FB6E9 /* SwiftUiCatalogLayouts */,
+				245E05F12B9A1537005FB6E9 /* SwiftUiCatalogContainers */,
+				245E05F22B9A1541005FB6E9 /* SwiftUiCatalogModals */,
+				245E05F32B9A1552005FB6E9 /* SwiftUiCatalogMiscellaneous */,
 			);
 			path = SubViews;
 			sourceTree = "<group>";
 		};
-		245E05EE2B9A1512005FB6E9 /* SwiftUiControls */ = {
+		245E05EE2B9A1512005FB6E9 /* SwiftUiCatalogControls */ = {
 			isa = PBXGroup;
 			children = (
-				245E05E22B9A0FD6005FB6E9 /* SwiftUiControlsView.swift */,
+				245E05FB2B9AF73D005FB6E9 /* SubViews */,
+				245E05E22B9A0FD6005FB6E9 /* SwiftUiCatalogControlsView.swift */,
 			);
-			path = SwiftUiControls;
+			path = SwiftUiCatalogControls;
 			sourceTree = "<group>";
 		};
-		245E05EF2B9A1521005FB6E9 /* SwiftUiLayouts */ = {
+		245E05EF2B9A1521005FB6E9 /* SwiftUiCatalogLayouts */ = {
 			isa = PBXGroup;
 			children = (
-				245E05E42B9A100D005FB6E9 /* SwiftUiLayoutsView.swift */,
+				245E05FC2B9AF751005FB6E9 /* SubViews */,
+				245E05E42B9A100D005FB6E9 /* SwiftUiCatalogLayoutsView.swift */,
 			);
-			path = SwiftUiLayouts;
+			path = SwiftUiCatalogLayouts;
 			sourceTree = "<group>";
 		};
-		245E05F02B9A152C005FB6E9 /* SwiftUiDisplayElements */ = {
+		245E05F02B9A152C005FB6E9 /* SwiftUiCatalogDisplayElements */ = {
 			isa = PBXGroup;
 			children = (
-				245E05E62B9A1478005FB6E9 /* SwiftUiDisplayElementsView.swift */,
+				245E05FD2B9AF759005FB6E9 /* SubViews */,
+				245E05E62B9A1478005FB6E9 /* SwiftUiCatalogDisplayElementsView.swift */,
 			);
-			path = SwiftUiDisplayElements;
+			path = SwiftUiCatalogDisplayElements;
 			sourceTree = "<group>";
 		};
-		245E05F12B9A1537005FB6E9 /* SwiftUiContainers */ = {
+		245E05F12B9A1537005FB6E9 /* SwiftUiCatalogContainers */ = {
 			isa = PBXGroup;
 			children = (
-				245E05E82B9A149E005FB6E9 /* SwiftUiContainersView.swift */,
+				245E05FE2B9AF798005FB6E9 /* SubViews */,
+				245E05E82B9A149E005FB6E9 /* SwiftUiCatalogContainersView.swift */,
 			);
-			path = SwiftUiContainers;
+			path = SwiftUiCatalogContainers;
 			sourceTree = "<group>";
 		};
-		245E05F22B9A1541005FB6E9 /* SwiftUiModals */ = {
+		245E05F22B9A1541005FB6E9 /* SwiftUiCatalogModals */ = {
 			isa = PBXGroup;
 			children = (
-				245E05EA2B9A14D0005FB6E9 /* SwiftUiModalsView.swift */,
+				245E05FF2B9AF79F005FB6E9 /* SubViews */,
+				245E05EA2B9A14D0005FB6E9 /* SwiftUiCatalogModalsView.swift */,
 			);
-			path = SwiftUiModals;
+			path = SwiftUiCatalogModals;
 			sourceTree = "<group>";
 		};
-		245E05F32B9A1552005FB6E9 /* SwiftUiMiscellaneous */ = {
+		245E05F32B9A1552005FB6E9 /* SwiftUiCatalogMiscellaneous */ = {
 			isa = PBXGroup;
 			children = (
-				245E05EC2B9A1502005FB6E9 /* SwiftUiMiscellaneousView.swift */,
+				245E06002B9AF7A7005FB6E9 /* SubViews */,
+				245E05EC2B9A1502005FB6E9 /* SwiftUiCatalogMiscellaneousView.swift */,
 			);
-			path = SwiftUiMiscellaneous;
+			path = SwiftUiCatalogMiscellaneous;
+			sourceTree = "<group>";
+		};
+		245E05F42B9AF308005FB6E9 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				245E05F62B9AF334005FB6E9 /* SwiftUiPageLayout */,
+				245E05F52B9AF312005FB6E9 /* SwiftUiBasicLayout */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		245E05F52B9AF312005FB6E9 /* SwiftUiBasicLayout */ = {
+			isa = PBXGroup;
+			children = (
+				245E05F92B9AF37F005FB6E9 /* SwiftUiBasicLayoutView.swift */,
+			);
+			path = SwiftUiBasicLayout;
+			sourceTree = "<group>";
+		};
+		245E05F62B9AF334005FB6E9 /* SwiftUiPageLayout */ = {
+			isa = PBXGroup;
+			children = (
+				245E05F72B9AF368005FB6E9 /* SwiftUiPageLayoutView.swift */,
+			);
+			path = SwiftUiPageLayout;
+			sourceTree = "<group>";
+		};
+		245E05FB2B9AF73D005FB6E9 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				245E06732B9B0A46005FB6E9 /* SwiftUiCatalogButtons */,
+				245E06742B9B0A55005FB6E9 /* SwiftUiCatalogToggle */,
+				245E06752B9B0A65005FB6E9 /* SwiftUiCatalogTextField */,
+				245E06762B9B0A74005FB6E9 /* SwiftUiCatalogSlider */,
+				245E06772B9B0A81005FB6E9 /* SwiftUiCatalogPickers */,
+				245E06782B9B0A8B005FB6E9 /* SwiftUiCatalogStepper */,
+				245E06792B9B0A96005FB6E9 /* SwiftUiCatalogMenus */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		245E05FC2B9AF751005FB6E9 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				245E068A2B9B0B65005FB6E9 /* SwiftUiCatalogStacks */,
+				245E068B2B9B0B72005FB6E9 /* SwiftUiCatalogList */,
+				245E068C2B9B0B7C005FB6E9 /* SwiftUiCatalogForEach */,
+				245E068D2B9B0B86005FB6E9 /* SwiftUiCatalogGrid */,
+				245E068E2B9B0B90005FB6E9 /* SwiftUiCatalogNavigationStack */,
+				245E068F2B9B0B9A005FB6E9 /* SwiftUiCatalogNavigationSplitView */,
+				245E06902B9B0BA5005FB6E9 /* SwiftUiCatalogTab */,
+				245E06912B9B0BAE005FB6E9 /* SwiftUiCatalogScrollView */,
+				245E06922B9B0BB9005FB6E9 /* SwiftUiCatalogGeometryReader */,
+				245E06952B9B0BD8005FB6E9 /* SwiftUiCatalogBackground */,
+				245E06962B9B0BE1005FB6E9 /* SwiftUiCatalogOverlay */,
+				245E06972B9B0BEA005FB6E9 /* SwiftUiCatalogDisclosureGroup */,
+				245E06982B9B0BF3005FB6E9 /* SwiftUiCatalogOutlineGroup */,
+				245E06992B9B0BFD005FB6E9 /* SwiftUiCatalogToolbar */,
+				245E069A2B9B0C06005FB6E9 /* SwiftUiCatalogFrame */,
+				245E069B2B9B0C0F005FB6E9 /* SwiftUiCatalogSafeAreaInset */,
+				245E069C2B9B0C19005FB6E9 /* SwiftUiCatalogEmptyView */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		245E05FD2B9AF759005FB6E9 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				245E067A2B9B0AA8005FB6E9 /* SwiftUiCatalogText */,
+				245E067B2B9B0AB4005FB6E9 /* SwiftUiCatalogImage */,
+				245E067C2B9B0ABF005FB6E9 /* SwiftUiCatalogLink */,
+				245E067D2B9B0AC9005FB6E9 /* SwiftUiCatalogWebView */,
+				245E067E2B9B0AD2005FB6E9 /* SwiftUiCatalogLabel */,
+				245E067F2B9B0ADA005FB6E9 /* SwiftUiCatalogProgressView */,
+				245E06802B9B0AE3005FB6E9 /* SwiftUiCatalogGauge */,
+				245E06812B9B0AED005FB6E9 /* SwiftUiCatalogContentUnavailable */,
+				245E06822B9B0AF7005FB6E9 /* SwiftUiCatalogShapes */,
+				245E06832B9B0B00005FB6E9 /* SwiftUiCatalogPath */,
+				245E06842B9B0B0A005FB6E9 /* SwiftUiCatalogCanvas */,
+				245E06852B9B0B13005FB6E9 /* SwiftUiCatalogColor */,
+				245E06862B9B0B1C005FB6E9 /* SwiftUiCatalogGradient */,
+				245E06932B9B0BC3005FB6E9 /* SwiftUiCatalogSpacer */,
+				245E06942B9B0BCE005FB6E9 /* SwiftUiCatalogDivider */,
+				245E06872B9B0B24005FB6E9 /* SwiftUiCatalogChart */,
+				245E06882B9B0B2D005FB6E9 /* SwiftUiCatalogMap */,
+				245E06892B9B0B3A005FB6E9 /* SwiftUiCatalogTable */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		245E05FE2B9AF798005FB6E9 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				245E069D2B9B0C37005FB6E9 /* SwiftUiCatalogGroup */,
+				245E069E2B9B0C40005FB6E9 /* SwiftUiCatalogForm */,
+				245E069F2B9B0C49005FB6E9 /* SwiftUiCatalogSection */,
+				245E06A02B9B0C52005FB6E9 /* SwiftUiCatalogViewThatFits */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		245E05FF2B9AF79F005FB6E9 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				245E06A12B9B0C61005FB6E9 /* SwiftUiCatalogAlert */,
+				245E06A22B9B0C6D005FB6E9 /* SwiftUiCatalogConfirmationDialog */,
+				245E06A32B9B0C76005FB6E9 /* SwiftUiCatalogNotification */,
+				245E06A42B9B0C81005FB6E9 /* SwiftUiCatalogSheet */,
+				245E06A52B9B0C8A005FB6E9 /* SwiftUiCatalogInspector */,
+				245E06A62B9B0C95005FB6E9 /* SwiftUiCatalogPopover */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		245E06002B9AF7A7005FB6E9 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		245E06732B9B0A46005FB6E9 /* SwiftUiCatalogButtons */ = {
+			isa = PBXGroup;
+			children = (
+				245E06052B9AF982005FB6E9 /* SwiftUiCatalogButtonsView.swift */,
+			);
+			path = SwiftUiCatalogButtons;
+			sourceTree = "<group>";
+		};
+		245E06742B9B0A55005FB6E9 /* SwiftUiCatalogToggle */ = {
+			isa = PBXGroup;
+			children = (
+				245E06072B9AF990005FB6E9 /* SwiftUiCatalogToggleView.swift */,
+			);
+			path = SwiftUiCatalogToggle;
+			sourceTree = "<group>";
+		};
+		245E06752B9B0A65005FB6E9 /* SwiftUiCatalogTextField */ = {
+			isa = PBXGroup;
+			children = (
+				245E06092B9AF9CE005FB6E9 /* SwiftUiCatalogTextFieldView.swift */,
+			);
+			path = SwiftUiCatalogTextField;
+			sourceTree = "<group>";
+		};
+		245E06762B9B0A74005FB6E9 /* SwiftUiCatalogSlider */ = {
+			isa = PBXGroup;
+			children = (
+				245E060B2B9AF9F2005FB6E9 /* SwiftUiCatalogSliderView.swift */,
+			);
+			path = SwiftUiCatalogSlider;
+			sourceTree = "<group>";
+		};
+		245E06772B9B0A81005FB6E9 /* SwiftUiCatalogPickers */ = {
+			isa = PBXGroup;
+			children = (
+				245E060D2B9AF9FE005FB6E9 /* SwiftUiCatalogPickersView.swift */,
+			);
+			path = SwiftUiCatalogPickers;
+			sourceTree = "<group>";
+		};
+		245E06782B9B0A8B005FB6E9 /* SwiftUiCatalogStepper */ = {
+			isa = PBXGroup;
+			children = (
+				245E060F2B9AFC99005FB6E9 /* SwiftUiCatalogStepperView.swift */,
+			);
+			path = SwiftUiCatalogStepper;
+			sourceTree = "<group>";
+		};
+		245E06792B9B0A96005FB6E9 /* SwiftUiCatalogMenus */ = {
+			isa = PBXGroup;
+			children = (
+				245E06112B9AFCA6005FB6E9 /* SwiftUiCatalogMenusView.swift */,
+			);
+			path = SwiftUiCatalogMenus;
+			sourceTree = "<group>";
+		};
+		245E067A2B9B0AA8005FB6E9 /* SwiftUiCatalogText */ = {
+			isa = PBXGroup;
+			children = (
+				245E06132B9AFEC7005FB6E9 /* SwiftUiCatalogTextView.swift */,
+			);
+			path = SwiftUiCatalogText;
+			sourceTree = "<group>";
+		};
+		245E067B2B9B0AB4005FB6E9 /* SwiftUiCatalogImage */ = {
+			isa = PBXGroup;
+			children = (
+				245E06152B9AFED9005FB6E9 /* SwiftUiCatalogImageView.swift */,
+			);
+			path = SwiftUiCatalogImage;
+			sourceTree = "<group>";
+		};
+		245E067C2B9B0ABF005FB6E9 /* SwiftUiCatalogLink */ = {
+			isa = PBXGroup;
+			children = (
+				245E06172B9AFEED005FB6E9 /* SwiftUiCatalogLinkView.swift */,
+			);
+			path = SwiftUiCatalogLink;
+			sourceTree = "<group>";
+		};
+		245E067D2B9B0AC9005FB6E9 /* SwiftUiCatalogWebView */ = {
+			isa = PBXGroup;
+			children = (
+				245E06192B9AFEFF005FB6E9 /* SwiftUiCatalogWebView.swift */,
+			);
+			path = SwiftUiCatalogWebView;
+			sourceTree = "<group>";
+		};
+		245E067E2B9B0AD2005FB6E9 /* SwiftUiCatalogLabel */ = {
+			isa = PBXGroup;
+			children = (
+				245E06232B9B00F7005FB6E9 /* SwiftUiCatalogLabelView.swift */,
+			);
+			path = SwiftUiCatalogLabel;
+			sourceTree = "<group>";
+		};
+		245E067F2B9B0ADA005FB6E9 /* SwiftUiCatalogProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				245E06252B9B010A005FB6E9 /* SwiftUiCatalogProgressView.swift */,
+			);
+			path = SwiftUiCatalogProgressView;
+			sourceTree = "<group>";
+		};
+		245E06802B9B0AE3005FB6E9 /* SwiftUiCatalogGauge */ = {
+			isa = PBXGroup;
+			children = (
+				245E06212B9B00AE005FB6E9 /* SwiftUiCatalogGaugeView.swift */,
+			);
+			path = SwiftUiCatalogGauge;
+			sourceTree = "<group>";
+		};
+		245E06812B9B0AED005FB6E9 /* SwiftUiCatalogContentUnavailable */ = {
+			isa = PBXGroup;
+			children = (
+				245E06272B9B0135005FB6E9 /* SwiftUiCatalogContentUnavailableView.swift */,
+			);
+			path = SwiftUiCatalogContentUnavailable;
+			sourceTree = "<group>";
+		};
+		245E06822B9B0AF7005FB6E9 /* SwiftUiCatalogShapes */ = {
+			isa = PBXGroup;
+			children = (
+				245E06292B9B014A005FB6E9 /* SwiftUiCatalogShapesView.swift */,
+			);
+			path = SwiftUiCatalogShapes;
+			sourceTree = "<group>";
+		};
+		245E06832B9B0B00005FB6E9 /* SwiftUiCatalogPath */ = {
+			isa = PBXGroup;
+			children = (
+				245E062D2B9B01AD005FB6E9 /* SwiftUiCatalogPathView.swift */,
+			);
+			path = SwiftUiCatalogPath;
+			sourceTree = "<group>";
+		};
+		245E06842B9B0B0A005FB6E9 /* SwiftUiCatalogCanvas */ = {
+			isa = PBXGroup;
+			children = (
+				245E062F2B9B01C2005FB6E9 /* SwiftUiCatalogCanvasView.swift */,
+			);
+			path = SwiftUiCatalogCanvas;
+			sourceTree = "<group>";
+		};
+		245E06852B9B0B13005FB6E9 /* SwiftUiCatalogColor */ = {
+			isa = PBXGroup;
+			children = (
+				245E06312B9B01D2005FB6E9 /* SwiftUiCatalogColorView.swift */,
+			);
+			path = SwiftUiCatalogColor;
+			sourceTree = "<group>";
+		};
+		245E06862B9B0B1C005FB6E9 /* SwiftUiCatalogGradient */ = {
+			isa = PBXGroup;
+			children = (
+				245E06332B9B01E9005FB6E9 /* SwiftUiCatalogGradientView.swift */,
+			);
+			path = SwiftUiCatalogGradient;
+			sourceTree = "<group>";
+		};
+		245E06872B9B0B24005FB6E9 /* SwiftUiCatalogChart */ = {
+			isa = PBXGroup;
+			children = (
+				245E06352B9B0200005FB6E9 /* SwiftUiCatalogChartView.swift */,
+			);
+			path = SwiftUiCatalogChart;
+			sourceTree = "<group>";
+		};
+		245E06882B9B0B2D005FB6E9 /* SwiftUiCatalogMap */ = {
+			isa = PBXGroup;
+			children = (
+				245E06372B9B020C005FB6E9 /* SwiftUiCatalogMapView.swift */,
+			);
+			path = SwiftUiCatalogMap;
+			sourceTree = "<group>";
+		};
+		245E06892B9B0B3A005FB6E9 /* SwiftUiCatalogTable */ = {
+			isa = PBXGroup;
+			children = (
+				245E06392B9B021B005FB6E9 /* SwiftUiCatalogTableView.swift */,
+			);
+			path = SwiftUiCatalogTable;
+			sourceTree = "<group>";
+		};
+		245E068A2B9B0B65005FB6E9 /* SwiftUiCatalogStacks */ = {
+			isa = PBXGroup;
+			children = (
+				245E061B2B9B0016005FB6E9 /* SwiftUiCatalogStacksView.swift */,
+			);
+			path = SwiftUiCatalogStacks;
+			sourceTree = "<group>";
+		};
+		245E068B2B9B0B72005FB6E9 /* SwiftUiCatalogList */ = {
+			isa = PBXGroup;
+			children = (
+				245E063B2B9B0250005FB6E9 /* SwiftUiCatalogListView.swift */,
+			);
+			path = SwiftUiCatalogList;
+			sourceTree = "<group>";
+		};
+		245E068C2B9B0B7C005FB6E9 /* SwiftUiCatalogForEach */ = {
+			isa = PBXGroup;
+			children = (
+				245E063D2B9B0266005FB6E9 /* SwiftUiCatalogForEachView.swift */,
+			);
+			path = SwiftUiCatalogForEach;
+			sourceTree = "<group>";
+		};
+		245E068D2B9B0B86005FB6E9 /* SwiftUiCatalogGrid */ = {
+			isa = PBXGroup;
+			children = (
+				245E063F2B9B0273005FB6E9 /* SwiftUiCatalogGridView.swift */,
+			);
+			path = SwiftUiCatalogGrid;
+			sourceTree = "<group>";
+		};
+		245E068E2B9B0B90005FB6E9 /* SwiftUiCatalogNavigationStack */ = {
+			isa = PBXGroup;
+			children = (
+				245E06412B9B02AC005FB6E9 /* SwiftUiCatalogNavigationStackView.swift */,
+			);
+			path = SwiftUiCatalogNavigationStack;
+			sourceTree = "<group>";
+		};
+		245E068F2B9B0B9A005FB6E9 /* SwiftUiCatalogNavigationSplitView */ = {
+			isa = PBXGroup;
+			children = (
+				245E06432B9B02C3005FB6E9 /* SwiftUiCatalogNavigationSplitView.swift */,
+			);
+			path = SwiftUiCatalogNavigationSplitView;
+			sourceTree = "<group>";
+		};
+		245E06902B9B0BA5005FB6E9 /* SwiftUiCatalogTab */ = {
+			isa = PBXGroup;
+			children = (
+				245E06452B9B02D3005FB6E9 /* SwiftUiCatalogTabView.swift */,
+			);
+			path = SwiftUiCatalogTab;
+			sourceTree = "<group>";
+		};
+		245E06912B9B0BAE005FB6E9 /* SwiftUiCatalogScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				245E06472B9B02E6005FB6E9 /* SwiftUiCatalogScrollView.swift */,
+			);
+			path = SwiftUiCatalogScrollView;
+			sourceTree = "<group>";
+		};
+		245E06922B9B0BB9005FB6E9 /* SwiftUiCatalogGeometryReader */ = {
+			isa = PBXGroup;
+			children = (
+				245E06492B9B0302005FB6E9 /* SwiftUiCatalogGeometryReaderView.swift */,
+			);
+			path = SwiftUiCatalogGeometryReader;
+			sourceTree = "<group>";
+		};
+		245E06932B9B0BC3005FB6E9 /* SwiftUiCatalogSpacer */ = {
+			isa = PBXGroup;
+			children = (
+				245E064B2B9B0313005FB6E9 /* SwiftUiCatalogSpacerView.swift */,
+			);
+			path = SwiftUiCatalogSpacer;
+			sourceTree = "<group>";
+		};
+		245E06942B9B0BCE005FB6E9 /* SwiftUiCatalogDivider */ = {
+			isa = PBXGroup;
+			children = (
+				245E064D2B9B0323005FB6E9 /* SwiftUiCatalogDividerView.swift */,
+			);
+			path = SwiftUiCatalogDivider;
+			sourceTree = "<group>";
+		};
+		245E06952B9B0BD8005FB6E9 /* SwiftUiCatalogBackground */ = {
+			isa = PBXGroup;
+			children = (
+				245E064F2B9B0335005FB6E9 /* SwiftUiCatalogBackgroundView.swift */,
+			);
+			path = SwiftUiCatalogBackground;
+			sourceTree = "<group>";
+		};
+		245E06962B9B0BE1005FB6E9 /* SwiftUiCatalogOverlay */ = {
+			isa = PBXGroup;
+			children = (
+				245E06512B9B0346005FB6E9 /* SwiftUiCatalogOverlayView.swift */,
+			);
+			path = SwiftUiCatalogOverlay;
+			sourceTree = "<group>";
+		};
+		245E06972B9B0BEA005FB6E9 /* SwiftUiCatalogDisclosureGroup */ = {
+			isa = PBXGroup;
+			children = (
+				245E06532B9B0357005FB6E9 /* SwiftUiCatalogDisclosureGroupView.swift */,
+			);
+			path = SwiftUiCatalogDisclosureGroup;
+			sourceTree = "<group>";
+		};
+		245E06982B9B0BF3005FB6E9 /* SwiftUiCatalogOutlineGroup */ = {
+			isa = PBXGroup;
+			children = (
+				245E06552B9B036D005FB6E9 /* SwiftUiCatalogOutlineGroupView.swift */,
+			);
+			path = SwiftUiCatalogOutlineGroup;
+			sourceTree = "<group>";
+		};
+		245E06992B9B0BFD005FB6E9 /* SwiftUiCatalogToolbar */ = {
+			isa = PBXGroup;
+			children = (
+				245E06572B9B0380005FB6E9 /* SwiftUiCatalogToolbarView.swift */,
+			);
+			path = SwiftUiCatalogToolbar;
+			sourceTree = "<group>";
+		};
+		245E069A2B9B0C06005FB6E9 /* SwiftUiCatalogFrame */ = {
+			isa = PBXGroup;
+			children = (
+				245E06592B9B038F005FB6E9 /* SwiftUiCatalogFrameView.swift */,
+			);
+			path = SwiftUiCatalogFrame;
+			sourceTree = "<group>";
+		};
+		245E069B2B9B0C0F005FB6E9 /* SwiftUiCatalogSafeAreaInset */ = {
+			isa = PBXGroup;
+			children = (
+				245E065B2B9B03A3005FB6E9 /* SwiftUiCatalogSafeAreaInsetView.swift */,
+			);
+			path = SwiftUiCatalogSafeAreaInset;
+			sourceTree = "<group>";
+		};
+		245E069C2B9B0C19005FB6E9 /* SwiftUiCatalogEmptyView */ = {
+			isa = PBXGroup;
+			children = (
+				245E065D2B9B03B2005FB6E9 /* SwiftUiCatalogEmptyView.swift */,
+			);
+			path = SwiftUiCatalogEmptyView;
+			sourceTree = "<group>";
+		};
+		245E069D2B9B0C37005FB6E9 /* SwiftUiCatalogGroup */ = {
+			isa = PBXGroup;
+			children = (
+				245E065F2B9B03E3005FB6E9 /* SwiftUiCatalogGroupView.swift */,
+			);
+			path = SwiftUiCatalogGroup;
+			sourceTree = "<group>";
+		};
+		245E069E2B9B0C40005FB6E9 /* SwiftUiCatalogForm */ = {
+			isa = PBXGroup;
+			children = (
+				245E06612B9B03F6005FB6E9 /* SwiftUiCatalogFormView.swift */,
+			);
+			path = SwiftUiCatalogForm;
+			sourceTree = "<group>";
+		};
+		245E069F2B9B0C49005FB6E9 /* SwiftUiCatalogSection */ = {
+			isa = PBXGroup;
+			children = (
+				245E06632B9B0409005FB6E9 /* SwiftUiCatalogSectionView.swift */,
+			);
+			path = SwiftUiCatalogSection;
+			sourceTree = "<group>";
+		};
+		245E06A02B9B0C52005FB6E9 /* SwiftUiCatalogViewThatFits */ = {
+			isa = PBXGroup;
+			children = (
+				245E06652B9B047C005FB6E9 /* SwiftUiCatalogViewThatFitsView.swift */,
+			);
+			path = SwiftUiCatalogViewThatFits;
+			sourceTree = "<group>";
+		};
+		245E06A12B9B0C61005FB6E9 /* SwiftUiCatalogAlert */ = {
+			isa = PBXGroup;
+			children = (
+				245E06672B9B0498005FB6E9 /* SwiftUiCatalogAlertView.swift */,
+			);
+			path = SwiftUiCatalogAlert;
+			sourceTree = "<group>";
+		};
+		245E06A22B9B0C6D005FB6E9 /* SwiftUiCatalogConfirmationDialog */ = {
+			isa = PBXGroup;
+			children = (
+				245E06692B9B04A7005FB6E9 /* SwiftUiCatalogConfirmationDialogView.swift */,
+			);
+			path = SwiftUiCatalogConfirmationDialog;
+			sourceTree = "<group>";
+		};
+		245E06A32B9B0C76005FB6E9 /* SwiftUiCatalogNotification */ = {
+			isa = PBXGroup;
+			children = (
+				245E066B2B9B04BB005FB6E9 /* SwiftUiCatalogNotificationView.swift */,
+			);
+			path = SwiftUiCatalogNotification;
+			sourceTree = "<group>";
+		};
+		245E06A42B9B0C81005FB6E9 /* SwiftUiCatalogSheet */ = {
+			isa = PBXGroup;
+			children = (
+				245E066D2B9B04D0005FB6E9 /* SwiftUiCatalogSheetView.swift */,
+			);
+			path = SwiftUiCatalogSheet;
+			sourceTree = "<group>";
+		};
+		245E06A52B9B0C8A005FB6E9 /* SwiftUiCatalogInspector */ = {
+			isa = PBXGroup;
+			children = (
+				245E066F2B9B04DD005FB6E9 /* SwiftUiCatalogInspectorView.swift */,
+			);
+			path = SwiftUiCatalogInspector;
+			sourceTree = "<group>";
+		};
+		245E06A62B9B0C95005FB6E9 /* SwiftUiCatalogPopover */ = {
+			isa = PBXGroup;
+			children = (
+				245E06712B9B04EF005FB6E9 /* SwiftUiCatalogPopoverView.swift */,
+			);
+			path = SwiftUiCatalogPopover;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -999,79 +1652,134 @@
 			buildActionMask = 2147483647;
 			files = (
 				2443B4192B972CF2000FE1FD /* PageScaffold.swift in Sources */,
+				245E06462B9B02D3005FB6E9 /* SwiftUiCatalogTabView.swift in Sources */,
+				245E06062B9AF982005FB6E9 /* SwiftUiCatalogButtonsView.swift in Sources */,
 				245E05C42B9A09D6005FB6E9 /* SwiftUiVisibilityView.swift in Sources */,
+				245E06582B9B0380005FB6E9 /* SwiftUiCatalogToolbarView.swift in Sources */,
+				245E060A2B9AF9CE005FB6E9 /* SwiftUiCatalogTextFieldView.swift in Sources */,
 				245E057A2B99FDE1005FB6E9 /* SwiftUiCodeArchitectureView.swift in Sources */,
 				245E05542B99F6F1005FB6E9 /* SwiftIntroductionView.swift in Sources */,
 				245E05602B99F7D2005FB6E9 /* SwiftOptionalsView.swift in Sources */,
-				245E05ED2B9A1502005FB6E9 /* SwiftUiMiscellaneousView.swift in Sources */,
+				245E05ED2B9A1502005FB6E9 /* SwiftUiCatalogMiscellaneousView.swift in Sources */,
+				245E06702B9B04DD005FB6E9 /* SwiftUiCatalogInspectorView.swift in Sources */,
 				2443B4052B91C60A000FE1FD /* SharedDataModel.swift in Sources */,
 				2443B4382B9864B1000FE1FD /* DeploymentView.swift in Sources */,
+				245E063C2B9B0250005FB6E9 /* SwiftUiCatalogListView.swift in Sources */,
 				2443B4272B9850FA000FE1FD /* Links.swift in Sources */,
 				245E05C22B9A09BE005FB6E9 /* SwiftUiPositioningView.swift in Sources */,
+				245E06242B9B00F7005FB6E9 /* SwiftUiCatalogLabelView.swift in Sources */,
 				245E05782B99FDCC005FB6E9 /* SwiftUiApiHandlingView.swift in Sources */,
 				2443B3FF2B91C5D9000FE1FD /* DesignSystem.swift in Sources */,
 				245E056E2B99FD45005FB6E9 /* SwiftAdvancedView.swift in Sources */,
 				245E05682B99FD09005FB6E9 /* SwiftFunctionsView.swift in Sources */,
+				245E06622B9B03F6005FB6E9 /* SwiftUiCatalogFormView.swift in Sources */,
+				245E06602B9B03E3005FB6E9 /* SwiftUiCatalogGroupView.swift in Sources */,
 				245E05BC2B9A097C005FB6E9 /* SwiftUiBordersView.swift in Sources */,
-				245E05E92B9A149E005FB6E9 /* SwiftUiContainersView.swift in Sources */,
+				245E062A2B9B014A005FB6E9 /* SwiftUiCatalogShapesView.swift in Sources */,
+				245E06A82B9B2B44005FB6E9 /* CodeSnippetWithDemo.swift in Sources */,
+				245E06442B9B02C3005FB6E9 /* SwiftUiCatalogNavigationSplitView.swift in Sources */,
+				245E064A2B9B0302005FB6E9 /* SwiftUiCatalogGeometryReaderView.swift in Sources */,
+				245E05E92B9A149E005FB6E9 /* SwiftUiCatalogContainersView.swift in Sources */,
 				245E05B82B9A095C005FB6E9 /* SwiftUiAlignmentView.swift in Sources */,
 				245E05662B99F813005FB6E9 /* SwiftCollectionsView.swift in Sources */,
 				245E05882B99FE9F005FB6E9 /* SwiftUiBestPracticesView.swift in Sources */,
 				245E05562B99F710005FB6E9 /* SwiftVariablesAndConstantsView.swift in Sources */,
-				245E05E72B9A1478005FB6E9 /* SwiftUiDisplayElementsView.swift in Sources */,
+				245E05E72B9A1478005FB6E9 /* SwiftUiCatalogDisplayElementsView.swift in Sources */,
 				245E05642B99F800005FB6E9 /* SwiftControlFlowView.swift in Sources */,
+				245E061C2B9B0016005FB6E9 /* SwiftUiCatalogStacksView.swift in Sources */,
 				245E055E2B99F7B3005FB6E9 /* SwiftCommentsView.swift in Sources */,
 				245E05522B99F607005FB6E9 /* IosDevelopmentView.swift in Sources */,
 				245E055C2B99F79D005FB6E9 /* SwiftExpressionsAndStatementsView.swift in Sources */,
 				2443B4332B9863DB000FE1FD /* UiKitView.swift in Sources */,
+				245E06662B9B047C005FB6E9 /* SwiftUiCatalogViewThatFitsView.swift in Sources */,
 				2443B3E92B91C093000FE1FD /* HomeView.swift in Sources */,
 				245E05CC2B9A0AAE005FB6E9 /* SwiftUiMediaView.swift in Sources */,
+				245E060E2B9AF9FE005FB6E9 /* SwiftUiCatalogPickersView.swift in Sources */,
+				245E06222B9B00AE005FB6E9 /* SwiftUiCatalogGaugeView.swift in Sources */,
 				245E054E2B99BCCF005FB6E9 /* TextSection.swift in Sources */,
+				245E06562B9B036D005FB6E9 /* SwiftUiCatalogOutlineGroupView.swift in Sources */,
 				245E05502B99F5E9005FB6E9 /* IosInstallationAndSetupView.swift in Sources */,
 				245E05742B99FDAA005FB6E9 /* SwiftUiNavigationAndRoutingView.swift in Sources */,
-				245E05EB2B9A14D0005FB6E9 /* SwiftUiModalsView.swift in Sources */,
+				245E05EB2B9A14D0005FB6E9 /* SwiftUiCatalogModalsView.swift in Sources */,
 				245E05842B99FE53005FB6E9 /* SwiftUiNativeFeaturesView.swift in Sources */,
+				245E066E2B9B04D0005FB6E9 /* SwiftUiCatalogSheetView.swift in Sources */,
 				2443B4152B91E573000FE1FD /* PageNotFoundView.swift in Sources */,
 				245E05CA2B9A0A95005FB6E9 /* SwiftUiFormInputsView.swift in Sources */,
 				2443B40B2B91C660000FE1FD /* LocalStorageService.swift in Sources */,
 				245E056A2B99FD1C005FB6E9 /* SwiftOopView.swift in Sources */,
+				245E06082B9AF990005FB6E9 /* SwiftUiCatalogToggleView.swift in Sources */,
 				2443B3E72B91C092000FE1FD /* IosDevelopersGuideApp.swift in Sources */,
+				245E066A2B9B04A7005FB6E9 /* SwiftUiCatalogConfirmationDialogView.swift in Sources */,
 				2443B4362B986471000FE1FD /* RestApiView.swift in Sources */,
+				245E066C2B9B04BB005FB6E9 /* SwiftUiCatalogNotificationView.swift in Sources */,
+				245E064E2B9B0323005FB6E9 /* SwiftUiCatalogDividerView.swift in Sources */,
 				2443B4202B984EF4000FE1FD /* SwiftFundamentalsView.swift in Sources */,
+				245E06262B9B010A005FB6E9 /* SwiftUiCatalogProgressView.swift in Sources */,
 				2443B4072B91C61A000FE1FD /* Validators.swift in Sources */,
+				245E06722B9B04EF005FB6E9 /* SwiftUiCatalogPopoverView.swift in Sources */,
 				245E05582B99F754005FB6E9 /* SwiftDataTypesView.swift in Sources */,
+				245E065C2B9B03A3005FB6E9 /* SwiftUiCatalogSafeAreaInsetView.swift in Sources */,
 				245E058C2B99FF25005FB6E9 /* DeploymentProdBuildView.swift in Sources */,
-				245E05E32B9A0FD6005FB6E9 /* SwiftUiControlsView.swift in Sources */,
+				245E06302B9B01C2005FB6E9 /* SwiftUiCatalogCanvasView.swift in Sources */,
+				245E06542B9B0357005FB6E9 /* SwiftUiCatalogDisclosureGroupView.swift in Sources */,
+				245E060C2B9AF9F2005FB6E9 /* SwiftUiCatalogSliderView.swift in Sources */,
+				245E062E2B9B01AD005FB6E9 /* SwiftUiCatalogPathView.swift in Sources */,
+				245E05E32B9A0FD6005FB6E9 /* SwiftUiCatalogControlsView.swift in Sources */,
 				2443B4472B988141000FE1FD /* IosImportantConceptsView.swift in Sources */,
 				2443B4112B91D06E000FE1FD /* RootView.swift in Sources */,
 				245E055A2B99F77F005FB6E9 /* SwiftInputAndOutputView.swift in Sources */,
+				245E06382B9B020C005FB6E9 /* SwiftUiCatalogMapView.swift in Sources */,
+				245E06142B9AFEC7005FB6E9 /* SwiftUiCatalogTextView.swift in Sources */,
+				245E06342B9B01E9005FB6E9 /* SwiftUiCatalogGradientView.swift in Sources */,
+				245E06322B9B01D2005FB6E9 /* SwiftUiCatalogColorView.swift in Sources */,
 				245E05D02B9A0AEE005FB6E9 /* SwiftUiDesignSystemView.swift in Sources */,
-				245E057C2B99FDFA005FB6E9 /* SwiftUiViewsAndModifiersCatalogView.swift in Sources */,
+				245E057C2B99FDFA005FB6E9 /* SwiftUiCatalogView.swift in Sources */,
 				245E05862B99FE79005FB6E9 /* SwiftUiResponsiveDesignView.swift in Sources */,
 				245E05C02B9A09A4005FB6E9 /* SwiftUiEffectsView.swift in Sources */,
+				245E06682B9B0498005FB6E9 /* SwiftUiCatalogAlertView.swift in Sources */,
+				245E061A2B9AFEFF005FB6E9 /* SwiftUiCatalogWebView.swift in Sources */,
+				245E06482B9B02E6005FB6E9 /* SwiftUiCatalogScrollView.swift in Sources */,
 				2443B4412B986CB7000FE1FD /* PackageManagerView.swift in Sources */,
+				245E063A2B9B021B005FB6E9 /* SwiftUiCatalogTableView.swift in Sources */,
+				245E06522B9B0346005FB6E9 /* SwiftUiCatalogOverlayView.swift in Sources */,
 				245E05C82B9A0A50005FB6E9 /* SwiftUiHyperlinksView.swift in Sources */,
 				245E05B22B9A08D2005FB6E9 /* SwiftUiDimensionsAndConstraintsView.swift in Sources */,
 				245E05702B99FD6E005FB6E9 /* SwiftUiManipulationView.swift in Sources */,
 				245E05802B99FE19005FB6E9 /* SwiftUiTestingView.swift in Sources */,
+				245E065A2B9B038F005FB6E9 /* SwiftUiCatalogFrameView.swift in Sources */,
+				245E06502B9B0335005FB6E9 /* SwiftUiCatalogBackgroundView.swift in Sources */,
 				245E05C62B9A0A37005FB6E9 /* SwiftUiInteractiveBehavioursView.swift in Sources */,
 				245E05B62B9A0932005FB6E9 /* SwiftUiColorsAndBackgroundsView.swift in Sources */,
 				2443B4092B91C655000FE1FD /* ApiService.swift in Sources */,
 				245E05B42B9A0919005FB6E9 /* SwiftUiSpacingView.swift in Sources */,
 				2443B42F2B9863A8000FE1FD /* SwiftUiView.swift in Sources */,
+				245E06422B9B02AC005FB6E9 /* SwiftUiCatalogNavigationStackView.swift in Sources */,
+				245E06402B9B0273005FB6E9 /* SwiftUiCatalogGridView.swift in Sources */,
 				2443B4012B91C5E4000FE1FD /* Helpers.swift in Sources */,
+				245E063E2B9B0266005FB6E9 /* SwiftUiCatalogForEachView.swift in Sources */,
 				2443B42B2B9862B9000FE1FD /* IosFundamentalsView.swift in Sources */,
 				245E057E2B99FE0A005FB6E9 /* SwiftUiDebuggingView.swift in Sources */,
-				245E05E52B9A100D005FB6E9 /* SwiftUiLayoutsView.swift in Sources */,
+				245E05E52B9A100D005FB6E9 /* SwiftUiCatalogLayoutsView.swift in Sources */,
+				245E06102B9AFC99005FB6E9 /* SwiftUiCatalogStepperView.swift in Sources */,
 				245E05B02B9A08B8005FB6E9 /* SwiftUiLayoutView.swift in Sources */,
+				245E06122B9AFCA6005FB6E9 /* SwiftUiCatalogMenusView.swift in Sources */,
+				245E06282B9B0135005FB6E9 /* SwiftUiCatalogContentUnavailableView.swift in Sources */,
 				245E058A2B99FF0E005FB6E9 /* DeploymentTestBuildView.swift in Sources */,
+				245E06182B9AFEED005FB6E9 /* SwiftUiCatalogLinkView.swift in Sources */,
 				245E05722B99FD7E005FB6E9 /* SwiftUiLifeCycleView.swift in Sources */,
+				245E05FA2B9AF37F005FB6E9 /* SwiftUiBasicLayoutView.swift in Sources */,
 				2443B4252B985017000FE1FD /* LinkData.swift in Sources */,
 				245E05822B99FE34005FB6E9 /* SwiftUiSupportingClassesAndEnumsView.swift in Sources */,
 				245E05622B99F7E5005FB6E9 /* SwiftOperatorsView.swift in Sources */,
+				245E05F82B9AF368005FB6E9 /* SwiftUiPageLayoutView.swift in Sources */,
+				245E06162B9AFED9005FB6E9 /* SwiftUiCatalogImageView.swift in Sources */,
+				245E06362B9B0200005FB6E9 /* SwiftUiCatalogChartView.swift in Sources */,
 				245E054C2B99B7DC005FB6E9 /* CodeSnippet.swift in Sources */,
+				245E064C2B9B0313005FB6E9 /* SwiftUiCatalogSpacerView.swift in Sources */,
 				245E056C2B99FD30005FB6E9 /* SwiftEnumAndStructsView.swift in Sources */,
+				245E065E2B9B03B2005FB6E9 /* SwiftUiCatalogEmptyView.swift in Sources */,
 				245E05762B99FDBD005FB6E9 /* SwiftUiStateManagementView.swift in Sources */,
+				245E06642B9B0409005FB6E9 /* SwiftUiCatalogSectionView.swift in Sources */,
 				2443B4032B91C5F8000FE1FD /* Router.swift in Sources */,
 				245E05BE2B9A098F005FB6E9 /* SwiftUiIconsAndImagesView.swift in Sources */,
 				2443B3FD2B91C5BF000FE1FD /* Constants.swift in Sources */,

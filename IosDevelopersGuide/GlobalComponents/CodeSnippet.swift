@@ -12,9 +12,11 @@ struct CodeSnippet: View {
     let snippetCode: String
     
     var body: some View {
-        Group {
+        VStack {
             Text(snippetTitle)
                 .frame(maxWidth: .infinity, alignment: .leading)
+                .bold()
+                .font(.system(size: 24))
             ScrollView(.horizontal) {
                 Text(snippetCode)
                     .frame(maxWidth: .infinity, alignment: .leading)
@@ -22,7 +24,6 @@ struct CodeSnippet: View {
                     .font(.system(size: 14, design: .monospaced))
                     .kerning(0.5)
                     .lineSpacing(8)
-//                    .fixedSize(horizontal: true, vertical: true)
                     .foregroundColor(.white)
                     .background(Color.black.opacity(0.8))
                     .cornerRadius(8)

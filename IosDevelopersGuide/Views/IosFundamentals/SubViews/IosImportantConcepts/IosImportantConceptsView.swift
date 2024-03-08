@@ -13,7 +13,6 @@ struct IosImportantConceptsView: View {
         PageScaffold(
             pageTitle: "IOS important concepts",
             content: {
-
             }
         )
     }

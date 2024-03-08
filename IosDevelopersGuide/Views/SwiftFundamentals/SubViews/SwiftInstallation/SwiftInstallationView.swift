@@ -9,7 +9,15 @@ import SwiftUI
 
 struct SwiftInstallationView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        PageScaffold(
+            pageTitle: "Installation",
+            content: {
+            }
+        )
+
     }
 }
 
+#Preview {
+    SwiftInstallationView()
+}

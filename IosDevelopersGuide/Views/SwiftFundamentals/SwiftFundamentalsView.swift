@@ -30,7 +30,6 @@ struct SwiftFundamentalsView: View {
         PageScaffold(
             pageTitle: "Swift fundamentals",
             content: {
-                Spacer().frame(height: 32)
                 Links(links: links)
             }
         )

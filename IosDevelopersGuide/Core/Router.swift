@@ -42,13 +42,96 @@ class Router: ObservableObject {
         case swiftUiStateManagement
         case swiftUiApiHandling
         case swiftUiCodeArchitecture
-        case swiftUiViewCatalog
+        case swiftUiCatalog
         case swiftUiDebugging
         case swiftUiTesting
         case swiftUiSuppportingClassesAndEnums
         case swiftUiNativeFeaturesHandling
         case swiftUiResponsiveDesign
         case swiftUiBestPractices
+        
+        case swiftUiLayout
+        case swiftUiPageLayout
+        case swiftUiBasicLayout
+        
+        case swiftUiDimensionsAndConstraints
+        case swiftUiSpacing
+        case swiftUiColorsAndBackgrounds
+        case swiftUiAlignment
+        case swiftUiText
+        case swiftUiBorders
+        case swiftUiIconsAndImages
+        case swiftUiEffects
+        case swiftUiPositioning
+        case swiftUiVisibility
+        case swiftUiInteractiveBehaviours
+        case swiftUiHyperlinks
+        case swiftUiFormInputs
+        case swiftUiMedia
+        
+        case swiftUiCatalogControls
+        case swiftUiCatalogButtons
+        case swiftUiCatalogToggle
+        case swiftUiCatalogTextField
+        case swiftUiCatalogSlider
+        case swiftUiCatalogPickers
+        case swiftUiCatalogStepper
+        case swiftUiCatalogMenus
+        
+        case swiftUiCatalogDisplayElements
+        case swiftUiCatalogText
+        case swiftUiCatalogImage
+        case swiftUiCatalogLink
+        case swiftUiCatalogWebView
+        case swiftUiCatalogLabel
+        case swiftUiCatalogProgressView
+        case swiftUiCatalogGauge
+        case swiftUiCatalogContentUnavailable
+        case swiftUiCatalogShapes
+        case swiftUiCatalogPath
+        case swiftUiCatalogCanvas
+        case swiftUiCatalogColor
+        case swiftUiCatalogGradient
+        case swiftUiCatalogSpacer
+        case swiftUiCatalogDivider
+        case swiftUiCatalogChart
+        case swiftUiCatalogMap
+        case swiftUiCatalogTable
+        
+        case swiftUiCatalogLayouts
+        case swiftUiCatalogStacks
+        case swiftUiCatalogList
+        case swiftUiCatalogForEach
+        case swiftUiCatalogGrid
+        case swiftUiCatalogNavigationStack
+        case swiftUiCatalogNavigationSplitView
+        case swiftUiCatalogTab
+        case swiftUiCatalogScrollView
+        case swiftUiCatalogGeometryReader
+        case swiftUiCatalogBackground
+        case swiftUiCatalogOverlay
+        case swiftUiCatalogDisclosureGroup
+        case swiftUiCatalogOutlineGroup
+        case swiftUiCatalogToolbar
+        case swiftUiCatalogFrame
+        case swiftUiCatalogSafeAreaInset
+        case swiftUiCatalogEmptyView
+        
+        case swiftUiCatalogContainers
+        case swiftUiCatalogGroup
+        case swiftUiCatalogForm
+        case swiftUiCatalogSection
+        case swiftUiCatalogViewThatFits
+        
+        case swiftUiCatalogModals
+        case swiftUiCatalogAlert
+        case swiftUiCatalogConfirmationDialog
+        case swiftUiCatalogNotification
+        case swiftUiCatalogSheet
+        case swiftUiCatalogInspector
+        case swiftUiCatalogPopover
+        
+        case swiftUiCatalogMiscellaneous
         
         case uiKit
         
@@ -78,71 +161,230 @@ class Router: ObservableObject {
             case .iosImportantConcepts:
                 IosImportantConceptsView()
             case .iosInstallationAndSetup:
-                PageNotFoundView()
+                IosInstallationAndSetupView()
             case .iosDevelopment:
-                PageNotFoundView()
+                IosDevelopmentView()
             
             case .swiftFundamentals:
                 SwiftFundamentalsView()
             case .swiftInstallation:
-                PageNotFoundView()
+                SwiftInstallationView()
             case .swiftIntroduction:
-                PageNotFoundView()
+                SwiftIntroductionView()
             case .swiftVariablesAndConstants:
-                PageNotFoundView()
+                SwiftVariablesAndConstantsView()
             case .swiftDataTypes:
-                PageNotFoundView()
+                SwiftDataTypesView()
             case .swiftInputAndOutput:
-                PageNotFoundView()
+                SwiftInputAndOutputView()
             case .swiftExpressionsAndStatements:
-                PageNotFoundView()
+                SwiftExpressionsAndStatementsView()
             case .swiftComments:
-                PageNotFoundView()
+                SwiftCommentsView()
             case .swiftOptionals:
-                PageNotFoundView()
+                SwiftOptionalsView()
             case .swiftOperators:
-                PageNotFoundView()
+                SwiftOperatorsView()
             case .swiftControlFlow:
-                PageNotFoundView()
+                SwiftControlFlowView()
             case .swiftCollections:
-                PageNotFoundView()
+                SwiftCollectionsView()
             case .swiftFunctions:
-                PageNotFoundView()
+                SwiftFunctionsView()
             case .swiftOop:
-                PageNotFoundView()
+                SwiftOopView()
             case .swiftEnumAndStructs:
-                PageNotFoundView()
+                SwiftEnumAndStructsView()
             case .swiftAdvanced:
-            PageNotFoundView()
+                SwiftAdvancedView()
             
             case .swiftUi:
                 SwiftUiView()
             case .swiftUiManipulation:
-                PageNotFoundView()
+                SwiftUiManipulationView()
             case .swiftUiLifeCycle:
-                PageNotFoundView()
+                SwiftUiLifeCycleView()
             case .swiftUiNavigationAndRouting:
-                PageNotFoundView()
+                SwiftUiNavigationAndRoutingView()
             case .swiftUiStateManagement:
-                PageNotFoundView()
+                SwiftUiStateManagementView()
             case .swiftUiApiHandling:
-                PageNotFoundView()
+                SwiftUiApiHandlingView()
             case .swiftUiCodeArchitecture:
-                PageNotFoundView()
-            case .swiftUiViewCatalog:
-                PageNotFoundView()
+                SwiftUiCodeArchitectureView()
+            case .swiftUiCatalog:
+                SwiftUiCatalogView()
             case .swiftUiDebugging:
-                PageNotFoundView()
+                SwiftUiDebuggingView()
             case .swiftUiTesting:
-                PageNotFoundView()
+                SwiftUiTestingView()
             case .swiftUiSuppportingClassesAndEnums:
-                PageNotFoundView()
+                SwiftUiSupportingClassesAndEnumsView()
             case .swiftUiNativeFeaturesHandling:
-                PageNotFoundView()
+                SwiftUiNativeFeaturesView()
             case .swiftUiResponsiveDesign:
-                PageNotFoundView()
+                SwiftUiResponsiveDesignView()
             case .swiftUiBestPractices:
-                PageNotFoundView()
+                SwiftUiBestPracticesView()
+            
+            case .swiftUiLayout:
+                SwiftUiLayoutView()
+            case .swiftUiPageLayout:
+                SwiftUiPageLayoutView()
+            case .swiftUiBasicLayout:
+                SwiftUiBasicLayoutView()
+            
+            case .swiftUiDimensionsAndConstraints:
+                SwiftUiDimensionsAndConstraintsView()
+            case .swiftUiSpacing:
+                SwiftUiSpacingView()
+            case .swiftUiColorsAndBackgrounds:
+                SwiftUiColorsAndBackgroundsView()
+            case .swiftUiAlignment:
+                SwiftUiAlignmentView()
+            case .swiftUiText:
+                SwiftUiTextView()
+            case .swiftUiBorders:
+                SwiftUiBordersView()
+            case .swiftUiIconsAndImages:
+                SwiftUiIconsAndImagesView()
+            case .swiftUiEffects:
+                SwiftUiEffectsView()
+            case .swiftUiPositioning:
+                SwiftUiPositioningView()
+            case .swiftUiVisibility:
+                SwiftUiVisibilityView()
+            case .swiftUiInteractiveBehaviours:
+                SwiftUiInteractiveBehavioursView()
+            case .swiftUiHyperlinks:
+                SwiftUiHyperlinksView()
+            case .swiftUiFormInputs:
+                SwiftUiFormInputsView()
+            case .swiftUiMedia:
+                SwiftUiMediaView()
+            
+            case .swiftUiCatalogControls:
+                SwiftUiCatalogControlsView()
+            case .swiftUiCatalogButtons:
+                SwiftUiCatalogButtonsView()
+            case .swiftUiCatalogToggle:
+                SwiftUiCatalogToggleView()
+            case .swiftUiCatalogTextField:
+                SwiftUiCatalogTextFieldView()
+            case .swiftUiCatalogSlider:
+                SwiftUiCatalogSliderView()
+            case .swiftUiCatalogPickers:
+                SwiftUiCatalogPickersView()
+            case .swiftUiCatalogStepper:
+                SwiftUiCatalogStepperView()
+            case .swiftUiCatalogMenus:
+                SwiftUiCatalogMenusView()
+            
+            case .swiftUiCatalogDisplayElements:
+                SwiftUiCatalogLayoutsView()
+            case .swiftUiCatalogText:
+                SwiftUiCatalogTextView()
+            case .swiftUiCatalogImage:
+                SwiftUiCatalogImageView()
+            case .swiftUiCatalogLink:
+                SwiftUiCatalogLinkView()
+            case .swiftUiCatalogWebView:
+                SwiftUiCatalogWebView()
+            case .swiftUiCatalogLabel:
+                SwiftUiCatalogLabelView()
+            case .swiftUiCatalogProgressView:
+                SwiftUiCatalogProgressView()
+            case .swiftUiCatalogGauge:
+                SwiftUiCatalogGaugeView()
+            case .swiftUiCatalogContentUnavailable:
+                SwiftUiCatalogContentUnavailableView()
+            case .swiftUiCatalogShapes:
+                SwiftUiCatalogShapesView()
+            case .swiftUiCatalogPath:
+                SwiftUiCatalogPathView()
+            case .swiftUiCatalogCanvas:
+                SwiftUiCatalogCanvasView()
+            case .swiftUiCatalogColor:
+                SwiftUiCatalogColorView()
+            case .swiftUiCatalogGradient:
+                SwiftUiCatalogGradientView()
+            case .swiftUiCatalogSpacer:
+                SwiftUiCatalogSpacerView()
+            case .swiftUiCatalogDivider:
+                SwiftUiCatalogDividerView()
+            case .swiftUiCatalogChart:
+                SwiftUiCatalogChartView()
+            case .swiftUiCatalogMap:
+                SwiftUiCatalogMapView()
+            case .swiftUiCatalogTable:
+                SwiftUiCatalogTableView()
+            
+            
+            case .swiftUiCatalogLayouts:
+                SwiftUiLayoutView()
+            case .swiftUiCatalogStacks:
+                SwiftUiCatalogStacksView()
+            case .swiftUiCatalogList:
+                SwiftUiCatalogListView()
+            case .swiftUiCatalogForEach:
+                SwiftUiCatalogForEachView()
+            case .swiftUiCatalogGrid:
+                SwiftUiCatalogGridView()
+            case .swiftUiCatalogNavigationStack:
+                SwiftUiCatalogNavigationStackView()
+            case .swiftUiCatalogNavigationSplitView:
+                SwiftUiCatalogNavigationSplitView()
+            case .swiftUiCatalogTab:
+                SwiftUiCatalogTabView()
+            case .swiftUiCatalogScrollView:
+                SwiftUiCatalogScrollView()
+            case .swiftUiCatalogGeometryReader:
+                SwiftUiCatalogGeometryReaderView()
+            case .swiftUiCatalogBackground:
+                SwiftUiCatalogBackgroundView()
+            case .swiftUiCatalogOverlay:
+                SwiftUiCatalogOverlayView()
+            case .swiftUiCatalogDisclosureGroup:
+                SwiftUiCatalogDisclosureGroupView()
+            case .swiftUiCatalogOutlineGroup:
+                SwiftUiCatalogOutlineGroupView()
+            case .swiftUiCatalogToolbar:
+                SwiftUiCatalogToolbarView()
+            case .swiftUiCatalogFrame:
+                SwiftUiCatalogFrameView()
+            case .swiftUiCatalogSafeAreaInset:
+                SwiftUiCatalogSafeAreaInsetView()
+            case .swiftUiCatalogEmptyView:
+                SwiftUiCatalogEmptyView()
+            
+            case .swiftUiCatalogContainers:
+                SwiftUiCatalogContainersView()
+            case .swiftUiCatalogGroup:
+                SwiftUiCatalogGroupView()
+            case .swiftUiCatalogForm:
+                SwiftUiCatalogFormView()
+            case .swiftUiCatalogSection:
+                SwiftUiCatalogSectionView()
+            case .swiftUiCatalogViewThatFits:
+                SwiftUiCatalogSectionView()
+            
+            case .swiftUiCatalogModals:
+                SwiftUiCatalogModalsView()
+            case .swiftUiCatalogAlert:
+                SwiftUiCatalogAlertView()
+            case .swiftUiCatalogConfirmationDialog:
+                SwiftUiCatalogConfirmationDialogView()
+            case .swiftUiCatalogNotification:
+                SwiftUiCatalogNotificationView()
+            case .swiftUiCatalogSheet:
+                SwiftUiCatalogSheetView()
+            case .swiftUiCatalogInspector:
+                SwiftUiCatalogInspectorView()
+            case .swiftUiCatalogPopover:
+                SwiftUiCatalogPopoverView()
+            
+            case .swiftUiCatalogMiscellaneous:
+                SwiftUiCatalogMiscellaneousView()
             
             case .uiKit:
                 UiKitView()
@@ -162,9 +404,9 @@ class Router: ObservableObject {
             case .deployment:
                 DeploymentView()
             case .deploymentTestBuild:
-                PageNotFoundView()
+                DeploymentTestBuildView()
             case .deploymentProdBuild:
-                PageNotFoundView()
+                DeploymentProdBuildView()
             
             
             default:

@@ -18,6 +18,7 @@ struct PageScaffold<Content: View>: View {
     
     var body: some View {
         ScrollView(.vertical){
+            Spacer().frame(height: 32)
             children
         }
             .toolbar {

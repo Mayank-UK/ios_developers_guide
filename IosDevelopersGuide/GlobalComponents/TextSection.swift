@@ -12,7 +12,7 @@ struct TextSection: View {
     let description: String
     
     var body: some View {
-        Group {
+        VStack {
             Text(title)
                 .frame(maxWidth: .infinity, alignment: .leading)
             Text(description)

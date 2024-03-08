@@ -9,7 +9,11 @@ import SwiftUI
 
 struct SwiftUiIconsAndImagesView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        PageScaffold(
+            pageTitle: "Icons and images",
+            content: {
+            }
+        )
     }
 }
 

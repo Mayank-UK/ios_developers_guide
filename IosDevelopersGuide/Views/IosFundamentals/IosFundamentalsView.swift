@@ -18,7 +18,6 @@ struct IosFundamentalsView: View {
         PageScaffold(
             pageTitle: "IOS fundamentals",
             content: {
-                Spacer().frame(height: 32)
                 Links(links: links)
             }
         )

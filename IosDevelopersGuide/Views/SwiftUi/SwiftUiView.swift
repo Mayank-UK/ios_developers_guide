@@ -15,7 +15,7 @@ struct SwiftUiView: View {
         LinkData(title: "State management", routePath: Router.routePaths.swiftUiStateManagement),
         LinkData(title: "API handling", routePath: Router.routePaths.swiftUiApiHandling),
         LinkData(title: "Code architecture", routePath: Router.routePaths.swiftUiCodeArchitecture),
-        LinkData(title: "View catalog", routePath: Router.routePaths.swiftUiViewCatalog),
+        LinkData(title: "Views and modifiers catalog", routePath: Router.routePaths.swiftUiCatalog),
         LinkData(title: "Debugging", routePath: Router.routePaths.swiftUiDebugging),
         LinkData(title: "Testing", routePath: Router.routePaths.swiftUiTesting),
         LinkData(title: "Supporting classes & enums", routePath: Router.routePaths.swiftUiSuppportingClassesAndEnums),
@@ -28,7 +28,6 @@ struct SwiftUiView: View {
         PageScaffold(
             pageTitle: "SwiftUI",
             content: {
-                Spacer().frame(height: 32)
                 Links(links: links)
             }
         )

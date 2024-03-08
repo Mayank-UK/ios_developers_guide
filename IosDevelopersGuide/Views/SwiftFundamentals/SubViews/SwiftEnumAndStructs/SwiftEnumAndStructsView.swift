@@ -9,7 +9,12 @@ import SwiftUI
 
 struct SwiftEnumAndStructsView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        PageScaffold(
+            pageTitle: "Enum and struct",
+            content: {
+            }
+        )
+
     }
 }
 

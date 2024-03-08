@@ -17,7 +17,6 @@ struct DeploymentView: View {
         PageScaffold(
             pageTitle: "Deployment",
             content: {
-                Spacer().frame(height: 32)
                 Links(links: links)
             }
         )

@@ -8,9 +8,20 @@
 import SwiftUI
 
 struct SwiftUiLayoutView: View {
+    let links: [LinkData] = [
+        LinkData(title: "Page layout", routePath: Router.routePaths.swiftUiPageLayout),
+        LinkData(title: "Basic layout", routePath: Router.routePaths.swiftUiBasicLayout),
+    ]
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        PageScaffold(
+            pageTitle: "Layouts",
+            content: {
+                Links(links: links)
+            }
+        )
     }
+
 }
 
 #Preview {

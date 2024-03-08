@@ -8,16 +8,10 @@
 import SwiftUI
 
 struct PackageManagerView: View {
-    let links: [LinkData] = [
-        LinkData(title: "_", routePath: Router.routePaths._temp),
-    ]
-    
     var body: some View {
         PageScaffold(
             pageTitle: "Package manager",
             content: {
-                Spacer().frame(height: 32)
-                Links(links: links)
             }
         )
     }
