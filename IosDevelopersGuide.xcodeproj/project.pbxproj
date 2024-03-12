@@ -34,7 +34,6 @@
 		2443B4382B9864B1000FE1FD /* DeploymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2443B4372B9864B1000FE1FD /* DeploymentView.swift */; };
 		2443B4412B986CB7000FE1FD /* PackageManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2443B4402B986CB7000FE1FD /* PackageManagerView.swift */; };
 		2443B4472B988141000FE1FD /* IosImportantConceptsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2443B4462B988141000FE1FD /* IosImportantConceptsView.swift */; };
-		245E054C2B99B7DC005FB6E9 /* CodeSnippet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E054B2B99B7DB005FB6E9 /* CodeSnippet.swift */; };
 		245E054E2B99BCCF005FB6E9 /* TextSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E054D2B99BCCF005FB6E9 /* TextSection.swift */; };
 		245E05502B99F5E9005FB6E9 /* IosInstallationAndSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E054F2B99F5E9005FB6E9 /* IosInstallationAndSetupView.swift */; };
 		245E05522B99F607005FB6E9 /* IosDevelopmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E05512B99F607005FB6E9 /* IosDevelopmentView.swift */; };
@@ -143,7 +142,7 @@
 		245E066E2B9B04D0005FB6E9 /* SwiftUiCatalogSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E066D2B9B04D0005FB6E9 /* SwiftUiCatalogSheetView.swift */; };
 		245E06702B9B04DD005FB6E9 /* SwiftUiCatalogInspectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E066F2B9B04DD005FB6E9 /* SwiftUiCatalogInspectorView.swift */; };
 		245E06722B9B04EF005FB6E9 /* SwiftUiCatalogPopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E06712B9B04EF005FB6E9 /* SwiftUiCatalogPopoverView.swift */; };
-		245E06A82B9B2B44005FB6E9 /* CodeSnippetWithDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E06A72B9B2B44005FB6E9 /* CodeSnippetWithDemo.swift */; };
+		245E06A82B9B2B44005FB6E9 /* CodeSnippet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E06A72B9B2B44005FB6E9 /* CodeSnippet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -176,7 +175,6 @@
 		2443B4372B9864B1000FE1FD /* DeploymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeploymentView.swift; sourceTree = "<group>"; };
 		2443B4402B986CB7000FE1FD /* PackageManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageManagerView.swift; sourceTree = "<group>"; };
 		2443B4462B988141000FE1FD /* IosImportantConceptsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IosImportantConceptsView.swift; sourceTree = "<group>"; };
-		245E054B2B99B7DB005FB6E9 /* CodeSnippet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeSnippet.swift; sourceTree = "<group>"; };
 		245E054D2B99BCCF005FB6E9 /* TextSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSection.swift; sourceTree = "<group>"; };
 		245E054F2B99F5E9005FB6E9 /* IosInstallationAndSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IosInstallationAndSetupView.swift; sourceTree = "<group>"; };
 		245E05512B99F607005FB6E9 /* IosDevelopmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IosDevelopmentView.swift; sourceTree = "<group>"; };
@@ -285,7 +283,7 @@
 		245E066D2B9B04D0005FB6E9 /* SwiftUiCatalogSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogSheetView.swift; sourceTree = "<group>"; };
 		245E066F2B9B04DD005FB6E9 /* SwiftUiCatalogInspectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogInspectorView.swift; sourceTree = "<group>"; };
 		245E06712B9B04EF005FB6E9 /* SwiftUiCatalogPopoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogPopoverView.swift; sourceTree = "<group>"; };
-		245E06A72B9B2B44005FB6E9 /* CodeSnippetWithDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeSnippetWithDemo.swift; sourceTree = "<group>"; };
+		245E06A72B9B2B44005FB6E9 /* CodeSnippet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeSnippet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -362,9 +360,8 @@
 			children = (
 				2443B4182B972CF2000FE1FD /* PageScaffold.swift */,
 				2443B4262B9850FA000FE1FD /* Links.swift */,
-				245E054B2B99B7DB005FB6E9 /* CodeSnippet.swift */,
 				245E054D2B99BCCF005FB6E9 /* TextSection.swift */,
-				245E06A72B9B2B44005FB6E9 /* CodeSnippetWithDemo.swift */,
+				245E06A72B9B2B44005FB6E9 /* CodeSnippet.swift */,
 			);
 			path = GlobalComponents;
 			sourceTree = "<group>";
@@ -1676,7 +1673,7 @@
 				245E06602B9B03E3005FB6E9 /* SwiftUiCatalogGroupView.swift in Sources */,
 				245E05BC2B9A097C005FB6E9 /* SwiftUiBordersView.swift in Sources */,
 				245E062A2B9B014A005FB6E9 /* SwiftUiCatalogShapesView.swift in Sources */,
-				245E06A82B9B2B44005FB6E9 /* CodeSnippetWithDemo.swift in Sources */,
+				245E06A82B9B2B44005FB6E9 /* CodeSnippet.swift in Sources */,
 				245E06442B9B02C3005FB6E9 /* SwiftUiCatalogNavigationSplitView.swift in Sources */,
 				245E064A2B9B0302005FB6E9 /* SwiftUiCatalogGeometryReaderView.swift in Sources */,
 				245E05E92B9A149E005FB6E9 /* SwiftUiCatalogContainersView.swift in Sources */,
@@ -1774,7 +1771,6 @@
 				245E05F82B9AF368005FB6E9 /* SwiftUiPageLayoutView.swift in Sources */,
 				245E06162B9AFED9005FB6E9 /* SwiftUiCatalogImageView.swift in Sources */,
 				245E06362B9B0200005FB6E9 /* SwiftUiCatalogChartView.swift in Sources */,
-				245E054C2B99B7DC005FB6E9 /* CodeSnippet.swift in Sources */,
 				245E064C2B9B0313005FB6E9 /* SwiftUiCatalogSpacerView.swift in Sources */,
 				245E056C2B99FD30005FB6E9 /* SwiftEnumAndStructsView.swift in Sources */,
 				245E065E2B9B03B2005FB6E9 /* SwiftUiCatalogEmptyView.swift in Sources */,
