@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 class Router: ObservableObject {
-    // route paths
+    
     enum routePaths: Hashable {
         case home
         
@@ -146,11 +146,8 @@ class Router: ObservableObject {
         case _temp
     }
     
-    // used to programatically control our navigation stack
-    // whenever an ObservableObject with a property marked @Published is changed, all views using that object will be reloaded to reflect those changes
     @Published var navigationStack: NavigationPath = NavigationPath()
     
-    // builds the views
     @ViewBuilder func view(for route: routePaths) -> some View {
         switch route {
             case .home:
@@ -414,7 +411,6 @@ class Router: ObservableObject {
         }
     }
     
-    // methods to push and pop views in navigation stack
     func navigateTo(routePath: routePaths) {
         navigationStack.append(routePath)
     }

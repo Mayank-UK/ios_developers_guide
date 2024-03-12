@@ -34,3 +34,12 @@ struct PageScaffold<Content: View>: View {
         
     }
 }
+
+#Preview {
+    PageScaffold(
+        pageTitle: "Test",
+        content: {
+            Text("Hello world!")
+        }
+    )
+}

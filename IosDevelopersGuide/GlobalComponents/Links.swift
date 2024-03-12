@@ -36,3 +36,11 @@ struct Links: View {
     }
 }
 
+#Preview {
+    Links(
+        links: [
+            LinkData(title: "Link 1", routePath: Router.routePaths._temp),
+            LinkData(title: "Link 2", routePath: Router.routePaths._temp),
+        ]
+    )
+}

@@ -9,11 +9,37 @@ import SwiftUI
 
 struct SwiftUiBasicLayoutView: View {
     
+    func frameContainer() -> some View {
+        return CustomSection(
+            snippetTitle: "Frame/Container",
+            snippetDescription: """
+            In SwiftUI most of the elements acts as frame/container for themselved and don't need a separate wrapping container element.
+            Height, width, color, background, etc can be directly applied to these elements.
+            """,
+            snippetCode: """
+            Text("Demo text")
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding()
+                .foregroundColor(.white)
+                .background(Color.black.opacity(0.8))
+                .cornerRadius(8)
+            """,
+            demoView: {
+                Text("Demo text")
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding()
+                    .foregroundColor(.white)
+                    .background(Color.black.opacity(0.8))
+                    .cornerRadius(8)
+            }
+        )
+    }
+    
     func hStack() -> some View {
-        return CodeSnippet(
+        return CustomSection(
             snippetTitle: "HStack",
             snippetDescription: """
-            Layout items in a horizontal axis
+            Layout elements in a horizontal axis.
             """,
             snippetCode: """
             HStack(alignment: .center, spacing: 16) {
@@ -39,10 +65,10 @@ struct SwiftUiBasicLayoutView: View {
     }
     
     func lazyHStack() -> some View {
-        return CodeSnippet(
+        return CustomSection(
             snippetTitle: "LazyHStack",
             snippetDescription: """
-            Layout items in a horizontal axis in a lazy manner, the views are only created when they need to be displayed on screen, which is particularly useful when dealing with a large number of views that might not all fit on the screen at once
+            Layout elements in a horizontal axis in a lazy manner, the views are only created when they need to be displayed on screen, which is particularly useful when dealing with a large number of views that might not all fit on the screen at once.
             """,
             snippetCode: """
             ScrollView(.horizontal) {
@@ -68,10 +94,10 @@ struct SwiftUiBasicLayoutView: View {
     }
     
     func vStack() -> some View {
-        return CodeSnippet(
+        return CustomSection(
             snippetTitle: "VStack",
             snippetDescription: """
-            Layout items in a vertical axis
+            Layout elements in a vertical axis.
             """,
             snippetCode: """
             VStack(alignment: .center, spacing: 16) {
@@ -97,10 +123,10 @@ struct SwiftUiBasicLayoutView: View {
     }
     
     func lazyVStack() -> some View {
-        return CodeSnippet(
+        return CustomSection(
             snippetTitle: "LazyVStack",
             snippetDescription: """
-            Layout items in a vertical axis in a lazy manner
+            Layout elements in a vertical axis in a lazy manner.
             """,
             snippetCode: """
             ScrollView(.vertical) {
@@ -128,11 +154,11 @@ struct SwiftUiBasicLayoutView: View {
     }
 
     func zStack() -> some View {
-        return CodeSnippet(
+        return CustomSection(
             snippetTitle: "ZStack",
             snippetDescription: """
-            Layout items in a z axis
-            Elements inside z stack by default take full width and height of ZStack
+            Layout elements in a z axis.
+            Elements inside z stack by default take full width and height of ZStack.
             """,
             snippetCode: """
             ZStack(alignment: .center) {
@@ -170,10 +196,10 @@ struct SwiftUiBasicLayoutView: View {
     }
     
     func grid() -> some View {
-        return CodeSnippet(
+        return CustomSection(
             snippetTitle: "Grid",
             snippetDescription: """
-            Layout items in a grid
+            Layout elements in a grid.
             """,
             snippetCode: """
             Grid {
@@ -223,10 +249,10 @@ struct SwiftUiBasicLayoutView: View {
     }
             
     func lazyHGrid() -> some View {
-        return CodeSnippet(
+        return CustomSection(
             snippetTitle: "LazyHGrid",
             snippetDescription: """
-            Layout items in a grid in horizontal axis in a lazy manner
+            Layout elements in a grid in horizontal axis in a lazy manner.
             """,
             snippetCode: """
             ScrollView(.horizontal) {
@@ -252,10 +278,10 @@ struct SwiftUiBasicLayoutView: View {
     }
     
     func lazyVGrid() -> some View {
-        return CodeSnippet(
+        return CustomSection(
             snippetTitle: "LazyVGrid",
             snippetDescription: """
-            Layout items in a grid in vertical axis in a lazy manner
+            Layout elements in a grid in vertical axis in a lazy manner.
             """,
             snippetCode: """
             ScrollView(.vertical) {
@@ -289,11 +315,11 @@ struct SwiftUiBasicLayoutView: View {
     }
     
     func list() -> some View {
-        return CodeSnippet(
+        return CustomSection(
             snippetTitle: "List",
             snippetDescription: """
-            Layout items in a list
-            If List is put inside a ScrollView, then it needs to be given fixed height to be visible
+            Layout elements in a list.
+            If List is put inside a ScrollView, then it needs to be given fixed height to be visible.
             """,
             snippetCode: """
             List{
@@ -319,10 +345,10 @@ struct SwiftUiBasicLayoutView: View {
     }
     
     func forEach() -> some View {
-        return CodeSnippet(
+        return CustomSection(
             snippetTitle: "ForEach",
             snippetDescription: """
-            Layout items on demand by iterating over a list of data
+            Layout elements on demand by iterating over a list of data.
             """, 
             snippetCode: """
             Group {
@@ -347,6 +373,7 @@ struct SwiftUiBasicLayoutView: View {
         PageScaffold(
             pageTitle: "Basic layout",
             content: {
+                frameContainer()
                 hStack()
                 lazyHStack()
                 vStack()

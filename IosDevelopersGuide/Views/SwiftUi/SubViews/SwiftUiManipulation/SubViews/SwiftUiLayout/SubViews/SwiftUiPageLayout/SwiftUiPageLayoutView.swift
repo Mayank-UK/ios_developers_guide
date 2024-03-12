@@ -10,10 +10,10 @@ import SwiftUI
 struct SwiftUiPageLayoutView: View {
     
     func swiftUiPageLayout() -> some View {
-        return CodeSnippet(
+        return CustomSection(
             snippetTitle: "SwiftUI page layout",
             snippetDescription: """
-            A page/screen in swiftUI is created using s structure following View prototype, it has one computed property "body" that builds the UI
+            A page/screen in swiftUI is created using s structure following View prototype, it has one computed property "body" that builds the UI.
             """,
             snippetCode: """
             import SwiftUI
@@ -29,10 +29,10 @@ struct SwiftUiPageLayoutView: View {
     }
     
     func dividingPageLayout() -> some View {
-        return CodeSnippet(
+        return CustomSection(
             snippetTitle: "Dividing page layout",
             snippetDescription: """
-            The UI on a page/screen can be divied into smalled units to make code more easier to read and manage, it can be done by dividing the UI into small separate functions
+            The UI on a page/screen can be divied into smalled units to make code more easier to read and manage, it can be done by dividing the UI into small separate functions.
             """,
             snippetCode: """
             import SwiftUI
@@ -55,10 +55,10 @@ struct SwiftUiPageLayoutView: View {
     }
     
     func uniformLayout() -> some View {
-        return CodeSnippet(
+        return CustomSection(
             snippetTitle: "Uniform layout",
             snippetDescription: """
-            The code for a page/screen should be uniformly written on all the screens, multiple screens should have uniformly written base structure code, for example you can create a reusable component like PageScaffold and use on all the screens
+            The code for a page/screen should be uniformly written on all the screens, multiple screens should have uniformly written base structure code, for example you can create a reusable component like PageScaffold and use on all the screens.
             """,
             snippetCode: """
             import SwiftUI

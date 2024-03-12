@@ -15,7 +15,7 @@
 		2443B3FF2B91C5D9000FE1FD /* DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2443B3FE2B91C5D9000FE1FD /* DesignSystem.swift */; };
 		2443B4012B91C5E4000FE1FD /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2443B4002B91C5E4000FE1FD /* Helpers.swift */; };
 		2443B4032B91C5F8000FE1FD /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2443B4022B91C5F8000FE1FD /* Router.swift */; };
-		2443B4052B91C60A000FE1FD /* SharedDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2443B4042B91C60A000FE1FD /* SharedDataModel.swift */; };
+		2443B4052B91C60A000FE1FD /* SharedDataLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2443B4042B91C60A000FE1FD /* SharedDataLayer.swift */; };
 		2443B4072B91C61A000FE1FD /* Validators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2443B4062B91C61A000FE1FD /* Validators.swift */; };
 		2443B4092B91C655000FE1FD /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2443B4082B91C655000FE1FD /* ApiService.swift */; };
 		2443B40B2B91C660000FE1FD /* LocalStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2443B40A2B91C660000FE1FD /* LocalStorageService.swift */; };
@@ -142,7 +142,7 @@
 		245E066E2B9B04D0005FB6E9 /* SwiftUiCatalogSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E066D2B9B04D0005FB6E9 /* SwiftUiCatalogSheetView.swift */; };
 		245E06702B9B04DD005FB6E9 /* SwiftUiCatalogInspectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E066F2B9B04DD005FB6E9 /* SwiftUiCatalogInspectorView.swift */; };
 		245E06722B9B04EF005FB6E9 /* SwiftUiCatalogPopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E06712B9B04EF005FB6E9 /* SwiftUiCatalogPopoverView.swift */; };
-		245E06A82B9B2B44005FB6E9 /* CodeSnippet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E06A72B9B2B44005FB6E9 /* CodeSnippet.swift */; };
+		245E06A82B9B2B44005FB6E9 /* CustomSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E06A72B9B2B44005FB6E9 /* CustomSection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -156,7 +156,7 @@
 		2443B3FE2B91C5D9000FE1FD /* DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystem.swift; sourceTree = "<group>"; };
 		2443B4002B91C5E4000FE1FD /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		2443B4022B91C5F8000FE1FD /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
-		2443B4042B91C60A000FE1FD /* SharedDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedDataModel.swift; sourceTree = "<group>"; };
+		2443B4042B91C60A000FE1FD /* SharedDataLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedDataLayer.swift; sourceTree = "<group>"; };
 		2443B4062B91C61A000FE1FD /* Validators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validators.swift; sourceTree = "<group>"; };
 		2443B4082B91C655000FE1FD /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		2443B40A2B91C660000FE1FD /* LocalStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorageService.swift; sourceTree = "<group>"; };
@@ -283,7 +283,7 @@
 		245E066D2B9B04D0005FB6E9 /* SwiftUiCatalogSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogSheetView.swift; sourceTree = "<group>"; };
 		245E066F2B9B04DD005FB6E9 /* SwiftUiCatalogInspectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogInspectorView.swift; sourceTree = "<group>"; };
 		245E06712B9B04EF005FB6E9 /* SwiftUiCatalogPopoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogPopoverView.swift; sourceTree = "<group>"; };
-		245E06A72B9B2B44005FB6E9 /* CodeSnippet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeSnippet.swift; sourceTree = "<group>"; };
+		245E06A72B9B2B44005FB6E9 /* CustomSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -361,7 +361,7 @@
 				2443B4182B972CF2000FE1FD /* PageScaffold.swift */,
 				2443B4262B9850FA000FE1FD /* Links.swift */,
 				245E054D2B99BCCF005FB6E9 /* TextSection.swift */,
-				245E06A72B9B2B44005FB6E9 /* CodeSnippet.swift */,
+				245E06A72B9B2B44005FB6E9 /* CustomSection.swift */,
 			);
 			path = GlobalComponents;
 			sourceTree = "<group>";
@@ -390,7 +390,7 @@
 				2443B3FE2B91C5D9000FE1FD /* DesignSystem.swift */,
 				2443B4002B91C5E4000FE1FD /* Helpers.swift */,
 				2443B4022B91C5F8000FE1FD /* Router.swift */,
-				2443B4042B91C60A000FE1FD /* SharedDataModel.swift */,
+				2443B4042B91C60A000FE1FD /* SharedDataLayer.swift */,
 				2443B4062B91C61A000FE1FD /* Validators.swift */,
 			);
 			path = Core;
@@ -1659,7 +1659,7 @@
 				245E05602B99F7D2005FB6E9 /* SwiftOptionalsView.swift in Sources */,
 				245E05ED2B9A1502005FB6E9 /* SwiftUiCatalogMiscellaneousView.swift in Sources */,
 				245E06702B9B04DD005FB6E9 /* SwiftUiCatalogInspectorView.swift in Sources */,
-				2443B4052B91C60A000FE1FD /* SharedDataModel.swift in Sources */,
+				2443B4052B91C60A000FE1FD /* SharedDataLayer.swift in Sources */,
 				2443B4382B9864B1000FE1FD /* DeploymentView.swift in Sources */,
 				245E063C2B9B0250005FB6E9 /* SwiftUiCatalogListView.swift in Sources */,
 				2443B4272B9850FA000FE1FD /* Links.swift in Sources */,
@@ -1673,7 +1673,7 @@
 				245E06602B9B03E3005FB6E9 /* SwiftUiCatalogGroupView.swift in Sources */,
 				245E05BC2B9A097C005FB6E9 /* SwiftUiBordersView.swift in Sources */,
 				245E062A2B9B014A005FB6E9 /* SwiftUiCatalogShapesView.swift in Sources */,
-				245E06A82B9B2B44005FB6E9 /* CodeSnippet.swift in Sources */,
+				245E06A82B9B2B44005FB6E9 /* CustomSection.swift in Sources */,
 				245E06442B9B02C3005FB6E9 /* SwiftUiCatalogNavigationSplitView.swift in Sources */,
 				245E064A2B9B0302005FB6E9 /* SwiftUiCatalogGeometryReaderView.swift in Sources */,
 				245E05E92B9A149E005FB6E9 /* SwiftUiCatalogContainersView.swift in Sources */,

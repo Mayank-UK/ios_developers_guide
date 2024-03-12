@@ -9,6 +9,7 @@ import SwiftUI
 
 struct RootView<InitialView: View>: View {
     @StateObject var router: Router = Router()
+    @StateObject var screenData: ScreenData = ScreenData()
         
     private let initialView: InitialView
     
@@ -17,16 +18,22 @@ struct RootView<InitialView: View>: View {
     }
     
     var body: some View {
-        NavigationStack(path: $router.navigationStack) {
-            initialView
-                .navigationDestination(for: Router.routePaths.self) { route in
-                router.view(for: route)
+        GeometryReader { geometry in
+            NavigationStack(path: $router.navigationStack) {
+                initialView
+                    .navigationDestination(for: Router.routePaths.self) { route in
+                    router.view(for: route)
+                }
             }
+                .onAppear{
+                    screenData.height = geometry.size.height
+                    screenData.width = geometry.size.width
+                }
         }
-        .environmentObject(router)
+            .environmentObject(router)
+            .environmentObject(screenData)
     }
 }
-
 
 #Preview {
     RootView {
