@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct SwiftUiAlignmentView: View {
-    
     func alignmentProperty() -> some View {
         return CustomSection(
             snippetTitle: "Alignment property",

@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct SwiftUiPageLayoutView: View {
-    
     func swiftUiPageLayout() -> some View {
         return CustomSection(
             snippetTitle: "SwiftUI page layout",

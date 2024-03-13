@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct SwiftUiBasicLayoutView: View {
-    
     func frameContainer() -> some View {
         return CustomSection(
             snippetTitle: "Frame/Container",

@@ -21,8 +21,8 @@ struct SwiftUiManipulationView: View {
         LinkData(title: "Positioning", routePath: Router.routePaths.swiftUiPositioning),
         LinkData(title: "Visibility", routePath: Router.routePaths.swiftUiVisibility),
         LinkData(title: "Interactive behaviours", routePath: Router.routePaths.swiftUiInteractiveBehaviours),
-        LinkData(title: "Hyperlinks", routePath: Router.routePaths.swiftUiHyperlinks),
-        LinkData(title: "Form inputs", routePath: Router.routePaths.swiftUiFormInputs),
+        LinkData(title: "Hyperlinks", routePath: Router.routePaths.swiftUiWeb),
+        LinkData(title: "Form inputs", routePath: Router.routePaths.swiftUiForm),
         LinkData(title: "Media", routePath: Router.routePaths.swiftUiMedia),
         
     ]

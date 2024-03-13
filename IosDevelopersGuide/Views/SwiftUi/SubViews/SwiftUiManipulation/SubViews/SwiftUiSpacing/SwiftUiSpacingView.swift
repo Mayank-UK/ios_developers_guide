@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct SwiftUiSpacingView: View {
-    
     func paddingSpacing() -> some View {
         return CustomSection(
             snippetTitle: "Padding",

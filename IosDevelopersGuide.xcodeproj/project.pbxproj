@@ -34,7 +34,6 @@
 		2443B4382B9864B1000FE1FD /* DeploymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2443B4372B9864B1000FE1FD /* DeploymentView.swift */; };
 		2443B4412B986CB7000FE1FD /* PackageManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2443B4402B986CB7000FE1FD /* PackageManagerView.swift */; };
 		2443B4472B988141000FE1FD /* IosImportantConceptsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2443B4462B988141000FE1FD /* IosImportantConceptsView.swift */; };
-		245E054E2B99BCCF005FB6E9 /* TextSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E054D2B99BCCF005FB6E9 /* TextSection.swift */; };
 		245E05502B99F5E9005FB6E9 /* IosInstallationAndSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E054F2B99F5E9005FB6E9 /* IosInstallationAndSetupView.swift */; };
 		245E05522B99F607005FB6E9 /* IosDevelopmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E05512B99F607005FB6E9 /* IosDevelopmentView.swift */; };
 		245E05542B99F6F1005FB6E9 /* SwiftIntroductionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E05532B99F6F1005FB6E9 /* SwiftIntroductionView.swift */; };
@@ -78,8 +77,8 @@
 		245E05C22B9A09BE005FB6E9 /* SwiftUiPositioningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E05C12B9A09BE005FB6E9 /* SwiftUiPositioningView.swift */; };
 		245E05C42B9A09D6005FB6E9 /* SwiftUiVisibilityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E05C32B9A09D6005FB6E9 /* SwiftUiVisibilityView.swift */; };
 		245E05C62B9A0A37005FB6E9 /* SwiftUiInteractiveBehavioursView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E05C52B9A0A37005FB6E9 /* SwiftUiInteractiveBehavioursView.swift */; };
-		245E05C82B9A0A50005FB6E9 /* SwiftUiHyperlinksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E05C72B9A0A50005FB6E9 /* SwiftUiHyperlinksView.swift */; };
-		245E05CA2B9A0A95005FB6E9 /* SwiftUiFormInputsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E05C92B9A0A95005FB6E9 /* SwiftUiFormInputsView.swift */; };
+		245E05C82B9A0A50005FB6E9 /* SwiftUiWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E05C72B9A0A50005FB6E9 /* SwiftUiWebView.swift */; };
+		245E05CA2B9A0A95005FB6E9 /* SwiftUiFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E05C92B9A0A95005FB6E9 /* SwiftUiFormView.swift */; };
 		245E05CC2B9A0AAE005FB6E9 /* SwiftUiMediaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E05CB2B9A0AAE005FB6E9 /* SwiftUiMediaView.swift */; };
 		245E05D02B9A0AEE005FB6E9 /* SwiftUiDesignSystemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E05CF2B9A0AEE005FB6E9 /* SwiftUiDesignSystemView.swift */; };
 		245E05E32B9A0FD6005FB6E9 /* SwiftUiCatalogControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E05E22B9A0FD6005FB6E9 /* SwiftUiCatalogControlsView.swift */; };
@@ -175,7 +174,6 @@
 		2443B4372B9864B1000FE1FD /* DeploymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeploymentView.swift; sourceTree = "<group>"; };
 		2443B4402B986CB7000FE1FD /* PackageManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageManagerView.swift; sourceTree = "<group>"; };
 		2443B4462B988141000FE1FD /* IosImportantConceptsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IosImportantConceptsView.swift; sourceTree = "<group>"; };
-		245E054D2B99BCCF005FB6E9 /* TextSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSection.swift; sourceTree = "<group>"; };
 		245E054F2B99F5E9005FB6E9 /* IosInstallationAndSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IosInstallationAndSetupView.swift; sourceTree = "<group>"; };
 		245E05512B99F607005FB6E9 /* IosDevelopmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IosDevelopmentView.swift; sourceTree = "<group>"; };
 		245E05532B99F6F1005FB6E9 /* SwiftIntroductionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftIntroductionView.swift; sourceTree = "<group>"; };
@@ -219,8 +217,8 @@
 		245E05C12B9A09BE005FB6E9 /* SwiftUiPositioningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiPositioningView.swift; sourceTree = "<group>"; };
 		245E05C32B9A09D6005FB6E9 /* SwiftUiVisibilityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiVisibilityView.swift; sourceTree = "<group>"; };
 		245E05C52B9A0A37005FB6E9 /* SwiftUiInteractiveBehavioursView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiInteractiveBehavioursView.swift; sourceTree = "<group>"; };
-		245E05C72B9A0A50005FB6E9 /* SwiftUiHyperlinksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiHyperlinksView.swift; sourceTree = "<group>"; };
-		245E05C92B9A0A95005FB6E9 /* SwiftUiFormInputsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiFormInputsView.swift; sourceTree = "<group>"; };
+		245E05C72B9A0A50005FB6E9 /* SwiftUiWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiWebView.swift; sourceTree = "<group>"; };
+		245E05C92B9A0A95005FB6E9 /* SwiftUiFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiFormView.swift; sourceTree = "<group>"; };
 		245E05CB2B9A0AAE005FB6E9 /* SwiftUiMediaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiMediaView.swift; sourceTree = "<group>"; };
 		245E05CF2B9A0AEE005FB6E9 /* SwiftUiDesignSystemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiDesignSystemView.swift; sourceTree = "<group>"; };
 		245E05E22B9A0FD6005FB6E9 /* SwiftUiCatalogControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogControlsView.swift; sourceTree = "<group>"; };
@@ -360,7 +358,6 @@
 			children = (
 				2443B4182B972CF2000FE1FD /* PageScaffold.swift */,
 				2443B4262B9850FA000FE1FD /* Links.swift */,
-				245E054D2B99BCCF005FB6E9 /* TextSection.swift */,
 				245E06A72B9B2B44005FB6E9 /* CustomSection.swift */,
 			);
 			path = GlobalComponents;
@@ -839,8 +836,8 @@
 				245E05DB2B9A0F09005FB6E9 /* SwiftUiPositioning */,
 				245E05DC2B9A0F16005FB6E9 /* SwiftUiVisibility */,
 				245E05DD2B9A0F25005FB6E9 /* SwiftUiInteractiveBehaviours */,
-				245E05DE2B9A0F33005FB6E9 /* SwiftUiHyperlinks */,
-				245E05DF2B9A0F3E005FB6E9 /* SwiftUiFormInputs */,
+				245E05DE2B9A0F33005FB6E9 /* SwiftUiWeb */,
+				245E05DF2B9A0F3E005FB6E9 /* SwiftUiForm */,
 				245E05E02B9A0F4D005FB6E9 /* SwiftUiMedia */,
 			);
 			path = SubViews;
@@ -951,20 +948,20 @@
 			path = SwiftUiInteractiveBehaviours;
 			sourceTree = "<group>";
 		};
-		245E05DE2B9A0F33005FB6E9 /* SwiftUiHyperlinks */ = {
+		245E05DE2B9A0F33005FB6E9 /* SwiftUiWeb */ = {
 			isa = PBXGroup;
 			children = (
-				245E05C72B9A0A50005FB6E9 /* SwiftUiHyperlinksView.swift */,
+				245E05C72B9A0A50005FB6E9 /* SwiftUiWebView.swift */,
 			);
-			path = SwiftUiHyperlinks;
+			path = SwiftUiWeb;
 			sourceTree = "<group>";
 		};
-		245E05DF2B9A0F3E005FB6E9 /* SwiftUiFormInputs */ = {
+		245E05DF2B9A0F3E005FB6E9 /* SwiftUiForm */ = {
 			isa = PBXGroup;
 			children = (
-				245E05C92B9A0A95005FB6E9 /* SwiftUiFormInputsView.swift */,
+				245E05C92B9A0A95005FB6E9 /* SwiftUiFormView.swift */,
 			);
-			path = SwiftUiFormInputs;
+			path = SwiftUiForm;
 			sourceTree = "<group>";
 		};
 		245E05E02B9A0F4D005FB6E9 /* SwiftUiMedia */ = {
@@ -1693,7 +1690,6 @@
 				245E05CC2B9A0AAE005FB6E9 /* SwiftUiMediaView.swift in Sources */,
 				245E060E2B9AF9FE005FB6E9 /* SwiftUiCatalogPickersView.swift in Sources */,
 				245E06222B9B00AE005FB6E9 /* SwiftUiCatalogGaugeView.swift in Sources */,
-				245E054E2B99BCCF005FB6E9 /* TextSection.swift in Sources */,
 				245E06562B9B036D005FB6E9 /* SwiftUiCatalogOutlineGroupView.swift in Sources */,
 				245E05502B99F5E9005FB6E9 /* IosInstallationAndSetupView.swift in Sources */,
 				245E05742B99FDAA005FB6E9 /* SwiftUiNavigationAndRoutingView.swift in Sources */,
@@ -1701,7 +1697,7 @@
 				245E05842B99FE53005FB6E9 /* SwiftUiNativeFeaturesView.swift in Sources */,
 				245E066E2B9B04D0005FB6E9 /* SwiftUiCatalogSheetView.swift in Sources */,
 				2443B4152B91E573000FE1FD /* PageNotFoundView.swift in Sources */,
-				245E05CA2B9A0A95005FB6E9 /* SwiftUiFormInputsView.swift in Sources */,
+				245E05CA2B9A0A95005FB6E9 /* SwiftUiFormView.swift in Sources */,
 				2443B40B2B91C660000FE1FD /* LocalStorageService.swift in Sources */,
 				245E056A2B99FD1C005FB6E9 /* SwiftOopView.swift in Sources */,
 				245E06082B9AF990005FB6E9 /* SwiftUiCatalogToggleView.swift in Sources */,
@@ -1739,7 +1735,7 @@
 				2443B4412B986CB7000FE1FD /* PackageManagerView.swift in Sources */,
 				245E063A2B9B021B005FB6E9 /* SwiftUiCatalogTableView.swift in Sources */,
 				245E06522B9B0346005FB6E9 /* SwiftUiCatalogOverlayView.swift in Sources */,
-				245E05C82B9A0A50005FB6E9 /* SwiftUiHyperlinksView.swift in Sources */,
+				245E05C82B9A0A50005FB6E9 /* SwiftUiWebView.swift in Sources */,
 				245E05B22B9A08D2005FB6E9 /* SwiftUiDimensionsAndConstraintsView.swift in Sources */,
 				245E05702B99FD6E005FB6E9 /* SwiftUiManipulationView.swift in Sources */,
 				245E05802B99FE19005FB6E9 /* SwiftUiTestingView.swift in Sources */,

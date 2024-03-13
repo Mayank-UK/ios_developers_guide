@@ -65,8 +65,8 @@ class Router: ObservableObject {
         case swiftUiPositioning
         case swiftUiVisibility
         case swiftUiInteractiveBehaviours
-        case swiftUiHyperlinks
-        case swiftUiFormInputs
+        case swiftUiWeb
+        case swiftUiForm
         case swiftUiMedia
         
         case swiftUiCatalogControls
@@ -253,10 +253,10 @@ class Router: ObservableObject {
                 SwiftUiVisibilityView()
             case .swiftUiInteractiveBehaviours:
                 SwiftUiInteractiveBehavioursView()
-            case .swiftUiHyperlinks:
-                SwiftUiHyperlinksView()
-            case .swiftUiFormInputs:
-                SwiftUiFormInputsView()
+            case .swiftUiWeb:
+                SwiftUiWebView()
+            case .swiftUiForm:
+                SwiftUiFormView()
             case .swiftUiMedia:
                 SwiftUiMediaView()
             

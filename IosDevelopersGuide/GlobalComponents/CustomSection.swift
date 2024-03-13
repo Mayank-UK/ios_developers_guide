@@ -39,7 +39,9 @@ struct CustomSection<DemoView: View>: View {
             }
             Spacer().frame(height: 8)
             demoView
+                .padding()
                 .frame(maxWidth: .infinity, alignment: .leading)
+                .background(Color.black.opacity(0.1))
             Spacer().frame(height: 8)
             if (snippetCode != nil) {
                 DisclosureGroup("\(isExpanded ? "Hide Code" : "Show Code")", isExpanded: $isExpanded) {
@@ -71,7 +73,6 @@ struct CustomSection<DemoView: View>: View {
         """,
         demoView: {
             Text("This is a demo view passed to this snippet")
-                .background(.yellow)
         }
     )
 }

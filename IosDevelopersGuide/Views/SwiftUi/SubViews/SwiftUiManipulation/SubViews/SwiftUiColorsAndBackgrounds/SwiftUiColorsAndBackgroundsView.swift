@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct SwiftUiColorsAndBackgroundsView: View {
-    
     func textColor() -> some View {
         return CustomSection(
             snippetTitle: "Text color",
