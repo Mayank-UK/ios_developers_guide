@@ -8,6 +8,21 @@
 import SwiftUI
 
 struct SwiftCommentsView: View {
+    func _temp() -> some View {
+        return CustomSection(
+            snippetTitle: "",
+            snippetDescription: """
+            
+            """,
+            snippetCode: """
+            
+            """,
+            demoView: {
+            
+            }
+        )
+    }
+    
     var body: some View {
         PageScaffold(
             pageTitle: "Comments",

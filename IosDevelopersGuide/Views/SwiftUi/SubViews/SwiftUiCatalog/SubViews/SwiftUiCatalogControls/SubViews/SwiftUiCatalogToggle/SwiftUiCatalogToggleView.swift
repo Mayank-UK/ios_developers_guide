@@ -8,6 +8,21 @@
 import SwiftUI
 
 struct SwiftUiCatalogToggleView: View {
+    func _temp() -> some View {
+        return CustomSection(
+            snippetTitle: "",
+            snippetDescription: """
+            
+            """,
+            snippetCode: """
+            
+            """,
+            demoView: {
+            
+            }
+        )
+    }
+    
     var body: some View {
         PageScaffold(
             pageTitle: "Toggle",

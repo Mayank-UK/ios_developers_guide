@@ -8,6 +8,21 @@
 import SwiftUI
 
 struct SwiftControlFlowView: View {
+    func _temp() -> some View {
+        return CustomSection(
+            snippetTitle: "",
+            snippetDescription: """
+            
+            """,
+            snippetCode: """
+            
+            """,
+            demoView: {
+            
+            }
+        )
+    }
+    
     var body: some View {
         PageScaffold(
             pageTitle: "Control flow",

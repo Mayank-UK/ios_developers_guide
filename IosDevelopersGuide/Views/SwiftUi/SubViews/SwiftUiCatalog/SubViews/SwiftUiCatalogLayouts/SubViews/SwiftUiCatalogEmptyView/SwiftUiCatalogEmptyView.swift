@@ -8,6 +8,21 @@
 import SwiftUI
 
 struct SwiftUiCatalogEmptyView: View {
+    func _temp() -> some View {
+        return CustomSection(
+            snippetTitle: "",
+            snippetDescription: """
+            
+            """,
+            snippetCode: """
+            
+            """,
+            demoView: {
+            
+            }
+        )
+    }
+    
     var body: some View {
         PageScaffold(
             pageTitle: "EmptyView",
