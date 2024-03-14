@@ -11,7 +11,7 @@ struct SwiftUiCatalogControlsView: View {
     let links: [LinkData] = [
         LinkData(title: "Buttons", routePath: Router.routePaths.swiftUiCatalogButtons),
         LinkData(title: "Toggle", routePath: Router.routePaths.swiftUiCatalogToggle),
-        LinkData(title: "TextField", routePath: Router.routePaths.swiftUiCatalogTextField),
+        LinkData(title: "TextFields", routePath: Router.routePaths.swiftUiCatalogTextField),
         LinkData(title: "Slider", routePath: Router.routePaths.swiftUiCatalogSlider),
         LinkData(title: "Pickers", routePath: Router.routePaths.swiftUiCatalogPickers),
         LinkData(title: "Stepper", routePath: Router.routePaths.swiftUiCatalogStepper),

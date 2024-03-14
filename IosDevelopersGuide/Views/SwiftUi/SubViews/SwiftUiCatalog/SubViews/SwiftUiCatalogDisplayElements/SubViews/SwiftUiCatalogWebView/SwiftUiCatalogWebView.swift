@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct SwiftUiCatalogWebView: View {
-    func _temp() -> some View {
+    func webView() -> some View {
         return CustomSection(
-            snippetTitle: "",
+            snippetTitle: "WebView",
             snippetDescription: """
-            
+            A view to show web pages inside a frame/container.
             """,
             snippetCode: """
             
@@ -27,6 +27,7 @@ struct SwiftUiCatalogWebView: View {
         PageScaffold(
             pageTitle: "WebView",
             content: {
+                webView()
             }
         )
     }

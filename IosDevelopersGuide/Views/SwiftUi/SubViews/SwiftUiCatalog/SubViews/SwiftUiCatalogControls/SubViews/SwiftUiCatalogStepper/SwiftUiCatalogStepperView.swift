@@ -8,17 +8,27 @@
 import SwiftUI
 
 struct SwiftUiCatalogStepperView: View {
-    func _temp() -> some View {
+    @State private var count: Int = 0
+    
+    func stepper() -> some View {
         return CustomSection(
-            snippetTitle: "",
+            snippetTitle: "Stepper",
             snippetDescription: """
-            
+            A control used to perform semantic increment and decrement actions.
             """,
             snippetCode: """
+            @State private var count: Int = 0
             
+            Stepper("\\(count)",
+                value: $count,
+                in: 0...100
+            )
             """,
             demoView: {
-            
+                Stepper("\(count)",
+                    value: $count,
+                    in: 0...100
+                )
             }
         )
     }
@@ -27,6 +37,7 @@ struct SwiftUiCatalogStepperView: View {
         PageScaffold(
             pageTitle: "Stepper",
             content: {
+                stepper()
             }
         )
     }

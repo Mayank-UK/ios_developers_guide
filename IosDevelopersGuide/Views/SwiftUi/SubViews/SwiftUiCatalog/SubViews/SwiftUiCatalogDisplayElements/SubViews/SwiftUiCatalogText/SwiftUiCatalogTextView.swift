@@ -8,17 +8,17 @@
 import SwiftUI
 
 struct SwiftUiCatalogTextView: View {
-    func _temp() -> some View {
+    func text() -> some View {
         return CustomSection(
-            snippetTitle: "",
+            snippetTitle: "Text",
             snippetDescription: """
-            
+            A view that only displays one or more read only lines of text.
             """,
             snippetCode: """
-            
+            Text("Sample text")
             """,
             demoView: {
-            
+                Text("Sample text")
             }
         )
     }
@@ -27,6 +27,7 @@ struct SwiftUiCatalogTextView: View {
         PageScaffold(
             pageTitle: "Text",
             content: {
+                text()
             }
         )
     }

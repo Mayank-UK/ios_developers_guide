@@ -8,17 +8,19 @@
 import SwiftUI
 
 struct SwiftUiCatalogLabelView: View {
-    func _temp() -> some View {
+    func label() -> some View {
         return CustomSection(
-            snippetTitle: "",
+            snippetTitle: "Label",
             snippetDescription: """
-            
+            A view to show label with an icon and a title.
             """,
             snippetCode: """
-            
+            Label("Rain", systemImage: "cloud.rain")
+                .labelStyle(.automatic)
             """,
             demoView: {
-            
+                Label("Rain", systemImage: "cloud.rain")
+                    .labelStyle(.automatic)
             }
         )
     }
@@ -27,6 +29,7 @@ struct SwiftUiCatalogLabelView: View {
         PageScaffold(
             pageTitle: "Label",
             content: {
+                label()
             }
         )
     }

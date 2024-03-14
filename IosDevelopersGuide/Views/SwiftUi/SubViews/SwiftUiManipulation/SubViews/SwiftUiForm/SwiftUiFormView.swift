@@ -30,6 +30,8 @@ struct SwiftUiFormView: View {
             Input from keyboard.
             """,
             snippetCode: """
+            @State private var inputText: String = ""
+            
             TextField("Input text", text: $inputText)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
             """,
@@ -81,6 +83,15 @@ struct SwiftUiFormView: View {
             Radio style is available for macOS, but not for iOS, instead it has SegmentedControl()
             """,
             snippetCode: """
+            enum Flavor: String, CaseIterable, Identifiable {
+                case chocolate
+                case vanilla
+                case strawberry
+                
+                var id: String { self.rawValue }
+            }
+            @State private var selectedFlavor: Flavor = .chocolate
+            
             Picker("Flavor", selection: $selectedFlavor) {
                 ForEach(Flavor.allCases) { flavor in
                     Text(flavor.rawValue.capitalized)
@@ -129,6 +140,15 @@ struct SwiftUiFormView: View {
             Input from multiple sections in a drop-down style.
             """,
             snippetCode: """
+            enum Flavor: String, CaseIterable, Identifiable {
+                case chocolate
+                case vanilla
+                case strawberry
+                
+                var id: String { self.rawValue }
+            }
+            @State private var selectedFlavor: Flavor = .chocolate
+            
             Picker("Flavor", selection: $selectedFlavor) {
                 ForEach(Flavor.allCases) { flavor in
                     Text(flavor.rawValue.capitalized)
@@ -156,6 +176,8 @@ struct SwiftUiFormView: View {
             Input for date.
             """,
             snippetCode: """
+            @State private var date = Date()
+            
             DatePicker(selection: $date,
                 in: ...Date(),
                 displayedComponents: .date,

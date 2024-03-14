@@ -8,17 +8,23 @@
 import SwiftUI
 
 struct SwiftUiCatalogToggleView: View {
-    func _temp() -> some View {
+    @State private var toggleStatus: Bool = true
+    
+    func toggle() -> some View {
         return CustomSection(
-            snippetTitle: "",
+            snippetTitle: "Toggle",
             snippetDescription: """
-            
+            A control that toggles between an on and off state.
             """,
             snippetCode: """
+            @State private var toggleStatus: Bool = true
             
+            Toggle("Switch", isOn: $toggleStatus)
+                .toggleStyle(SwitchToggleStyle(tint: .accentColor))
             """,
             demoView: {
-            
+                Toggle("Togglable switch", isOn: $toggleStatus)
+                    .toggleStyle(SwitchToggleStyle(tint: .accentColor))
             }
         )
     }
@@ -27,6 +33,7 @@ struct SwiftUiCatalogToggleView: View {
         PageScaffold(
             pageTitle: "Toggle",
             content: {
+                toggle()
             }
         )
     }

@@ -15,7 +15,12 @@ struct SwiftUiIconsAndImagesView: View {
             Without resizable modifier, the icon/image will take it's default dimensions.
             """,
             snippetCode: """
-            
+            HStack {
+                Image(systemName: "star.fill")
+                Image("home")
+                    .resizable()
+                    .frame(width: 16, height: 16)
+            }
             """,
             demoView: {
                 HStack {
@@ -36,13 +41,15 @@ struct SwiftUiIconsAndImagesView: View {
             It will be necessary to provide resizable() modifier to every image to render it properly along with mentioning it's aspect ratio.
             """,
             snippetCode: """
-            
+            Image("family")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 128)
             """,
             demoView: {
                 Image("family")
                     .resizable()
                     .scaledToFit()
-                    .scaledToFill()
                     .frame(width: 128)
             }
         )

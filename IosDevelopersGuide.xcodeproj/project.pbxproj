@@ -91,7 +91,6 @@
 		245E05FA2B9AF37F005FB6E9 /* SwiftUiBasicLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E05F92B9AF37F005FB6E9 /* SwiftUiBasicLayoutView.swift */; };
 		245E06062B9AF982005FB6E9 /* SwiftUiCatalogButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E06052B9AF982005FB6E9 /* SwiftUiCatalogButtonsView.swift */; };
 		245E06082B9AF990005FB6E9 /* SwiftUiCatalogToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E06072B9AF990005FB6E9 /* SwiftUiCatalogToggleView.swift */; };
-		245E060A2B9AF9CE005FB6E9 /* SwiftUiCatalogTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E06092B9AF9CE005FB6E9 /* SwiftUiCatalogTextFieldView.swift */; };
 		245E060C2B9AF9F2005FB6E9 /* SwiftUiCatalogSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E060B2B9AF9F2005FB6E9 /* SwiftUiCatalogSliderView.swift */; };
 		245E060E2B9AF9FE005FB6E9 /* SwiftUiCatalogPickersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E060D2B9AF9FE005FB6E9 /* SwiftUiCatalogPickersView.swift */; };
 		245E06102B9AFC99005FB6E9 /* SwiftUiCatalogStepperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E060F2B9AFC99005FB6E9 /* SwiftUiCatalogStepperView.swift */; };
@@ -142,6 +141,7 @@
 		245E06702B9B04DD005FB6E9 /* SwiftUiCatalogInspectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E066F2B9B04DD005FB6E9 /* SwiftUiCatalogInspectorView.swift */; };
 		245E06722B9B04EF005FB6E9 /* SwiftUiCatalogPopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E06712B9B04EF005FB6E9 /* SwiftUiCatalogPopoverView.swift */; };
 		245E06A82B9B2B44005FB6E9 /* CustomSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E06A72B9B2B44005FB6E9 /* CustomSection.swift */; };
+		249842452BA3039500490FBC /* SwiftUiCatalogTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249842442BA3039500490FBC /* SwiftUiCatalogTextFieldView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -231,7 +231,6 @@
 		245E05F92B9AF37F005FB6E9 /* SwiftUiBasicLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiBasicLayoutView.swift; sourceTree = "<group>"; };
 		245E06052B9AF982005FB6E9 /* SwiftUiCatalogButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogButtonsView.swift; sourceTree = "<group>"; };
 		245E06072B9AF990005FB6E9 /* SwiftUiCatalogToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogToggleView.swift; sourceTree = "<group>"; };
-		245E06092B9AF9CE005FB6E9 /* SwiftUiCatalogTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogTextFieldView.swift; sourceTree = "<group>"; };
 		245E060B2B9AF9F2005FB6E9 /* SwiftUiCatalogSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogSliderView.swift; sourceTree = "<group>"; };
 		245E060D2B9AF9FE005FB6E9 /* SwiftUiCatalogPickersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogPickersView.swift; sourceTree = "<group>"; };
 		245E060F2B9AFC99005FB6E9 /* SwiftUiCatalogStepperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogStepperView.swift; sourceTree = "<group>"; };
@@ -282,6 +281,7 @@
 		245E066F2B9B04DD005FB6E9 /* SwiftUiCatalogInspectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogInspectorView.swift; sourceTree = "<group>"; };
 		245E06712B9B04EF005FB6E9 /* SwiftUiCatalogPopoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogPopoverView.swift; sourceTree = "<group>"; };
 		245E06A72B9B2B44005FB6E9 /* CustomSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSection.swift; sourceTree = "<group>"; };
+		249842442BA3039500490FBC /* SwiftUiCatalogTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogTextFieldView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1069,7 +1069,7 @@
 			children = (
 				245E06732B9B0A46005FB6E9 /* SwiftUiCatalogButtons */,
 				245E06742B9B0A55005FB6E9 /* SwiftUiCatalogToggle */,
-				245E06752B9B0A65005FB6E9 /* SwiftUiCatalogTextField */,
+				245E06752B9B0A65005FB6E9 /* SwiftUiCatalogTextFields */,
 				245E06762B9B0A74005FB6E9 /* SwiftUiCatalogSlider */,
 				245E06772B9B0A81005FB6E9 /* SwiftUiCatalogPickers */,
 				245E06782B9B0A8B005FB6E9 /* SwiftUiCatalogStepper */,
@@ -1174,12 +1174,12 @@
 			path = SwiftUiCatalogToggle;
 			sourceTree = "<group>";
 		};
-		245E06752B9B0A65005FB6E9 /* SwiftUiCatalogTextField */ = {
+		245E06752B9B0A65005FB6E9 /* SwiftUiCatalogTextFields */ = {
 			isa = PBXGroup;
 			children = (
-				245E06092B9AF9CE005FB6E9 /* SwiftUiCatalogTextFieldView.swift */,
+				249842442BA3039500490FBC /* SwiftUiCatalogTextFieldView.swift */,
 			);
-			path = SwiftUiCatalogTextField;
+			path = SwiftUiCatalogTextFields;
 			sourceTree = "<group>";
 		};
 		245E06762B9B0A74005FB6E9 /* SwiftUiCatalogSlider */ = {
@@ -1650,7 +1650,6 @@
 				245E06062B9AF982005FB6E9 /* SwiftUiCatalogButtonsView.swift in Sources */,
 				245E05C42B9A09D6005FB6E9 /* SwiftUiVisibilityView.swift in Sources */,
 				245E06582B9B0380005FB6E9 /* SwiftUiCatalogToolbarView.swift in Sources */,
-				245E060A2B9AF9CE005FB6E9 /* SwiftUiCatalogTextFieldView.swift in Sources */,
 				245E057A2B99FDE1005FB6E9 /* SwiftUiCodeArchitectureView.swift in Sources */,
 				245E05542B99F6F1005FB6E9 /* SwiftIntroductionView.swift in Sources */,
 				245E05602B99F7D2005FB6E9 /* SwiftOptionalsView.swift in Sources */,
@@ -1680,6 +1679,7 @@
 				245E05562B99F710005FB6E9 /* SwiftVariablesAndConstantsView.swift in Sources */,
 				245E05E72B9A1478005FB6E9 /* SwiftUiCatalogDisplayElementsView.swift in Sources */,
 				245E05642B99F800005FB6E9 /* SwiftControlFlowView.swift in Sources */,
+				249842452BA3039500490FBC /* SwiftUiCatalogTextFieldView.swift in Sources */,
 				245E061C2B9B0016005FB6E9 /* SwiftUiCatalogStacksView.swift in Sources */,
 				245E055E2B99F7B3005FB6E9 /* SwiftCommentsView.swift in Sources */,
 				245E05522B99F607005FB6E9 /* IosDevelopmentView.swift in Sources */,
