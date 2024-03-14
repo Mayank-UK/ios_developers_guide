@@ -73,6 +73,8 @@ class Router: ObservableObject {
         case swiftUiCatalogButtons
         case swiftUiCatalogToggle
         case swiftUiCatalogTextField
+        case swiftUiCatalogTextEditor
+        case swiftUiCatalogSecureField
         case swiftUiCatalogSlider
         case swiftUiCatalogPickers
         case swiftUiCatalogStepper
@@ -268,6 +270,10 @@ class Router: ObservableObject {
                 SwiftUiCatalogToggleView()
             case .swiftUiCatalogTextField:
                 SwiftUiCatalogTextFieldView()
+            case .swiftUiCatalogTextEditor:
+                SwiftUiCatalogTextEditorView()
+            case .swiftUiCatalogSecureField:
+                SwiftUiCatalogSecureFieldView()
             case .swiftUiCatalogSlider:
                 SwiftUiCatalogSliderView()
             case .swiftUiCatalogPickers:

@@ -8,17 +8,25 @@
 import SwiftUI
 
 struct SwiftUiCatalogContentUnavailableView: View {
-    func _temp() -> some View {
+    func contentUnavailable() -> some View {
         return CustomSection(
-            snippetTitle: "",
+            snippetTitle: "ContentUnavailable",
             snippetDescription: """
-            
+            A view to display when the content is unavailable.
             """,
             snippetCode: """
-            
+            ContentUnavailableView {
+                Label("No Mail", systemImage: "tray.fill")
+            } description: {
+                Text("New mails you receive will appear here.")
+            }
             """,
             demoView: {
-            
+                ContentUnavailableView {
+                    Label("No Mail", systemImage: "tray.fill")
+                } description: {
+                    Text("New mails you receive will appear here.")
+                }
             }
         )
     }
@@ -27,6 +35,7 @@ struct SwiftUiCatalogContentUnavailableView: View {
         PageScaffold(
             pageTitle: "ContentUnavailable",
             content: {
+                contentUnavailable()
             }
         )
     }

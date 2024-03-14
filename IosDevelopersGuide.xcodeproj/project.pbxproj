@@ -142,6 +142,8 @@
 		245E06722B9B04EF005FB6E9 /* SwiftUiCatalogPopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E06712B9B04EF005FB6E9 /* SwiftUiCatalogPopoverView.swift */; };
 		245E06A82B9B2B44005FB6E9 /* CustomSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E06A72B9B2B44005FB6E9 /* CustomSection.swift */; };
 		249842452BA3039500490FBC /* SwiftUiCatalogTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249842442BA3039500490FBC /* SwiftUiCatalogTextFieldView.swift */; };
+		249842472BA3078200490FBC /* SwiftUiCatalogTextEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249842462BA3078200490FBC /* SwiftUiCatalogTextEditorView.swift */; };
+		2498424B2BA308B100490FBC /* SwiftUiCatalogSecureFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2498424A2BA308B100490FBC /* SwiftUiCatalogSecureFieldView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -282,6 +284,8 @@
 		245E06712B9B04EF005FB6E9 /* SwiftUiCatalogPopoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogPopoverView.swift; sourceTree = "<group>"; };
 		245E06A72B9B2B44005FB6E9 /* CustomSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSection.swift; sourceTree = "<group>"; };
 		249842442BA3039500490FBC /* SwiftUiCatalogTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogTextFieldView.swift; sourceTree = "<group>"; };
+		249842462BA3078200490FBC /* SwiftUiCatalogTextEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogTextEditorView.swift; sourceTree = "<group>"; };
+		2498424A2BA308B100490FBC /* SwiftUiCatalogSecureFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogSecureFieldView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1069,7 +1073,9 @@
 			children = (
 				245E06732B9B0A46005FB6E9 /* SwiftUiCatalogButtons */,
 				245E06742B9B0A55005FB6E9 /* SwiftUiCatalogToggle */,
-				245E06752B9B0A65005FB6E9 /* SwiftUiCatalogTextFields */,
+				245E06752B9B0A65005FB6E9 /* SwiftUiCatalogTextField */,
+				249842482BA3078F00490FBC /* SwiftUICatalogTextEditor */,
+				249842492BA3086700490FBC /* SwiftUiCatalogSecureField */,
 				245E06762B9B0A74005FB6E9 /* SwiftUiCatalogSlider */,
 				245E06772B9B0A81005FB6E9 /* SwiftUiCatalogPickers */,
 				245E06782B9B0A8B005FB6E9 /* SwiftUiCatalogStepper */,
@@ -1174,12 +1180,12 @@
 			path = SwiftUiCatalogToggle;
 			sourceTree = "<group>";
 		};
-		245E06752B9B0A65005FB6E9 /* SwiftUiCatalogTextFields */ = {
+		245E06752B9B0A65005FB6E9 /* SwiftUiCatalogTextField */ = {
 			isa = PBXGroup;
 			children = (
 				249842442BA3039500490FBC /* SwiftUiCatalogTextFieldView.swift */,
 			);
-			path = SwiftUiCatalogTextFields;
+			path = SwiftUiCatalogTextField;
 			sourceTree = "<group>";
 		};
 		245E06762B9B0A74005FB6E9 /* SwiftUiCatalogSlider */ = {
@@ -1574,6 +1580,22 @@
 			path = SwiftUiCatalogPopover;
 			sourceTree = "<group>";
 		};
+		249842482BA3078F00490FBC /* SwiftUICatalogTextEditor */ = {
+			isa = PBXGroup;
+			children = (
+				249842462BA3078200490FBC /* SwiftUiCatalogTextEditorView.swift */,
+			);
+			path = SwiftUICatalogTextEditor;
+			sourceTree = "<group>";
+		};
+		249842492BA3086700490FBC /* SwiftUiCatalogSecureField */ = {
+			isa = PBXGroup;
+			children = (
+				2498424A2BA308B100490FBC /* SwiftUiCatalogSecureFieldView.swift */,
+			);
+			path = SwiftUiCatalogSecureField;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1693,6 +1715,7 @@
 				245E06562B9B036D005FB6E9 /* SwiftUiCatalogOutlineGroupView.swift in Sources */,
 				245E05502B99F5E9005FB6E9 /* IosInstallationAndSetupView.swift in Sources */,
 				245E05742B99FDAA005FB6E9 /* SwiftUiNavigationAndRoutingView.swift in Sources */,
+				2498424B2BA308B100490FBC /* SwiftUiCatalogSecureFieldView.swift in Sources */,
 				245E05EB2B9A14D0005FB6E9 /* SwiftUiCatalogModalsView.swift in Sources */,
 				245E05842B99FE53005FB6E9 /* SwiftUiNativeFeaturesView.swift in Sources */,
 				245E066E2B9B04D0005FB6E9 /* SwiftUiCatalogSheetView.swift in Sources */,
@@ -1738,6 +1761,7 @@
 				245E05C82B9A0A50005FB6E9 /* SwiftUiWebView.swift in Sources */,
 				245E05B22B9A08D2005FB6E9 /* SwiftUiDimensionsAndConstraintsView.swift in Sources */,
 				245E05702B99FD6E005FB6E9 /* SwiftUiManipulationView.swift in Sources */,
+				249842472BA3078200490FBC /* SwiftUiCatalogTextEditorView.swift in Sources */,
 				245E05802B99FE19005FB6E9 /* SwiftUiTestingView.swift in Sources */,
 				245E065A2B9B038F005FB6E9 /* SwiftUiCatalogFrameView.swift in Sources */,
 				245E06502B9B0335005FB6E9 /* SwiftUiCatalogBackgroundView.swift in Sources */,
