@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct SwiftUiCatalogNavigationSplitView: View {
-    func _temp() -> some View {
+    func navigationSplitView() -> some View {
         return CustomSection(
-            snippetTitle: "",
+            snippetTitle: "NavigationSplitView",
             snippetDescription: """
             
             """,
@@ -27,6 +27,7 @@ struct SwiftUiCatalogNavigationSplitView: View {
         PageScaffold(
             pageTitle: "NavigationSplitView",
             content: {
+                navigationSplitView()
             }
         )
     }

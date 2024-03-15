@@ -12,7 +12,7 @@ struct SwiftUiCatalogLayoutsView: View {
         LinkData(title: "Stacks", routePath: Router.routePaths.swiftUiCatalogStacks),
         LinkData(title: "List", routePath: Router.routePaths.swiftUiCatalogList),
         LinkData(title: "ForEach", routePath: Router.routePaths.swiftUiCatalogForEach),
-        LinkData(title: "Grid", routePath: Router.routePaths.swiftUiCatalogGrid),
+        LinkData(title: "Grid", routePath: Router.routePaths.swiftUiCatalogGrids),
         LinkData(title: "NavigationStack", routePath: Router.routePaths.swiftUiCatalogNavigationStack),
         LinkData(title: "NavigationSplitView", routePath: Router.routePaths.swiftUiCatalogNavigationSplitView),
         LinkData(title: "Tab", routePath: Router.routePaths.swiftUiCatalogTab),

@@ -8,17 +8,59 @@
 import SwiftUI
 
 struct SwiftUiCatalogGradientView: View {
-    func _temp() -> some View {
+    func linear() -> some View {
         return CustomSection(
-            snippetTitle: "",
+            snippetTitle: "LinearGradient",
             snippetDescription: """
-            
+            Add linear gradient to a UI element.
             """,
             snippetCode: """
-            
+            Rectangle()
+                .fill(LinearGradient(gradient: Gradient(colors: [.red, .blue]), startPoint: .leading, endPoint: .trailing))
+                .frame(width: 64, height: 64)
             """,
             demoView: {
-            
+                Rectangle()
+                    .fill(LinearGradient(gradient: Gradient(colors: [.red, .blue]), startPoint: .leading, endPoint: .trailing))
+                    .frame(width: 64, height: 64)
+            }
+        )
+    }
+    
+    func radial() -> some View {
+        return CustomSection(
+            snippetTitle: "RadialGradient",
+            snippetDescription: """
+            Add radial gradient to a UI element.
+            """,
+            snippetCode: """
+            Rectangle()
+                .fill(RadialGradient(gradient: Gradient(colors: [.purple, .pink]), center: .center, startRadius: 50, endRadius: 100))
+                .frame(width: 64, height: 64)
+            """,
+            demoView: {
+                Rectangle()
+                    .fill(RadialGradient(gradient: Gradient(colors: [.purple, .pink]), center: .center, startRadius: 50, endRadius: 100))
+                    .frame(width: 64, height: 64)
+            }
+        )
+    }
+
+    func angular() -> some View {
+        return CustomSection(
+            snippetTitle: "AngularGradient",
+            snippetDescription: """
+            Add angular gradient to a UI element.
+            """,
+            snippetCode: """
+            Rectangle()
+                .fill(AngularGradient(gradient: Gradient(colors: [.red, .yellow, .green, .blue, .purple]), center: .center))
+                .frame(width: 64, height: 64)
+            """,
+            demoView: {
+                Rectangle()
+                    .fill(AngularGradient(gradient: Gradient(colors: [.red, .yellow, .green, .blue, .purple]), center: .center))
+                    .frame(width: 64, height: 64)
             }
         )
     }
@@ -27,6 +69,9 @@ struct SwiftUiCatalogGradientView: View {
         PageScaffold(
             pageTitle: "Gradient",
             content: {
+                linear()
+                radial()
+                angular()
             }
         )
     }

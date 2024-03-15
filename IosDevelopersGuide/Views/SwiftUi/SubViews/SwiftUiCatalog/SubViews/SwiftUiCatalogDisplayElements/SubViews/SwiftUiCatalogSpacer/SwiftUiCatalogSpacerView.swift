@@ -8,17 +8,29 @@
 import SwiftUI
 
 struct SwiftUiCatalogSpacerView: View {
-    func _temp() -> some View {
+    func spacer() -> some View {
         return CustomSection(
-            snippetTitle: "",
+            snippetTitle: "Spacer",
             snippetDescription: """
-            
+            Add space between UI elements.
             """,
             snippetCode: """
-            
+            HStack{
+                Rectangle()
+                    .frame(width: 64, height: 64)
+                Spacer().frame(width: 32)
+                Rectangle()
+                    .frame(width: 64, height: 64)
+            }
             """,
             demoView: {
-            
+                HStack{
+                    Rectangle()
+                        .frame(width: 64, height: 64)
+                    Spacer().frame(width: 32)
+                    Rectangle()
+                        .frame(width: 64, height: 64)
+                }
             }
         )
     }
@@ -27,6 +39,7 @@ struct SwiftUiCatalogSpacerView: View {
         PageScaffold(
             pageTitle: "Spacer",
             content: {
+                spacer()
             }
         )
     }

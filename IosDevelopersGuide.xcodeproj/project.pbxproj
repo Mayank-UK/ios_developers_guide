@@ -114,7 +114,7 @@
 		245E063A2B9B021B005FB6E9 /* SwiftUiCatalogTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E06392B9B021B005FB6E9 /* SwiftUiCatalogTableView.swift */; };
 		245E063C2B9B0250005FB6E9 /* SwiftUiCatalogListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E063B2B9B0250005FB6E9 /* SwiftUiCatalogListView.swift */; };
 		245E063E2B9B0266005FB6E9 /* SwiftUiCatalogForEachView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E063D2B9B0266005FB6E9 /* SwiftUiCatalogForEachView.swift */; };
-		245E06402B9B0273005FB6E9 /* SwiftUiCatalogGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E063F2B9B0273005FB6E9 /* SwiftUiCatalogGridView.swift */; };
+		245E06402B9B0273005FB6E9 /* SwiftUiCatalogGridsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E063F2B9B0273005FB6E9 /* SwiftUiCatalogGridsView.swift */; };
 		245E06422B9B02AC005FB6E9 /* SwiftUiCatalogNavigationStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E06412B9B02AC005FB6E9 /* SwiftUiCatalogNavigationStackView.swift */; };
 		245E06442B9B02C3005FB6E9 /* SwiftUiCatalogNavigationSplitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E06432B9B02C3005FB6E9 /* SwiftUiCatalogNavigationSplitView.swift */; };
 		245E06462B9B02D3005FB6E9 /* SwiftUiCatalogTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E06452B9B02D3005FB6E9 /* SwiftUiCatalogTabView.swift */; };
@@ -256,7 +256,7 @@
 		245E06392B9B021B005FB6E9 /* SwiftUiCatalogTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogTableView.swift; sourceTree = "<group>"; };
 		245E063B2B9B0250005FB6E9 /* SwiftUiCatalogListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogListView.swift; sourceTree = "<group>"; };
 		245E063D2B9B0266005FB6E9 /* SwiftUiCatalogForEachView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogForEachView.swift; sourceTree = "<group>"; };
-		245E063F2B9B0273005FB6E9 /* SwiftUiCatalogGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogGridView.swift; sourceTree = "<group>"; };
+		245E063F2B9B0273005FB6E9 /* SwiftUiCatalogGridsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogGridsView.swift; sourceTree = "<group>"; };
 		245E06412B9B02AC005FB6E9 /* SwiftUiCatalogNavigationStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogNavigationStackView.swift; sourceTree = "<group>"; };
 		245E06432B9B02C3005FB6E9 /* SwiftUiCatalogNavigationSplitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogNavigationSplitView.swift; sourceTree = "<group>"; };
 		245E06452B9B02D3005FB6E9 /* SwiftUiCatalogTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogTabView.swift; sourceTree = "<group>"; };
@@ -1090,7 +1090,7 @@
 				245E068A2B9B0B65005FB6E9 /* SwiftUiCatalogStacks */,
 				245E068B2B9B0B72005FB6E9 /* SwiftUiCatalogList */,
 				245E068C2B9B0B7C005FB6E9 /* SwiftUiCatalogForEach */,
-				245E068D2B9B0B86005FB6E9 /* SwiftUiCatalogGrid */,
+				245E068D2B9B0B86005FB6E9 /* SwiftUiCatalogGrids */,
 				245E068E2B9B0B90005FB6E9 /* SwiftUiCatalogNavigationStack */,
 				245E068F2B9B0B9A005FB6E9 /* SwiftUiCatalogNavigationSplitView */,
 				245E06902B9B0BA5005FB6E9 /* SwiftUiCatalogTab */,
@@ -1372,12 +1372,12 @@
 			path = SwiftUiCatalogForEach;
 			sourceTree = "<group>";
 		};
-		245E068D2B9B0B86005FB6E9 /* SwiftUiCatalogGrid */ = {
+		245E068D2B9B0B86005FB6E9 /* SwiftUiCatalogGrids */ = {
 			isa = PBXGroup;
 			children = (
-				245E063F2B9B0273005FB6E9 /* SwiftUiCatalogGridView.swift */,
+				245E063F2B9B0273005FB6E9 /* SwiftUiCatalogGridsView.swift */,
 			);
-			path = SwiftUiCatalogGrid;
+			path = SwiftUiCatalogGrids;
 			sourceTree = "<group>";
 		};
 		245E068E2B9B0B90005FB6E9 /* SwiftUiCatalogNavigationStack */ = {
@@ -1771,7 +1771,7 @@
 				245E05B42B9A0919005FB6E9 /* SwiftUiSpacingView.swift in Sources */,
 				2443B42F2B9863A8000FE1FD /* SwiftUiView.swift in Sources */,
 				245E06422B9B02AC005FB6E9 /* SwiftUiCatalogNavigationStackView.swift in Sources */,
-				245E06402B9B0273005FB6E9 /* SwiftUiCatalogGridView.swift in Sources */,
+				245E06402B9B0273005FB6E9 /* SwiftUiCatalogGridsView.swift in Sources */,
 				2443B4012B91C5E4000FE1FD /* Helpers.swift in Sources */,
 				245E063E2B9B0266005FB6E9 /* SwiftUiCatalogForEachView.swift in Sources */,
 				2443B42B2B9862B9000FE1FD /* IosFundamentalsView.swift in Sources */,

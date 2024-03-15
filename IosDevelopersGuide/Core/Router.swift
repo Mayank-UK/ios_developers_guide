@@ -104,7 +104,7 @@ class Router: ObservableObject {
         case swiftUiCatalogStacks
         case swiftUiCatalogList
         case swiftUiCatalogForEach
-        case swiftUiCatalogGrid
+        case swiftUiCatalogGrids
         case swiftUiCatalogNavigationStack
         case swiftUiCatalogNavigationSplitView
         case swiftUiCatalogTab
@@ -331,8 +331,8 @@ class Router: ObservableObject {
                 SwiftUiCatalogListView()
             case .swiftUiCatalogForEach:
                 SwiftUiCatalogForEachView()
-            case .swiftUiCatalogGrid:
-                SwiftUiCatalogGridView()
+            case .swiftUiCatalogGrids:
+                SwiftUiCatalogGridsView()
             case .swiftUiCatalogNavigationStack:
                 SwiftUiCatalogNavigationStackView()
             case .swiftUiCatalogNavigationSplitView:

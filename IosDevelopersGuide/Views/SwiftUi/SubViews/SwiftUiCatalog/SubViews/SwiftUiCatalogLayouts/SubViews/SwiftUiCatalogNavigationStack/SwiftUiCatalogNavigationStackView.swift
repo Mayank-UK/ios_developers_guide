@@ -8,17 +8,33 @@
 import SwiftUI
 
 struct SwiftUiCatalogNavigationStackView: View {
-    func _temp() -> some View {
+    func navigationStack() -> some View {
         return CustomSection(
-            snippetTitle: "",
+            snippetTitle: "NavigationStack",
             snippetDescription: """
-            
+            A view that allows navigation inside it between multiple screens.
             """,
             snippetCode: """
-            
+            NavigationStack {
+                NavigationLink {
+                    EmptyView()
+                } label: {
+                    Text("Navigation link")
+                }
+                    .navigationTitle("Navigation title")
+            }
+                .frame(height: 256)
             """,
             demoView: {
-            
+                NavigationStack {
+                    NavigationLink {
+                        EmptyView()
+                    } label: {
+                        Text("Navigation link")
+                    }
+                        .navigationTitle("Navigation title")
+                }
+                    .frame(height: 256)
             }
         )
     }
@@ -27,6 +43,7 @@ struct SwiftUiCatalogNavigationStackView: View {
         PageScaffold(
             pageTitle: "NavigationStack",
             content: {
+                navigationStack()
             }
         )
     }

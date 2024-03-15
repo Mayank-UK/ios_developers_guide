@@ -8,25 +8,36 @@
 import SwiftUI
 
 struct SwiftUiCatalogForEachView: View {
-    func _temp() -> some View {
+    func forEach() -> some View {
         return CustomSection(
-            snippetTitle: "",
+            snippetTitle: "ForEach",
             snippetDescription: """
-            
+            Layout elements on demand by iterating over a list of data.
             """,
             snippetCode: """
-            
+            Group {
+                ForEach(["Apple", "Banana", "Cherry"], id: \\.self) { fruit in
+                    Rectangle()
+                        .frame(width: 64, height: 64)
+                }
+            }
             """,
             demoView: {
-            
+                Group {
+                    ForEach(["Apple", "Banana", "Cherry"], id: \.self) { fruit in
+                        Rectangle()
+                            .frame(width: 64, height: 64)
+                    }
+                }
             }
         )
     }
-    
+
     var body: some View {
         PageScaffold(
             pageTitle: "ForEach",
             content: {
+                forEach()
             }
         )
     }

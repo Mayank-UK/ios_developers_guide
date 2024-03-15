@@ -8,17 +8,32 @@
 import SwiftUI
 
 struct SwiftUiCatalogListView: View {
-    func _temp() -> some View {
+    func list() -> some View {
         return CustomSection(
-            snippetTitle: "",
+            snippetTitle: "List",
             snippetDescription: """
-            
+            Layout elements in a list.
+            If List is put inside a ScrollView, then it needs to be given fixed height to be visible.
             """,
             snippetCode: """
-            
+            List{
+                Rectangle()
+                    .frame(width: 64, height: 64)
+                Rectangle()
+                    .frame(width: 64, height: 64)
+                Rectangle()
+                    .frame(width: 64, height: 64)
+            }.frame(height: 256)
             """,
             demoView: {
-            
+                List{
+                    Rectangle()
+                        .frame(width: 64, height: 64)
+                    Rectangle()
+                        .frame(width: 64, height: 64)
+                    Rectangle()
+                        .frame(width: 64, height: 64)
+                }.frame(height: 256)
             }
         )
     }
@@ -27,6 +42,7 @@ struct SwiftUiCatalogListView: View {
         PageScaffold(
             pageTitle: "List",
             content: {
+                list()
             }
         )
     }
