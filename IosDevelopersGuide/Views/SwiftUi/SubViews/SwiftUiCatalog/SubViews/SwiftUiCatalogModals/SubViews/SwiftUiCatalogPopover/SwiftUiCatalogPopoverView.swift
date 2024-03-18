@@ -8,17 +8,34 @@
 import SwiftUI
 
 struct SwiftUiCatalogPopoverView: View {
-    func _temp() -> some View {
+    @State private var showingPopover = false
+    
+    func popover() -> some View {
         return CustomSection(
-            snippetTitle: "",
+            snippetTitle: "Popover",
             snippetDescription: """
-            
+            Modifier to show popover.
+            A popover is a floating view that overlays content, while a sheet covers a large part of the screen.
             """,
             snippetCode: """
-            
+            Button("Show popover") {
+                showingPopover = true
+            }
+                .popover(isPresented: $showingPopover) {
+                    Text("Your content here")
+                        .font(.headline)
+                        .padding()
+                }
             """,
             demoView: {
-            
+                Button("Show popover") {
+                    showingPopover = true
+                }
+                    .popover(isPresented: $showingPopover) {
+                        Text("Your content here")
+                            .font(.headline)
+                            .padding()
+                    }
             }
         )
     }
@@ -27,6 +44,7 @@ struct SwiftUiCatalogPopoverView: View {
         PageScaffold(
             pageTitle: "Popover",
             content: {
+                popover()
             }
         )
     }

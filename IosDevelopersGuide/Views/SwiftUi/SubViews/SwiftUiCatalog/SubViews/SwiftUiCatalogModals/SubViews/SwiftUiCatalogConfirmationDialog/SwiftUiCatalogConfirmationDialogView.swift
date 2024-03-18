@@ -8,17 +8,39 @@
 import SwiftUI
 
 struct SwiftUiCatalogConfirmationDialogView: View {
-    func _temp() -> some View {
+    @State private var confirmationShown = false
+    
+    func confirmationDialog() -> some View {
         return CustomSection(
-            snippetTitle: "",
+            snippetTitle: "ConfirmationDialog",
             snippetDescription: """
-            
+            Modifier to display confirmation dialogs to the user.
             """,
             snippetCode: """
-            
+            Button("Delete Item") {
+                    confirmationShown = true
+            }
+                .confirmationDialog("Are you sure?", isPresented: $confirmationShown) {
+                    Button("Yes") {
+                        
+                    }
+                    Button("No", role: .cancel) {
+                        
+                    }
+                }
             """,
             demoView: {
-            
+                Button("Delete Item") {
+                        confirmationShown = true
+                }
+                    .confirmationDialog("Are you sure?", isPresented: $confirmationShown) {
+                        Button("Yes") {
+                            
+                        }
+                        Button("No", role: .cancel) {
+                            
+                        }
+                    }
             }
         )
     }
@@ -27,6 +49,7 @@ struct SwiftUiCatalogConfirmationDialogView: View {
         PageScaffold(
             pageTitle: "Confirmation dialog",
             content: {
+                confirmationDialog()
             }
         )
     }

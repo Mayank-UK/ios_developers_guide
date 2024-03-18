@@ -8,17 +8,31 @@
 import SwiftUI
 
 struct SwiftUiCatalogScrollView: View {
-    func _temp() -> some View {
+    func scrollView() -> some View {
         return CustomSection(
-            snippetTitle: "",
+            snippetTitle: "ScrollView",
             snippetDescription: """
-            
+            A view for adding scrollability to the view.
             """,
             snippetCode: """
-            
+            ScrollView {
+                ForEach(1...7, id: \\.self) { item in
+                    Rectangle()
+                        .frame(width: .infinity, height: 64)
+                }
+            }
+                .frame(height: 256)
             """,
             demoView: {
-            
+                VStack {
+                    ScrollView {
+                        ForEach(1...7, id: \.self) { item in
+                            Rectangle()
+                                .frame(width: .infinity, height: 64)
+                        }
+                    }
+                        .frame(height: 256)
+                }
             }
         )
     }
@@ -27,6 +41,7 @@ struct SwiftUiCatalogScrollView: View {
         PageScaffold(
             pageTitle: "ScrollView",
             content: {
+                scrollView()
             }
         )
     }

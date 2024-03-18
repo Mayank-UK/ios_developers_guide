@@ -8,17 +8,36 @@
 import SwiftUI
 
 struct SwiftUiCatalogViewThatFitsView: View {
-    func _temp() -> some View {
+    func viewThatFits() -> some View {
         return CustomSection(
-            snippetTitle: "",
+            snippetTitle: "ViewThatFits",
             snippetDescription: """
-            
+            ViewThatFits adapts to the available space by providing the first child view that fits within the constrained size.
+            ViewThatFits is fantastic for creating adaptive layouts that adjust based on available screen space.
             """,
             snippetCode: """
-            
+            ViewThatFits(in: .horizontal) {
+                HStack {
+                    Text("50")
+                    ProgressView(value: 50)
+                        .frame(width: 128)
+                }
+                ProgressView(value: 50)
+                    .frame(width: 128)
+                Text("50")
+            }
             """,
             demoView: {
-            
+                ViewThatFits(in: .horizontal) {
+                    HStack {
+                        Text("50")
+                        ProgressView(value: 50)
+                            .frame(width: 128)
+                    }
+                    ProgressView(value: 50)
+                        .frame(width: 128)
+                    Text("50")
+                }
             }
         )
     }
@@ -27,6 +46,7 @@ struct SwiftUiCatalogViewThatFitsView: View {
         PageScaffold(
             pageTitle: "ViewThatFits",
             content: {
+                viewThatFits()
             }
         )
     }

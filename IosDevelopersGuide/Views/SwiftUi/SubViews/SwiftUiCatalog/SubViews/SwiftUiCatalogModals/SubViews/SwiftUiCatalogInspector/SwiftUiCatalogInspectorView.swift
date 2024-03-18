@@ -8,17 +8,31 @@
 import SwiftUI
 
 struct SwiftUiCatalogInspectorView: View {
-    func _temp() -> some View {
+    @State private var isShowingInspector = false
+    
+    func inspector() -> some View {
         return CustomSection(
-            snippetTitle: "",
+            snippetTitle: "Inspector",
             snippetDescription: """
-            
+            Modifier to allow to add an inspector view anywhere.
             """,
             snippetCode: """
-            
+            Button("Show inspector") {
+                isShowingInspector.toggle()
+            }
+                .inspector(isPresented: $isShowingInspector) {
+                    Text("Inspector View")
+                        .inspectorColumnWidth(min: 64, ideal: 128, max: 256)
+                }
             """,
             demoView: {
-            
+                Button("Show inspector") {
+                    isShowingInspector.toggle()
+                }
+                    .inspector(isPresented: $isShowingInspector) {
+                        Text("Inspector View")
+                            .inspectorColumnWidth(min: 64, ideal: 128, max: 256)
+                    }
             }
         )
     }
@@ -27,6 +41,7 @@ struct SwiftUiCatalogInspectorView: View {
         PageScaffold(
             pageTitle: "Inspector",
             content: {
+                inspector()
             }
         )
     }

@@ -8,17 +8,37 @@
 import SwiftUI
 
 struct SwiftUiCatalogToolbarView: View {
-    func _temp() -> some View {
+    let placement: ToolbarItemPlacement = .automatic
+    
+    func toolbar() -> some View {
         return CustomSection(
-            snippetTitle: "",
+            snippetTitle: "Toolbar",
             snippetDescription: """
-            
+            Toolbar modifier allows you to create and customize toolbars within your views.
             """,
             snippetCode: """
-            
+            Text("Hello, World!")
+                .padding()
+                .navigationTitle("SwiftUI")
+                .toolbar {
+                    ToolbarItem {
+                        Button("Press Me") {
+                            print("Pressed")
+                        }
+                    }
+                }
             """,
             demoView: {
-            
+                Text("Hello, World!")
+                    .padding()
+                    .navigationTitle("SwiftUI")
+                    .toolbar {
+                        ToolbarItem {
+                            Button("Press Me") {
+                                print("Pressed")
+                            }
+                        }
+                    }
             }
         )
     }
@@ -27,6 +47,7 @@ struct SwiftUiCatalogToolbarView: View {
         PageScaffold(
             pageTitle: "Toolbar",
             content: {
+                toolbar()
             }
         )
     }

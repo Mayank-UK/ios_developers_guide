@@ -8,17 +8,35 @@
 import SwiftUI
 
 struct SwiftUiCatalogSheetView: View {
-    func _temp() -> some View {
+    @State private var shouldPresentSheet = false
+
+    func sheet() -> some View {
         return CustomSection(
-            snippetTitle: "",
+            snippetTitle: "Sheet",
             snippetDescription: """
-            
+            Modifier to show a sheet to a user.
             """,
             snippetCode: """
+            @State private var shouldPresentSheet = false
             
+            Button("Show sheet") {
+                shouldPresentSheet.toggle()
+            }
+            .sheet(isPresented: $shouldPresentSheet) {
+                Button("Dismiss") {
+                    shouldPresentSheet = false
+                }
+            }
             """,
             demoView: {
-            
+                Button("Show sheet") {
+                    shouldPresentSheet.toggle()
+                }
+                .sheet(isPresented: $shouldPresentSheet) {
+                    Button("Dismiss") {
+                        shouldPresentSheet = false
+                    }
+                }
             }
         )
     }
@@ -27,6 +45,7 @@ struct SwiftUiCatalogSheetView: View {
         PageScaffold(
             pageTitle: "Sheet",
             content: {
+                sheet()
             }
         )
     }

@@ -8,17 +8,29 @@
 import SwiftUI
 
 struct SwiftUiCatalogAlertView: View {
-    func _temp() -> some View {
+    @State private var showingAlert = false
+    
+    func alert() -> some View {
         return CustomSection(
-            snippetTitle: "",
+            snippetTitle: "Alert",
             snippetDescription: """
-            
+            Modifier to display alerts to the user.
             """,
             snippetCode: """
-            
+            Button("Show Alert") {
+                showingAlert = true
+            }
+                .alert("Important message", isPresented: $showingAlert) {
+                    Button("OK", role: .cancel) { }
+                }
             """,
             demoView: {
-            
+                Button("Show Alert") {
+                    showingAlert = true
+                }
+                    .alert("Important message", isPresented: $showingAlert) {
+                        Button("OK", role: .cancel) { }
+                    }
             }
         )
     }
@@ -27,6 +39,7 @@ struct SwiftUiCatalogAlertView: View {
         PageScaffold(
             pageTitle: "Alert",
             content: {
+                alert()
             }
         )
     }

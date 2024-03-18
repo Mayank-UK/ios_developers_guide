@@ -8,17 +8,25 @@
 import SwiftUI
 
 struct SwiftUiCatalogBackgroundView: View {
-    func _temp() -> some View {
+    func background() -> some View {
         return CustomSection(
-            snippetTitle: "",
+            snippetTitle: "Background color",
             snippetDescription: """
-            
+            Modifier to add background color.
             """,
             snippetCode: """
-            
+            Text("")
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding()
+                .foregroundColor(.white)
+                .background(Color.green)
             """,
             demoView: {
-            
+                Text("")
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding()
+                    .foregroundColor(.white)
+                    .background(Color.green)
             }
         )
     }
@@ -27,6 +35,7 @@ struct SwiftUiCatalogBackgroundView: View {
         PageScaffold(
             pageTitle: "Background",
             content: {
+                background()
             }
         )
     }

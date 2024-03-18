@@ -8,17 +8,43 @@
 import SwiftUI
 
 struct SwiftUiCatalogSafeAreaInsetView: View {
-    func _temp() -> some View {
+    func safeAreaInset() -> some View {
         return CustomSection(
-            snippetTitle: "",
+            snippetTitle: "SafeAreaInset",
             snippetDescription: """
-            
+            SafeAreaInset modifier allows you to place content outside the device’s safe area while ensuring that other views adjust their layout to keep their content visible.
             """,
             snippetCode: """
-            
+            NavigationView {
+                List(0..<100) { i in
+                    Text("Row \\(i)")
+                }
+                .navigationTitle("Select a row")
+                .safeAreaInset(edge: .bottom) {
+                    Text("Outside Safe Area")
+                        .font(.largeTitle)
+                        .foregroundStyle(.white)
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                        .background(.indigo)
+                }
+            }
             """,
             demoView: {
-            
+                NavigationView {
+                    List(0..<100) { i in
+                        Text("Row \(i)")
+                    }
+                    .navigationTitle("Select a row")
+                    .safeAreaInset(edge: .bottom) {
+                        Text("Outside Safe Area")
+                            .font(.largeTitle)
+                            .foregroundStyle(.white)
+                            .frame(maxWidth: .infinity)
+                            .padding()
+                            .background(.indigo)
+                    }
+                }
             }
         )
     }
@@ -27,6 +53,7 @@ struct SwiftUiCatalogSafeAreaInsetView: View {
         PageScaffold(
             pageTitle: "SafeAreaInset",
             content: {
+                safeAreaInset()
             }
         )
     }

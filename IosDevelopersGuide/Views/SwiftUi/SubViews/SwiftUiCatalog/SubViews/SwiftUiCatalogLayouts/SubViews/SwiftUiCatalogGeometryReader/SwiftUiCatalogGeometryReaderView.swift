@@ -8,17 +8,23 @@
 import SwiftUI
 
 struct SwiftUiCatalogGeometryReaderView: View {
-    func _temp() -> some View {
+    func geometryReader() -> some View {
         return CustomSection(
-            snippetTitle: "",
+            snippetTitle: "GeometryReader",
             snippetDescription: """
-            
+            GeometryReader is a container view that defines its content as a function of its own size and coordinate space.
             """,
             snippetCode: """
-            
+            GeometryReader { geometry in
+                Rectangle()
+                    .frame(width: geometry.size.width * 0.5, height: geometry.size.height * 5)
+            }
             """,
             demoView: {
-            
+                GeometryReader { geometry in
+                    Rectangle()
+                        .frame(width: geometry.size.width * 0.5, height: geometry.size.height * 5)
+                }
             }
         )
     }
@@ -27,6 +33,7 @@ struct SwiftUiCatalogGeometryReaderView: View {
         PageScaffold(
             pageTitle: "GeometryReader",
             content: {
+                geometryReader()
             }
         )
     }

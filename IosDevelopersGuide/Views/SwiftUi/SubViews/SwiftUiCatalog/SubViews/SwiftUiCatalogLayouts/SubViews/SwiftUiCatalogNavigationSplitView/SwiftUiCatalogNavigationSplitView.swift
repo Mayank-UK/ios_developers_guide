@@ -12,13 +12,25 @@ struct SwiftUiCatalogNavigationSplitView: View {
         return CustomSection(
             snippetTitle: "NavigationSplitView",
             snippetDescription: """
-            
+            NavigationSplitView show links on iphone, but will show links along with content on wide screens like iPads.
             """,
             snippetCode: """
-            
+            NavigationSplitView {
+                Text("Column 1")
+            } content: {
+                Text("Column 2")
+            } detail: {
+                Text("Column 3")
+            }
             """,
             demoView: {
-            
+                NavigationSplitView {
+                    Text("Column 1")
+                } content: {
+                    Text("Column 2")
+                } detail: {
+                    Text("Column 3")
+                }
             }
         )
     }

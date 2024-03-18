@@ -8,17 +8,18 @@
 import SwiftUI
 
 struct SwiftUiCatalogEmptyView: View {
-    func _temp() -> some View {
+    func emptyView() -> some View {
         return CustomSection(
-            snippetTitle: "",
+            snippetTitle: "EmptyView",
             snippetDescription: """
-            
+            EmptyView is a view that doesn’t contain any content.
+            Use EmptyView to handle empty states in your app.
             """,
             snippetCode: """
-            
+            EmptyView()
             """,
             demoView: {
-            
+                EmptyView()
             }
         )
     }
@@ -27,6 +28,7 @@ struct SwiftUiCatalogEmptyView: View {
         PageScaffold(
             pageTitle: "EmptyView",
             content: {
+                emptyView()
             }
         )
     }

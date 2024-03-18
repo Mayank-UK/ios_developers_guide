@@ -8,17 +8,19 @@
 import SwiftUI
 
 struct SwiftUiCatalogFrameView: View {
-    func _temp() -> some View {
+    func frame() -> some View {
         return CustomSection(
-            snippetTitle: "",
+            snippetTitle: "Frame",
             snippetDescription: """
-            
+            Frame modifier allows you to specify a fixed size for a view.
             """,
             snippetCode: """
-            
+            Rectangle()
+                .frame(width: 128, height: 64)
             """,
             demoView: {
-            
+                Rectangle()
+                    .frame(width: 128, height: 64)
             }
         )
     }
@@ -27,6 +29,7 @@ struct SwiftUiCatalogFrameView: View {
         PageScaffold(
             pageTitle: "Frame",
             content: {
+                frame()
             }
         )
     }

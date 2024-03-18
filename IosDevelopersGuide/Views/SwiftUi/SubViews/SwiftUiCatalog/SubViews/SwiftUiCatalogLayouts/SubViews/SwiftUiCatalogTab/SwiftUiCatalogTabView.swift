@@ -8,17 +8,41 @@
 import SwiftUI
 
 struct SwiftUiCatalogTabView: View {
-    func _temp() -> some View {
+    func tab() -> some View {
         return CustomSection(
-            snippetTitle: "",
+            snippetTitle: "TabView",
             snippetDescription: """
-            
+            A view for dividing UI into different tabs.
             """,
             snippetCode: """
-            
+            TabView {
+                Text("Tab 1")
+                    .tabItem {
+                        Image(systemName: "1.circle")
+                        Text("First Tab")
+                    }
+                Text("Tab 2")
+                    .tabItem {
+                        Image(systemName: "2.circle")
+                        Text("Second Tab")
+                    }
+            }
+                .frame(height: 256)
             """,
             demoView: {
-            
+                TabView {
+                    Text("Tab 1")
+                        .tabItem {
+                            Image(systemName: "1.circle")
+                            Text("First Tab")
+                        }
+                    Text("Tab 2")
+                        .tabItem {
+                            Image(systemName: "2.circle")
+                            Text("Second Tab")
+                        }
+                }
+                    .frame(height: 256)
             }
         )
     }
@@ -27,6 +51,7 @@ struct SwiftUiCatalogTabView: View {
         PageScaffold(
             pageTitle: "Tab",
             content: {
+                tab()
             }
         )
     }
