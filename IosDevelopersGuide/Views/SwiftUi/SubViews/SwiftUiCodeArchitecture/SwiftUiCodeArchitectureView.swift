@@ -8,18 +8,16 @@
 import SwiftUI
 
 struct SwiftUiCodeArchitectureView: View {
-    func _temp() -> some View {
+    func screenCodeArchitecture() -> some View {
         return CustomSection(
-            snippetTitle: "",
+            snippetTitle: "Screen code architecture",
             snippetDescription: """
+            There are many ways to organise code for a screen, but 2 are very common:
             
-            """,
-            snippetCode: """
+            1) Separate struct: Use when you want something, custom and reusable.
             
-            """,
-            demoView: {
-            
-            }
+            2) Separate function: Use when you want something private and internal.
+            """
         )
     }
     
@@ -27,6 +25,7 @@ struct SwiftUiCodeArchitectureView: View {
         PageScaffold(
             pageTitle: "Code architecture",
             content: {
+                screenCodeArchitecture()
             }
         )
     }
