@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SwiftUiCatalogTabView: View {
-    func tab() -> some View {
+    func tabView() -> some View {
         return CustomSection(
             snippetTitle: "TabView",
             snippetDescription: """
@@ -51,7 +51,7 @@ struct SwiftUiCatalogTabView: View {
         PageScaffold(
             pageTitle: "Tab",
             content: {
-                tab()
+                tabView()
             }
         )
     }

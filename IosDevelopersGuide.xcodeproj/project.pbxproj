@@ -1093,7 +1093,7 @@
 				245E068D2B9B0B86005FB6E9 /* SwiftUiCatalogGrids */,
 				245E068E2B9B0B90005FB6E9 /* SwiftUiCatalogNavigationStack */,
 				245E068F2B9B0B9A005FB6E9 /* SwiftUiCatalogNavigationSplitView */,
-				245E06902B9B0BA5005FB6E9 /* SwiftUiCatalogTab */,
+				245E06902B9B0BA5005FB6E9 /* SwiftUiCatalogTabView */,
 				245E06912B9B0BAE005FB6E9 /* SwiftUiCatalogScrollView */,
 				245E06922B9B0BB9005FB6E9 /* SwiftUiCatalogGeometryReader */,
 				245E06952B9B0BD8005FB6E9 /* SwiftUiCatalogBackground */,
@@ -1396,12 +1396,12 @@
 			path = SwiftUiCatalogNavigationSplitView;
 			sourceTree = "<group>";
 		};
-		245E06902B9B0BA5005FB6E9 /* SwiftUiCatalogTab */ = {
+		245E06902B9B0BA5005FB6E9 /* SwiftUiCatalogTabView */ = {
 			isa = PBXGroup;
 			children = (
 				245E06452B9B02D3005FB6E9 /* SwiftUiCatalogTabView.swift */,
 			);
-			path = SwiftUiCatalogTab;
+			path = SwiftUiCatalogTabView;
 			sourceTree = "<group>";
 		};
 		245E06912B9B0BAE005FB6E9 /* SwiftUiCatalogScrollView */ = {
