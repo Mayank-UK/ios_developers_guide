@@ -47,10 +47,10 @@ class ApiService: ObservableObject {
         
         do {
             let (data, response) = try await URLSession.shared.data(for: request)
+            todoData = try JSONDecoder().decode(TodoData.self, from: data)
+            
             let responseBody = String(data: data, encoding: .utf8) ?? ""
             print(responseBody)
-            
-            todoData = try JSONDecoder().decode(TodoData.self, from: data)
         } catch {
             todoData.error = "\(error)"
         }

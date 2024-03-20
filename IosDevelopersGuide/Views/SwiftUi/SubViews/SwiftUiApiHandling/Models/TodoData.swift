@@ -7,13 +7,10 @@
 
 import Foundation
 
-struct TodoData: BaseModel, Decodable  {
-    var todo: Todo?
+struct TodoData: BaseModel, Decodable {
+    var userId: Int?
+    var title: String?
+    var completed: Bool?
+    var id: Int?
     var error: String?
-    
-    struct Todo: Decodable {
-        var userId: String
-        var title: String
-        var completed: Bool
-    }
 }
