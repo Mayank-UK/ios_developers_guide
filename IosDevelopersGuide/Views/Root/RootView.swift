@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct RootView<InitialView: View>: View {
-    @StateObject var router: Router = Router()
     @StateObject var screenData: ScreenData = ScreenData()
+    @StateObject var router: Router = Router()
+    @StateObject var apiService: ApiService = ApiService()
         
     private let initialView: InitialView
     
@@ -30,8 +31,9 @@ struct RootView<InitialView: View>: View {
                     screenData.width = geometry.size.width
                 }
         }
-            .environmentObject(router)
             .environmentObject(screenData)
+            .environmentObject(router)
+            .environmentObject(apiService)
     }
 }
 

@@ -144,6 +144,9 @@
 		249842452BA3039500490FBC /* SwiftUiCatalogTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249842442BA3039500490FBC /* SwiftUiCatalogTextFieldView.swift */; };
 		249842472BA3078200490FBC /* SwiftUiCatalogTextEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249842462BA3078200490FBC /* SwiftUiCatalogTextEditorView.swift */; };
 		2498424B2BA308B100490FBC /* SwiftUiCatalogSecureFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2498424A2BA308B100490FBC /* SwiftUiCatalogSecureFieldView.swift */; };
+		2498424E2BAAD17500490FBC /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2498424D2BAAD17500490FBC /* UserData.swift */; };
+		249842502BAB1DE800490FBC /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2498424F2BAB1DE700490FBC /* BaseModel.swift */; };
+		249842542BAB407E00490FBC /* TodoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249842532BAB407E00490FBC /* TodoData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -286,6 +289,9 @@
 		249842442BA3039500490FBC /* SwiftUiCatalogTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogTextFieldView.swift; sourceTree = "<group>"; };
 		249842462BA3078200490FBC /* SwiftUiCatalogTextEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogTextEditorView.swift; sourceTree = "<group>"; };
 		2498424A2BA308B100490FBC /* SwiftUiCatalogSecureFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCatalogSecureFieldView.swift; sourceTree = "<group>"; };
+		2498424D2BAAD17500490FBC /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		2498424F2BAB1DE700490FBC /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		249842532BAB407E00490FBC /* TodoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -371,6 +377,7 @@
 			isa = PBXGroup;
 			children = (
 				2443B4242B985017000FE1FD /* LinkData.swift */,
+				2498424F2BAB1DE700490FBC /* BaseModel.swift */,
 			);
 			path = GlobalModals;
 			sourceTree = "<group>";
@@ -739,6 +746,7 @@
 		245E05A32B9A055E005FB6E9 /* SwiftUiApiHandling */ = {
 			isa = PBXGroup;
 			children = (
+				2498424C2BAAD15800490FBC /* Models */,
 				245E05772B99FDCC005FB6E9 /* SwiftUiApiHandlingView.swift */,
 			);
 			path = SwiftUiApiHandling;
@@ -1596,6 +1604,15 @@
 			path = SwiftUiCatalogSecureField;
 			sourceTree = "<group>";
 		};
+		2498424C2BAAD15800490FBC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2498424D2BAAD17500490FBC /* UserData.swift */,
+				249842532BAB407E00490FBC /* TodoData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1672,6 +1689,7 @@
 				245E06062B9AF982005FB6E9 /* SwiftUiCatalogButtonsView.swift in Sources */,
 				245E05C42B9A09D6005FB6E9 /* SwiftUiVisibilityView.swift in Sources */,
 				245E06582B9B0380005FB6E9 /* SwiftUiCatalogToolbarView.swift in Sources */,
+				249842542BAB407E00490FBC /* TodoData.swift in Sources */,
 				245E057A2B99FDE1005FB6E9 /* SwiftUiCodeArchitectureView.swift in Sources */,
 				245E05542B99F6F1005FB6E9 /* SwiftIntroductionView.swift in Sources */,
 				245E05602B99F7D2005FB6E9 /* SwiftOptionalsView.swift in Sources */,
@@ -1691,6 +1709,7 @@
 				245E06602B9B03E3005FB6E9 /* SwiftUiCatalogGroupView.swift in Sources */,
 				245E05BC2B9A097C005FB6E9 /* SwiftUiBordersView.swift in Sources */,
 				245E062A2B9B014A005FB6E9 /* SwiftUiCatalogShapesView.swift in Sources */,
+				2498424E2BAAD17500490FBC /* UserData.swift in Sources */,
 				245E06A82B9B2B44005FB6E9 /* CustomSection.swift in Sources */,
 				245E06442B9B02C3005FB6E9 /* SwiftUiCatalogNavigationSplitView.swift in Sources */,
 				245E064A2B9B0302005FB6E9 /* SwiftUiCatalogGeometryReaderView.swift in Sources */,
@@ -1795,6 +1814,7 @@
 				245E056C2B99FD30005FB6E9 /* SwiftEnumAndStructsView.swift in Sources */,
 				245E065E2B9B03B2005FB6E9 /* SwiftUiCatalogEmptyView.swift in Sources */,
 				245E05762B99FDBD005FB6E9 /* SwiftUiStateManagementView.swift in Sources */,
+				249842502BAB1DE800490FBC /* BaseModel.swift in Sources */,
 				245E06642B9B0409005FB6E9 /* SwiftUiCatalogSectionView.swift in Sources */,
 				2443B4032B91C5F8000FE1FD /* Router.swift in Sources */,
 				245E05BE2B9A098F005FB6E9 /* SwiftUiIconsAndImagesView.swift in Sources */,
