@@ -8,18 +8,25 @@
 import SwiftUI
 
 struct IosDevelopmentView: View {
-    func _temp() -> some View {
+    func developmentLanguages() -> some View {
         return CustomSection(
-            snippetTitle: "",
+            snippetTitle: "Languages",
             snippetDescription: """
+            IOS development can be done in 2 languages:
+            1) C# (old way)
+            2) Swift (new way, recommended way)
+            """
+        )
+    }
+    
+    func developmentTools() -> some View {
+        return CustomSection(
+            snippetTitle: "Tools",
+            snippetDescription: """
+            All software development done for apple devices is done using xcode which includes iPhone, macbook, iWatch, apple vision, etc.
             
-            """,
-            snippetCode: """
-            
-            """,
-            demoView: {
-            
-            }
+            Xcode is an IDE developed by apple specially for apple ecosystem.
+            """
         )
     }
     
@@ -27,6 +34,8 @@ struct IosDevelopmentView: View {
         PageScaffold(
             pageTitle: "Development",
             content: {
+                developmentLanguages()
+                developmentTools()
             }
         )
     }

@@ -13,7 +13,6 @@ struct HomeView: View {
         LinkData(title: "Swift fundamentals", routePath: Router.routePaths.swiftFundamentals),
         LinkData(title: "SwiftUI", routePath: Router.routePaths.swiftUi),
         LinkData(title: "UIKit", routePath: Router.routePaths.uiKit),
-        LinkData(title: "Rest API", routePath: Router.routePaths.restApi),
         LinkData(title: "Package manager & packages", routePath: Router.routePaths.packageManager),
         LinkData(title: "Deployment", routePath: Router.routePaths.deployment),
     ]

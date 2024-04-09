@@ -8,18 +8,31 @@
 import SwiftUI
 
 struct SwiftCommentsView: View {
-    func _temp() -> some View {
+    func singleLineComments() -> some View {
         return CustomSection(
-            snippetTitle: "",
+            snippetTitle: "Single line comments",
             snippetDescription: """
-            
+            A comment is something whose syntax is not taken into consideration.
+            Comment a single line.
             """,
             snippetCode: """
-            
+            //  This is single line comment.
+            """
+        )
+    }
+    
+    func multiLineComments() -> some View {
+        return CustomSection(
+            snippetTitle: "Multi line comments",
+            snippetDescription: """
+            Comment multiple lines.
             """,
-            demoView: {
-            
-            }
+            snippetCode: """
+            /*
+                This is a
+                multi-line comment.
+            */
+            """
         )
     }
     
@@ -27,6 +40,8 @@ struct SwiftCommentsView: View {
         PageScaffold(
             pageTitle: "Comments",
             content: {
+                singleLineComments()
+                multiLineComments()
             }
         )
 

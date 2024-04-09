@@ -8,18 +8,12 @@
 import SwiftUI
 
 struct SwiftInstallationView: View {
-    func _temp() -> some View {
+    func installation() -> some View {
         return CustomSection(
-            snippetTitle: "",
+            snippetTitle: "Installation",
             snippetDescription: """
-            
-            """,
-            snippetCode: """
-            
-            """,
-            demoView: {
-            
-            }
+            Swift is installed automatically with xcode.
+            """
         )
     }
     
@@ -27,6 +21,7 @@ struct SwiftInstallationView: View {
         PageScaffold(
             pageTitle: "Installation",
             content: {
+                installation()
             }
         )
 

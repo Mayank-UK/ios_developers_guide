@@ -29,7 +29,6 @@ class Router: ObservableObject {
         case swiftOptionals
         case swiftOperators
         case swiftControlFlow
-        case swiftCollections
         case swiftFunctions
         case swiftOop
         case swiftEnumAndStructs
@@ -186,8 +185,6 @@ class Router: ObservableObject {
                 SwiftOperatorsView()
             case .swiftControlFlow:
                 SwiftControlFlowView()
-            case .swiftCollections:
-                SwiftCollectionsView()
             case .swiftFunctions:
                 SwiftFunctionsView()
             case .swiftOop:
@@ -391,18 +388,9 @@ class Router: ObservableObject {
             
             case .uiKit:
                 UiKitView()
-//            case ._:
-//                PageNotFound()
-            
-            case .restApi:
-                RestApiView()
-//            case ._:
-//                PageNotFound()
             
             case .packageManager:
                 PackageManagerView()
-//            case ._:
-//                PageNotFound()
             
             case .deployment:
                 DeploymentView()

@@ -30,7 +30,6 @@
 		2443B42B2B9862B9000FE1FD /* IosFundamentalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2443B42A2B9862B9000FE1FD /* IosFundamentalsView.swift */; };
 		2443B42F2B9863A8000FE1FD /* SwiftUiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2443B42E2B9863A8000FE1FD /* SwiftUiView.swift */; };
 		2443B4332B9863DB000FE1FD /* UiKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2443B4322B9863DB000FE1FD /* UiKitView.swift */; };
-		2443B4362B986471000FE1FD /* RestApiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2443B4352B986471000FE1FD /* RestApiView.swift */; };
 		2443B4382B9864B1000FE1FD /* DeploymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2443B4372B9864B1000FE1FD /* DeploymentView.swift */; };
 		2443B4412B986CB7000FE1FD /* PackageManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2443B4402B986CB7000FE1FD /* PackageManagerView.swift */; };
 		2443B4472B988141000FE1FD /* IosImportantConceptsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2443B4462B988141000FE1FD /* IosImportantConceptsView.swift */; };
@@ -45,7 +44,6 @@
 		245E05602B99F7D2005FB6E9 /* SwiftOptionalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E055F2B99F7D2005FB6E9 /* SwiftOptionalsView.swift */; };
 		245E05622B99F7E5005FB6E9 /* SwiftOperatorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E05612B99F7E5005FB6E9 /* SwiftOperatorsView.swift */; };
 		245E05642B99F800005FB6E9 /* SwiftControlFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E05632B99F800005FB6E9 /* SwiftControlFlowView.swift */; };
-		245E05662B99F813005FB6E9 /* SwiftCollectionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E05652B99F813005FB6E9 /* SwiftCollectionsView.swift */; };
 		245E05682B99FD09005FB6E9 /* SwiftFunctionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E05672B99FD09005FB6E9 /* SwiftFunctionsView.swift */; };
 		245E056A2B99FD1C005FB6E9 /* SwiftOopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E05692B99FD1C005FB6E9 /* SwiftOopView.swift */; };
 		245E056C2B99FD30005FB6E9 /* SwiftEnumAndStructsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E056B2B99FD30005FB6E9 /* SwiftEnumAndStructsView.swift */; };
@@ -175,7 +173,6 @@
 		2443B42A2B9862B9000FE1FD /* IosFundamentalsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IosFundamentalsView.swift; sourceTree = "<group>"; };
 		2443B42E2B9863A8000FE1FD /* SwiftUiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiView.swift; sourceTree = "<group>"; };
 		2443B4322B9863DB000FE1FD /* UiKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiKitView.swift; sourceTree = "<group>"; };
-		2443B4352B986471000FE1FD /* RestApiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestApiView.swift; sourceTree = "<group>"; };
 		2443B4372B9864B1000FE1FD /* DeploymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeploymentView.swift; sourceTree = "<group>"; };
 		2443B4402B986CB7000FE1FD /* PackageManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageManagerView.swift; sourceTree = "<group>"; };
 		2443B4462B988141000FE1FD /* IosImportantConceptsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IosImportantConceptsView.swift; sourceTree = "<group>"; };
@@ -190,7 +187,6 @@
 		245E055F2B99F7D2005FB6E9 /* SwiftOptionalsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftOptionalsView.swift; sourceTree = "<group>"; };
 		245E05612B99F7E5005FB6E9 /* SwiftOperatorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftOperatorsView.swift; sourceTree = "<group>"; };
 		245E05632B99F800005FB6E9 /* SwiftControlFlowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftControlFlowView.swift; sourceTree = "<group>"; };
-		245E05652B99F813005FB6E9 /* SwiftCollectionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCollectionsView.swift; sourceTree = "<group>"; };
 		245E05672B99FD09005FB6E9 /* SwiftFunctionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftFunctionsView.swift; sourceTree = "<group>"; };
 		245E05692B99FD1C005FB6E9 /* SwiftOopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftOopView.swift; sourceTree = "<group>"; };
 		245E056B2B99FD30005FB6E9 /* SwiftEnumAndStructsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftEnumAndStructsView.swift; sourceTree = "<group>"; };
@@ -352,7 +348,6 @@
 				2443B43B2B9867CD000FE1FD /* IosFundamentals */,
 				2443B41E2B984ED9000FE1FD /* SwiftFundamentals */,
 				2443B42D2B986391000FE1FD /* SwiftUi */,
-				2443B43D2B986872000FE1FD /* RestApi */,
 				2443B4312B9863CF000FE1FD /* UiKit */,
 				2443B43F2B986C80000FE1FD /* PackageManager */,
 				2443B4392B986769000FE1FD /* Deployment */,
@@ -426,7 +421,6 @@
 				245E05972B9A0425005FB6E9 /* SwiftOptionals */,
 				245E05982B9A0436005FB6E9 /* SwiftOperators */,
 				245E05992B9A0445005FB6E9 /* SwiftControlFlow */,
-				245E059A2B9A0451005FB6E9 /* SwiftCollections */,
 				245E059B2B9A045E005FB6E9 /* SwiftFunctions */,
 				245E059C2B9A046C005FB6E9 /* SwiftOop */,
 				245E059D2B9A0479005FB6E9 /* SwiftEnumAndStructs */,
@@ -514,22 +508,6 @@
 				245E058D2B9A036A005FB6E9 /* IosImportantConcepts */,
 				245E058E2B9A0385005FB6E9 /* IosInstallationAndSetup */,
 				245E058F2B9A039B005FB6E9 /* IosDevelopment */,
-			);
-			path = SubViews;
-			sourceTree = "<group>";
-		};
-		2443B43D2B986872000FE1FD /* RestApi */ = {
-			isa = PBXGroup;
-			children = (
-				2443B43E2B986885000FE1FD /* SubViews */,
-				2443B4352B986471000FE1FD /* RestApiView.swift */,
-			);
-			path = RestApi;
-			sourceTree = "<group>";
-		};
-		2443B43E2B986885000FE1FD /* SubViews */ = {
-			isa = PBXGroup;
-			children = (
 			);
 			path = SubViews;
 			sourceTree = "<group>";
@@ -668,14 +646,6 @@
 				245E05632B99F800005FB6E9 /* SwiftControlFlowView.swift */,
 			);
 			path = SwiftControlFlow;
-			sourceTree = "<group>";
-		};
-		245E059A2B9A0451005FB6E9 /* SwiftCollections */ = {
-			isa = PBXGroup;
-			children = (
-				245E05652B99F813005FB6E9 /* SwiftCollectionsView.swift */,
-			);
-			path = SwiftCollections;
 			sourceTree = "<group>";
 		};
 		245E059B2B9A045E005FB6E9 /* SwiftFunctions */ = {
@@ -1715,7 +1685,6 @@
 				245E064A2B9B0302005FB6E9 /* SwiftUiCatalogGeometryReaderView.swift in Sources */,
 				245E05E92B9A149E005FB6E9 /* SwiftUiCatalogContainersView.swift in Sources */,
 				245E05B82B9A095C005FB6E9 /* SwiftUiAlignmentView.swift in Sources */,
-				245E05662B99F813005FB6E9 /* SwiftCollectionsView.swift in Sources */,
 				245E05882B99FE9F005FB6E9 /* SwiftUiBestPracticesView.swift in Sources */,
 				245E05562B99F710005FB6E9 /* SwiftVariablesAndConstantsView.swift in Sources */,
 				245E05E72B9A1478005FB6E9 /* SwiftUiCatalogDisplayElementsView.swift in Sources */,
@@ -1745,7 +1714,6 @@
 				245E06082B9AF990005FB6E9 /* SwiftUiCatalogToggleView.swift in Sources */,
 				2443B3E72B91C092000FE1FD /* IosDevelopersGuideApp.swift in Sources */,
 				245E066A2B9B04A7005FB6E9 /* SwiftUiCatalogConfirmationDialogView.swift in Sources */,
-				2443B4362B986471000FE1FD /* RestApiView.swift in Sources */,
 				245E066C2B9B04BB005FB6E9 /* SwiftUiCatalogNotificationView.swift in Sources */,
 				245E064E2B9B0323005FB6E9 /* SwiftUiCatalogDividerView.swift in Sources */,
 				2443B4202B984EF4000FE1FD /* SwiftFundamentalsView.swift in Sources */,

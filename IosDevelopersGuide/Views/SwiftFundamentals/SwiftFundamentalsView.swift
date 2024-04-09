@@ -19,7 +19,6 @@ struct SwiftFundamentalsView: View {
         LinkData(title: "Optionals", routePath: Router.routePaths.swiftOptionals),
         LinkData(title: "Operators", routePath: Router.routePaths.swiftOperators),
         LinkData(title: "Control flow", routePath: Router.routePaths.swiftControlFlow),
-        LinkData(title: "Collections", routePath: Router.routePaths.swiftCollections),
         LinkData(title: "Functions", routePath: Router.routePaths.swiftFunctions),
         LinkData(title: "OOP", routePath: Router.routePaths.swiftOop),
         LinkData(title: "Enum & structs", routePath: Router.routePaths.swiftEnumAndStructs),

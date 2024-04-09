@@ -8,18 +8,20 @@
 import SwiftUI
 
 struct SwiftFunctionsView: View {
-    func _temp() -> some View {
+    func functions() -> some View {
         return CustomSection(
-            snippetTitle: "",
+            snippetTitle: "Functions",
             snippetDescription: """
-            
+            A function in Swift is a self-contained unit of code that performs a specific task.
             """,
             snippetCode: """
-            
-            """,
-            demoView: {
-            
+            func average(_ numbers: Double...) -> Double {
+                let total = numbers.reduce(0, +)
+                return total / Double(numbers.count)
             }
+            
+            let avg = average(10, 20, 30)
+            """
         )
     }
     
@@ -27,6 +29,7 @@ struct SwiftFunctionsView: View {
         PageScaffold(
             pageTitle: "Functions",
             content: {
+                functions()
             }
         )
 
