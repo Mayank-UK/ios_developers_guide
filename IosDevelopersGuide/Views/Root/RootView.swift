@@ -6,8 +6,12 @@
 //
 
 import SwiftUI
+import Combine
 
 struct RootView<InitialView: View>: View {
+    @Environment(\.verticalSizeClass) var verticalSizeClass
+    @Environment(\.horizontalSizeClass) var horizontalSizeClass
+    
     @StateObject var screenData: ScreenData = ScreenData()
     @StateObject var router: Router = Router()
     @StateObject var apiService: ApiService = ApiService()
@@ -25,15 +29,29 @@ struct RootView<InitialView: View>: View {
                     .navigationDestination(for: Router.routePaths.self) { route in
                     router.view(for: route)
                 }
+                    
             }
-                .onAppear{
-                    screenData.height = geometry.size.height
-                    screenData.width = geometry.size.width
+                .preference(key: SizePreferenceKey.self, value: geometry.size)
+                .onPreferenceChange(SizePreferenceKey.self) { newSize in
+                    screenData.height = newSize.height
+                    screenData.width = newSize.width
+                    
+                    screenData.isCompactHeight = verticalSizeClass == .compact
+                    screenData.isCompactWidth = horizontalSizeClass == .compact
                 }
         }
+            
             .environmentObject(screenData)
             .environmentObject(router)
             .environmentObject(apiService)
+    }
+}
+
+struct SizePreferenceKey: PreferenceKey {
+    static var defaultValue: CGSize = CGSize.init(width: 1, height: 1)
+
+    static func reduce(value: inout CGSize, nextValue: () -> CGSize) {
+        value = nextValue()
     }
 }
 

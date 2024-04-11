@@ -45,7 +45,19 @@ class Router: ObservableObject {
         case swiftUiDebugging
         case swiftUiTesting
         case swiftUiSuppportingClassesAndEnums
+        
         case swiftUiNativeFeaturesHandling
+        case swiftUiCamera
+        case swiftUiFaceId
+        case swiftUiMicrophone
+        case swiftUiSpeakers
+        case swiftUiBluetooth
+        case swiftUiWifi
+        case swiftUiCompass
+        case swiftUiAccelerometer
+        case swiftUiProximitySensor
+        case swiftUiAmbientLightSensor
+        
         case swiftUiResponsiveDesign
         case swiftUiBestPractices
         
@@ -216,8 +228,30 @@ class Router: ObservableObject {
                 SwiftUiTestingView()
             case .swiftUiSuppportingClassesAndEnums:
                 SwiftUiSupportingClassesAndEnumsView()
+            
             case .swiftUiNativeFeaturesHandling:
                 SwiftUiNativeFeaturesView()
+            case .swiftUiCamera:
+                SwiftUICameraView()
+            case .swiftUiFaceId:
+                SwiftUIFaceIdView()
+            case .swiftUiMicrophone:
+                SwiftUiMicrophoneView()
+            case .swiftUiSpeakers:
+                SwiftUiSpeakersView()
+            case .swiftUiBluetooth:
+                SwiftUiBluetoothView()
+            case .swiftUiWifi:
+                SwiftUiWifiView()
+            case .swiftUiCompass:
+                SwiftUiCompassView()
+            case .swiftUiAccelerometer:
+                SwiftUiAccelerometerView()
+            case .swiftUiProximitySensor:
+                SwiftUiProximitySensorView()
+            case .swiftUiAmbientLightSensor:
+                SwiftUiAmbientLightSensorView()
+            
             case .swiftUiResponsiveDesign:
                 SwiftUiResponsiveDesignView()
             case .swiftUiBestPractices:

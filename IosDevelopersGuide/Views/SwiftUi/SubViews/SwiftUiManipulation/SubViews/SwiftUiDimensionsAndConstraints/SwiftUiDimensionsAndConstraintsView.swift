@@ -111,8 +111,12 @@ struct SwiftUiDimensionsAndConstraintsView: View {
             }
 
             struct RootView<InitialView: View>: View {
-                @StateObject var router: Router = Router()
+                @Environment(\\.verticalSizeClass) var verticalSizeClass
+                @Environment(\\.horizontalSizeClass) var horizontalSizeClass
+                
                 @StateObject var screenData: ScreenData = ScreenData()
+                @StateObject var router: Router = Router()
+                @StateObject var apiService: ApiService = ApiService()
                     
                 private let initialView: InitialView
                 
@@ -127,17 +131,31 @@ struct SwiftUiDimensionsAndConstraintsView: View {
                                 .navigationDestination(for: Router.routePaths.self) { route in
                                 router.view(for: route)
                             }
+                                
                         }
-                            .onAppear{
-                                screenData.height = geometry.size.height
-                                screenData.width = geometry.size.width
+                            .preference(key: SizePreferenceKey.self, value: geometry.size)
+                            .onPreferenceChange(SizePreferenceKey.self) { newSize in
+                                screenData.height = newSize.height
+                                screenData.width = newSize.width
+                                
+                                screenData.isCompactHeight = verticalSizeClass == .compact
+                                screenData.isCompactWidth = horizontalSizeClass == .compact
                             }
                     }
-                        .environmentObject(router)
+                        
                         .environmentObject(screenData)
+                        .environmentObject(router)
+                        .environmentObject(apiService)
                 }
             }
-            
+
+            struct SizePreferenceKey: PreferenceKey {
+                static var defaultValue: CGSize = CGSize.init(width: 1, height: 1)
+
+                static func reduce(value: inout CGSize, nextValue: () -> CGSize) {
+                    value = nextValue()
+                }
+            }
             
             //  then use in some view like this
             Rectangle()
@@ -145,7 +163,11 @@ struct SwiftUiDimensionsAndConstraintsView: View {
             """,
             demoView: {
                 Rectangle()
-                    .frame(width: screenData.width, height: screenData.height)
+                    .frame(width: screenData.width * 0.5, height: screenData.height * 0.5)
+//                GeometryReader { geometry in
+//                    Rectangle()
+//                        .frame(width: geometry.size.width * 0.5, height: geometry.size.height * 1)
+//                }
             }
         )
     }
@@ -164,11 +186,11 @@ struct SwiftUiDimensionsAndConstraintsView: View {
     }
 }
 
-#Preview {
-    @EnvironmentObject var screenData: ScreenData
-    
-    return SwiftUiDimensionsAndConstraintsView()
-//        .environmentObject(screenData)
-//    this is not the proper way, but currently it's the only way that don't throw error
-        .environmentObject(ScreenData())
-}
+//#Preview {
+//    @EnvironmentObject var screenData: ScreenData
+//    
+//    return SwiftUiDimensionsAndConstraintsView()
+////        .environmentObject(screenData)
+////    this is not the proper way, but currently it's the only way that don't throw error
+//        .environmentObject(ScreenData())
+//}

@@ -8,18 +8,12 @@
 import SwiftUI
 
 struct SwiftUiBestPracticesView: View {
-    func _temp() -> some View {
+    func bestPractices() -> some View {
         return CustomSection(
-            snippetTitle: "",
+            snippetTitle: "Best practices",
             snippetDescription: """
-            
-            """,
-            snippetCode: """
-            
-            """,
-            demoView: {
-            
-            }
+            1) Follow consistent coding style throughout the app, refer to IosDevelopersGuide
+            """
         )
     }
     
@@ -27,6 +21,7 @@ struct SwiftUiBestPracticesView: View {
         PageScaffold(
             pageTitle: "Best practices",
             content: {
+                bestPractices()
             }
         )
     }

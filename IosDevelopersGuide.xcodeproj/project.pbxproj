@@ -145,6 +145,16 @@
 		2498424E2BAAD17500490FBC /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2498424D2BAAD17500490FBC /* UserData.swift */; };
 		249842502BAB1DE800490FBC /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2498424F2BAB1DE700490FBC /* BaseModel.swift */; };
 		249842542BAB407E00490FBC /* TodoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249842532BAB407E00490FBC /* TodoData.swift */; };
+		249B77EB2BC690FF00EFEAB7 /* SwiftUiCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249B77EA2BC690FF00EFEAB7 /* SwiftUiCameraView.swift */; };
+		249B77ED2BC6911200EFEAB7 /* SwiftUiFaceIdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249B77EC2BC6911200EFEAB7 /* SwiftUiFaceIdView.swift */; };
+		249B77EF2BC6912A00EFEAB7 /* SwiftUiMicrophoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249B77EE2BC6912A00EFEAB7 /* SwiftUiMicrophoneView.swift */; };
+		249B77F12BC6914D00EFEAB7 /* SwiftUiSpeakersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249B77F02BC6914D00EFEAB7 /* SwiftUiSpeakersView.swift */; };
+		249B77F32BC6916000EFEAB7 /* SwiftUiBluetoothView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249B77F22BC6916000EFEAB7 /* SwiftUiBluetoothView.swift */; };
+		249B77F52BC6917200EFEAB7 /* SwiftUiWifiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249B77F42BC6917200EFEAB7 /* SwiftUiWifiView.swift */; };
+		249B77F72BC6918600EFEAB7 /* SwiftUiCompassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249B77F62BC6918600EFEAB7 /* SwiftUiCompassView.swift */; };
+		249B77F92BC6919C00EFEAB7 /* SwiftUiAccelerometerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249B77F82BC6919C00EFEAB7 /* SwiftUiAccelerometerView.swift */; };
+		249B77FB2BC691B000EFEAB7 /* SwiftUiProximitySensorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249B77FA2BC691B000EFEAB7 /* SwiftUiProximitySensorView.swift */; };
+		249B77FD2BC691CA00EFEAB7 /* SwiftUiAmbientLightSensorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249B77FC2BC691CA00EFEAB7 /* SwiftUiAmbientLightSensorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -288,6 +298,16 @@
 		2498424D2BAAD17500490FBC /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		2498424F2BAB1DE700490FBC /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		249842532BAB407E00490FBC /* TodoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoData.swift; sourceTree = "<group>"; };
+		249B77EA2BC690FF00EFEAB7 /* SwiftUiCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCameraView.swift; sourceTree = "<group>"; };
+		249B77EC2BC6911200EFEAB7 /* SwiftUiFaceIdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiFaceIdView.swift; sourceTree = "<group>"; };
+		249B77EE2BC6912A00EFEAB7 /* SwiftUiMicrophoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiMicrophoneView.swift; sourceTree = "<group>"; };
+		249B77F02BC6914D00EFEAB7 /* SwiftUiSpeakersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiSpeakersView.swift; sourceTree = "<group>"; };
+		249B77F22BC6916000EFEAB7 /* SwiftUiBluetoothView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiBluetoothView.swift; sourceTree = "<group>"; };
+		249B77F42BC6917200EFEAB7 /* SwiftUiWifiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiWifiView.swift; sourceTree = "<group>"; };
+		249B77F62BC6918600EFEAB7 /* SwiftUiCompassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiCompassView.swift; sourceTree = "<group>"; };
+		249B77F82BC6919C00EFEAB7 /* SwiftUiAccelerometerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiAccelerometerView.swift; sourceTree = "<group>"; };
+		249B77FA2BC691B000EFEAB7 /* SwiftUiProximitySensorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiProximitySensorView.swift; sourceTree = "<group>"; };
+		249B77FC2BC691CA00EFEAB7 /* SwiftUiAmbientLightSensorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiAmbientLightSensorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -766,6 +786,7 @@
 		245E05A92B9A05FB005FB6E9 /* SwiftUiNativeFeatures */ = {
 			isa = PBXGroup;
 			children = (
+				249B77DF2BC68EC600EFEAB7 /* SubViews */,
 				245E05832B99FE53005FB6E9 /* SwiftUiNativeFeaturesView.swift */,
 			);
 			path = SwiftUiNativeFeatures;
@@ -1583,6 +1604,103 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		249B77DF2BC68EC600EFEAB7 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				249B77E02BC68ED500EFEAB7 /* SwiftUiCamera */,
+				249B77E12BC68EEF00EFEAB7 /* SwiftUiFaceId */,
+				249B77E22BC68EFB00EFEAB7 /* SwiftUiMicrophone */,
+				249B77E32BC68F0900EFEAB7 /* SwiftUiSpeakers */,
+				249B77E42BC68F1500EFEAB7 /* SwiftUiBluetooth */,
+				249B77E52BC68F2200EFEAB7 /* SwiftUiWifi */,
+				249B77E62BC68F2D00EFEAB7 /* SwiftUiCompass */,
+				249B77E72BC68F3800EFEAB7 /* SwiftUiAccelerometer */,
+				249B77E82BC68F4800EFEAB7 /* SwiftUiProximitySensor */,
+				249B77E92BC68F5A00EFEAB7 /* SwiftUiAmbientLightSensor */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		249B77E02BC68ED500EFEAB7 /* SwiftUiCamera */ = {
+			isa = PBXGroup;
+			children = (
+				249B77EA2BC690FF00EFEAB7 /* SwiftUiCameraView.swift */,
+			);
+			path = SwiftUiCamera;
+			sourceTree = "<group>";
+		};
+		249B77E12BC68EEF00EFEAB7 /* SwiftUiFaceId */ = {
+			isa = PBXGroup;
+			children = (
+				249B77EC2BC6911200EFEAB7 /* SwiftUiFaceIdView.swift */,
+			);
+			path = SwiftUiFaceId;
+			sourceTree = "<group>";
+		};
+		249B77E22BC68EFB00EFEAB7 /* SwiftUiMicrophone */ = {
+			isa = PBXGroup;
+			children = (
+				249B77EE2BC6912A00EFEAB7 /* SwiftUiMicrophoneView.swift */,
+			);
+			path = SwiftUiMicrophone;
+			sourceTree = "<group>";
+		};
+		249B77E32BC68F0900EFEAB7 /* SwiftUiSpeakers */ = {
+			isa = PBXGroup;
+			children = (
+				249B77F02BC6914D00EFEAB7 /* SwiftUiSpeakersView.swift */,
+			);
+			path = SwiftUiSpeakers;
+			sourceTree = "<group>";
+		};
+		249B77E42BC68F1500EFEAB7 /* SwiftUiBluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				249B77F22BC6916000EFEAB7 /* SwiftUiBluetoothView.swift */,
+			);
+			path = SwiftUiBluetooth;
+			sourceTree = "<group>";
+		};
+		249B77E52BC68F2200EFEAB7 /* SwiftUiWifi */ = {
+			isa = PBXGroup;
+			children = (
+				249B77F42BC6917200EFEAB7 /* SwiftUiWifiView.swift */,
+			);
+			path = SwiftUiWifi;
+			sourceTree = "<group>";
+		};
+		249B77E62BC68F2D00EFEAB7 /* SwiftUiCompass */ = {
+			isa = PBXGroup;
+			children = (
+				249B77F62BC6918600EFEAB7 /* SwiftUiCompassView.swift */,
+			);
+			path = SwiftUiCompass;
+			sourceTree = "<group>";
+		};
+		249B77E72BC68F3800EFEAB7 /* SwiftUiAccelerometer */ = {
+			isa = PBXGroup;
+			children = (
+				249B77F82BC6919C00EFEAB7 /* SwiftUiAccelerometerView.swift */,
+			);
+			path = SwiftUiAccelerometer;
+			sourceTree = "<group>";
+		};
+		249B77E82BC68F4800EFEAB7 /* SwiftUiProximitySensor */ = {
+			isa = PBXGroup;
+			children = (
+				249B77FA2BC691B000EFEAB7 /* SwiftUiProximitySensorView.swift */,
+			);
+			path = SwiftUiProximitySensor;
+			sourceTree = "<group>";
+		};
+		249B77E92BC68F5A00EFEAB7 /* SwiftUiAmbientLightSensor */ = {
+			isa = PBXGroup;
+			children = (
+				249B77FC2BC691CA00EFEAB7 /* SwiftUiAmbientLightSensorView.swift */,
+			);
+			path = SwiftUiAmbientLightSensor;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1655,6 +1773,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2443B4192B972CF2000FE1FD /* PageScaffold.swift in Sources */,
+				249B77FD2BC691CA00EFEAB7 /* SwiftUiAmbientLightSensorView.swift in Sources */,
 				245E06462B9B02D3005FB6E9 /* SwiftUiCatalogTabView.swift in Sources */,
 				245E06062B9AF982005FB6E9 /* SwiftUiCatalogButtonsView.swift in Sources */,
 				245E05C42B9A09D6005FB6E9 /* SwiftUiVisibilityView.swift in Sources */,
@@ -1673,12 +1792,14 @@
 				245E06242B9B00F7005FB6E9 /* SwiftUiCatalogLabelView.swift in Sources */,
 				245E05782B99FDCC005FB6E9 /* SwiftUiApiHandlingView.swift in Sources */,
 				2443B3FF2B91C5D9000FE1FD /* DesignSystem.swift in Sources */,
+				249B77F92BC6919C00EFEAB7 /* SwiftUiAccelerometerView.swift in Sources */,
 				245E056E2B99FD45005FB6E9 /* SwiftAdvancedView.swift in Sources */,
 				245E05682B99FD09005FB6E9 /* SwiftFunctionsView.swift in Sources */,
 				245E06622B9B03F6005FB6E9 /* SwiftUiCatalogFormView.swift in Sources */,
 				245E06602B9B03E3005FB6E9 /* SwiftUiCatalogGroupView.swift in Sources */,
 				245E05BC2B9A097C005FB6E9 /* SwiftUiBordersView.swift in Sources */,
 				245E062A2B9B014A005FB6E9 /* SwiftUiCatalogShapesView.swift in Sources */,
+				249B77EB2BC690FF00EFEAB7 /* SwiftUiCameraView.swift in Sources */,
 				2498424E2BAAD17500490FBC /* UserData.swift in Sources */,
 				245E06A82B9B2B44005FB6E9 /* CustomSection.swift in Sources */,
 				245E06442B9B02C3005FB6E9 /* SwiftUiCatalogNavigationSplitView.swift in Sources */,
@@ -1691,6 +1812,7 @@
 				245E05642B99F800005FB6E9 /* SwiftControlFlowView.swift in Sources */,
 				249842452BA3039500490FBC /* SwiftUiCatalogTextFieldView.swift in Sources */,
 				245E061C2B9B0016005FB6E9 /* SwiftUiCatalogStacksView.swift in Sources */,
+				249B77F52BC6917200EFEAB7 /* SwiftUiWifiView.swift in Sources */,
 				245E055E2B99F7B3005FB6E9 /* SwiftCommentsView.swift in Sources */,
 				245E05522B99F607005FB6E9 /* IosDevelopmentView.swift in Sources */,
 				245E055C2B99F79D005FB6E9 /* SwiftExpressionsAndStatementsView.swift in Sources */,
@@ -1699,6 +1821,7 @@
 				2443B3E92B91C093000FE1FD /* HomeView.swift in Sources */,
 				245E05CC2B9A0AAE005FB6E9 /* SwiftUiMediaView.swift in Sources */,
 				245E060E2B9AF9FE005FB6E9 /* SwiftUiCatalogPickersView.swift in Sources */,
+				249B77FB2BC691B000EFEAB7 /* SwiftUiProximitySensorView.swift in Sources */,
 				245E06222B9B00AE005FB6E9 /* SwiftUiCatalogGaugeView.swift in Sources */,
 				245E06562B9B036D005FB6E9 /* SwiftUiCatalogOutlineGroupView.swift in Sources */,
 				245E05502B99F5E9005FB6E9 /* IosInstallationAndSetupView.swift in Sources */,
@@ -1710,7 +1833,9 @@
 				2443B4152B91E573000FE1FD /* PageNotFoundView.swift in Sources */,
 				245E05CA2B9A0A95005FB6E9 /* SwiftUiFormView.swift in Sources */,
 				2443B40B2B91C660000FE1FD /* LocalStorageService.swift in Sources */,
+				249B77F32BC6916000EFEAB7 /* SwiftUiBluetoothView.swift in Sources */,
 				245E056A2B99FD1C005FB6E9 /* SwiftOopView.swift in Sources */,
+				249B77ED2BC6911200EFEAB7 /* SwiftUiFaceIdView.swift in Sources */,
 				245E06082B9AF990005FB6E9 /* SwiftUiCatalogToggleView.swift in Sources */,
 				2443B3E72B91C092000FE1FD /* IosDevelopersGuideApp.swift in Sources */,
 				245E066A2B9B04A7005FB6E9 /* SwiftUiCatalogConfirmationDialogView.swift in Sources */,
@@ -1718,14 +1843,17 @@
 				245E064E2B9B0323005FB6E9 /* SwiftUiCatalogDividerView.swift in Sources */,
 				2443B4202B984EF4000FE1FD /* SwiftFundamentalsView.swift in Sources */,
 				245E06262B9B010A005FB6E9 /* SwiftUiCatalogProgressView.swift in Sources */,
+				249B77EF2BC6912A00EFEAB7 /* SwiftUiMicrophoneView.swift in Sources */,
 				2443B4072B91C61A000FE1FD /* Validators.swift in Sources */,
 				245E06722B9B04EF005FB6E9 /* SwiftUiCatalogPopoverView.swift in Sources */,
+				249B77F72BC6918600EFEAB7 /* SwiftUiCompassView.swift in Sources */,
 				245E05582B99F754005FB6E9 /* SwiftDataTypesView.swift in Sources */,
 				245E065C2B9B03A3005FB6E9 /* SwiftUiCatalogSafeAreaInsetView.swift in Sources */,
 				245E058C2B99FF25005FB6E9 /* DeploymentProdBuildView.swift in Sources */,
 				245E06302B9B01C2005FB6E9 /* SwiftUiCatalogCanvasView.swift in Sources */,
 				245E06542B9B0357005FB6E9 /* SwiftUiCatalogDisclosureGroupView.swift in Sources */,
 				245E060C2B9AF9F2005FB6E9 /* SwiftUiCatalogSliderView.swift in Sources */,
+				249B77F12BC6914D00EFEAB7 /* SwiftUiSpeakersView.swift in Sources */,
 				245E062E2B9B01AD005FB6E9 /* SwiftUiCatalogPathView.swift in Sources */,
 				245E05E32B9A0FD6005FB6E9 /* SwiftUiCatalogControlsView.swift in Sources */,
 				2443B4472B988141000FE1FD /* IosImportantConceptsView.swift in Sources */,
