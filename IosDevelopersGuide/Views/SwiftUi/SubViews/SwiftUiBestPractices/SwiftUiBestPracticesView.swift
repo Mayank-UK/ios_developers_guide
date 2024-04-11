@@ -12,7 +12,9 @@ struct SwiftUiBestPracticesView: View {
         return CustomSection(
             snippetTitle: "Best practices",
             snippetDescription: """
-            1) Follow consistent coding style throughout the app, refer to IosDevelopersGuide
+            1) Clear the fundamentals
+            2) Follow the apple human interface guidelines at https://developer.apple.com/design/human-interface-guidelines
+            3) Follow consistent coding style throughout the app, refer to IosDevelopersGuide
             """
         )
     }
