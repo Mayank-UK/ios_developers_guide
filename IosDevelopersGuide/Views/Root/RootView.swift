@@ -9,9 +9,13 @@ import SwiftUI
 import Combine
 
 struct RootView<InitialView: View>: View {
+    @Environment(\.colorScheme) var colorScheme
     @Environment(\.verticalSizeClass) var verticalSizeClass
     @Environment(\.horizontalSizeClass) var horizontalSizeClass
     
+    @StateObject private var designSystem = DesignSystem(
+        colorScheme: ColorScheme(dark: DarkColors.self, light: LightColors.self)
+    )
     @StateObject var screenData: ScreenData = ScreenData()
     @StateObject var router: Router = Router()
     @StateObject var apiService: ApiService = ApiService()
@@ -40,7 +44,12 @@ struct RootView<InitialView: View>: View {
                     screenData.isCompactWidth = horizontalSizeClass == .compact
                 }
         }
-            
+        
+            .onChange(of: colorScheme) {
+                let colorScheme = ColorScheme(dark: DarkColors.self, light: LightColors.self)
+                designSystem.updateColorScheme(colorScheme)
+            }
+            .environmentObject(designSystem)
             .environmentObject(screenData)
             .environmentObject(router)
             .environmentObject(apiService)

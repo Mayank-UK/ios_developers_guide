@@ -8,7 +8,7 @@
 import SwiftUI
 import Combine
 
-struct SwiftUiApiHandlingView: View {
+struct ApiHandlingView: View {
     @EnvironmentObject var apiService: ApiService
     @State var userData: UserData?
     @State var todoData: TodoData?
@@ -196,5 +196,5 @@ struct SwiftUiApiHandlingView: View {
 }
 
 #Preview {
-    SwiftUiApiHandlingView()
+    ApiHandlingView()
 }

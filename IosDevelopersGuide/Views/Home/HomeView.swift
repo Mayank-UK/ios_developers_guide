@@ -13,8 +13,13 @@ struct HomeView: View {
         LinkData(title: "Swift fundamentals", routePath: Router.routePaths.swiftFundamentals),
         LinkData(title: "SwiftUI", routePath: Router.routePaths.swiftUi),
         LinkData(title: "UIKit", routePath: Router.routePaths.uiKit),
-        LinkData(title: "Package manager & packages", routePath: Router.routePaths.packageManager),
+        LinkData(title: "Other basics", routePath: Router.routePaths.otherBasics),
+        LinkData(title: "API handling", routePath: Router.routePaths.apiHandling),
+        LinkData(title: "Database handling", routePath: Router.routePaths.databaseHandling),
+        LinkData(title: "Architecture", routePath: Router.routePaths.architecture),
+        LinkData(title: "Dependency management", routePath: Router.routePaths.dependencyManagement),
         LinkData(title: "Deployment", routePath: Router.routePaths.deployment),
+        LinkData(title: "Best practices", routePath: Router.routePaths.bestPractices),
     ]
     
     var body: some View {

@@ -7,10 +7,10 @@
 
 import SwiftUI
 
-struct SwiftUiBestPracticesView: View {
-    func bestPractices() -> some View {
+struct BestPracticesView: View {
+    func generalBestPractices() -> some View {
         return CustomSection(
-            snippetTitle: "Best practices",
+            snippetTitle: "General best practices",
             snippetDescription: """
             1) Clear the fundamentals
             2) Follow the apple human interface guidelines at https://developer.apple.com/design/human-interface-guidelines
@@ -19,16 +19,26 @@ struct SwiftUiBestPracticesView: View {
         )
     }
     
+    func swiftUiBestPractices() -> some View {
+        return CustomSection(
+            snippetTitle: "SwiftUi best practices",
+            snippetDescription: """
+            
+            """
+        )
+    }
+    
     var body: some View {
         PageScaffold(
             pageTitle: "Best practices",
             content: {
-                bestPractices()
+                generalBestPractices()
+                swiftUiBestPractices()
             }
         )
     }
 }
 
 #Preview {
-    SwiftUiBestPracticesView()
+    BestPracticesView()
 }

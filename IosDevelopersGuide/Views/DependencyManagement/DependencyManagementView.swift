@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct PackageManagerView: View {
+struct DependencyManagementView: View {
     func _temp() -> some View {
         return CustomSection(
             snippetTitle: "",
@@ -33,5 +33,5 @@ struct PackageManagerView: View {
 }
 
 #Preview {
-    PackageManagerView()
+    DependencyManagementView()
 }

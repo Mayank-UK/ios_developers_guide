@@ -8,385 +8,111 @@
 import SwiftUI
 
 struct SwiftUiDesignSystemView: View {
-    func designSystem() -> some View {
+    @EnvironmentObject var designSystem: DesignSystem
+    
+    func basics() -> some View {
         return CustomSection(
             snippetTitle: "Design system",
             snippetDescription: """
             Design system implementation
             """,
             snippetCode: """
-            import Foundation
-            import SwiftUI
-            
-            struct DesignSystem {
-                struct colors {
-                    //  primary colors
-                    static let primary: Color = Color(red: 117/255, green: 115/255, blue: 255)
-                    static let primaryLight: Color = Color(red: 117/255, green: 115/255, blue: 255/255)
-                    static let primaryDark: Color = Color(red: 117/255, green: 115/255, blue: 255/255)
-                    static let primaryGradient: LinearGradient = LinearGradient(
-                        gradient: Gradient(colors: [primary, primaryLight, primaryDark]),
-                        startPoint: .leading,
-                        endPoint: .trailing
-                    )
-                    
-                    //  secondary/accent colors
-                    static let secondary: Color = Color(red: 117/255, green: 115/255, blue: 255/255)
-                    static let secondaryLight: Color = Color(red: 117/255, green: 115/255, blue: 255/255)
-                    static let secondaryDark: Color = Color(red: 117/255, green: 115/255, blue: 255/255)
-                    static let secondaryGradient: LinearGradient = LinearGradient(
-                        gradient: Gradient(colors: [secondary, secondaryLight, secondaryDark]),
-                        startPoint: .leading,
-                        endPoint: .trailing
-                    )
-                    
-                    //  default system colors
-                    static let error: Color = Color(red: 117/255, green: 115/255, blue: 255/255)
-                    static let alert: Color = Color(red: 357, green: 596, blue: 255)
-                    static let success: Color = Color(red: 117/255, green: 115/255, blue: 255/255)
-                    
-                    //  text colors
-                    static let headingLight: Color = Color(red: 117/255, green: 115/255, blue: 255/255)
-                    static let headingDark: Color = Color(red: 117/255, green: 115/255, blue: 255/255)
-                    static let bodyLight: Color = Color(red: 117/255, green: 115/255, blue: 255/255)
-                    static let bodyDark: Color = Color(red: 117/255, green: 115/255, blue: 255/255)
-                    static let placeHolderLight: Color = Color(red: 117/255, green: 115/255, blue: 255/255)
-                    static let placeHolderDark: Color = Color(red: 117/255, green: 115/255, blue: 255/255)
-                    static let linkLight: Color = Color(red: 117/255, green: 115/255, blue: 255/255)
-                    static let linkDark: Color = Color(red: 117/255, green: 115/255, blue: 255/255)
-                    static let iconDark: Color = Color(red: 117/255, green: 115/255, blue: 255/255)
-                    
-                    // backgrounds
-                    static let backgroundBodyLight: Color = Color(red: 117/255, green: 115/255, blue: 255/255)
-                    static let backgroundBodyDark: Color = Color(red: 117/255, green: 115/255, blue: 255/255)
-                    static let backgroundBodyGrey: Color = Color(red: 117/255, green: 115/255, blue: 255/255)
-                    static let backgroundInputField: Color = Color(red: 117/255, green: 115/255, blue: 255/255)
-                    static let backgroundBodyGradient: LinearGradient = LinearGradient(
-                        gradient: Gradient(colors: [primary, primaryLight, primaryDark]),
-                        startPoint: .leading,
-                        endPoint: .trailing
-                    )
+            // Dark scheme colors
+            struct DarkColors {
+                static let primary = Color(red: 0.238, green: 325, blue: 0.687)
+                static let primaryVariant = Color(red: 0.0, green: 0.373, blue: 0.698)
+                static let secondary = Color(red: 0.4, green: 0.733, blue: 0.416)
+                static let background = Color(red: 0.129, green: 0.129, blue: 0.129)
+                static let surface = Color(red: 0.2, green: 0.2, blue: 0.2)
+                static let error = Color(red: 0.69, green: 0.0, blue: 0.125)
+                static let onPrimary = Color.black
+                static let onSecondary = Color.white
+                static let onBackground = Color.white
+                static let onSurface = Color.white
+                static let onError = Color.white
+            }
 
-                    // border colors
-                    static let borderLight: Color = Color(red: 117/255, green: 115/255, blue: 255/255)
-                    static let borderDark: Color = Color(red: 117/255, green: 115/255, blue: 255/255)
-                }
+            // Light scheme colors
+            struct LightColors {
+                static let primary = Color(red: 0.0, green: 0.478, blue: 1.0)
+                static let primaryVariant = Color(red: 0.0, green: 0.373, blue: 0.698)
+                static let secondary = Color(red: 0.611, green: 0.8, blue: 0.396)
+                static let background = Color.white
+                static let surface = Color(red: 0.969, green: 0.969, blue: 0.969)
+                static let error = Color(red: 0.835, green: 0.0, blue: 0.0)
+                static let onPrimary = Color.white
+                static let onSecondary = Color.black
+                static let onBackground = Color.black
+                static let onSurface = Color.black
+                static let onError = Color.black
+            }
 
-                struct typography {
-                    struct h1 : View {
-                        let color: Color
-                        let text: String
-                        
-                        init(color: Color = DesignSystem.colors.primary, text: String) {
-                            self.color = color
-                            self.text = text
-                        }
-                        
-                        var body: some View {
-                            return Text(text)
-                                .frame(maxWidth: .infinity, alignment: .leading)
-                                .font(.custom("Montserrat-Bold", size: 96))
-                                .fontWeight(.bold)
-                                .foregroundColor(color)
-                                .kerning(-1.5)
-                        }
-                    }
-                    
-                    struct h2 : View {
-                        let color: Color
-                        let text: String
-                        
-                        init(color: Color = DesignSystem.colors.primary, text: String) {
-                            self.color = color
-                            self.text = text
-                        }
-                        
-                        var body: some View {
-                            return Text(text)
-                                .frame(maxWidth: .infinity, alignment: .leading)
-                                .font(.custom("Montserrat-Bold", size: 60))
-                                .fontWeight(.bold)
-                                .foregroundColor(color)
-                                .kerning(-0.5)
-                        }
-                    }
-                    
-                    struct h3 : View {
-                        let color: Color
-                        let text: String
-                        
-                        init(color: Color = DesignSystem.colors.primary, text: String) {
-                            self.color = color
-                            self.text = text
-                        }
-                        
-                        var body: some View {
-                            return Text(text)
-                                .frame(maxWidth: .infinity, alignment: .leading)
-                                .font(.custom("Montserrat-Bold", size: 48))
-                                .fontWeight(.bold)
-                                .foregroundColor(color)
-                                .kerning(0)
-                        }
-                    }
+            //
+            // Define custom fonts
+            extension Font {
+                static let displayLarge = Font.custom("Montserrat-Regular", size: 57)
+                static let displayMedium = Font.custom("Montserrat-Regular", size: 45)
+                static let displaySmall = Font.custom("Montserrat-Regular", size: 36)
 
-                    struct h4 : View {
-                        let color: Color
-                        let text: String
-                        
-                        init(color: Color = DesignSystem.colors.primary, text: String) {
-                            self.color = color
-                            self.text = text
-                        }
-                        
-                        var body: some View {
-                            return Text(text)
-                                .frame(maxWidth: .infinity, alignment: .leading)
-                                .font(.custom("Montserrat-Bold", size: 34))
-                                .fontWeight(.bold)
-                                .foregroundColor(color)
-                                .kerning(0.25)
-                        }
-                    }
+                static let headlineLarge = Font.custom("Montserrat-Regular", size: 32)
+                static let headlineMedium = Font.custom("Montserrat-Regular", size: 28)
+                static let headlineSmall = Font.custom("Montserrat-Regular", size: 24)
 
-                    struct h5: View {
-                        let color: Color
-                        let text: String
-                        
-                        init(color: Color = DesignSystem.colors.primary, text: String) {
-                            self.color = color
-                            self.text = text
-                        }
-                        
-                        var body: some View {
-                            return Text(text)
-                                .frame(maxWidth: .infinity, alignment: .leading)
-                                .font(.custom("Montserrat-Bold", size: 24))
-                                .fontWeight(.bold)
-                                .foregroundColor(color)
-                                .kerning(0)
-                        }
-                    }
+                static let titleLarge = Font.custom("Montserrat-Bold", size: 22)
+                static let titleMedium = Font.custom("Montserrat-Bold", size: 16)
+                static let titleSmall = Font.custom("Montserrat-Medium", size: 14)
 
-                    struct h6 : View {
-                        let color: Color
-                        let text: String
-                        
-                        init(color: Color = DesignSystem.colors.primary, text: String) {
-                            self.color = color
-                            self.text = text
-                        }
-                        
-                        var body: some View {
-                            return Text(text)
-                                .frame(maxWidth: .infinity, alignment: .leading)
-                                .font(.custom("Montserrat-Bold", size: 20))
-                                .fontWeight(.bold)
-                                .foregroundColor(color)
-                                .kerning(0.15)
-                        }
-                    }
+                static let bodyLarge = Font.custom("Montserrat-Regular", size: 16)
+                static let bodyMedium = Font.custom("Montserrat-Regular", size: 14)
+                static let bodySmall = Font.custom("System-Regular", size: 12)
 
-                    struct subtitle1 : View {
-                        let color: Color
-                        let text: String
-                        
-                        init(color: Color = DesignSystem.colors.primary, text: String) {
-                            self.color = color
-                            self.text = text
-                        }
-                        
-                        var body: some View {
-                            return Text(text)
-                                .frame(maxWidth: .infinity, alignment: .leading)
-                                .font(.custom("Montserrat-Medium", size: 16))
-                                .fontWeight(.medium)
-                                .foregroundColor(color)
-                                .kerning(0.15)
-                        }
-                    }
+                static let labelLarge = Font.custom("Montserrat-Medium", size: 14)
+                static let labelMedium = Font.custom("Montserrat-Medium", size: 12)
+                static let labelSmall = Font.custom("Montserrat-Medium", size: 11)
+            }
 
-                    struct subtitle2 : View {
-                        let color: Color
-                        let text: String
-                        
-                        init(color: Color = DesignSystem.colors.primary, text: String) {
-                            self.color = color
-                            self.text = text
-                        }
-                        
-                        var body: some View {
-                            return Text(text)
-                                .frame(maxWidth: .infinity, alignment: .leading)
-                                .font(.custom("Montserrat-Medium", size: 14))
-                                .fontWeight(.medium)
-                                .foregroundColor(color)
-                                .kerning(0.1)
-                        }
-                    }
+            // Group all typography styles into a single object
+            struct FontScheme {
+                let displayLarge = Font.displayLarge
+                let displayMedium = Font.displayMedium
+                let displaySmall = Font.displaySmall
+                let headlineLarge = Font.headlineLarge
+                let headlineMedium = Font.headlineMedium
+                let headlineSmall = Font.headlineSmall
+                let titleLarge = Font.titleLarge
+                let titleMedium = Font.titleMedium
+                let titleSmall = Font.titleSmall
+                let bodyLarge = Font.bodyLarge
+                let bodyMedium = Font.bodyMedium
+                let bodySmall = Font.bodySmall
+                let labelLarge = Font.labelLarge
+                let labelMedium = Font.labelMedium
+                let labelSmall = Font.labelSmall
+            }
 
-                    struct body1 : View {
-                        let color: Color
-                        let text: String
-                        
-                        init(color: Color = DesignSystem.colors.primary, text: String) {
-                            self.color = color
-                            self.text = text
-                        }
-                        
-                        var body: some View {
-                            return Text(text)
-                                .frame(maxWidth: .infinity, alignment: .leading)
-                                .font(.custom("Montserrat-Bold", size: 16))
-                                .fontWeight(.regular)
-                                .foregroundColor(color)
-                                .kerning(0.5)
-                        }
-                    }
-
-                    struct body2 : View {
-                        let color: Color
-                        let text: String
-                        
-                        init(color: Color = DesignSystem.colors.primary, text: String) {
-                            self.color = color
-                            self.text = text
-                        }
-                        
-                        var body: some View {
-                            return Text(text)
-                                .frame(maxWidth: .infinity, alignment: .leading)
-                                .font(.custom("Montserrat-Regular", size: 14))
-                                .fontWeight(.regular)
-                                .foregroundColor(color)
-                                .kerning(0.25)
-                        }
-                    }
-
-                    struct button : View {
-                        let color: Color
-                        let text: String
-                        
-                        init(color: Color = DesignSystem.colors.primary, text: String) {
-                            self.color = color
-                            self.text = text
-                        }
-                        
-                        var body: some View {
-                            return Text(text)
-                                .frame(maxWidth: .infinity, alignment: .leading)
-                                .font(.custom("Montserrat-Regular", size: 16))
-                                .fontWeight(.bold)
-                                .foregroundColor(color)
-                                .kerning(1.25)
-                        }
-                    }
-
-                    struct buttonSmall : View {
-                        let color: Color
-                        let text: String
-                        
-                        init(color: Color = DesignSystem.colors.primary, text: String) {
-                            self.color = color
-                            self.text = text
-                        }
-                        
-                        var body: some View {
-                            return Text(text)
-                                .frame(maxWidth: .infinity, alignment: .leading)
-                                .font(.custom("Montserrat-Bold", size: 12))
-                                .fontWeight(.bold)
-                                .foregroundColor(color)
-                                .kerning(1.25)
-                        }
-                    }
-
-                    struct navigation : View {
-                        let color: Color
-                        let text: String
-                        
-                        init(color: Color = DesignSystem.colors.primary, text: String) {
-                            self.color = color
-                            self.text = text
-                        }
-                        
-                        var body: some View {
-                            return Text(text)
-                                .frame(maxWidth: .infinity, alignment: .leading)
-                                .font(.custom("Montserrat-Regular", size: 14))
-                                .fontWeight(.regular)
-                                .foregroundColor(color)
-                                .kerning(0.25)
-                        }
-                    }
-
-                    struct time : View {
-                        let color: Color
-                        let text: String
-                        
-                        init(color: Color = DesignSystem.colors.primary, text: String) {
-                            self.color = color
-                            self.text = text
-                        }
-                        
-                        var body: some View {
-                            return Text(text)
-                                .frame(maxWidth: .infinity, alignment: .leading)
-                                .font(.custom("Montserrat-Regular", size: 10))
-                                .fontWeight(.regular)
-                                .foregroundColor(color)
-                                .kerning(1.5)
-                        }
-                    }
-
-                    struct small : View {
-                        let color: Color
-                        let text: String
-                        
-                        init(color: Color = DesignSystem.colors.primary, text: String) {
-                            self.color = color
-                            self.text = text
-                        }
-                        
-                        var body: some View {
-                            return Text(text)
-                                .frame(maxWidth: .infinity, alignment: .leading)
-                                .font(.custom("Montserrat-Regular", size: 12))
-                                .fontWeight(.regular)
-                                .foregroundColor(color)
-                                .kerning(0.4)
-                        }
-                    }
-
-                    struct smallBold : View {
-                        let color: Color
-                        let text: String
-                        
-                        init(color: Color = DesignSystem.colors.primary, text: String) {
-                            self.color = color
-                            self.text = text
-                        }
-                        
-                        var body: some View {
-                            return Text(text)
-                                .frame(maxWidth: .infinity, alignment: .leading)
-                                .font(.custom("Montserrat-Bold", size: 12))
-                                .fontWeight(.bold)
-                                .foregroundColor(color)
-                                .kerning(0.25)
-                        }
-                    }
+            class DesignSystem: ObservableObject {
+                @Published var colorScheme: ColorScheme
+                
+                init(colorScheme: ColorScheme) {
+                    self.colorScheme = colorScheme
                 }
                 
-                struct sizes {
-                    static let xxs: Int = 2
-                    static let xs: Int = 4
-                    static let sm: Int = 8
-                    static let md: Int = 16
-                    static let lg: Int = 32
-                    static let xl: Int = 64
-                    static let xxl: Int = 128
-                    static let xxxl: Int = 256
+                func updateColorScheme(_ colorScheme: ColorScheme) {
+                    self.colorScheme = colorScheme
+                }
+                
+                var types: FontScheme {
+                    return FontScheme()
+                }
+                
+                struct Sizes {
+                    static let xxs: CGFloat = 2
+                    static let xs: CGFloat = 4
+                    static let sm: CGFloat = 8
+                    static let md: CGFloat = 16
+                    static let lg: CGFloat = 32
+                    static let xl: CGFloat = 64
+                    static let xxl: CGFloat = 128
                 }
                 
                 enum shadows {
@@ -395,6 +121,64 @@ struct SwiftUiDesignSystemView: View {
                     case navigationMenu
                     case modal
                     case bottomSheet
+                }
+                
+                func shadow(for type: shadows) -> DSShadowComponent {
+                    switch type {
+                    case .buttonCard:
+                        return DSShadowComponent(color: .gray, radius: 2, x: 0, y: 1)
+                    case .buttonCardHover:
+                        return DSShadowComponent(color: .gray, radius: 4, x: 0, y: 4)
+                    case .navigationMenu:
+                        return DSShadowComponent(color: .gray, radius: 19, x: 0, y: 19)
+                    case .modal:
+                        return DSShadowComponent(color: .gray, radius: 8, x: 7, y: 14)
+                    case .bottomSheet:
+                        return DSShadowComponent(color: .gray, radius: 8, x: -2, y: 4)
+                    }
+                }
+            }
+
+            struct ColorScheme {
+                let primary: Color
+                let primaryVariant: Color
+                let secondary: Color
+                let background: Color
+                let surface: Color
+                let error: Color
+                let onPrimary: Color
+                let onSecondary: Color
+                let onBackground: Color
+                let onSurface: Color
+                let onError: Color
+
+                init(dark: DarkColors.Type, light: LightColors.Type) {
+                    let currentStyle = UITraitCollection.current.userInterfaceStyle
+                    if currentStyle == .dark {
+                        self.primary = dark.primary
+                        self.primaryVariant = dark.primaryVariant
+                        self.secondary = dark.secondary
+                        self.background = dark.background
+                        self.surface = dark.surface
+                        self.error = dark.error
+                        self.onPrimary = dark.onPrimary
+                        self.onSecondary = dark.onSecondary
+                        self.onBackground = dark.onBackground
+                        self.onSurface = dark.onSurface
+                        self.onError = dark.onError
+                    } else {
+                        self.primary = light.primary
+                        self.primaryVariant = light.primaryVariant
+                        self.secondary = light.secondary
+                        self.background = light.background
+                        self.surface = light.surface
+                        self.error = light.error
+                        self.onPrimary = light.onPrimary
+                        self.onSecondary = light.onSecondary
+                        self.onBackground = light.onBackground
+                        self.onSurface = light.onSurface
+                        self.onError = light.onError
+                    }
                 }
             }
 
@@ -410,26 +194,29 @@ struct SwiftUiDesignSystemView: View {
                 }
             }
 
+
             extension View {
-                func designSystemShadow(shadow: DesignSystem.shadows) -> some View {
-                    switch shadow {
-                        case .buttonCard:
-                            return modifier(DSShadowComponent(color: .gray, radius: 2, x: 0, y: 1))
-                        case .buttonCardHover:
-                            return modifier(DSShadowComponent(color: .gray, radius: 4, x: 0, y: 4))
-                        case .navigationMenu:
-                            return modifier(DSShadowComponent(color: .gray, radius: 19, x: 0, y: 19))
-                        case .modal:
-                            return modifier(DSShadowComponent(color: .gray, radius: 8, x: 7, y: 14))
-                        case .bottomSheet:
-                            return modifier(DSShadowComponent(color: .gray, radius: 8, x: -2, y: 4))
-                    }
+                @ViewBuilder
+                func designSystemShadow(for type: DesignSystem.shadows) -> some View {
+                    self.modifier(DSShadowComponent(color: .gray, radius: 4, x: 0, y: 4))
                 }
             }
+            
+            // implementation example
+            Text("Hello, World!")
+                .font(designSystem.types.titleLarge)
+                .foregroundColor(designSystem.colorScheme.onPrimary)
+                .padding(DesignSystem.Sizes.md)
+                .background(designSystem.colorScheme.primary)
+                .designSystemShadow(for: .buttonCard)
             """,
             demoView: {
-                DesignSystem.typography.h1(color: DesignSystem.colors.primary, text: "Hello")
-                    .background(DesignSystem.colors.alert)
+                Text("Hello, World!")
+                    .font(designSystem.types.titleLarge)
+                    .foregroundColor(designSystem.colorScheme.onPrimary)
+                    .padding(DesignSystem.Sizes.md)
+                    .background(designSystem.colorScheme.primary)
+                    .designSystemShadow(for: .buttonCard)
             }
         )
     }
@@ -438,7 +225,7 @@ struct SwiftUiDesignSystemView: View {
         PageScaffold(
             pageTitle: "Design system",
             content: {
-                designSystem()
+                basics()
             }
         )
     }

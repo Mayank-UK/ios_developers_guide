@@ -36,18 +36,7 @@ struct SwiftUiNavigationAndRoutingView: View {
                     .navigationTitle("Navigation title")
             }
                 .frame(height: 256)
-            """,
-            demoView: {
-                NavigationStack {
-                    NavigationLink {
-                        EmptyView()
-                    } label: {
-                        Text("Navigation link")
-                    }
-                        .navigationTitle("Navigation title")
-                }
-                    .frame(height: 256)
-            }
+            """
         )
     }
     

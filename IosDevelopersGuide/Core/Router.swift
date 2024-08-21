@@ -14,9 +14,6 @@ class Router: ObservableObject {
         case home
         
         case iosFundamentals
-        case iosImportantConcepts
-        case iosInstallationAndSetup
-        case iosDevelopment
         
         case swiftFundamentals
         case swiftInstallation
@@ -39,8 +36,6 @@ class Router: ObservableObject {
         case swiftUiLifeCycle
         case swiftUiNavigationAndRouting
         case swiftUiStateManagement
-        case swiftUiApiHandling
-        case swiftUiCodeArchitecture
         case swiftUiCatalog
         case swiftUiDebugging
         case swiftUiTesting
@@ -58,8 +53,8 @@ class Router: ObservableObject {
         case swiftUiProximitySensor
         case swiftUiAmbientLightSensor
         
+        case swiftUiDesignSystem
         case swiftUiResponsiveDesign
-        case swiftUiBestPractices
         
         case swiftUiLayout
         case swiftUiPageLayout
@@ -148,13 +143,21 @@ class Router: ObservableObject {
         
         case uiKit
         
-        case restApi
+        case otherBasics
         
-        case packageManager
+        case apiHandling
+        
+        case databaseHandling
+        
+        case architecture
+        
+        case dependencyManagement
         
         case deployment
         case deploymentTestBuild
         case deploymentProdBuild
+        
+        case bestPractices
         
         case _temp
     }
@@ -168,12 +171,6 @@ class Router: ObservableObject {
             
             case .iosFundamentals:
                 IosFundamentalsView()
-            case .iosImportantConcepts:
-                IosImportantConceptsView()
-            case .iosInstallationAndSetup:
-                IosInstallationAndSetupView()
-            case .iosDevelopment:
-                IosDevelopmentView()
             
             case .swiftFundamentals:
                 SwiftFundamentalsView()
@@ -216,10 +213,6 @@ class Router: ObservableObject {
                 SwiftUiNavigationAndRoutingView()
             case .swiftUiStateManagement:
                 SwiftUiStateManagementView()
-            case .swiftUiApiHandling:
-                SwiftUiApiHandlingView()
-            case .swiftUiCodeArchitecture:
-                SwiftUiCodeArchitectureView()
             case .swiftUiCatalog:
                 SwiftUiCatalogView()
             case .swiftUiDebugging:
@@ -252,10 +245,11 @@ class Router: ObservableObject {
             case .swiftUiAmbientLightSensor:
                 SwiftUiAmbientLightSensorView()
             
+            case .swiftUiDesignSystem:
+                SwiftUiDesignSystemView()
+            
             case .swiftUiResponsiveDesign:
                 SwiftUiResponsiveDesignView()
-            case .swiftUiBestPractices:
-                SwiftUiBestPracticesView()
             
             case .swiftUiLayout:
                 SwiftUiLayoutView()
@@ -423,8 +417,20 @@ class Router: ObservableObject {
             case .uiKit:
                 UiKitView()
             
-            case .packageManager:
-                PackageManagerView()
+            case .otherBasics:
+                OtherBasicsView()
+            
+            case .apiHandling:
+                ApiHandlingView()
+            
+            case .databaseHandling:
+                DatabaseHandlingView()
+            
+            case .architecture:
+                ArchitectureView()
+            
+            case .dependencyManagement:
+                DependencyManagementView()
             
             case .deployment:
                 DeploymentView()
@@ -432,6 +438,9 @@ class Router: ObservableObject {
                 DeploymentTestBuildView()
             case .deploymentProdBuild:
                 DeploymentProdBuildView()
+            
+            case .bestPractices:
+                BestPracticesView()
             
             
             default:
