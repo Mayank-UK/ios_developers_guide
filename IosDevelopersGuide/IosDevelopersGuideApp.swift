@@ -12,9 +12,8 @@ struct IosDevelopersGuideApp: App {
     var body: some Scene {
         WindowGroup {
             RootView {
-                HomeView()
+                HomeView(viewModel: HomeViewModel())
             }
         }
     }
 }
-
