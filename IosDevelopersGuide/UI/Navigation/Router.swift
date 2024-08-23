@@ -59,7 +59,7 @@ class Router: ObservableObject {
         case swiftUiPositioning
         case swiftUiVisibility
         case swiftUiInteractiveBehaviours
-        case swiftUiWeb
+        case swiftUiWebAndApps
         case swiftUiForm
         case swiftUiMedia
         
@@ -129,10 +129,12 @@ class Router: ObservableObject {
         
         case swiftUiCatalogMiscellaneous
         
+        case swiftUiOtherBasics
+        case swiftUiBackgroundTask
+        case swiftUiNotificationCenter
+        
         case uiKit
-        
-        case otherBasics
-        
+    
         case apiHandling
         case posts
         
@@ -239,8 +241,8 @@ class Router: ObservableObject {
                 SwiftUiVisibilityView(viewModel: SwiftUiVisibilityViewModel())
             case .swiftUiInteractiveBehaviours:
                 SwiftUiInteractiveBehavioursView(viewModel: SwiftUiInteractiveBehavioursViewModel())
-            case .swiftUiWeb:
-                SwiftUiWebView(viewModel: SwiftUiWebViewModel())
+            case .swiftUiWebAndApps:
+                SwiftUiWebAndAppsView(viewModel: SwiftUiWebAndAppsViewModel())
             case .swiftUiForm:
                 SwiftUiFormView(viewModel: SwiftUiFormViewModel())
             case .swiftUiMedia:
@@ -368,15 +370,20 @@ class Router: ObservableObject {
                 SwiftUiCatalogInspectorView(viewModel: SwiftUiCatalogInspectorViewModel())
             case .swiftUiCatalogPopover:
                 SwiftUiCatalogPopoverView(viewModel: SwiftUiCatalogPopoverViewModel())
-            
+
             case .swiftUiCatalogMiscellaneous:
                 SwiftUiCatalogMiscellaneousView(viewModel: SwiftUiCatalogMiscellaneousViewModel())
             
+            case .swiftUiOtherBasics:
+                SwiftUiOtherBasicsView(viewModel: SwiftUiOtherBasicsViewModel())
+            case .swiftUiBackgroundTask:
+                SwiftUiBackgroundTaskView(viewModel: SwiftUiBackgroundTaskViewModel())
+            case .swiftUiNotificationCenter:
+                SwiftUiNotificationCenterView(viewModel: SwiftUiNotificationCenterViewModel())
+       
+            
             case .uiKit:
                 UiKitView(viewModel: UiKitViewModel())
-            
-            case .otherBasics:
-                OtherBasicsView(viewModel: OtherBasicsViewModel())
             
             case .apiHandling:
                 ApiHandlingView(viewModel: ApiHandlingViewModel())

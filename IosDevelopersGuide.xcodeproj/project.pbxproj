@@ -53,7 +53,7 @@
 		245E05C22B9A09BE005FB6E9 /* SwiftUiPositioningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E05C12B9A09BE005FB6E9 /* SwiftUiPositioningView.swift */; };
 		245E05C42B9A09D6005FB6E9 /* SwiftUiVisibilityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E05C32B9A09D6005FB6E9 /* SwiftUiVisibilityView.swift */; };
 		245E05C62B9A0A37005FB6E9 /* SwiftUiInteractiveBehavioursView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E05C52B9A0A37005FB6E9 /* SwiftUiInteractiveBehavioursView.swift */; };
-		245E05C82B9A0A50005FB6E9 /* SwiftUiWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E05C72B9A0A50005FB6E9 /* SwiftUiWebView.swift */; };
+		245E05C82B9A0A50005FB6E9 /* SwiftUiWebAndAppsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E05C72B9A0A50005FB6E9 /* SwiftUiWebAndAppsView.swift */; };
 		245E05CA2B9A0A95005FB6E9 /* SwiftUiFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E05C92B9A0A95005FB6E9 /* SwiftUiFormView.swift */; };
 		245E05CC2B9A0AAE005FB6E9 /* SwiftUiMediaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E05CB2B9A0AAE005FB6E9 /* SwiftUiMediaView.swift */; };
 		245E05D02B9A0AEE005FB6E9 /* SwiftUiDesignSystemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E05CF2B9A0AEE005FB6E9 /* SwiftUiDesignSystemView.swift */; };
@@ -142,7 +142,13 @@
 		249D00102C7759F4004BA3AC /* DeploymentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249D000F2C7759F4004BA3AC /* DeploymentViewModel.swift */; };
 		249D00122C7759FA004BA3AC /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249D00112C7759FA004BA3AC /* HomeViewModel.swift */; };
 		249D00162C775A09004BA3AC /* PageNotFoundViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249D00152C775A09004BA3AC /* PageNotFoundViewModel.swift */; };
-		249DFED82C75C483004BA3AC /* OtherBasicsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249DFED72C75C483004BA3AC /* OtherBasicsView.swift */; };
+		249D001B2C7849ED004BA3AC /* sample_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 249D001A2C7849ED004BA3AC /* sample_video.mp4 */; };
+		249D001D2C7849F7004BA3AC /* sample_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 249D001C2C7849F7004BA3AC /* sample_audio.mp3 */; };
+		249D00272C78762C004BA3AC /* SwiftUiNotificationCenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249D00262C78762C004BA3AC /* SwiftUiNotificationCenterView.swift */; };
+		249D00292C78763B004BA3AC /* SwiftUiBackgroundTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249D00282C78763B004BA3AC /* SwiftUiBackgroundTaskView.swift */; };
+		249D002B2C78764D004BA3AC /* SwiftUiNotificationCenterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249D002A2C78764D004BA3AC /* SwiftUiNotificationCenterViewModel.swift */; };
+		249D002D2C78765C004BA3AC /* SwiftUiBackgroundTaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249D002C2C78765C004BA3AC /* SwiftUiBackgroundTaskViewModel.swift */; };
+		249DFED82C75C483004BA3AC /* SwiftUiOtherBasicsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249DFED72C75C483004BA3AC /* SwiftUiOtherBasicsView.swift */; };
 		249DFEDC2C75C71B004BA3AC /* DatabaseHandlingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249DFEDB2C75C71B004BA3AC /* DatabaseHandlingView.swift */; };
 		249DFEDE2C75DA73004BA3AC /* DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249DFEDD2C75DA73004BA3AC /* DesignSystem.swift */; };
 		249DFF092C76FCC5004BA3AC /* IosDevelopersGuideApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 249DFF072C76FCC5004BA3AC /* IosDevelopersGuideApp.xcdatamodeld */; };
@@ -160,7 +166,7 @@
 		249DFF362C7753EA004BA3AC /* TempViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249DFF352C7753EA004BA3AC /* TempViewModel.swift */; };
 		249DFF382C7755EC004BA3AC /* ArchitectureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249DFF372C7755EC004BA3AC /* ArchitectureViewModel.swift */; };
 		249DFF3A2C7755FD004BA3AC /* DatabaseHandlingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249DFF392C7755FD004BA3AC /* DatabaseHandlingViewModel.swift */; };
-		249DFF3C2C775606004BA3AC /* OtherBasicsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249DFF3B2C775606004BA3AC /* OtherBasicsViewModel.swift */; };
+		249DFF3C2C775606004BA3AC /* SwiftUiOtherBasicsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249DFF3B2C775606004BA3AC /* SwiftUiOtherBasicsViewModel.swift */; };
 		249DFF3E2C77560E004BA3AC /* ApiHandlingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249DFF3D2C77560E004BA3AC /* ApiHandlingViewModel.swift */; };
 		249DFF402C77561E004BA3AC /* BestPracticesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249DFF3F2C77561E004BA3AC /* BestPracticesViewModel.swift */; };
 		249DFF422C775626004BA3AC /* IosFundamentalsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249DFF412C775626004BA3AC /* IosFundamentalsViewModel.swift */; };
@@ -181,7 +187,7 @@
 		249DFF602C7756A5004BA3AC /* SwiftUiPositioningViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249DFF5F2C7756A5004BA3AC /* SwiftUiPositioningViewModel.swift */; };
 		249DFF622C7756AB004BA3AC /* SwiftUiVisibilityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249DFF612C7756AB004BA3AC /* SwiftUiVisibilityViewModel.swift */; };
 		249DFF642C7756B2004BA3AC /* SwiftUiInteractiveBehavioursViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249DFF632C7756B1004BA3AC /* SwiftUiInteractiveBehavioursViewModel.swift */; };
-		249DFF662C7756B8004BA3AC /* SwiftUiWebViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249DFF652C7756B8004BA3AC /* SwiftUiWebViewModel.swift */; };
+		249DFF662C7756B8004BA3AC /* SwiftUiWebAndAppsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249DFF652C7756B8004BA3AC /* SwiftUiWebAndAppsViewModel.swift */; };
 		249DFF682C7756BE004BA3AC /* SwiftUiFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249DFF672C7756BE004BA3AC /* SwiftUiFormViewModel.swift */; };
 		249DFF6A2C7756C5004BA3AC /* SwiftUiMediaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249DFF692C7756C5004BA3AC /* SwiftUiMediaViewModel.swift */; };
 		249DFF6C2C7756CD004BA3AC /* SwiftUiLifeCycleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249DFF6B2C7756CD004BA3AC /* SwiftUiLifeCycleViewModel.swift */; };
@@ -309,7 +315,7 @@
 		245E05C12B9A09BE005FB6E9 /* SwiftUiPositioningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiPositioningView.swift; sourceTree = "<group>"; };
 		245E05C32B9A09D6005FB6E9 /* SwiftUiVisibilityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiVisibilityView.swift; sourceTree = "<group>"; };
 		245E05C52B9A0A37005FB6E9 /* SwiftUiInteractiveBehavioursView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiInteractiveBehavioursView.swift; sourceTree = "<group>"; };
-		245E05C72B9A0A50005FB6E9 /* SwiftUiWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiWebView.swift; sourceTree = "<group>"; };
+		245E05C72B9A0A50005FB6E9 /* SwiftUiWebAndAppsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiWebAndAppsView.swift; sourceTree = "<group>"; };
 		245E05C92B9A0A95005FB6E9 /* SwiftUiFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiFormView.swift; sourceTree = "<group>"; };
 		245E05CB2B9A0AAE005FB6E9 /* SwiftUiMediaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiMediaView.swift; sourceTree = "<group>"; };
 		245E05CF2B9A0AEE005FB6E9 /* SwiftUiDesignSystemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiDesignSystemView.swift; sourceTree = "<group>"; };
@@ -397,7 +403,14 @@
 		249D000F2C7759F4004BA3AC /* DeploymentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeploymentViewModel.swift; sourceTree = "<group>"; };
 		249D00112C7759FA004BA3AC /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		249D00152C775A09004BA3AC /* PageNotFoundViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageNotFoundViewModel.swift; sourceTree = "<group>"; };
-		249DFED72C75C483004BA3AC /* OtherBasicsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherBasicsView.swift; sourceTree = "<group>"; };
+		249D001A2C7849ED004BA3AC /* sample_video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sample_video.mp4; sourceTree = "<group>"; };
+		249D001C2C7849F7004BA3AC /* sample_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sample_audio.mp3; sourceTree = "<group>"; };
+		249D00262C78762C004BA3AC /* SwiftUiNotificationCenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiNotificationCenterView.swift; sourceTree = "<group>"; };
+		249D00282C78763B004BA3AC /* SwiftUiBackgroundTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiBackgroundTaskView.swift; sourceTree = "<group>"; };
+		249D002A2C78764D004BA3AC /* SwiftUiNotificationCenterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiNotificationCenterViewModel.swift; sourceTree = "<group>"; };
+		249D002C2C78765C004BA3AC /* SwiftUiBackgroundTaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiBackgroundTaskViewModel.swift; sourceTree = "<group>"; };
+		249D002E2C7888FC004BA3AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		249DFED72C75C483004BA3AC /* SwiftUiOtherBasicsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiOtherBasicsView.swift; sourceTree = "<group>"; };
 		249DFEDB2C75C71B004BA3AC /* DatabaseHandlingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseHandlingView.swift; sourceTree = "<group>"; };
 		249DFEDD2C75DA73004BA3AC /* DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystem.swift; sourceTree = "<group>"; };
 		249DFF082C76FCC5004BA3AC /* IosDevelopersGuideApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = IosDevelopersGuideApp.xcdatamodel; sourceTree = "<group>"; };
@@ -415,7 +428,7 @@
 		249DFF352C7753EA004BA3AC /* TempViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempViewModel.swift; sourceTree = "<group>"; };
 		249DFF372C7755EC004BA3AC /* ArchitectureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchitectureViewModel.swift; sourceTree = "<group>"; };
 		249DFF392C7755FD004BA3AC /* DatabaseHandlingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseHandlingViewModel.swift; sourceTree = "<group>"; };
-		249DFF3B2C775606004BA3AC /* OtherBasicsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherBasicsViewModel.swift; sourceTree = "<group>"; };
+		249DFF3B2C775606004BA3AC /* SwiftUiOtherBasicsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiOtherBasicsViewModel.swift; sourceTree = "<group>"; };
 		249DFF3D2C77560E004BA3AC /* ApiHandlingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiHandlingViewModel.swift; sourceTree = "<group>"; };
 		249DFF3F2C77561E004BA3AC /* BestPracticesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestPracticesViewModel.swift; sourceTree = "<group>"; };
 		249DFF412C775626004BA3AC /* IosFundamentalsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IosFundamentalsViewModel.swift; sourceTree = "<group>"; };
@@ -436,7 +449,7 @@
 		249DFF5F2C7756A5004BA3AC /* SwiftUiPositioningViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiPositioningViewModel.swift; sourceTree = "<group>"; };
 		249DFF612C7756AB004BA3AC /* SwiftUiVisibilityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiVisibilityViewModel.swift; sourceTree = "<group>"; };
 		249DFF632C7756B1004BA3AC /* SwiftUiInteractiveBehavioursViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiInteractiveBehavioursViewModel.swift; sourceTree = "<group>"; };
-		249DFF652C7756B8004BA3AC /* SwiftUiWebViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiWebViewModel.swift; sourceTree = "<group>"; };
+		249DFF652C7756B8004BA3AC /* SwiftUiWebAndAppsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiWebAndAppsViewModel.swift; sourceTree = "<group>"; };
 		249DFF672C7756BE004BA3AC /* SwiftUiFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiFormViewModel.swift; sourceTree = "<group>"; };
 		249DFF692C7756C5004BA3AC /* SwiftUiMediaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiMediaViewModel.swift; sourceTree = "<group>"; };
 		249DFF6B2C7756CD004BA3AC /* SwiftUiLifeCycleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiLifeCycleViewModel.swift; sourceTree = "<group>"; };
@@ -546,6 +559,8 @@
 		2443B3E52B91C092000FE1FD /* IosDevelopersGuide */ = {
 			isa = PBXGroup;
 			children = (
+				249D002E2C7888FC004BA3AC /* Info.plist */,
+				249D00172C7848D8004BA3AC /* Assets */,
 				249DFF232C772DB4004BA3AC /* DI */,
 				249DFEFD2C76E963004BA3AC /* Domain */,
 				249DFEFC2C76E95B004BA3AC /* Data */,
@@ -623,6 +638,7 @@
 		2443B4302B9863C3000FE1FD /* SubScreens */ = {
 			isa = PBXGroup;
 			children = (
+				249DFED62C75C44A004BA3AC /* SwiftUiOtherBasics */,
 				245E059F2B9A0523005FB6E9 /* SwiftUiManipulation */,
 				245E05A02B9A0533005FB6E9 /* SwiftUiLifeCycle */,
 				245E05A12B9A0540005FB6E9 /* SwiftUiNavigationAndRouting */,
@@ -844,7 +860,7 @@
 				245E05DB2B9A0F09005FB6E9 /* SwiftUiPositioning */,
 				245E05DC2B9A0F16005FB6E9 /* SwiftUiVisibility */,
 				245E05DD2B9A0F25005FB6E9 /* SwiftUiInteractiveBehaviours */,
-				245E05DE2B9A0F33005FB6E9 /* SwiftUiWeb */,
+				245E05DE2B9A0F33005FB6E9 /* SwiftUiWebAndApps */,
 				245E05DF2B9A0F3E005FB6E9 /* SwiftUiForm */,
 				245E05E02B9A0F4D005FB6E9 /* SwiftUiMedia */,
 			);
@@ -969,13 +985,13 @@
 			path = SwiftUiInteractiveBehaviours;
 			sourceTree = "<group>";
 		};
-		245E05DE2B9A0F33005FB6E9 /* SwiftUiWeb */ = {
+		245E05DE2B9A0F33005FB6E9 /* SwiftUiWebAndApps */ = {
 			isa = PBXGroup;
 			children = (
-				245E05C72B9A0A50005FB6E9 /* SwiftUiWebView.swift */,
-				249DFF652C7756B8004BA3AC /* SwiftUiWebViewModel.swift */,
+				245E05C72B9A0A50005FB6E9 /* SwiftUiWebAndAppsView.swift */,
+				249DFF652C7756B8004BA3AC /* SwiftUiWebAndAppsViewModel.swift */,
 			);
-			path = SwiftUiWeb;
+			path = SwiftUiWebAndApps;
 			sourceTree = "<group>";
 		};
 		245E05DF2B9A0F3E005FB6E9 /* SwiftUiForm */ = {
@@ -1785,13 +1801,66 @@
 			path = SwiftUiAmbientLightSensor;
 			sourceTree = "<group>";
 		};
-		249DFED62C75C44A004BA3AC /* OtherBasics */ = {
+		249D00172C7848D8004BA3AC /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				249DFED72C75C483004BA3AC /* OtherBasicsView.swift */,
-				249DFF3B2C775606004BA3AC /* OtherBasicsViewModel.swift */,
+				249D00192C7849CB004BA3AC /* Audios */,
+				249D00182C78490C004BA3AC /* Videos */,
 			);
-			path = OtherBasics;
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		249D00182C78490C004BA3AC /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				249D001A2C7849ED004BA3AC /* sample_video.mp4 */,
+			);
+			path = Videos;
+			sourceTree = "<group>";
+		};
+		249D00192C7849CB004BA3AC /* Audios */ = {
+			isa = PBXGroup;
+			children = (
+				249D001C2C7849F7004BA3AC /* sample_audio.mp3 */,
+			);
+			path = Audios;
+			sourceTree = "<group>";
+		};
+		249D00232C7875EC004BA3AC /* SubScreens */ = {
+			isa = PBXGroup;
+			children = (
+				249D00252C78760A004BA3AC /* SwiftUiNotificationCenter */,
+				249D00242C7875FE004BA3AC /* SwiftUiBackgroundTask */,
+			);
+			path = SubScreens;
+			sourceTree = "<group>";
+		};
+		249D00242C7875FE004BA3AC /* SwiftUiBackgroundTask */ = {
+			isa = PBXGroup;
+			children = (
+				249D00282C78763B004BA3AC /* SwiftUiBackgroundTaskView.swift */,
+				249D002C2C78765C004BA3AC /* SwiftUiBackgroundTaskViewModel.swift */,
+			);
+			path = SwiftUiBackgroundTask;
+			sourceTree = "<group>";
+		};
+		249D00252C78760A004BA3AC /* SwiftUiNotificationCenter */ = {
+			isa = PBXGroup;
+			children = (
+				249D00262C78762C004BA3AC /* SwiftUiNotificationCenterView.swift */,
+				249D002A2C78764D004BA3AC /* SwiftUiNotificationCenterViewModel.swift */,
+			);
+			path = SwiftUiNotificationCenter;
+			sourceTree = "<group>";
+		};
+		249DFED62C75C44A004BA3AC /* SwiftUiOtherBasics */ = {
+			isa = PBXGroup;
+			children = (
+				249D00232C7875EC004BA3AC /* SubScreens */,
+				249DFED72C75C483004BA3AC /* SwiftUiOtherBasicsView.swift */,
+				249DFF3B2C775606004BA3AC /* SwiftUiOtherBasicsViewModel.swift */,
+			);
+			path = SwiftUiOtherBasics;
 			sourceTree = "<group>";
 		};
 		249DFEDA2C75C6CB004BA3AC /* DatabaseHandling */ = {
@@ -1921,7 +1990,6 @@
 				249DFF322C7753A7004BA3AC /* Temp */,
 				245E05A42B9A0575005FB6E9 /* Architecture */,
 				249DFEDA2C75C6CB004BA3AC /* DatabaseHandling */,
-				249DFED62C75C44A004BA3AC /* OtherBasics */,
 				245E05A32B9A055E005FB6E9 /* ApiHandling */,
 				245E05AB2B9A0613005FB6E9 /* BestPractices */,
 				2443B43B2B9867CD000FE1FD /* IosFundamentals */,
@@ -2020,9 +2088,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				249D001D2C7849F7004BA3AC /* sample_audio.mp3 in Resources */,
 				2443B3EF2B91C095000FE1FD /* Preview Assets.xcassets in Resources */,
 				2443B3EB2B91C095000FE1FD /* Assets.xcassets in Resources */,
 				2443B41D2B9793B5000FE1FD /* DeveloperNotes.rtf in Resources */,
+				249D001B2C7849ED004BA3AC /* sample_video.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2034,6 +2104,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2443B4192B972CF2000FE1FD /* PageScaffold.swift in Sources */,
+				249D00292C78763B004BA3AC /* SwiftUiBackgroundTaskView.swift in Sources */,
 				249B77FD2BC691CA00EFEAB7 /* SwiftUiAmbientLightSensorView.swift in Sources */,
 				245E06462B9B02D3005FB6E9 /* SwiftUiCatalogTabView.swift in Sources */,
 				245E06062B9AF982005FB6E9 /* SwiftUiCatalogButtonsView.swift in Sources */,
@@ -2056,6 +2127,7 @@
 				249DFF9E2C775830004BA3AC /* SwiftUiCatalogProgressViewModel.swift in Sources */,
 				245E063C2B9B0250005FB6E9 /* SwiftUiCatalogListView.swift in Sources */,
 				2443B4272B9850FA000FE1FD /* Links.swift in Sources */,
+				249D002B2C78764D004BA3AC /* SwiftUiNotificationCenterViewModel.swift in Sources */,
 				249DFFF62C77599D004BA3AC /* SwiftUiCameraViewModel.swift in Sources */,
 				249DFF522C775675004BA3AC /* SwiftUiSpacingViewModel.swift in Sources */,
 				245E05C22B9A09BE005FB6E9 /* SwiftUiPositioningView.swift in Sources */,
@@ -2153,12 +2225,13 @@
 				249DFFC42C7758F0004BA3AC /* SwiftUiCatalogTabViewModel.swift in Sources */,
 				249DFF5A2C77568E004BA3AC /* SwiftUiBordersViewModel.swift in Sources */,
 				245E06262B9B010A005FB6E9 /* SwiftUiCatalogProgressView.swift in Sources */,
+				249D00272C78762C004BA3AC /* SwiftUiNotificationCenterView.swift in Sources */,
 				249DFFB02C775866004BA3AC /* SwiftUiCatalogDividerViewModel.swift in Sources */,
 				249B77EF2BC6912A00EFEAB7 /* SwiftUiMicrophoneView.swift in Sources */,
 				249DFFCE2C77590F004BA3AC /* SwiftUiCatalogDisclosureGroupViewModel.swift in Sources */,
 				2443B4072B91C61A000FE1FD /* Validators.swift in Sources */,
 				245E06722B9B04EF005FB6E9 /* SwiftUiCatalogPopoverView.swift in Sources */,
-				249DFF3C2C775606004BA3AC /* OtherBasicsViewModel.swift in Sources */,
+				249DFF3C2C775606004BA3AC /* SwiftUiOtherBasicsViewModel.swift in Sources */,
 				249DFFEA2C775971004BA3AC /* SwiftUiCatalogInspectorViewModel.swift in Sources */,
 				249DFF8E2C7757E7004BA3AC /* SwiftUiCatalogPickersViewModel.swift in Sources */,
 				249B77F72BC6918600EFEAB7 /* SwiftUiCompassView.swift in Sources */,
@@ -2201,7 +2274,7 @@
 				245E063A2B9B021B005FB6E9 /* SwiftUiCatalogTableView.swift in Sources */,
 				245E06522B9B0346005FB6E9 /* SwiftUiCatalogOverlayView.swift in Sources */,
 				249DFF292C772E4F004BA3AC /* ApiService.swift in Sources */,
-				245E05C82B9A0A50005FB6E9 /* SwiftUiWebView.swift in Sources */,
+				245E05C82B9A0A50005FB6E9 /* SwiftUiWebAndAppsView.swift in Sources */,
 				245E05B22B9A08D2005FB6E9 /* SwiftUiDimensionsAndConstraintsView.swift in Sources */,
 				249DFF9A2C775823004BA3AC /* SwiftUiCatalogWebViewModel.swift in Sources */,
 				249DFF802C775749004BA3AC /* SwiftUiCatalogMiscellaneousViewModel.swift in Sources */,
@@ -2214,7 +2287,7 @@
 				245E06502B9B0335005FB6E9 /* SwiftUiCatalogBackgroundView.swift in Sources */,
 				245E05C62B9A0A37005FB6E9 /* SwiftUiInteractiveBehavioursView.swift in Sources */,
 				249DFF922C7757F5004BA3AC /* SwiftUiCatalogMenusViewModel.swift in Sources */,
-				249DFF662C7756B8004BA3AC /* SwiftUiWebViewModel.swift in Sources */,
+				249DFF662C7756B8004BA3AC /* SwiftUiWebAndAppsViewModel.swift in Sources */,
 				249DFFEC2C775976004BA3AC /* SwiftUiCatalogPopoverViewModel.swift in Sources */,
 				249DFFD62C77592A004BA3AC /* SwiftUiCatalogSafeAreaInsetViewModel.swift in Sources */,
 				249DFEDC2C75C71B004BA3AC /* DatabaseHandlingView.swift in Sources */,
@@ -2241,7 +2314,7 @@
 				249DFF342C7753E0004BA3AC /* TempView.swift in Sources */,
 				245E05B02B9A08B8005FB6E9 /* SwiftUiLayoutView.swift in Sources */,
 				249DFFDC2C775940004BA3AC /* SwiftUiCatalogFormViewModel.swift in Sources */,
-				249DFED82C75C483004BA3AC /* OtherBasicsView.swift in Sources */,
+				249DFED82C75C483004BA3AC /* SwiftUiOtherBasicsView.swift in Sources */,
 				249DFF6A2C7756C5004BA3AC /* SwiftUiMediaViewModel.swift in Sources */,
 				249D000A2C7759D5004BA3AC /* SwiftUiResponsiveDesignViewModel.swift in Sources */,
 				245E06122B9AFCA6005FB6E9 /* SwiftUiCatalogMenusView.swift in Sources */,
@@ -2272,6 +2345,7 @@
 				249DFFD42C775924004BA3AC /* SwiftUiCatalogFrameViewModel.swift in Sources */,
 				249842502BAB1DE800490FBC /* BaseModel.swift in Sources */,
 				245E06642B9B0409005FB6E9 /* SwiftUiCatalogSectionView.swift in Sources */,
+				249D002D2C78765C004BA3AC /* SwiftUiBackgroundTaskViewModel.swift in Sources */,
 				2443B4032B91C5F8000FE1FD /* Router.swift in Sources */,
 				245E05BE2B9A098F005FB6E9 /* SwiftUiIconsAndImagesView.swift in Sources */,
 				249DFFC82C7758FC004BA3AC /* SwiftUiCatalogGeometryReaderViewModel.swift in Sources */,
@@ -2413,8 +2487,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"IosDevelopersGuide/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = IosDevelopersGuide/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "For camera implementation demo";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -2450,8 +2528,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"IosDevelopersGuide/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = IosDevelopersGuide/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "For camera implementation demo";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;

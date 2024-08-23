@@ -11,37 +11,59 @@ struct ArchitectureView: View {
     // inject the viewModel from route
     @ObservedObject var viewModel: ArchitectureViewModel
     
-    func basics() -> some View {
+    func cleanMvvm() -> some View {
         return CustomSection(
-            snippetTitle: "Architecture",
+            snippetTitle: "Clean MVVM",
             snippetDescription: """
-            The code can be structured in a way to make it simple to read, write and maintain:
+            Clean MVVM architecture in Android is a way of organizing your code to promote separation of concerns, maintainability, testability, and scalability. It builds upon the Model-View-ViewModel (MVVM) design pattern by incorporating principles from Clean Architecture, which was introduced by Robert C. Martin (Uncle Bob).
+                        
+            Key Principles of Clean MVVM Architecture:
+            -Separation of Concerns
+            -Dependency Injection
+            -Single Responsibility Principle (SRP)
+            -Repository Pattern
+            -Use Cases
+            -Testability
+            -UI/State Management
+            -Reactive Streams
             
-            /Core
-                Contants
-                DesignSystem
-                Helpers
-                Router
-                SharedDataLayer
-                Validators
+            Structure of Clean MVVM Architecture:
             
-            /GlobalComponents
-                Button
-                InputField
-            
-            /GlobalModals
-                Base
-            
-            /Services
-                ApiService
-                LocalStorageService
-            
-            /Views
-                /Home
-                    HomeView
-                    HomeData
-                /AnotherScreen
-            
+            ExampleApp/
+            |    Data/
+            |    |    Local/
+            |    |    |    AppDatabase.swift
+            |    |    Remote/
+            |    |    |    DTOs/
+            |    |    |    |    ExampleDto.swift
+            |    |    |    ApiService.swift
+            |    |    Repositoryimpls/
+            |    |    |    ExampleRepositoryImpl.swift
+            |    DI/
+            |    |    DIContainer.swift
+            |    Domain/
+            |    |    Models/
+            |    |    |    Example.swift
+            |    |    RepositoryInterfaces/
+            |    |    |    ExampleRepository.swift
+            |    |    Usercases/
+            |    |    |    ExampleUseCase.swift
+            |    UI/
+            |    |    DesignSystem/
+            |    |    |    DesignSystem.swift
+            |    |    Navigation/
+            |    |    |    Router.swift
+            |    |    Components/
+            |    |    |    Example.swift
+            |    |    screens/
+            |    |    |    Example/
+            |    |    |     |   ExampleScreen.swift
+            |    |    |     |   ExampleViewModel.swift
+            |    Util/
+            |    |    Constants.kt
+            |    Assets/
+            |    |    Audios/
+            |    |    Videos/
             """
         )
     }
@@ -50,7 +72,7 @@ struct ArchitectureView: View {
         PageScaffold(
             pageTitle: "Architecture",
             content: {
-                basics()
+                cleanMvvm()
             }
         )
     }

@@ -8,7 +8,7 @@
 import Foundation
 
 @MainActor
-class SwiftUiWebViewModel: ObservableObject {
+class SwiftUiWebAndAppsViewModel: ObservableObject {
     
     // inject the usecases, repositories, services through constructor pattern but use simple utilities, data variables from within
     init() {

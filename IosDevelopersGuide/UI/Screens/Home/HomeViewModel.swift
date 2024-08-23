@@ -15,7 +15,6 @@ class HomeViewModel: ObservableObject {
         LinkData(title: "Swift fundamentals", routePath: Router.routePaths.swiftFundamentals),
         LinkData(title: "SwiftUI", routePath: Router.routePaths.swiftUi),
         LinkData(title: "UIKit", routePath: Router.routePaths.uiKit),
-        LinkData(title: "Other basics", routePath: Router.routePaths.otherBasics),
         LinkData(title: "API handling", routePath: Router.routePaths.apiHandling),
         LinkData(title: "Database handling", routePath: Router.routePaths.databaseHandling),
         LinkData(title: "Architecture", routePath: Router.routePaths.architecture),

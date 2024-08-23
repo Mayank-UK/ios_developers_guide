@@ -7,15 +7,15 @@
 
 import SwiftUI
 
-struct OtherBasicsView: View {
+struct SwiftUiOtherBasicsView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: OtherBasicsViewModel
+    @ObservedObject var viewModel: SwiftUiOtherBasicsViewModel
     
     var body: some View {
         PageScaffold(
             pageTitle: "Other basics",
             content: {
-                
+                Links(links: viewModel.links)
             }
         )
     }
