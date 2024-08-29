@@ -8,19 +8,12 @@
 import SwiftUI
 
 struct UiKitView: View {
-    // inject the viewModel from route
-    @ObservedObject var viewModel: UiKitViewModel
-    
     var body: some View {
-        PageScaffold(
-            pageTitle: "UIKit",
-            content: {
-                Links(links: viewModel.links)
-            }
-        )
+        UIKitWrapperView()
     }
 }
 
-//#Preview {
-//    UiKitView()
-//}
+
+#Preview {
+    UiKitView()
+}

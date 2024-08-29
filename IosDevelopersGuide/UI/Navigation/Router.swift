@@ -129,9 +129,12 @@ class Router: ObservableObject {
         
         case swiftUiCatalogMiscellaneous
         
+        case swiftUiWidget
+        
         case swiftUiOtherBasics
         case swiftUiBackgroundTask
         case swiftUiNotificationCenter
+        case swiftUiNotification
         
         case uiKit
     
@@ -374,16 +377,20 @@ class Router: ObservableObject {
             case .swiftUiCatalogMiscellaneous:
                 SwiftUiCatalogMiscellaneousView(viewModel: SwiftUiCatalogMiscellaneousViewModel())
             
+            case .swiftUiWidget:
+                SwiftUiWidgetView(viewModel: SwiftUiWidgetViewModel())
+            
             case .swiftUiOtherBasics:
                 SwiftUiOtherBasicsView(viewModel: SwiftUiOtherBasicsViewModel())
             case .swiftUiBackgroundTask:
                 SwiftUiBackgroundTaskView(viewModel: SwiftUiBackgroundTaskViewModel())
             case .swiftUiNotificationCenter:
                 SwiftUiNotificationCenterView(viewModel: SwiftUiNotificationCenterViewModel())
-       
+            case .swiftUiNotification:
+                SwiftUiNotificationView(viewModel: SwiftUiNotificationViewModel())
             
             case .uiKit:
-                UiKitView(viewModel: UiKitViewModel())
+                UiKitView()
             
             case .apiHandling:
                 ApiHandlingView(viewModel: ApiHandlingViewModel())

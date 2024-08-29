@@ -22,6 +22,7 @@ class SwiftUiViewModel: ObservableObject {
         LinkData(title: "Native features", routePath: Router.routePaths.swiftUiNativeFeaturesHandling),
         LinkData(title: "Design system", routePath: Router.routePaths.swiftUiDesignSystem),
         LinkData(title: "Responsive design", routePath: Router.routePaths.swiftUiResponsiveDesign),
+        LinkData(title: "Widgets", routePath: Router.routePaths.swiftUiWidget),
         LinkData(title: "Other basics", routePath: Router.routePaths.swiftUiOtherBasics),
     ]
     
