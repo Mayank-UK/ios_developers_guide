@@ -271,7 +271,7 @@ class Router: ObservableObject {
                 SwiftUiCatalogMenusView(viewModel: SwiftUiCatalogMenusViewModel())
             
             case .swiftUiCatalogDisplayElements:
-                SwiftUiCatalogLayoutsView(viewModel: SwiftUiCatalogLayoutsViewModel())
+                SwiftUiCatalogDisplayElementsView(viewModel: SwiftUiCatalogDisplayElementsViewModel())
             case .swiftUiCatalogText:
                 SwiftUiCatalogTextView(viewModel: SwiftUiCatalogTextViewModel())
             case .swiftUiCatalogImage:
