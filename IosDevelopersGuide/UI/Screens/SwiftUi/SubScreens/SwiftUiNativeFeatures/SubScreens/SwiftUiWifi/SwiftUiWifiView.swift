@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiWifiView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiWifiViewModel
+    @StateObject var viewModel: SwiftUiWifiViewModel
     
     func _temp() -> some View {
         return CustomSection(

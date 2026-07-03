@@ -13,10 +13,10 @@ final class PostViewModel: ObservableObject {
     @Published var posts: [Post] = []
     @Published var errorMessage: String?
 
-    @Injected(\.fetchPostsUseCase) private var fetchPostsUseCase: FetchPostsUseCase
+    private let fetchPostsUseCase: FetchPostsUseCase
 
-    init() {
-        // Dependencies injected via @Injected property wrapper
+    init(fetchPostsUseCase: FetchPostsUseCase) {
+        self.fetchPostsUseCase = fetchPostsUseCase
     }
 
     func fetchPosts() async {

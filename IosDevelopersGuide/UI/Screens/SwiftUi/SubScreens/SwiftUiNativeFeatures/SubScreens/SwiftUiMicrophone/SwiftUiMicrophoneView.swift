@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiMicrophoneView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiMicrophoneViewModel
+    @StateObject var viewModel: SwiftUiMicrophoneViewModel
     
     func _temp() -> some View {
         return CustomSection(

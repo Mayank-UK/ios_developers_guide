@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiCatalogGradientView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiCatalogGradientViewModel
+    @StateObject var viewModel: SwiftUiCatalogGradientViewModel
     
     func linear() -> some View {
         return CustomSection(

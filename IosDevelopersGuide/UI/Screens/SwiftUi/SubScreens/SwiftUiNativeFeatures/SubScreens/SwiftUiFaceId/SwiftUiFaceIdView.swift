@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUIFaceIdView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUIFaceIdViewModel
+    @StateObject var viewModel: SwiftUIFaceIdViewModel
     
     func _temp() -> some View {
         return CustomSection(

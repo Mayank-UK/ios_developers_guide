@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiCatalogBackgroundView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiCatalogBackgroundViewModel
+    @StateObject var viewModel: SwiftUiCatalogBackgroundViewModel
     
     func background() -> some View {
         return CustomSection(

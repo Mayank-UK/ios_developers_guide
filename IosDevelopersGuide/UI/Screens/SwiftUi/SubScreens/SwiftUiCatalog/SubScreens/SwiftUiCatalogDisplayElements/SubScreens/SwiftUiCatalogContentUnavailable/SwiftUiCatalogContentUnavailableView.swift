@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiCatalogContentUnavailableView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiCatalogContentUnavailableViewModel
+    @StateObject var viewModel: SwiftUiCatalogContentUnavailableViewModel
     
     func contentUnavailable() -> some View {
         return CustomSection(

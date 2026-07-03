@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiDebuggingView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiDebuggingViewModel
+    @StateObject var viewModel: SwiftUiDebuggingViewModel
     
     func previewCanvas() -> some View {
         return CustomSection(

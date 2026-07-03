@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiCompassView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiCompassViewModel
+    @StateObject var viewModel: SwiftUiCompassViewModel
     
     func _temp() -> some View {
         return CustomSection(

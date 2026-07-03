@@ -9,7 +9,7 @@ import SwiftUI
 import BackgroundTasks
 
 struct SwiftUiBackgroundTaskView: View {
-    @ObservedObject var viewModel: SwiftUiBackgroundTaskViewModel
+    @StateObject var viewModel: SwiftUiBackgroundTaskViewModel
     @Environment(\.scenePhase) private var scenePhase
     @State private var taskIdentifier = "com.example.MyApp.refresh"
 
@@ -30,7 +30,7 @@ struct SwiftUiBackgroundTaskView: View {
             snippetCode: """
             // enable the background mode in the app settings
             
-            @ObservedObject var viewModel: SwiftUiBackgroundTaskViewModel
+            @StateObject var viewModel: SwiftUiBackgroundTaskViewModel
             @Environment(\\.scenePhase) private var scenePhase
             @State private var taskIdentifier = "com.example.MyApp.refresh"
             

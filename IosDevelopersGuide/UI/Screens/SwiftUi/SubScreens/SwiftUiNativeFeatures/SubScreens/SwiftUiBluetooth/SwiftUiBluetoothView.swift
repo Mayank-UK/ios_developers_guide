@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiBluetoothView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiBluetoothViewModel
+    @StateObject var viewModel: SwiftUiBluetoothViewModel
     
     func _temp() -> some View {
         return CustomSection(

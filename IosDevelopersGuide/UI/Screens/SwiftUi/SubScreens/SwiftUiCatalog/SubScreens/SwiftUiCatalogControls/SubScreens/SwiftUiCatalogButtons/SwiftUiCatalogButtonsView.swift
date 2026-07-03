@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiCatalogButtonsView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiCatalogButtonsViewModel
+    @StateObject var viewModel: SwiftUiCatalogButtonsViewModel
     
     @State private var clipboardText: String = ""
     @FocusState private var isFocused: Bool

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiCatalogPopoverView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiCatalogPopoverViewModel
+    @StateObject var viewModel: SwiftUiCatalogPopoverViewModel
     
     @State private var showingPopover = false
     

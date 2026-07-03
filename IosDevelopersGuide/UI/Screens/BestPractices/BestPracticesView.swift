@@ -9,7 +9,7 @@ import SwiftUI
 
 struct BestPracticesView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: BestPracticesViewModel
+    @StateObject var viewModel: BestPracticesViewModel
     
     func generalBestPractices() -> some View {
         return CustomSection(

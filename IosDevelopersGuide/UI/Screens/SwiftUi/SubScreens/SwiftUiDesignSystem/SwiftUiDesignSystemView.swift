@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiDesignSystemView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiDesignSystemViewModel
+    @StateObject var viewModel: SwiftUiDesignSystemViewModel
     
     @EnvironmentObject var designSystem: DesignSystem
     

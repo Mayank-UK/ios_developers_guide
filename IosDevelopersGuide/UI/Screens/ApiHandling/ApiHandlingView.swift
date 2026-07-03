@@ -10,7 +10,7 @@ import Combine
 
 struct ApiHandlingView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: ApiHandlingViewModel
+    @StateObject var viewModel: ApiHandlingViewModel
     @EnvironmentObject var router: Router
     
     func basics() -> some View {
@@ -175,7 +175,7 @@ struct ApiHandlingView: View {
             
             // PostView.swift
             struct PostView: View {
-                @ObservedObject var viewModel: PostViewModel
+                @StateObject var viewModel: PostViewModel
                 @EnvironmentObject var screenData: ScreenData
                 
                 struct PostRow: View {

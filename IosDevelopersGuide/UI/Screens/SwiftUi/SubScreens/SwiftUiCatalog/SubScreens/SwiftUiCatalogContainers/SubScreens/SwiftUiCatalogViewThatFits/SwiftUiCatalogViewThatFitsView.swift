@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiCatalogViewThatFitsView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiCatalogViewThatFitsViewModel
+    @StateObject var viewModel: SwiftUiCatalogViewThatFitsViewModel
     
     func viewThatFits() -> some View {
         return CustomSection(

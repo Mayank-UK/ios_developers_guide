@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiCatalogStepperView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiCatalogStepperViewModel
+    @StateObject var viewModel: SwiftUiCatalogStepperViewModel
     
     @State private var count: Int = 0
     

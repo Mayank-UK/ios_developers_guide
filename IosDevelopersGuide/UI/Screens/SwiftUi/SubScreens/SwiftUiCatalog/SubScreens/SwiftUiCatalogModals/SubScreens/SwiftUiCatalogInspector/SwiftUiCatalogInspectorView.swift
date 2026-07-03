@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiCatalogInspectorView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiCatalogInspectorViewModel
+    @StateObject var viewModel: SwiftUiCatalogInspectorViewModel
     
     @State private var isShowingInspector = false
     

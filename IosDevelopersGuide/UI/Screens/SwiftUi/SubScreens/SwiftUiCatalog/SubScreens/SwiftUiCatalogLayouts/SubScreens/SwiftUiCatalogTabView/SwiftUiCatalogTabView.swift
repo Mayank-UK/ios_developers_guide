@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiCatalogTabView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiCatalogTabViewModel
+    @StateObject var viewModel: SwiftUiCatalogTabViewModel
     
     func tabView() -> some View {
         return CustomSection(

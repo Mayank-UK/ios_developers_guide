@@ -10,7 +10,7 @@ import UserNotifications
 
 struct SwiftUiCatalogNotificationView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiCatalogNotificationViewModel
+    @StateObject var viewModel: SwiftUiCatalogNotificationViewModel
     
     @State private var permissionRequested = false
     

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiCatalogShapesView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiCatalogShapesViewModel
+    @StateObject var viewModel: SwiftUiCatalogShapesViewModel
     
     func rectangle() -> some View {
         return CustomSection(

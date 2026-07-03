@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiCatalogNavigationSplitView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiCatalogNavigationSplitViewModel
+    @StateObject var viewModel: SwiftUiCatalogNavigationSplitViewModel
     
     func navigationSplitView() -> some View {
         return CustomSection(

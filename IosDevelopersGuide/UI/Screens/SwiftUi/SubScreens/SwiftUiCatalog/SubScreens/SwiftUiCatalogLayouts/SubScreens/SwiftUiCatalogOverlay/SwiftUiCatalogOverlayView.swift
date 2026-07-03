@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiCatalogOverlayView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiCatalogOverlayViewModel
+    @StateObject var viewModel: SwiftUiCatalogOverlayViewModel
     
     func overlay() -> some View {
         return CustomSection(

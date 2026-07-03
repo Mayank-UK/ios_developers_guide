@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiAmbientLightSensorView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiAmbientLightSensorViewModel
+    @StateObject var viewModel: SwiftUiAmbientLightSensorViewModel
     
     func _temp() -> some View {
         return CustomSection(

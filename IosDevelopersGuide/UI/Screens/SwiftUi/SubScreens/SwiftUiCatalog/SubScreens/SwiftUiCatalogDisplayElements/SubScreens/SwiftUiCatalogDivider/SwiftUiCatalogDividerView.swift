@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiCatalogDividerView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiCatalogDividerViewModel
+    @StateObject var viewModel: SwiftUiCatalogDividerViewModel
     
     func divider() -> some View {
         return CustomSection(

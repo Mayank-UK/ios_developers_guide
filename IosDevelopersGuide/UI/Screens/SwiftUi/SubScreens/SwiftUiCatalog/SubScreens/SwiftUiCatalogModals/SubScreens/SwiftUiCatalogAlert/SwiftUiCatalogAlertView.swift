@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiCatalogAlertView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiCatalogAlertViewModel
+    @StateObject var viewModel: SwiftUiCatalogAlertViewModel
     
     @State private var showingAlert = false
     

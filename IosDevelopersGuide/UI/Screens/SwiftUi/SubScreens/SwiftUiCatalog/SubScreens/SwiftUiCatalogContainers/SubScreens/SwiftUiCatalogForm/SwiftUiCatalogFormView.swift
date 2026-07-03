@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiCatalogFormView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiCatalogFormViewModel
+    @StateObject var viewModel: SwiftUiCatalogFormViewModel
     
     @State private var inputText: String = ""
     @State private var date = Date()

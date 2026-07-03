@@ -9,7 +9,7 @@ import SwiftUI
 
 struct DatabaseHandlingView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: DatabaseHandlingViewModel
+    @StateObject var viewModel: DatabaseHandlingViewModel
     @EnvironmentObject var router: Router
     
     func basics() -> some View {
@@ -147,7 +147,7 @@ struct DatabaseHandlingView: View {
             
             // PostView.swift
             struct PostView: View {
-                @ObservedObject var viewModel: PostViewModel
+                @StateObject var viewModel: PostViewModel
                 @EnvironmentObject var screenData: ScreenData
                 
                 struct PostRow: View {

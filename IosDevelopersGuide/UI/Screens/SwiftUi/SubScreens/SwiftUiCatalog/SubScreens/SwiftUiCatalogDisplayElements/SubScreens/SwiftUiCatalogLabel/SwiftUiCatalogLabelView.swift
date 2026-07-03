@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiCatalogLabelView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiCatalogLabelViewModel
+    @StateObject var viewModel: SwiftUiCatalogLabelViewModel
     
     func label() -> some View {
         return CustomSection(

@@ -10,7 +10,7 @@ import SwiftUI
 
 struct SwiftUiWidgetView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiWidgetViewModel
+    @StateObject var viewModel: SwiftUiWidgetViewModel
     
     func basics() -> some View {
         return CustomSection(

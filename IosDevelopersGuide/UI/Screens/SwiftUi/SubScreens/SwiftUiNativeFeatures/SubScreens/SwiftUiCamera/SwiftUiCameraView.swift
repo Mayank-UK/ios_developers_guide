@@ -101,7 +101,7 @@ struct ImagePicker: UIViewControllerRepresentable {
 
 struct SwiftUICameraView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUICameraViewModel
+    @StateObject var viewModel: SwiftUICameraViewModel
     
     func basics() -> some View {
         return CustomSection(

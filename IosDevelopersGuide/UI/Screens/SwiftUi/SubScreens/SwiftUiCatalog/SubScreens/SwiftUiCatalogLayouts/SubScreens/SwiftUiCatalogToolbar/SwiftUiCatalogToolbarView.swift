@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiCatalogToolbarView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiCatalogToolbarViewModel
+    @StateObject var viewModel: SwiftUiCatalogToolbarViewModel
     
     let placement: ToolbarItemPlacement = .automatic
     

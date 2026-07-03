@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiCatalogMiscellaneousView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiCatalogMiscellaneousViewModel
+    @StateObject var viewModel: SwiftUiCatalogMiscellaneousViewModel
     
     let links: [LinkData] = [
 //        LinkData(title: "_", routePath: Router.routePaths._),

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiCatalogProgressView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiCatalogProgressViewModel
+    @StateObject var viewModel: SwiftUiCatalogProgressViewModel
     
     func progressView() -> some View {
         return CustomSection(

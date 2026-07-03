@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiCatalogTextFieldView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiCatalogTextFieldViewModel
+    @StateObject var viewModel: SwiftUiCatalogTextFieldViewModel
     
     @FocusState private var isFocused: Bool
     @State private var text: String = ""

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiCatalogToggleView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiCatalogToggleViewModel
+    @StateObject var viewModel: SwiftUiCatalogToggleViewModel
     
     @State private var toggleStatus: Bool = true
     

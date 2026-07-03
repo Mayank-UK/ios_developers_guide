@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiCatalogConfirmationDialogView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiCatalogConfirmationDialogViewModel
+    @StateObject var viewModel: SwiftUiCatalogConfirmationDialogViewModel
     
     @State private var confirmationShown = false
     

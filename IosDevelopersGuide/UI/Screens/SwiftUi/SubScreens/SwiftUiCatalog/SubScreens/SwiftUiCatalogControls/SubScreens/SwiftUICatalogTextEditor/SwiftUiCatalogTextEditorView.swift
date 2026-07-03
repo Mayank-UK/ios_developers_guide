@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiCatalogTextEditorView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiCatalogTextEditorViewModel
+    @StateObject var viewModel: SwiftUiCatalogTextEditorViewModel
     
     @State private var textEditor: String = """
     This is placeholder text

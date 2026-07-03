@@ -9,7 +9,7 @@ import SwiftUI
 
 struct DependencyManagementView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: DependencyManagementViewModel
+    @StateObject var viewModel: DependencyManagementViewModel
     
     func swiftPackageManager() -> some View {
         return CustomSection(

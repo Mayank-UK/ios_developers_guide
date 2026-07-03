@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiCatalogSafeAreaInsetView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiCatalogSafeAreaInsetViewModel
+    @StateObject var viewModel: SwiftUiCatalogSafeAreaInsetViewModel
     
     func safeAreaInset() -> some View {
         return CustomSection(

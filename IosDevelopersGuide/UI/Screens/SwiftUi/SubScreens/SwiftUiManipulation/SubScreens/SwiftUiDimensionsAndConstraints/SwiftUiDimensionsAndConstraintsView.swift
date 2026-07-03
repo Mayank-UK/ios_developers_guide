@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiDimensionsAndConstraintsView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiDimensionsAndConstraintsViewModel
+    @StateObject var viewModel: SwiftUiDimensionsAndConstraintsViewModel
     
     @EnvironmentObject var screenData: ScreenData
     

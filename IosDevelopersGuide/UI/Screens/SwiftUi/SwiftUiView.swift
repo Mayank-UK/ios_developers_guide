@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiViewModel
+    @StateObject var viewModel: SwiftUiViewModel
     
     var body: some View {
         PageScaffold(

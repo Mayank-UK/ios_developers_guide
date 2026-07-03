@@ -6,10 +6,11 @@
 //
 
 import SwiftUI
+import FactoryKit
 
 struct IosFundamentalsView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: IosFundamentalsViewModel
+    @StateObject var viewModel: IosFundamentalsViewModel
     
     func importantConcepts() -> some View {
         return CustomSection(
@@ -70,6 +71,8 @@ struct IosFundamentalsView: View {
     }
 }
 
-//#Preview {
-//    IosFundamentalsView()
-//}
+#Preview {
+    IosFundamentalsView(
+        viewModel: Container.shared.iosFundamentalsViewModel()
+    )
+}

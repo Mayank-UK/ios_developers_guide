@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiCatalogSectionView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiCatalogSectionViewModel
+    @StateObject var viewModel: SwiftUiCatalogSectionViewModel
     
     @State private var inputText: String = ""
     @State private var date = Date()

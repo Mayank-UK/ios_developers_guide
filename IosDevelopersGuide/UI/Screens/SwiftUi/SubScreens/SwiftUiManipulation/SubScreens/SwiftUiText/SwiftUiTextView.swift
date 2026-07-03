@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiTextView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiTextViewModel
+    @StateObject var viewModel: SwiftUiTextViewModel
     
     func textElement() -> some View {
         return CustomSection(

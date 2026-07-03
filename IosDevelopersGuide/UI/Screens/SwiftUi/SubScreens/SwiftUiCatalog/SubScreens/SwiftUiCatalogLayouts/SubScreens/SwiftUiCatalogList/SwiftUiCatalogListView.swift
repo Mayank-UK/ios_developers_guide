@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiCatalogListView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiCatalogListViewModel
+    @StateObject var viewModel: SwiftUiCatalogListViewModel
     
     func list() -> some View {
         return CustomSection(

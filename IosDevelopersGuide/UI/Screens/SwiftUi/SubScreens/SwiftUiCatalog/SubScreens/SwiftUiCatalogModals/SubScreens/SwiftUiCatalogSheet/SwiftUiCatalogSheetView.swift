@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiCatalogSheetView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiCatalogSheetViewModel
+    @StateObject var viewModel: SwiftUiCatalogSheetViewModel
     
     @State private var shouldPresentSheet = false
 

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiCatalogScrollView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiCatalogScrollViewModel
+    @StateObject var viewModel: SwiftUiCatalogScrollViewModel
     
     func scrollView() -> some View {
         return CustomSection(

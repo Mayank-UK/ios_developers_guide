@@ -12,6 +12,9 @@
 		2424500B2FF7A7B6006E6384 /* RepositoryModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424500A2FF7A7B3006E6384 /* RepositoryModule.swift */; };
 		2424500D2FF7A7C9006E6384 /* UseCaseModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424500C2FF7A7C3006E6384 /* UseCaseModule.swift */; };
 		242450102FF7A8A6006E6384 /* FactoryKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2424500F2FF7A8A6006E6384 /* FactoryKit */; };
+		242450182FF7D6EA006E6384 /* ViewModelModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242450172FF7D6E5006E6384 /* ViewModelModule.swift */; };
+		2424501D2FF7ED12006E6384 /* DependencyInjectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424501A2FF7ED12006E6384 /* DependencyInjectionView.swift */; };
+		2424501E2FF7ED12006E6384 /* DependencyInjectionView.swiftModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424501B2FF7ED12006E6384 /* DependencyInjectionView.swiftModel.swift */; };
 		242FD1F02C80702000C450FE /* SwiftUiNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242FD1EF2C80702000C450FE /* SwiftUiNotificationView.swift */; };
 		242FD1F22C80705800C450FE /* SwiftUiNotificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242FD1F12C80705800C450FE /* SwiftUiNotificationViewModel.swift */; };
 		242FD1F52C807F5D00C450FE /* SwiftUiWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242FD1F42C807F5D00C450FE /* SwiftUiWidgetView.swift */; };
@@ -311,6 +314,9 @@
 		242450082FF7A799006E6384 /* DatabaseModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseModule.swift; sourceTree = "<group>"; };
 		2424500A2FF7A7B3006E6384 /* RepositoryModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryModule.swift; sourceTree = "<group>"; };
 		2424500C2FF7A7C3006E6384 /* UseCaseModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseModule.swift; sourceTree = "<group>"; };
+		242450172FF7D6E5006E6384 /* ViewModelModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelModule.swift; sourceTree = "<group>"; };
+		2424501A2FF7ED12006E6384 /* DependencyInjectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjectionView.swift; sourceTree = "<group>"; };
+		2424501B2FF7ED12006E6384 /* DependencyInjectionView.swiftModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjectionView.swiftModel.swift; sourceTree = "<group>"; };
 		242FD1EF2C80702000C450FE /* SwiftUiNotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiNotificationView.swift; sourceTree = "<group>"; };
 		242FD1F12C80705800C450FE /* SwiftUiNotificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiNotificationViewModel.swift; sourceTree = "<group>"; };
 		242FD1F42C807F5D00C450FE /* SwiftUiWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiWidgetView.swift; sourceTree = "<group>"; };
@@ -606,6 +612,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2424501C2FF7ED12006E6384 /* DependencyInjection */ = {
+			isa = PBXGroup;
+			children = (
+				2424501A2FF7ED12006E6384 /* DependencyInjectionView.swift */,
+				2424501B2FF7ED12006E6384 /* DependencyInjectionView.swiftModel.swift */,
+			);
+			path = DependencyInjection;
+			sourceTree = "<group>";
+		};
 		242FD1EE2C806FD500C450FE /* SwiftUiNotifications */ = {
 			isa = PBXGroup;
 			children = (
@@ -2090,6 +2105,7 @@
 		249DFF232C772DB4004BA3AC /* DI */ = {
 			isa = PBXGroup;
 			children = (
+				242450172FF7D6E5006E6384 /* ViewModelModule.swift */,
 				2424500C2FF7A7C3006E6384 /* UseCaseModule.swift */,
 				2424500A2FF7A7B3006E6384 /* RepositoryModule.swift */,
 				242450082FF7A799006E6384 /* DatabaseModule.swift */,
@@ -2101,6 +2117,7 @@
 		249DFF2E2C772FEA004BA3AC /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				2424501C2FF7ED12006E6384 /* DependencyInjection */,
 				249DFF322C7753A7004BA3AC /* Temp */,
 				245E05A42B9A0575005FB6E9 /* Architecture */,
 				249DFEDA2C75C6CB004BA3AC /* DatabaseHandling */,
@@ -2332,6 +2349,7 @@
 				245E05882B99FE9F005FB6E9 /* BestPracticesView.swift in Sources */,
 				245E05E72B9A1478005FB6E9 /* SwiftUiCatalogDisplayElementsView.swift in Sources */,
 				249DFF4A2C775650004BA3AC /* SwiftUiLayoutViewModel.swift in Sources */,
+				242450182FF7D6EA006E6384 /* ViewModelModule.swift in Sources */,
 				249DFF682C7756BE004BA3AC /* SwiftUiFormViewModel.swift in Sources */,
 				249DFF782C775713004BA3AC /* SwiftUiCatalogDisplayElementsViewModel.swift in Sources */,
 				249DFF402C77561E004BA3AC /* BestPracticesViewModel.swift in Sources */,
@@ -2363,6 +2381,7 @@
 				245E05EB2B9A14D0005FB6E9 /* SwiftUiCatalogModalsView.swift in Sources */,
 				249DFFDA2C77593B004BA3AC /* SwiftUiCatalogGroupViewModel.swift in Sources */,
 				249DFFB82C7758C5004BA3AC /* SwiftUiCatalogStacksViewModel.swift in Sources */,
+				2424501E2FF7ED12006E6384 /* DependencyInjectionView.swiftModel.swift in Sources */,
 				249DFFE02C77594D004BA3AC /* SwiftUiCatalogViewThatFitsViewModel.swift in Sources */,
 				249DFFB22C77586C004BA3AC /* SwiftUiCatalogChartViewModel.swift in Sources */,
 				245E05842B99FE53005FB6E9 /* SwiftUiNativeFeaturesView.swift in Sources */,
@@ -2456,6 +2475,7 @@
 				249DFFD62C77592A004BA3AC /* SwiftUiCatalogSafeAreaInsetViewModel.swift in Sources */,
 				249DFEDC2C75C71B004BA3AC /* DatabaseHandlingView.swift in Sources */,
 				249D00062C7759C9004BA3AC /* SwiftUiProximitySensorViewModel.swift in Sources */,
+				2424501D2FF7ED12006E6384 /* DependencyInjectionView.swift in Sources */,
 				249DFFE22C77595A004BA3AC /* SwiftUiCatalogAlertViewModel.swift in Sources */,
 				245E05B62B9A0932005FB6E9 /* SwiftUiColorsAndBackgroundsView.swift in Sources */,
 				245E05B42B9A0919005FB6E9 /* SwiftUiSpacingView.swift in Sources */,

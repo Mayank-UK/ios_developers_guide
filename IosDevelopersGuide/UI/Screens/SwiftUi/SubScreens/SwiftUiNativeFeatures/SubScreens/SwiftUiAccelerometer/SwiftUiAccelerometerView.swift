@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiAccelerometerView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiAccelerometerViewModel
+    @StateObject var viewModel: SwiftUiAccelerometerViewModel
     
     func _temp() -> some View {
         return CustomSection(

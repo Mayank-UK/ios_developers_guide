@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiAlignmentView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiAlignmentViewModel
+    @StateObject var viewModel: SwiftUiAlignmentViewModel
     
     func alignmentProperty() -> some View {
         return CustomSection(

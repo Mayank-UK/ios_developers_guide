@@ -10,7 +10,7 @@ import UIKit
 
 struct SwiftUiNotificationCenterView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiNotificationCenterViewModel
+    @StateObject var viewModel: SwiftUiNotificationCenterViewModel
     
     func basics() -> some View {
         return CustomSection(

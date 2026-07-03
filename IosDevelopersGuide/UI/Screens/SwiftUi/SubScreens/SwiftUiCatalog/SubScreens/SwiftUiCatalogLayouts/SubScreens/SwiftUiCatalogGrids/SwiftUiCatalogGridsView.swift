@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiCatalogGridsView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiCatalogGridsViewModel
+    @StateObject var viewModel: SwiftUiCatalogGridsViewModel
     
     func grid() -> some View {
         return CustomSection(

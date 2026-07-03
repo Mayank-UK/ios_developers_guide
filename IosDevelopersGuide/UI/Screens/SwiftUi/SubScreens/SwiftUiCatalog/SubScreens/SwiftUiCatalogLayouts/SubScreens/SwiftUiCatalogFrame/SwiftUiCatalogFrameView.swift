@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiCatalogFrameView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiCatalogFrameViewModel
+    @StateObject var viewModel: SwiftUiCatalogFrameViewModel
     
     func frame() -> some View {
         return CustomSection(

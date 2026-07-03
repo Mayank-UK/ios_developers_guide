@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiFormView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiFormViewModel
+    @StateObject var viewModel: SwiftUiFormViewModel
     
     @State private var inputText: String = ""
     @State private var count: Int = 0

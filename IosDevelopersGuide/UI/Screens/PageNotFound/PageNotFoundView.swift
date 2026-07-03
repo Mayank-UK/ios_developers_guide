@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PageNotFoundView: View {    
     // inject the viewModel from route
-    @ObservedObject var viewModel: PageNotFoundViewModel
+    @StateObject var viewModel: PageNotFoundViewModel
     
     var body: some View {
         PageScaffold(

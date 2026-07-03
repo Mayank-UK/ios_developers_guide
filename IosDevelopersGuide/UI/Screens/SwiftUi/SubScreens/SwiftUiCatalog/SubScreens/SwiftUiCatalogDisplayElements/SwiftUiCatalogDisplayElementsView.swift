@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiCatalogDisplayElementsView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiCatalogDisplayElementsViewModel
+    @StateObject var viewModel: SwiftUiCatalogDisplayElementsViewModel
     
 
     

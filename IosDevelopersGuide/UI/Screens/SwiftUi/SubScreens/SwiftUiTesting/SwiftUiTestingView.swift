@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiTestingView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiTestingViewModel
+    @StateObject var viewModel: SwiftUiTestingViewModel
     
     func unitTesting() -> some View {
         return CustomSection(

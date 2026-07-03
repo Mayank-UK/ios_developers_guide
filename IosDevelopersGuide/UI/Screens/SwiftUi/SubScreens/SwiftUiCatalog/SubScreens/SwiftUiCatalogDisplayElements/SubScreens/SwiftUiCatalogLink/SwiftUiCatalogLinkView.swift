@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiCatalogLinkView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiCatalogLinkViewModel
+    @StateObject var viewModel: SwiftUiCatalogLinkViewModel
     
     func link() -> some View {
         return CustomSection(

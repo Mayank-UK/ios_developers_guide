@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiVisibilityView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiVisibilityViewModel
+    @StateObject var viewModel: SwiftUiVisibilityViewModel
     
     @State var isVisible: Bool = false
     

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiInteractiveBehavioursView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiInteractiveBehavioursViewModel
+    @StateObject var viewModel: SwiftUiInteractiveBehavioursViewModel
     
     @State private var tapCount: Int = 0
     @State private var hoverStatus: Bool = false

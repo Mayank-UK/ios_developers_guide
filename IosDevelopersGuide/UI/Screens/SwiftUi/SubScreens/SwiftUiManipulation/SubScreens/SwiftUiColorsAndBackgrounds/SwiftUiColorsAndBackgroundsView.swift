@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiColorsAndBackgroundsView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiColorsAndBackgroundsViewModel
+    @StateObject var viewModel: SwiftUiColorsAndBackgroundsViewModel
     
     func textColor() -> some View {
         return CustomSection(

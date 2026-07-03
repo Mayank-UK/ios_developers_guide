@@ -10,7 +10,7 @@ import WebKit
 
 struct SwiftUiWebAndAppsView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiWebAndAppsViewModel
+    @StateObject var viewModel: SwiftUiWebAndAppsViewModel
     
     func link() -> some View {
         return CustomSection(

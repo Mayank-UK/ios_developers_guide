@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiCatalogImageView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiCatalogImageViewModel
+    @StateObject var viewModel: SwiftUiCatalogImageViewModel
     
     func image() -> some View {
         return CustomSection(

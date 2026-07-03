@@ -10,7 +10,7 @@ import MapKit
 
 struct SwiftUiCatalogMapView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiCatalogMapViewModel
+    @StateObject var viewModel: SwiftUiCatalogMapViewModel
     
     @State private var cameraPosition = MapCameraPosition.region(MKCoordinateRegion(
         center: CLLocationCoordinate2D(latitude: 37.3348, longitude: -122.0090),

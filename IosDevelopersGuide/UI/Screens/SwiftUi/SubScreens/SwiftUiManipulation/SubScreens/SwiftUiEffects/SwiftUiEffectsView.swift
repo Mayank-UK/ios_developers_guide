@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiEffectsView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiEffectsViewModel
+    @StateObject var viewModel: SwiftUiEffectsViewModel
     
     func shadows() -> some View {
         return CustomSection(

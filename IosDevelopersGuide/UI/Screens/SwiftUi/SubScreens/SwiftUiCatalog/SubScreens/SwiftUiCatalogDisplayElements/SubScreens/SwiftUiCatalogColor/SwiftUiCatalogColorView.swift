@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiCatalogColorView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiCatalogColorViewModel
+    @StateObject var viewModel: SwiftUiCatalogColorViewModel
     
     func foregroundColor() -> some View {
         return CustomSection(

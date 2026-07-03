@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TempView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: TempViewModel
+    @StateObject var viewModel: TempViewModel
     
     func basics() -> some View {
         Text("Hello world!")

@@ -13,7 +13,7 @@ class ObservableExample: ObservableObject {
 
 struct SwiftUiStateManagementView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiStateManagementViewModel
+    @StateObject var viewModel: SwiftUiStateManagementViewModel
     
     @State private var tapCount: Int = 0
     @State private var showingAddUser = false
@@ -34,7 +34,7 @@ struct SwiftUiStateManagementView: View {
         }
     }
     
-    @ObservedObject var observableExample = ObservableExample()
+    @StateObject var observableExample = ObservableExample()
     
     struct View1: View {
         @EnvironmentObject var observableExample: ObservableExample
@@ -55,7 +55,7 @@ struct SwiftUiStateManagementView: View {
             SwiftUI provides several property wrappers for state management:
             - @State: For view-level state.
             - @Binding: For two-way communication between parent and child views.
-            - @ObservedObject: For observing changes in external objects (e.g., ObservableObject).
+            - @StateObject: For observing changes in external objects (e.g., ObservableObject).
             - @EnvironmentObject: For sharing data across views using the environment.
             """
         )
@@ -146,7 +146,7 @@ struct SwiftUiStateManagementView: View {
 
     func observedObject() -> some View {
         return CustomSection(
-            snippetTitle: "@ObservedObject",
+            snippetTitle: "@StateObject",
             snippetDescription: """
             Property wrapper for observing changes in external objects (e.g., ObservableObject).
             """,
@@ -155,7 +155,7 @@ struct SwiftUiStateManagementView: View {
                 @Published var count: Int = 0
             }
             
-            @ObservedObject var observableExample = ObservableExample()
+            @StateObject var observableExample = ObservableExample()
             
             Text("Tap me!       \\(observableExample.count)")
                 .padding()
@@ -202,7 +202,7 @@ struct SwiftUiStateManagementView: View {
                 }
             }
             
-            @ObservedObject var observableExample = ObservableExample()
+            @StateObject var observableExample = ObservableExample()
             
             VStack {
                 View1()

@@ -11,7 +11,7 @@ import UserNotifications
 
 struct SwiftUiNotificationView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiNotificationViewModel
+    @StateObject var viewModel: SwiftUiNotificationViewModel
     
     @State private var isAuthorized = false
     @State private var notificationMessage = "Checking notification settings..."

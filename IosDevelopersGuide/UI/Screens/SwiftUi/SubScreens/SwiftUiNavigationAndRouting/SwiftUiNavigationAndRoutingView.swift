@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiNavigationAndRoutingView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiNavigationAndRoutingViewModel
+    @StateObject var viewModel: SwiftUiNavigationAndRoutingViewModel
     
     func basics() -> some View {
         return CustomSection(

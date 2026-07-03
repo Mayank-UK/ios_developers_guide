@@ -10,11 +10,11 @@ import Charts
 
 struct SwiftUiCatalogChartView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiCatalogChartViewModel
+    @StateObject var viewModel: SwiftUiCatalogChartViewModel
     
     // had to use this to prevent "'SwiftUiCatalogChartView' initializer is inaccessible due to 'private' protection level" in router
     init(viewModel: SwiftUiCatalogChartViewModel) {
-        _viewModel = ObservedObject(wrappedValue: viewModel)
+        _viewModel = StateObject(wrappedValue: viewModel)
     }
     
     struct BarData: Identifiable {

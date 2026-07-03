@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiCatalogEmptyView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiCatalogEmptyViewModel
+    @StateObject var viewModel: SwiftUiCatalogEmptyViewModel
     
     func emptyView() -> some View {
         return CustomSection(

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiCatalogCanvasView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiCatalogCanvasViewModel
+    @StateObject var viewModel: SwiftUiCatalogCanvasViewModel
     
     func canvas() -> some View {
         return CustomSection(

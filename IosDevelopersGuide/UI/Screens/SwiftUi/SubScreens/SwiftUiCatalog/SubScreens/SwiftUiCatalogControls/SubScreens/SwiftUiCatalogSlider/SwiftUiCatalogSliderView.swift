@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiCatalogSliderView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiCatalogSliderViewModel
+    @StateObject var viewModel: SwiftUiCatalogSliderViewModel
     
     @State private var volume: Double = 50.0
     @State private var rating: Double = 50.0

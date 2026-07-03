@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiCatalogGeometryReaderView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiCatalogGeometryReaderViewModel
+    @StateObject var viewModel: SwiftUiCatalogGeometryReaderViewModel
     
     func geometryReader() -> some View {
         return CustomSection(

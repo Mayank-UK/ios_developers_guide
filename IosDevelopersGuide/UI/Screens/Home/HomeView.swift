@@ -6,10 +6,11 @@
 //
 
 import SwiftUI
+import FactoryKit
 
 struct HomeView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: HomeViewModel
+    @StateObject var viewModel: HomeViewModel
     
     var body: some View {
         PageScaffold(
@@ -22,5 +23,5 @@ struct HomeView: View {
 }
 
 #Preview {
-    HomeView(viewModel: HomeViewModel())
+    HomeView(viewModel: Container.shared.homeViewModel())
 }

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiPageLayoutView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiPageLayoutViewModel
+    @StateObject var viewModel: SwiftUiPageLayoutViewModel
     
     func swiftUiPageLayout() -> some View {
         return CustomSection(

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiNativeFeaturesView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiNativeFeaturesViewModel
+    @StateObject var viewModel: SwiftUiNativeFeaturesViewModel
     
     let links: [LinkData] = [
         LinkData(title: "Camera", routePath: Router.routePaths.swiftUiCamera),

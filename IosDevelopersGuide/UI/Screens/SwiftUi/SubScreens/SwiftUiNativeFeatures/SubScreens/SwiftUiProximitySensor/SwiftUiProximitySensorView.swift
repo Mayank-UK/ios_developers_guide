@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiProximitySensorView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiProximitySensorViewModel
+    @StateObject var viewModel: SwiftUiProximitySensorViewModel
     
     func _temp() -> some View {
         return CustomSection(

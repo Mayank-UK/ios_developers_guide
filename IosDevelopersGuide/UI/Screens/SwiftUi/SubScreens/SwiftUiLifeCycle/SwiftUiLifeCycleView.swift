@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiLifeCycleView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiLifeCycleViewModel
+    @StateObject var viewModel: SwiftUiLifeCycleViewModel
     
     @State private var showingAlert = false
     

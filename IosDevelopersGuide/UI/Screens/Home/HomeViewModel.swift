@@ -18,6 +18,7 @@ class HomeViewModel: ObservableObject {
         LinkData(title: "API handling", routePath: Router.routePaths.apiHandling),
         LinkData(title: "Database handling", routePath: Router.routePaths.databaseHandling),
         LinkData(title: "Architecture", routePath: Router.routePaths.architecture),
+        LinkData(title: "Dependency injection", routePath: Router.routePaths.dependencyInjection),
         LinkData(title: "Dependency management", routePath: Router.routePaths.dependencyManagement),
         LinkData(title: "Deployment", routePath: Router.routePaths.deployment),
         LinkData(title: "Best practices", routePath: Router.routePaths.bestPractices),

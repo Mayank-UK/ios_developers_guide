@@ -107,7 +107,7 @@ struct VideoPlayerView: View {
 
 struct SwiftUiMediaView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiMediaViewModel
+    @StateObject var viewModel: SwiftUiMediaViewModel
     
     func audio() -> some View {
         return CustomSection(

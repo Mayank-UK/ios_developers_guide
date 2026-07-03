@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiCatalogSecureFieldView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiCatalogSecureFieldViewModel
+    @StateObject var viewModel: SwiftUiCatalogSecureFieldViewModel
     
     @State private var password: String = ""
     

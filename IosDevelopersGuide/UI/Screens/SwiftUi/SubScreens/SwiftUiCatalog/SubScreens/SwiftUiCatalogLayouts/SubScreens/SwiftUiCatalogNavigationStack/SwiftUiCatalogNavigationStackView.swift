@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiCatalogNavigationStackView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiCatalogNavigationStackViewModel
+    @StateObject var viewModel: SwiftUiCatalogNavigationStackViewModel
     
     func navigationStack() -> some View {
         return CustomSection(

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiCatalogGaugeView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiCatalogGaugeViewModel
+    @StateObject var viewModel: SwiftUiCatalogGaugeViewModel
     
     @State private var current = 67.0
     @State private var minValue = 0.0

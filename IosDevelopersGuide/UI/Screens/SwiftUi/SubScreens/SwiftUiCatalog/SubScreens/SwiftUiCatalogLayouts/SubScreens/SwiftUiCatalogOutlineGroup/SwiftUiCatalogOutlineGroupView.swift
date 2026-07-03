@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiCatalogOutlineGroupView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiCatalogOutlineGroupViewModel
+    @StateObject var viewModel: SwiftUiCatalogOutlineGroupViewModel
     
     struct FileItem: Hashable, Identifiable, CustomStringConvertible {
         var id: Self { self }

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiCatalogSpacerView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiCatalogSpacerViewModel
+    @StateObject var viewModel: SwiftUiCatalogSpacerViewModel
     
     func spacer() -> some View {
         return CustomSection(

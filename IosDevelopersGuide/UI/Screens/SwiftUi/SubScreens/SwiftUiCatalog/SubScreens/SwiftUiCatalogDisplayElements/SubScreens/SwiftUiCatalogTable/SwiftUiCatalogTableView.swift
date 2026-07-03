@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiCatalogTableView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiCatalogTableViewModel
+    @StateObject var viewModel: SwiftUiCatalogTableViewModel
     
     @State private var sortOrder = [KeyPathComparator(\TableData.givenName)]
     struct TableData: Identifiable {

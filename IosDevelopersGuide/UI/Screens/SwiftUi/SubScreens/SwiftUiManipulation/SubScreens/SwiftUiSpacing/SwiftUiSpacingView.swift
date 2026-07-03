@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiSpacingView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiSpacingViewModel
+    @StateObject var viewModel: SwiftUiSpacingViewModel
     
     func paddingSpacing() -> some View {
         return CustomSection(

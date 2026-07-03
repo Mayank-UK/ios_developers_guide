@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiCatalogDisclosureGroupView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiCatalogDisclosureGroupViewModel
+    @StateObject var viewModel: SwiftUiCatalogDisclosureGroupViewModel
     
     func disclosureView() -> some View {
         return CustomSection(

@@ -10,7 +10,7 @@ import PhotosUI
 
 struct SwiftUiCatalogPickersView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiCatalogPickersViewModel
+    @StateObject var viewModel: SwiftUiCatalogPickersViewModel
     
     enum Flavor: String, CaseIterable, Identifiable {
         case chocolate

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiIconsAndImagesView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiIconsAndImagesViewModel
+    @StateObject var viewModel: SwiftUiIconsAndImagesViewModel
     
     func icons() -> some View {
         return CustomSection(

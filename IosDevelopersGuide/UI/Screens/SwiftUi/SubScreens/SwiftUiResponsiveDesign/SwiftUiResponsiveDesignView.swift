@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiResponsiveDesignView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiResponsiveDesignViewModel
+    @StateObject var viewModel: SwiftUiResponsiveDesignViewModel
     
     @EnvironmentObject var screenData: ScreenData
     

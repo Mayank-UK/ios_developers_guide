@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiPositioningView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiPositioningViewModel
+    @StateObject var viewModel: SwiftUiPositioningViewModel
     
     func positioning() -> some View {
         return CustomSection(

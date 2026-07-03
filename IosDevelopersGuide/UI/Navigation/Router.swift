@@ -7,6 +7,7 @@
 
 import Foundation
 import SwiftUI
+import FactoryKit
 
 class Router: ObservableObject {
     
@@ -143,6 +144,8 @@ class Router: ObservableObject {
         
         case architecture
         
+        case dependencyInjection
+        
         case dependencyManagement
         
         case deployment
@@ -157,263 +160,267 @@ class Router: ObservableObject {
     @MainActor @ViewBuilder func view(for route: routePaths) -> some View {
         switch route {
             case .home:
-                HomeView(viewModel: HomeViewModel())
+                HomeView(viewModel: Container.shared.homeViewModel())
 
             case .iosFundamentals:
-                IosFundamentalsView(viewModel: IosFundamentalsViewModel())
+                IosFundamentalsView(viewModel: Container.shared.iosFundamentalsViewModel())
 
             case .swiftFundamentals:
-                SwiftFundamentalsView(viewModel: SwiftFundamentalsViewModel())
+                SwiftFundamentalsView(viewModel: Container.shared.swiftFundamentalsViewModel())
             
             case .swiftUi:
-                SwiftUiView(viewModel: SwiftUiViewModel())
+                SwiftUiView(viewModel: Container.shared.swiftUiViewModel())
             case .swiftUiManipulation:
-                SwiftUiManipulationView(viewModel: SwiftUiManipulationViewModel())
+                SwiftUiManipulationView(viewModel: Container.shared.swiftUiManipulationViewModel())
             case .swiftUiLifeCycle:
-                SwiftUiLifeCycleView(viewModel: SwiftUiLifeCycleViewModel())
+                SwiftUiLifeCycleView(viewModel: Container.shared.swiftUiLifeCycleViewModel())
             case .swiftUiNavigationAndRouting:
-                SwiftUiNavigationAndRoutingView(viewModel: SwiftUiNavigationAndRoutingViewModel())
+                SwiftUiNavigationAndRoutingView(viewModel: Container.shared.swiftUiNavigationAndRoutingViewModel())
             case .swiftUiStateManagement:
-                SwiftUiStateManagementView(viewModel: SwiftUiStateManagementViewModel())
+                SwiftUiStateManagementView(viewModel: Container.shared.swiftUiStateManagementViewModel())
             case .swiftUiCatalog:
-                SwiftUiCatalogView(viewModel: SwiftUiCatalogViewModel())
+                SwiftUiCatalogView(viewModel: Container.shared.swiftUiCatalogViewModel())
             case .swiftUiDebugging:
-                SwiftUiDebuggingView(viewModel: SwiftUiDebuggingViewModel())
+                SwiftUiDebuggingView(viewModel: Container.shared.swiftUiDebuggingViewModel())
             case .swiftUiTesting:
-                SwiftUiTestingView(viewModel: SwiftUiTestingViewModel())
+                SwiftUiTestingView(viewModel: Container.shared.swiftUiTestingViewModel())
             case .swiftUiSuppportingClassesAndEnums:
-                SwiftUiSupportingClassesAndEnumsView(viewModel: SwiftUiSupportingClassesAndEnumsViewModel())
+                SwiftUiSupportingClassesAndEnumsView(viewModel: Container.shared.swiftUiSupportingClassesAndEnumsViewModel())
             
             case .swiftUiNativeFeaturesHandling:
-                SwiftUiNativeFeaturesView(viewModel: SwiftUiNativeFeaturesViewModel())
+                SwiftUiNativeFeaturesView(viewModel: Container.shared.swiftUiNativeFeaturesViewModel())
             case .swiftUiCamera:
-                SwiftUICameraView(viewModel: SwiftUICameraViewModel())
+                SwiftUICameraView(viewModel: Container.shared.swiftUICameraViewModel())
             case .swiftUiFaceId:
-                SwiftUIFaceIdView(viewModel: SwiftUIFaceIdViewModel())
+                SwiftUIFaceIdView(viewModel: Container.shared.swiftUIFaceIdViewModel())
             case .swiftUiMicrophone:
-                SwiftUiMicrophoneView(viewModel: SwiftUiMicrophoneViewModel())
+                SwiftUiMicrophoneView(viewModel: Container.shared.swiftUiMicrophoneViewModel())
             case .swiftUiSpeakers:
-                SwiftUiSpeakersView(viewModel: SwiftUiSpeakersViewModel())
+                SwiftUiSpeakersView(viewModel: Container.shared.swiftUiSpeakersViewModel())
             case .swiftUiBluetooth:
-                SwiftUiBluetoothView(viewModel: SwiftUiBluetoothViewModel())
+                SwiftUiBluetoothView(viewModel: Container.shared.swiftUiBluetoothViewModel())
             case .swiftUiWifi:
-                SwiftUiWifiView(viewModel: SwiftUiWifiViewModel())
+                SwiftUiWifiView(viewModel: Container.shared.swiftUiWifiViewModel())
             case .swiftUiCompass:
-                SwiftUiCompassView(viewModel: SwiftUiCompassViewModel())
+                SwiftUiCompassView(viewModel: Container.shared.swiftUiCompassViewModel())
             case .swiftUiAccelerometer:
-                SwiftUiAccelerometerView(viewModel: SwiftUiAccelerometerViewModel())
+                SwiftUiAccelerometerView(viewModel: Container.shared.swiftUiAccelerometerViewModel())
             case .swiftUiProximitySensor:
-                SwiftUiProximitySensorView(viewModel: SwiftUiProximitySensorViewModel())
+                SwiftUiProximitySensorView(viewModel: Container.shared.swiftUiProximitySensorViewModel())
             case .swiftUiAmbientLightSensor:
-                SwiftUiAmbientLightSensorView(viewModel: SwiftUiAmbientLightSensorViewModel())
+                SwiftUiAmbientLightSensorView(viewModel: Container.shared.swiftUiAmbientLightSensorViewModel())
             
             case .swiftUiDesignSystem:
-                SwiftUiDesignSystemView(viewModel: SwiftUiDesignSystemViewModel())
-
+                SwiftUiDesignSystemView(viewModel: Container.shared.swiftUiDesignSystemViewModel())
             case .swiftUiResponsiveDesign:
-                SwiftUiResponsiveDesignView(viewModel: SwiftUiResponsiveDesignViewModel())
+                SwiftUiResponsiveDesignView(viewModel: Container.shared.swiftUiResponsiveDesignViewModel())
             
             case .swiftUiLayout:
-                SwiftUiLayoutView(viewModel: SwiftUiLayoutViewModel())
+                SwiftUiLayoutView(viewModel: Container.shared.swiftUiLayoutViewModel())
             case .swiftUiPageLayout:
-                SwiftUiPageLayoutView(viewModel: SwiftUiPageLayoutViewModel())
+                SwiftUiPageLayoutView(viewModel: Container.shared.swiftUiPageLayoutViewModel())
             case .swiftUiBasicLayout:
-                SwiftUiBasicLayoutView(viewModel: SwiftUiBasicLayoutViewModel())
+                SwiftUiBasicLayoutView(viewModel: Container.shared.swiftUiBasicLayoutViewModel())
             
             case .swiftUiDimensionsAndConstraints:
-                SwiftUiDimensionsAndConstraintsView(viewModel: SwiftUiDimensionsAndConstraintsViewModel())
+                SwiftUiDimensionsAndConstraintsView(viewModel: Container.shared.swiftUiDimensionsAndConstraintsViewModel())
             case .swiftUiSpacing:
-                SwiftUiSpacingView(viewModel: SwiftUiSpacingViewModel())
+                SwiftUiSpacingView(viewModel: Container.shared.swiftUiSpacingViewModel())
             case .swiftUiColorsAndBackgrounds:
-                SwiftUiColorsAndBackgroundsView(viewModel: SwiftUiColorsAndBackgroundsViewModel())
+                SwiftUiColorsAndBackgroundsView(viewModel: Container.shared.swiftUiColorsAndBackgroundsViewModel())
             case .swiftUiAlignment:
-                SwiftUiAlignmentView(viewModel: SwiftUiAlignmentViewModel())
+                SwiftUiAlignmentView(viewModel: Container.shared.swiftUiAlignmentViewModel())
             case .swiftUiText:
-                SwiftUiTextView(viewModel: SwiftUiTextViewModel())
+                SwiftUiTextView(viewModel: Container.shared.swiftUiTextViewModel())
             case .swiftUiBorders:
-                SwiftUiBordersView(viewModel: SwiftUiBordersViewModel())
+                SwiftUiBordersView(viewModel: Container.shared.swiftUiBordersViewModel())
             case .swiftUiIconsAndImages:
-                SwiftUiIconsAndImagesView(viewModel: SwiftUiIconsAndImagesViewModel())
+                SwiftUiIconsAndImagesView(viewModel: Container.shared.swiftUiIconsAndImagesViewModel())
             case .swiftUiEffects:
-                SwiftUiEffectsView(viewModel: SwiftUiEffectsViewModel())
+                SwiftUiEffectsView(viewModel: Container.shared.swiftUiEffectsViewModel())
             case .swiftUiPositioning:
-                SwiftUiPositioningView(viewModel: SwiftUiPositioningViewModel())
+                SwiftUiPositioningView(viewModel: Container.shared.swiftUiPositioningViewModel())
             case .swiftUiVisibility:
-                SwiftUiVisibilityView(viewModel: SwiftUiVisibilityViewModel())
+                SwiftUiVisibilityView(viewModel: Container.shared.swiftUiVisibilityViewModel())
             case .swiftUiInteractiveBehaviours:
-                SwiftUiInteractiveBehavioursView(viewModel: SwiftUiInteractiveBehavioursViewModel())
+                SwiftUiInteractiveBehavioursView(viewModel: Container.shared.swiftUiInteractiveBehavioursViewModel())
             case .swiftUiWebAndApps:
-                SwiftUiWebAndAppsView(viewModel: SwiftUiWebAndAppsViewModel())
+                SwiftUiWebAndAppsView(viewModel: Container.shared.swiftUiWebAndAppsViewModel())
             case .swiftUiForm:
-                SwiftUiFormView(viewModel: SwiftUiFormViewModel())
+                SwiftUiFormView(viewModel: Container.shared.swiftUiFormViewModel())
             case .swiftUiMedia:
-                SwiftUiMediaView(viewModel: SwiftUiMediaViewModel())
+                SwiftUiMediaView(viewModel: Container.shared.swiftUiMediaViewModel())
             
             case .swiftUiCatalogControls:
-                SwiftUiCatalogControlsView(viewModel: SwiftUiCatalogControlsViewModel())
+                SwiftUiCatalogControlsView(viewModel: Container.shared.swiftUiCatalogControlsViewModel())
             case .swiftUiCatalogButtons:
-                SwiftUiCatalogButtonsView(viewModel: SwiftUiCatalogButtonsViewModel())
+                SwiftUiCatalogButtonsView(viewModel: Container.shared.swiftUiCatalogButtonsViewModel())
             case .swiftUiCatalogToggle:
-                SwiftUiCatalogToggleView(viewModel: SwiftUiCatalogToggleViewModel())
+                SwiftUiCatalogToggleView(viewModel: Container.shared.swiftUiCatalogToggleViewModel())
             case .swiftUiCatalogTextField:
-                SwiftUiCatalogTextFieldView(viewModel: SwiftUiCatalogTextFieldViewModel())
+                SwiftUiCatalogTextFieldView(viewModel: Container.shared.swiftUiCatalogTextFieldViewModel())
             case .swiftUiCatalogTextEditor:
-                SwiftUiCatalogTextEditorView(viewModel: SwiftUiCatalogTextEditorViewModel())
+                SwiftUiCatalogTextEditorView(viewModel: Container.shared.swiftUiCatalogTextEditorViewModel())
             case .swiftUiCatalogSecureField:
-                SwiftUiCatalogSecureFieldView(viewModel: SwiftUiCatalogSecureFieldViewModel())
+                SwiftUiCatalogSecureFieldView(viewModel: Container.shared.swiftUiCatalogSecureFieldViewModel())
             case .swiftUiCatalogSlider:
-                SwiftUiCatalogSliderView(viewModel: SwiftUiCatalogSliderViewModel())
+                SwiftUiCatalogSliderView(viewModel: Container.shared.swiftUiCatalogSliderViewModel())
             case .swiftUiCatalogPickers:
-                SwiftUiCatalogPickersView(viewModel: SwiftUiCatalogPickersViewModel())
+                SwiftUiCatalogPickersView(viewModel: Container.shared.swiftUiCatalogPickersViewModel())
             case .swiftUiCatalogStepper:
-                SwiftUiCatalogStepperView(viewModel: SwiftUiCatalogStepperViewModel())
+                SwiftUiCatalogStepperView(viewModel: Container.shared.swiftUiCatalogStepperViewModel())
             case .swiftUiCatalogMenus:
-                SwiftUiCatalogMenusView(viewModel: SwiftUiCatalogMenusViewModel())
+                SwiftUiCatalogMenusView(viewModel: Container.shared.swiftUiCatalogMenusViewModel())
             
             case .swiftUiCatalogDisplayElements:
-                SwiftUiCatalogDisplayElementsView(viewModel: SwiftUiCatalogDisplayElementsViewModel())
+                SwiftUiCatalogDisplayElementsView(viewModel: Container.shared.swiftUiCatalogDisplayElementsViewModel())
             case .swiftUiCatalogText:
-                SwiftUiCatalogTextView(viewModel: SwiftUiCatalogTextViewModel())
+                SwiftUiCatalogTextView(viewModel: Container.shared.swiftUiCatalogTextViewModel())
             case .swiftUiCatalogImage:
-                SwiftUiCatalogImageView(viewModel: SwiftUiCatalogImageViewModel())
+                SwiftUiCatalogImageView(viewModel: Container.shared.swiftUiCatalogImageViewModel())
             case .swiftUiCatalogLink:
-                SwiftUiCatalogLinkView(viewModel: SwiftUiCatalogLinkViewModel())
+                SwiftUiCatalogLinkView(viewModel: Container.shared.swiftUiCatalogLinkViewModel())
             case .swiftUiCatalogWebView:
-                SwiftUiCatalogWebView(viewModel: SwiftUiCatalogWebViewModel())
+                SwiftUiCatalogWebView(viewModel: Container.shared.swiftUiCatalogWebViewModel())
             case .swiftUiCatalogLabel:
-                SwiftUiCatalogLabelView(viewModel: SwiftUiCatalogLabelViewModel())
+                SwiftUiCatalogLabelView(viewModel: Container.shared.swiftUiCatalogLabelViewModel())
             case .swiftUiCatalogProgressView:
-                SwiftUiCatalogProgressView(viewModel: SwiftUiCatalogProgressViewModel())
+                SwiftUiCatalogProgressView(viewModel: Container.shared.swiftUiCatalogProgressViewModel())
             case .swiftUiCatalogGauge:
-                SwiftUiCatalogGaugeView(viewModel: SwiftUiCatalogGaugeViewModel())
+                SwiftUiCatalogGaugeView(viewModel: Container.shared.swiftUiCatalogGaugeViewModel())
             case .swiftUiCatalogContentUnavailable:
-                SwiftUiCatalogContentUnavailableView(viewModel: SwiftUiCatalogContentUnavailableViewModel())
+                SwiftUiCatalogContentUnavailableView(viewModel: Container.shared.swiftUiCatalogContentUnavailableViewModel())
             case .swiftUiCatalogShapes:
-                SwiftUiCatalogShapesView(viewModel: SwiftUiCatalogShapesViewModel())
+                SwiftUiCatalogShapesView(viewModel: Container.shared.swiftUiCatalogShapesViewModel())
             case .swiftUiCatalogPath:
-                SwiftUiCatalogPathView(viewModel: SwiftUiCatalogPathViewModel())
+                SwiftUiCatalogPathView(viewModel: Container.shared.swiftUiCatalogPathViewModel())
             case .swiftUiCatalogCanvas:
-                SwiftUiCatalogCanvasView(viewModel: SwiftUiCatalogCanvasViewModel())
+                SwiftUiCatalogCanvasView(viewModel: Container.shared.swiftUiCatalogCanvasViewModel())
             case .swiftUiCatalogColor:
-                SwiftUiCatalogColorView(viewModel: SwiftUiCatalogColorViewModel())
+                SwiftUiCatalogColorView(viewModel: Container.shared.swiftUiCatalogColorViewModel())
             case .swiftUiCatalogGradient:
-                SwiftUiCatalogGradientView(viewModel: SwiftUiCatalogGradientViewModel())
+                SwiftUiCatalogGradientView(viewModel: Container.shared.swiftUiCatalogGradientViewModel())
             case .swiftUiCatalogSpacer:
-                SwiftUiCatalogSpacerView(viewModel: SwiftUiCatalogSpacerViewModel())
+                SwiftUiCatalogSpacerView(viewModel: Container.shared.swiftUiCatalogSpacerViewModel())
             case .swiftUiCatalogDivider:
-                SwiftUiCatalogDividerView(viewModel: SwiftUiCatalogDividerViewModel())
+                SwiftUiCatalogDividerView(viewModel: Container.shared.swiftUiCatalogDividerViewModel())
             case .swiftUiCatalogChart:
-                SwiftUiCatalogChartView(viewModel: SwiftUiCatalogChartViewModel())
+                SwiftUiCatalogChartView(viewModel: Container.shared.swiftUiCatalogChartViewModel())
             case .swiftUiCatalogMap:
-                SwiftUiCatalogMapView(viewModel: SwiftUiCatalogMapViewModel())
+                SwiftUiCatalogMapView(viewModel: Container.shared.swiftUiCatalogMapViewModel())
             case .swiftUiCatalogTable:
-                SwiftUiCatalogTableView(viewModel: SwiftUiCatalogTableViewModel())
+                SwiftUiCatalogTableView(viewModel: Container.shared.swiftUiCatalogTableViewModel())
             
             case .swiftUiCatalogLayouts:
-                SwiftUiCatalogLayoutsView(viewModel: SwiftUiCatalogLayoutsViewModel())
+                SwiftUiCatalogLayoutsView(viewModel: Container.shared.swiftUiCatalogLayoutsViewModel())
             case .swiftUiCatalogStacks:
-                SwiftUiCatalogStacksView(viewModel: SwiftUiCatalogStacksViewModel())
+                SwiftUiCatalogStacksView(viewModel: Container.shared.swiftUiCatalogStacksViewModel())
             case .swiftUiCatalogList:
-                SwiftUiCatalogListView(viewModel: SwiftUiCatalogListViewModel())
+                SwiftUiCatalogListView(viewModel: Container.shared.swiftUiCatalogListViewModel())
             case .swiftUiCatalogForEach:
-                SwiftUiCatalogForEachView(viewModel: SwiftUiCatalogForEachViewModel())
+                SwiftUiCatalogForEachView(viewModel: Container.shared.swiftUiCatalogForEachViewModel())
             case .swiftUiCatalogGrids:
-                SwiftUiCatalogGridsView(viewModel: SwiftUiCatalogGridsViewModel())
+                SwiftUiCatalogGridsView(viewModel: Container.shared.swiftUiCatalogGridsViewModel())
             case .swiftUiCatalogNavigationStack:
-                SwiftUiCatalogNavigationStackView(viewModel: SwiftUiCatalogNavigationStackViewModel())
+                SwiftUiCatalogNavigationStackView(viewModel: Container.shared.swiftUiCatalogNavigationStackViewModel())
             case .swiftUiCatalogNavigationSplitView:
-                SwiftUiCatalogNavigationSplitView(viewModel: SwiftUiCatalogNavigationSplitViewModel())
+                SwiftUiCatalogNavigationSplitView(viewModel: Container.shared.swiftUiCatalogNavigationSplitViewModel())
             case .swiftUiCatalogTab:
-                SwiftUiCatalogTabView(viewModel: SwiftUiCatalogTabViewModel())
+                SwiftUiCatalogTabView(viewModel: Container.shared.swiftUiCatalogTabViewModel())
             case .swiftUiCatalogScrollView:
-                SwiftUiCatalogScrollView(viewModel: SwiftUiCatalogScrollViewModel())
+                SwiftUiCatalogScrollView(viewModel: Container.shared.swiftUiCatalogScrollViewModel())
             case .swiftUiCatalogGeometryReader:
-                SwiftUiCatalogGeometryReaderView(viewModel: SwiftUiCatalogGeometryReaderViewModel())
+                SwiftUiCatalogGeometryReaderView(viewModel: Container.shared.swiftUiCatalogGeometryReaderViewModel())
             case .swiftUiCatalogBackground:
-                SwiftUiCatalogBackgroundView(viewModel: SwiftUiCatalogBackgroundViewModel())
+                SwiftUiCatalogBackgroundView(viewModel: Container.shared.swiftUiCatalogBackgroundViewModel())
             case .swiftUiCatalogOverlay:
-                SwiftUiCatalogOverlayView(viewModel: SwiftUiCatalogOverlayViewModel())
+                SwiftUiCatalogOverlayView(viewModel: Container.shared.swiftUiCatalogOverlayViewModel())
             case .swiftUiCatalogDisclosureGroup:
-                SwiftUiCatalogDisclosureGroupView(viewModel: SwiftUiCatalogDisclosureGroupViewModel())
+                SwiftUiCatalogDisclosureGroupView(viewModel: Container.shared.swiftUiCatalogDisclosureGroupViewModel())
             case .swiftUiCatalogOutlineGroup:
-                SwiftUiCatalogOutlineGroupView(viewModel: SwiftUiCatalogOutlineGroupViewModel())
+                SwiftUiCatalogOutlineGroupView(viewModel: Container.shared.swiftUiCatalogOutlineGroupViewModel())
             case .swiftUiCatalogToolbar:
-                SwiftUiCatalogToolbarView(viewModel: SwiftUiCatalogToolbarViewModel())
+                SwiftUiCatalogToolbarView(viewModel: Container.shared.swiftUiCatalogToolbarViewModel())
             case .swiftUiCatalogFrame:
-                SwiftUiCatalogFrameView(viewModel: SwiftUiCatalogFrameViewModel())
+                SwiftUiCatalogFrameView(viewModel: Container.shared.swiftUiCatalogFrameViewModel())
             case .swiftUiCatalogSafeAreaInset:
-                SwiftUiCatalogSafeAreaInsetView(viewModel: SwiftUiCatalogSafeAreaInsetViewModel())
+                SwiftUiCatalogSafeAreaInsetView(viewModel: Container.shared.swiftUiCatalogSafeAreaInsetViewModel())
             case .swiftUiCatalogEmptyView:
-                SwiftUiCatalogEmptyView(viewModel: SwiftUiCatalogEmptyViewModel())
+                SwiftUiCatalogEmptyView(viewModel: Container.shared.swiftUiCatalogEmptyViewModel())
             
             case .swiftUiCatalogContainers:
-                SwiftUiCatalogContainersView(viewModel: SwiftUiCatalogContainersViewModel())
+                SwiftUiCatalogContainersView(viewModel: Container.shared.swiftUiCatalogContainersViewModel())
             case .swiftUiCatalogGroup:
-                SwiftUiCatalogGroupView(viewModel: SwiftUiCatalogGroupViewModel())
+                SwiftUiCatalogGroupView(viewModel: Container.shared.swiftUiCatalogGroupViewModel())
             case .swiftUiCatalogForm:
-                SwiftUiCatalogFormView(viewModel: SwiftUiCatalogFormViewModel())
+                SwiftUiCatalogFormView(viewModel: Container.shared.swiftUiCatalogFormViewModel())
             case .swiftUiCatalogSection:
-                SwiftUiCatalogSectionView(viewModel: SwiftUiCatalogSectionViewModel())
+                SwiftUiCatalogSectionView(viewModel: Container.shared.swiftUiCatalogSectionViewModel())
             case .swiftUiCatalogViewThatFits:
-                SwiftUiCatalogViewThatFitsView(viewModel: SwiftUiCatalogViewThatFitsViewModel())
+                SwiftUiCatalogViewThatFitsView(viewModel: Container.shared.swiftUiCatalogViewThatFitsViewModel())
             
             case .swiftUiCatalogModals:
-                SwiftUiCatalogModalsView(viewModel: SwiftUiCatalogModalsViewModel())
+                SwiftUiCatalogModalsView(viewModel: Container.shared.swiftUiCatalogModalsViewModel())
             case .swiftUiCatalogAlert:
-                SwiftUiCatalogAlertView(viewModel: SwiftUiCatalogAlertViewModel())
+                SwiftUiCatalogAlertView(viewModel: Container.shared.swiftUiCatalogAlertViewModel())
             case .swiftUiCatalogConfirmationDialog:
-                SwiftUiCatalogConfirmationDialogView(viewModel: SwiftUiCatalogConfirmationDialogViewModel())
+                SwiftUiCatalogConfirmationDialogView(viewModel: Container.shared.swiftUiCatalogConfirmationDialogViewModel())
             case .swiftUiCatalogNotification:
-                SwiftUiCatalogNotificationView(viewModel: SwiftUiCatalogNotificationViewModel())
+                SwiftUiCatalogNotificationView(viewModel: Container.shared.swiftUiCatalogNotificationViewModel())
             case .swiftUiCatalogSheet:
-                SwiftUiCatalogSheetView(viewModel: SwiftUiCatalogSheetViewModel())
+                SwiftUiCatalogSheetView(viewModel: Container.shared.swiftUiCatalogSheetViewModel())
             case .swiftUiCatalogInspector:
-                SwiftUiCatalogInspectorView(viewModel: SwiftUiCatalogInspectorViewModel())
+                SwiftUiCatalogInspectorView(viewModel: Container.shared.swiftUiCatalogInspectorViewModel())
             case .swiftUiCatalogPopover:
-                SwiftUiCatalogPopoverView(viewModel: SwiftUiCatalogPopoverViewModel())
+                SwiftUiCatalogPopoverView(viewModel: Container.shared.swiftUiCatalogPopoverViewModel())
 
             case .swiftUiCatalogMiscellaneous:
-                SwiftUiCatalogMiscellaneousView(viewModel: SwiftUiCatalogMiscellaneousViewModel())
+                SwiftUiCatalogMiscellaneousView(viewModel: Container.shared.swiftUiCatalogMiscellaneousViewModel())
             
             case .swiftUiWidget:
-                SwiftUiWidgetView(viewModel: SwiftUiWidgetViewModel())
+                SwiftUiWidgetView(viewModel: Container.shared.swiftUiWidgetViewModel())
 
             case .swiftUiOtherBasics:
-                SwiftUiOtherBasicsView(viewModel: SwiftUiOtherBasicsViewModel())
+                SwiftUiOtherBasicsView(viewModel: Container.shared.swiftUiOtherBasicsViewModel())
             case .swiftUiBackgroundTask:
-                SwiftUiBackgroundTaskView(viewModel: SwiftUiBackgroundTaskViewModel())
+                SwiftUiBackgroundTaskView(viewModel: Container.shared.swiftUiBackgroundTaskViewModel())
             case .swiftUiNotificationCenter:
-                SwiftUiNotificationCenterView(viewModel: SwiftUiNotificationCenterViewModel())
+                SwiftUiNotificationCenterView(viewModel: Container.shared.swiftUiNotificationCenterViewModel())
             case .swiftUiNotification:
-                SwiftUiNotificationView(viewModel: SwiftUiNotificationViewModel())
+                SwiftUiNotificationView(viewModel: Container.shared.swiftUiNotificationViewModel())
             
             case .uiKit:
                 UiKitView()
             
             case .apiHandling:
-                ApiHandlingView(viewModel: ApiHandlingViewModel())
+                ApiHandlingView(viewModel: Container.shared.apiHandlingViewModel())
 
             case .posts:
-                PostView(viewModel: PostViewModel())
+                PostView(
+                    viewModel: Container.shared.postViewModel()
+                )
 
             case .databaseHandling:
-                DatabaseHandlingView(viewModel: DatabaseHandlingViewModel())
+                DatabaseHandlingView(viewModel: Container.shared.databaseHandlingViewModel())
 
             case .architecture:
-                ArchitectureView(viewModel: ArchitectureViewModel())
-
-            case .dependencyManagement:
-                DependencyManagementView(viewModel: DependencyManagementViewModel())
-
-            case .deployment:
-                DeploymentView(viewModel: DeploymentViewModel())
-
-            case .bestPractices:
-                BestPracticesView(viewModel: BestPracticesViewModel())
+                ArchitectureView(viewModel: Container.shared.architectureViewModel())
             
 
+            case .dependencyInjection:
+                DependencyInjectionView(viewModel: Container.shared.dependencyInjectionViewModel())
+
+            case .dependencyManagement:
+                DependencyManagementView(viewModel: Container.shared.dependencyManagementViewModel())
+
+            case .deployment:
+                DeploymentView(viewModel: Container.shared.deploymentViewModel())
+
+            case .bestPractices:
+                BestPracticesView(viewModel: Container.shared.bestPracticesViewModel())
+            
             default:
-                PageNotFoundView(viewModel: PageNotFoundViewModel())
+                PageNotFoundView(viewModel: Container.shared.pageNotFoundViewModel())
         }
     }
     

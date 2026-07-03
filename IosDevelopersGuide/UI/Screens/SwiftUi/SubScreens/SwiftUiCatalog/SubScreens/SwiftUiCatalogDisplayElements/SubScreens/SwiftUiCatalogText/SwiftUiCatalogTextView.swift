@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiCatalogTextView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiCatalogTextViewModel
+    @StateObject var viewModel: SwiftUiCatalogTextViewModel
     
     func text() -> some View {
         return CustomSection(

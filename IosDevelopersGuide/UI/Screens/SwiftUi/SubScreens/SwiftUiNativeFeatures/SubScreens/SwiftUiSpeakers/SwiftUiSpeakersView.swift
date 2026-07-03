@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiSpeakersView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiSpeakersViewModel
+    @StateObject var viewModel: SwiftUiSpeakersViewModel
     
     func _temp() -> some View {
         return CustomSection(

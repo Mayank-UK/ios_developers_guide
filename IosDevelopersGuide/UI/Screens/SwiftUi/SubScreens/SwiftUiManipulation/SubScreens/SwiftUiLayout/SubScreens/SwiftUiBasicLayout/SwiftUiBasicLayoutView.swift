@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiBasicLayoutView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiBasicLayoutViewModel
+    @StateObject var viewModel: SwiftUiBasicLayoutViewModel
     
     func frameContainer() -> some View {
         return CustomSection(

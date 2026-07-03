@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftFundamentalsView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftFundamentalsViewModel
+    @StateObject var viewModel: SwiftFundamentalsViewModel
     
     func installation() -> some View {
         return CustomSection(

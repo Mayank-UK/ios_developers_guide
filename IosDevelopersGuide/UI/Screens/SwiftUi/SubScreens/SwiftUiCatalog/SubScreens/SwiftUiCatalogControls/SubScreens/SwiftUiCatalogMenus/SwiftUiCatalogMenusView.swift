@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiCatalogMenusView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiCatalogMenusViewModel
+    @StateObject var viewModel: SwiftUiCatalogMenusViewModel
     
     func menu() -> some View {
         return CustomSection(

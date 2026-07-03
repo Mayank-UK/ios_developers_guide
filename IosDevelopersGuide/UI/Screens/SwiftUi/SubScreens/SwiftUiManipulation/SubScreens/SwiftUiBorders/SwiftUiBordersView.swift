@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiBordersView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiBordersViewModel
+    @StateObject var viewModel: SwiftUiBordersViewModel
     
     func simpleBorders() -> some View {
         return CustomSection(

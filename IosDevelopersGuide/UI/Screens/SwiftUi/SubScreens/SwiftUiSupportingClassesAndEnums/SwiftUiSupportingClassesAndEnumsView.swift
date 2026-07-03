@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUiSupportingClassesAndEnumsView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: SwiftUiSupportingClassesAndEnumsViewModel
+    @StateObject var viewModel: SwiftUiSupportingClassesAndEnumsViewModel
     
     func color() -> some View {
         return CustomSection(

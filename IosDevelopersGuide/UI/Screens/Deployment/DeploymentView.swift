@@ -9,7 +9,7 @@ import SwiftUI
 
 struct DeploymentView: View {
     // inject the viewModel from route
-    @ObservedObject var viewModel: DeploymentViewModel
+    @StateObject var viewModel: DeploymentViewModel
     
     func testDeployment() -> some View {
         return CustomSection(
