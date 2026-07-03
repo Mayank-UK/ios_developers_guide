@@ -10,8 +10,6 @@ import SwiftUI
 
 class Router: ObservableObject {
     
-    private let diContainer = DIContainer.shared
-    
     enum routePaths: Hashable {
         case home
         
@@ -160,10 +158,10 @@ class Router: ObservableObject {
         switch route {
             case .home:
                 HomeView(viewModel: HomeViewModel())
-            
+
             case .iosFundamentals:
                 IosFundamentalsView(viewModel: IosFundamentalsViewModel())
-            
+
             case .swiftFundamentals:
                 SwiftFundamentalsView(viewModel: SwiftFundamentalsViewModel())
             
@@ -211,7 +209,7 @@ class Router: ObservableObject {
             
             case .swiftUiDesignSystem:
                 SwiftUiDesignSystemView(viewModel: SwiftUiDesignSystemViewModel())
-            
+
             case .swiftUiResponsiveDesign:
                 SwiftUiResponsiveDesignView(viewModel: SwiftUiResponsiveDesignViewModel())
             
@@ -312,7 +310,7 @@ class Router: ObservableObject {
                 SwiftUiCatalogTableView(viewModel: SwiftUiCatalogTableViewModel())
             
             case .swiftUiCatalogLayouts:
-                SwiftUiLayoutView(viewModel: SwiftUiLayoutViewModel())
+                SwiftUiCatalogLayoutsView(viewModel: SwiftUiCatalogLayoutsViewModel())
             case .swiftUiCatalogStacks:
                 SwiftUiCatalogStacksView(viewModel: SwiftUiCatalogStacksViewModel())
             case .swiftUiCatalogList:
@@ -357,7 +355,7 @@ class Router: ObservableObject {
             case .swiftUiCatalogSection:
                 SwiftUiCatalogSectionView(viewModel: SwiftUiCatalogSectionViewModel())
             case .swiftUiCatalogViewThatFits:
-                SwiftUiCatalogSectionView(viewModel: SwiftUiCatalogSectionViewModel())
+                SwiftUiCatalogViewThatFitsView(viewModel: SwiftUiCatalogViewThatFitsViewModel())
             
             case .swiftUiCatalogModals:
                 SwiftUiCatalogModalsView(viewModel: SwiftUiCatalogModalsViewModel())
@@ -379,7 +377,7 @@ class Router: ObservableObject {
             
             case .swiftUiWidget:
                 SwiftUiWidgetView(viewModel: SwiftUiWidgetViewModel())
-            
+
             case .swiftUiOtherBasics:
                 SwiftUiOtherBasicsView(viewModel: SwiftUiOtherBasicsViewModel())
             case .swiftUiBackgroundTask:
@@ -394,30 +392,26 @@ class Router: ObservableObject {
             
             case .apiHandling:
                 ApiHandlingView(viewModel: ApiHandlingViewModel())
-            
+
             case .posts:
-                PostView(
-                    viewModel: PostViewModel(
-                        fetchPostsUseCase: DIContainer.shared.fetchPostsUseCase
-                    )
-                )
-            
+                PostView(viewModel: PostViewModel())
+
             case .databaseHandling:
                 DatabaseHandlingView(viewModel: DatabaseHandlingViewModel())
-            
+
             case .architecture:
                 ArchitectureView(viewModel: ArchitectureViewModel())
-            
+
             case .dependencyManagement:
                 DependencyManagementView(viewModel: DependencyManagementViewModel())
-            
+
             case .deployment:
                 DeploymentView(viewModel: DeploymentViewModel())
-            
+
             case .bestPractices:
                 BestPracticesView(viewModel: BestPracticesViewModel())
             
-            
+
             default:
                 PageNotFoundView(viewModel: PageNotFoundViewModel())
         }

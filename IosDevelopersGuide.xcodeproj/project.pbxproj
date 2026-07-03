@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		242450072FF7A701006E6384 /* NetworkModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242450062FF7A6FC006E6384 /* NetworkModule.swift */; };
+		242450092FF7A79E006E6384 /* DatabaseModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242450082FF7A799006E6384 /* DatabaseModule.swift */; };
+		2424500B2FF7A7B6006E6384 /* RepositoryModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424500A2FF7A7B3006E6384 /* RepositoryModule.swift */; };
+		2424500D2FF7A7C9006E6384 /* UseCaseModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424500C2FF7A7C3006E6384 /* UseCaseModule.swift */; };
+		242450102FF7A8A6006E6384 /* FactoryKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2424500F2FF7A8A6006E6384 /* FactoryKit */; };
 		242FD1F02C80702000C450FE /* SwiftUiNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242FD1EF2C80702000C450FE /* SwiftUiNotificationView.swift */; };
 		242FD1F22C80705800C450FE /* SwiftUiNotificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242FD1F12C80705800C450FE /* SwiftUiNotificationViewModel.swift */; };
 		242FD1F52C807F5D00C450FE /* SwiftUiWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242FD1F42C807F5D00C450FE /* SwiftUiWidgetView.swift */; };
@@ -169,7 +174,6 @@
 		249DFF1D2C772CD9004BA3AC /* FetchPostsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249DFF1C2C772CD9004BA3AC /* FetchPostsUseCase.swift */; };
 		249DFF202C772D5D004BA3AC /* PostRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249DFF1F2C772D5D004BA3AC /* PostRepositoryImpl.swift */; };
 		249DFF222C772D94004BA3AC /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249DFF212C772D94004BA3AC /* Post.swift */; };
-		249DFF252C772DC6004BA3AC /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249DFF242C772DC6004BA3AC /* DIContainer.swift */; };
 		249DFF272C772DF8004BA3AC /* PostRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249DFF262C772DF8004BA3AC /* PostRepository.swift */; };
 		249DFF292C772E4F004BA3AC /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249DFF282C772E4F004BA3AC /* ApiService.swift */; };
 		249DFF2B2C772E78004BA3AC /* PostDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249DFF2A2C772E78004BA3AC /* PostDto.swift */; };
@@ -303,6 +307,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		242450062FF7A6FC006E6384 /* NetworkModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModule.swift; sourceTree = "<group>"; };
+		242450082FF7A799006E6384 /* DatabaseModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseModule.swift; sourceTree = "<group>"; };
+		2424500A2FF7A7B3006E6384 /* RepositoryModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryModule.swift; sourceTree = "<group>"; };
+		2424500C2FF7A7C3006E6384 /* UseCaseModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseModule.swift; sourceTree = "<group>"; };
 		242FD1EF2C80702000C450FE /* SwiftUiNotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiNotificationView.swift; sourceTree = "<group>"; };
 		242FD1F12C80705800C450FE /* SwiftUiNotificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiNotificationViewModel.swift; sourceTree = "<group>"; };
 		242FD1F42C807F5D00C450FE /* SwiftUiWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiWidgetView.swift; sourceTree = "<group>"; };
@@ -468,7 +476,6 @@
 		249DFF1C2C772CD9004BA3AC /* FetchPostsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchPostsUseCase.swift; sourceTree = "<group>"; };
 		249DFF1F2C772D5D004BA3AC /* PostRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRepositoryImpl.swift; sourceTree = "<group>"; };
 		249DFF212C772D94004BA3AC /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
-		249DFF242C772DC6004BA3AC /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
 		249DFF262C772DF8004BA3AC /* PostRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRepository.swift; sourceTree = "<group>"; };
 		249DFF282C772E4F004BA3AC /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		249DFF2A2C772E78004BA3AC /* PostDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDto.swift; sourceTree = "<group>"; };
@@ -592,6 +599,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				242450102FF7A8A6006E6384 /* FactoryKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2082,7 +2090,10 @@
 		249DFF232C772DB4004BA3AC /* DI */ = {
 			isa = PBXGroup;
 			children = (
-				249DFF242C772DC6004BA3AC /* DIContainer.swift */,
+				2424500C2FF7A7C3006E6384 /* UseCaseModule.swift */,
+				2424500A2FF7A7B3006E6384 /* RepositoryModule.swift */,
+				242450082FF7A799006E6384 /* DatabaseModule.swift */,
+				242450062FF7A6FC006E6384 /* NetworkModule.swift */,
 			);
 			path = DI;
 			sourceTree = "<group>";
@@ -2199,6 +2210,9 @@
 				Base,
 			);
 			mainGroup = 2443B3DA2B91C092000FE1FD;
+			packageReferences = (
+				2424500E2FF7A896006E6384 /* XCRemoteSwiftPackageReference "Factory" */,
+			);
 			productRefGroup = 2443B3E42B91C092000FE1FD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -2265,6 +2279,7 @@
 				249DFFAA2C775854004BA3AC /* SwiftUiCatalogColorViewModel.swift in Sources */,
 				249DFF582C775688004BA3AC /* SwiftUiTextViewModel.swift in Sources */,
 				249DFF482C775643004BA3AC /* SwiftUiManipulationViewModel.swift in Sources */,
+				2424500B2FF7A7B6006E6384 /* RepositoryModule.swift in Sources */,
 				245E05ED2B9A1502005FB6E9 /* SwiftUiCatalogMiscellaneousView.swift in Sources */,
 				245E06702B9B04DD005FB6E9 /* SwiftUiCatalogInspectorView.swift in Sources */,
 				2443B4052B91C60A000FE1FD /* SharedDataLayer.swift in Sources */,
@@ -2278,6 +2293,7 @@
 				245E05C22B9A09BE005FB6E9 /* SwiftUiPositioningView.swift in Sources */,
 				245E06242B9B00F7005FB6E9 /* SwiftUiCatalogLabelView.swift in Sources */,
 				245E05782B99FDCC005FB6E9 /* ApiHandlingView.swift in Sources */,
+				242450092FF7A79E006E6384 /* DatabaseModule.swift in Sources */,
 				249DFFE62C775965004BA3AC /* SwiftUiCatalogNotificationViewModel.swift in Sources */,
 				249B77F92BC6919C00EFEAB7 /* SwiftUiAccelerometerView.swift in Sources */,
 				249DFF902C7757EF004BA3AC /* SwiftUiCatalogStepperViewModel.swift in Sources */,
@@ -2360,7 +2376,6 @@
 				249DFF5E2C77569D004BA3AC /* SwiftUiEffectsViewModel.swift in Sources */,
 				249DFF882C7757D5004BA3AC /* SwiftUiCatalogTextEditorViewModel.swift in Sources */,
 				2443B3E72B91C092000FE1FD /* IosDevelopersGuideApp.swift in Sources */,
-				249DFF252C772DC6004BA3AC /* DIContainer.swift in Sources */,
 				249DFF4E2C775661004BA3AC /* SwiftUiBasicLayoutViewModel.swift in Sources */,
 				245E066A2B9B04A7005FB6E9 /* SwiftUiCatalogConfirmationDialogView.swift in Sources */,
 				245E066C2B9B04BB005FB6E9 /* SwiftUiCatalogNotificationView.swift in Sources */,
@@ -2383,6 +2398,7 @@
 				249B77F72BC6918600EFEAB7 /* SwiftUiCompassView.swift in Sources */,
 				249DFEDE2C75DA73004BA3AC /* DesignSystem.swift in Sources */,
 				245E065C2B9B03A3005FB6E9 /* SwiftUiCatalogSafeAreaInsetView.swift in Sources */,
+				242450072FF7A701006E6384 /* NetworkModule.swift in Sources */,
 				245E06302B9B01C2005FB6E9 /* SwiftUiCatalogCanvasView.swift in Sources */,
 				245E06542B9B0357005FB6E9 /* SwiftUiCatalogDisclosureGroupView.swift in Sources */,
 				249DFF562C775682004BA3AC /* SwiftUiAlignmentViewModel.swift in Sources */,
@@ -2450,6 +2466,7 @@
 				245E06402B9B0273005FB6E9 /* SwiftUiCatalogGridsView.swift in Sources */,
 				249DFF6E2C7756D4004BA3AC /* SwiftUiNavigationAndRoutingViewModel.swift in Sources */,
 				2443B4012B91C5E4000FE1FD /* Helpers.swift in Sources */,
+				2424500D2FF7A7C9006E6384 /* UseCaseModule.swift in Sources */,
 				245E063E2B9B0266005FB6E9 /* SwiftUiCatalogForEachView.swift in Sources */,
 				2443B42B2B9862B9000FE1FD /* IosFundamentalsView.swift in Sources */,
 				249DFF6C2C7756CD004BA3AC /* SwiftUiLifeCycleViewModel.swift in Sources */,
@@ -2808,6 +2825,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2424500E2FF7A896006E6384 /* XCRemoteSwiftPackageReference "Factory" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Factory";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.2.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2424500F2FF7A8A6006E6384 /* FactoryKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2424500E2FF7A896006E6384 /* XCRemoteSwiftPackageReference "Factory" */;
+			productName = FactoryKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		249DFF072C76FCC5004BA3AC /* IosDevelopersGuideApp.xcdatamodeld */ = {

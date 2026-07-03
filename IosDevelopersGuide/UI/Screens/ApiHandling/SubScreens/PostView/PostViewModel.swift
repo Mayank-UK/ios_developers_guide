@@ -6,18 +6,19 @@
 //
 
 import Foundation
+import FactoryKit
 
 @MainActor
-class PostViewModel: ObservableObject {
+final class PostViewModel: ObservableObject {
     @Published var posts: [Post] = []
     @Published var errorMessage: String?
-    
-    private let fetchPostsUseCase: FetchPostsUseCase
-    
-    init(fetchPostsUseCase: FetchPostsUseCase) {
-        self.fetchPostsUseCase = fetchPostsUseCase
+
+    @Injected(\.fetchPostsUseCase) private var fetchPostsUseCase: FetchPostsUseCase
+
+    init() {
+        // Dependencies injected via @Injected property wrapper
     }
-    
+
     func fetchPosts() async {
         do {
             posts = try await fetchPostsUseCase.execute()
@@ -28,3 +29,4 @@ class PostViewModel: ObservableObject {
         }
     }
 }
+
