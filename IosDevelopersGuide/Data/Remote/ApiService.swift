@@ -35,25 +35,24 @@ protocol APIServiceProtocol {
 class APIService: APIServiceProtocol {    
     // Generic method for making network requests
     private func fetchData<T: Decodable>(from urlString: String, type: T.Type) async throws -> T {
-       guard let url = URL(string: urlString) else {
-           throw ErrorTypes.networkError(URLError(.badURL))
-       }
-       
-       do {
-           let (data, _) = try await URLSession.shared.data(from: url)
-           return try JSONDecoder().decode(T.self, from: data)
-       } catch let urlError as URLError {
-           throw ErrorTypes.networkError(urlError)
-       } catch let decodingError as DecodingError {
-           throw ErrorTypes.decodingError(decodingError)
-       } catch {
-           throw ErrorTypes.unknownError(error)
-       }
+        guard let url = URL(string: urlString) else {
+            throw NetworkException("Invalid URL", context: urlString)
+        }
+
+        return try await guardedApiCall {
+            // UNCOMMENT ONE OF THESE TO TEST ERROR SCENARIOS:
+//             throw ErrorTestingHelper.simulateNetworkTimeout()
+            //  throw ErrorTestingHelper.simulateNoConnection()
+            // throw ErrorTestingHelper.simulateServerError()
+
+            let (data, _) = try await URLSession.shared.data(from: url)
+            return try JSONDecoder().decode(T.self, from: data)
+        }
     }
 
     // Fetch posts method using the generic fetchData
     func fetchPosts() async throws -> [PostDTO] {
-       return try await fetchData(from: "https://jsonplaceholder.typicode.com/posts", type: [PostDTO].self)
+        return try await fetchData(from: "https://jsonplaceholder.typicode.com/posts", type: [PostDTO].self)
     }
 }
 

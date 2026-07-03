@@ -50,19 +50,52 @@ struct PostView: View {
     }
     
     func basics() -> some View {
-        VStack {
-            if let errorMessage = viewModel.errorMessage {
-                Text(errorMessage)
-                    .foregroundColor(.red)
-                    .padding()
-            }
-            List(viewModel.posts) { post in
-                PostRow(post: post)
+        ZStack {
+            // Main content
+            if viewModel.isLoading {
+                // Show loading indicator
+                ProgressView("Loading posts...")
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+            } else if let failure = viewModel.currentFailure {
+                // Show error based on severity
+                if failure.severity == .critical {
+                    // Critical errors: Full error screen
+                    ErrorView(
+                        failure: failure,
+                        onRetry: {
+                            viewModel.currentFailure = nil
+                            Task {
+                                await viewModel.fetchPosts()
+                            }
+                        }
+                    )
+                } else {
+                    // Warnings/Info: Show content with overlay error component
+                    List(viewModel.posts) { post in
+                        PostRow(post: post)
+                    }
+                    // Non-blocking error overlay
+                    VStack {
+                        Spacer()
+                        ErrorSnackbar(
+                            failure: failure,
+                            onDismiss: {
+                                viewModel.currentFailure = nil
+                            }
+                        )
+                    }
+                }
+            } else {
+                // Show posts when there's no error
+                List(viewModel.posts) { post in
+                    PostRow(post: post)
+                }
             }
         }
         .frame(height: screenData.height)
-        .onAppear {
-            Task {
+        .task {
+            // Only fetch once when view appears
+            if viewModel.posts.isEmpty && viewModel.currentFailure == nil {
                 await viewModel.fetchPosts()
             }
         }

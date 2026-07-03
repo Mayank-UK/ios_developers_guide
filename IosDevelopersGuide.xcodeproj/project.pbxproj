@@ -15,6 +15,25 @@
 		242450182FF7D6EA006E6384 /* ViewModelModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242450172FF7D6E5006E6384 /* ViewModelModule.swift */; };
 		2424501D2FF7ED12006E6384 /* DependencyInjectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424501A2FF7ED12006E6384 /* DependencyInjectionView.swift */; };
 		2424501E2FF7ED12006E6384 /* DependencyInjectionView.swiftModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424501B2FF7ED12006E6384 /* DependencyInjectionView.swiftModel.swift */; };
+		242450212FF7F5AA006E6384 /* ResultType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242450202FF7F5A7006E6384 /* ResultType.swift */; };
+		242450242FF7F638006E6384 /* Failure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242450232FF7F635006E6384 /* Failure.swift */; };
+		242450262FF7F67C006E6384 /* NetworkFailure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242450252FF7F678006E6384 /* NetworkFailure.swift */; };
+		242450282FF7F699006E6384 /* ServerFailure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242450272FF7F696006E6384 /* ServerFailure.swift */; };
+		2424502A2FF7F6B6006E6384 /* CacheFailure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242450292FF7F6B3006E6384 /* CacheFailure.swift */; };
+		2424502D2FF7F79B006E6384 /* AppException.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424502C2FF7F791006E6384 /* AppException.swift */; };
+		2424502F2FF7F7DB006E6384 /* NetworkException.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424502E2FF7F7D8006E6384 /* NetworkException.swift */; };
+		242450312FF7F7F5006E6384 /* ServerException.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242450302FF7F7F4006E6384 /* ServerException.swift */; };
+		242450332FF7F80C006E6384 /* DatabaseException.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242450322FF7F80A006E6384 /* DatabaseException.swift */; };
+		242450352FF7F82A006E6384 /* DecodingException.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242450342FF7F827006E6384 /* DecodingException.swift */; };
+		242450382FF7F8B3006E6384 /* ExceptionMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242450372FF7F8B0006E6384 /* ExceptionMapper.swift */; };
+		2424503B2FF7F90E006E6384 /* GuardedApiCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424503A2FF7F90B006E6384 /* GuardedApiCall.swift */; };
+		2424503D2FF7F93B006E6384 /* SafeRepositoryCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424503C2FF7F939006E6384 /* SafeRepositoryCall.swift */; };
+		242450402FF7FC43006E6384 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424503F2FF7FC40006E6384 /* ErrorView.swift */; };
+		242450422FF7FD32006E6384 /* ErrorBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242450412FF7FD32006E6384 /* ErrorBanner.swift */; };
+		242450442FF7FDC5006E6384 /* ErrorSnackbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242450432FF7FDC1006E6384 /* ErrorSnackbar.swift */; };
+		242450472FF7FE6B006E6384 /* ErrorTestingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242450462FF7FE64006E6384 /* ErrorTestingHelper.swift */; };
+		242450492FF8027C006E6384 /* FakeApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242450482FF80277006E6384 /* FakeApiService.swift */; };
+		2424504B2FF80285006E6384 /* FakeAppDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424504A2FF80282006E6384 /* FakeAppDatabase.swift */; };
 		242FD1F02C80702000C450FE /* SwiftUiNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242FD1EF2C80702000C450FE /* SwiftUiNotificationView.swift */; };
 		242FD1F22C80705800C450FE /* SwiftUiNotificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242FD1F12C80705800C450FE /* SwiftUiNotificationViewModel.swift */; };
 		242FD1F52C807F5D00C450FE /* SwiftUiWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242FD1F42C807F5D00C450FE /* SwiftUiWidgetView.swift */; };
@@ -317,6 +336,25 @@
 		242450172FF7D6E5006E6384 /* ViewModelModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelModule.swift; sourceTree = "<group>"; };
 		2424501A2FF7ED12006E6384 /* DependencyInjectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjectionView.swift; sourceTree = "<group>"; };
 		2424501B2FF7ED12006E6384 /* DependencyInjectionView.swiftModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjectionView.swiftModel.swift; sourceTree = "<group>"; };
+		242450202FF7F5A7006E6384 /* ResultType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultType.swift; sourceTree = "<group>"; };
+		242450232FF7F635006E6384 /* Failure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Failure.swift; sourceTree = "<group>"; };
+		242450252FF7F678006E6384 /* NetworkFailure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkFailure.swift; sourceTree = "<group>"; };
+		242450272FF7F696006E6384 /* ServerFailure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerFailure.swift; sourceTree = "<group>"; };
+		242450292FF7F6B3006E6384 /* CacheFailure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheFailure.swift; sourceTree = "<group>"; };
+		2424502C2FF7F791006E6384 /* AppException.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppException.swift; sourceTree = "<group>"; };
+		2424502E2FF7F7D8006E6384 /* NetworkException.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkException.swift; sourceTree = "<group>"; };
+		242450302FF7F7F4006E6384 /* ServerException.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerException.swift; sourceTree = "<group>"; };
+		242450322FF7F80A006E6384 /* DatabaseException.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseException.swift; sourceTree = "<group>"; };
+		242450342FF7F827006E6384 /* DecodingException.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodingException.swift; sourceTree = "<group>"; };
+		242450372FF7F8B0006E6384 /* ExceptionMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExceptionMapper.swift; sourceTree = "<group>"; };
+		2424503A2FF7F90B006E6384 /* GuardedApiCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuardedApiCall.swift; sourceTree = "<group>"; };
+		2424503C2FF7F939006E6384 /* SafeRepositoryCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeRepositoryCall.swift; sourceTree = "<group>"; };
+		2424503F2FF7FC40006E6384 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		242450412FF7FD32006E6384 /* ErrorBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorBanner.swift; sourceTree = "<group>"; };
+		242450432FF7FDC1006E6384 /* ErrorSnackbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorSnackbar.swift; sourceTree = "<group>"; };
+		242450462FF7FE64006E6384 /* ErrorTestingHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorTestingHelper.swift; sourceTree = "<group>"; };
+		242450482FF80277006E6384 /* FakeApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeApiService.swift; sourceTree = "<group>"; };
+		2424504A2FF80282006E6384 /* FakeAppDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeAppDatabase.swift; sourceTree = "<group>"; };
 		242FD1EF2C80702000C450FE /* SwiftUiNotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiNotificationView.swift; sourceTree = "<group>"; };
 		242FD1F12C80705800C450FE /* SwiftUiNotificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiNotificationViewModel.swift; sourceTree = "<group>"; };
 		242FD1F42C807F5D00C450FE /* SwiftUiWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiWidgetView.swift; sourceTree = "<group>"; };
@@ -621,6 +659,75 @@
 			path = DependencyInjection;
 			sourceTree = "<group>";
 		};
+		2424501F2FF7F590006E6384 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				242450452FF7FE58006E6384 /* Testing */,
+				242450392FF7F906006E6384 /* Guards */,
+				242450362FF7F89F006E6384 /* Mapping */,
+				2424502B2FF7F782006E6384 /* Exceptions */,
+				242450222FF7F626006E6384 /* Failures */,
+				242450202FF7F5A7006E6384 /* ResultType.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		242450222FF7F626006E6384 /* Failures */ = {
+			isa = PBXGroup;
+			children = (
+				242450292FF7F6B3006E6384 /* CacheFailure.swift */,
+				242450272FF7F696006E6384 /* ServerFailure.swift */,
+				242450252FF7F678006E6384 /* NetworkFailure.swift */,
+				242450232FF7F635006E6384 /* Failure.swift */,
+			);
+			path = Failures;
+			sourceTree = "<group>";
+		};
+		2424502B2FF7F782006E6384 /* Exceptions */ = {
+			isa = PBXGroup;
+			children = (
+				242450342FF7F827006E6384 /* DecodingException.swift */,
+				242450322FF7F80A006E6384 /* DatabaseException.swift */,
+				242450302FF7F7F4006E6384 /* ServerException.swift */,
+				2424502E2FF7F7D8006E6384 /* NetworkException.swift */,
+				2424502C2FF7F791006E6384 /* AppException.swift */,
+			);
+			path = Exceptions;
+			sourceTree = "<group>";
+		};
+		242450362FF7F89F006E6384 /* Mapping */ = {
+			isa = PBXGroup;
+			children = (
+				242450372FF7F8B0006E6384 /* ExceptionMapper.swift */,
+			);
+			path = Mapping;
+			sourceTree = "<group>";
+		};
+		242450392FF7F906006E6384 /* Guards */ = {
+			isa = PBXGroup;
+			children = (
+				2424503C2FF7F939006E6384 /* SafeRepositoryCall.swift */,
+				2424503A2FF7F90B006E6384 /* GuardedApiCall.swift */,
+			);
+			path = Guards;
+			sourceTree = "<group>";
+		};
+		2424503E2FF7FC32006E6384 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				2424503F2FF7FC40006E6384 /* ErrorView.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		242450452FF7FE58006E6384 /* Testing */ = {
+			isa = PBXGroup;
+			children = (
+				242450462FF7FE64006E6384 /* ErrorTestingHelper.swift */,
+			);
+			path = Testing;
+			sourceTree = "<group>";
+		};
 		242FD1EE2C806FD500C450FE /* SwiftUiNotifications */ = {
 			isa = PBXGroup;
 			children = (
@@ -683,6 +790,7 @@
 		2443B3E52B91C092000FE1FD /* IosDevelopersGuide */ = {
 			isa = PBXGroup;
 			children = (
+				2424501F2FF7F590006E6384 /* Core */,
 				249D002E2C7888FC004BA3AC /* Info.plist */,
 				249D00172C7848D8004BA3AC /* Assets */,
 				249DFF232C772DB4004BA3AC /* DI */,
@@ -722,6 +830,8 @@
 		2443B3F72B91C10D000FE1FD /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				242450432FF7FDC1006E6384 /* ErrorSnackbar.swift */,
+				242450412FF7FD32006E6384 /* ErrorBanner.swift */,
 				2443B4182B972CF2000FE1FD /* PageScaffold.swift */,
 				2443B4262B9850FA000FE1FD /* Links.swift */,
 				245E06A72B9B2B44005FB6E9 /* CustomSection.swift */,
@@ -2021,6 +2131,7 @@
 		249DFEFE2C76E978004BA3AC /* Local */ = {
 			isa = PBXGroup;
 			children = (
+				2424504A2FF80282006E6384 /* FakeAppDatabase.swift */,
 				249DFF2C2C772E99004BA3AC /* AppDatabase.swift */,
 			);
 			path = Local;
@@ -2029,6 +2140,7 @@
 		249DFEFF2C76E97D004BA3AC /* Remote */ = {
 			isa = PBXGroup;
 			children = (
+				242450482FF80277006E6384 /* FakeApiService.swift */,
 				249DFF062C76EA66004BA3AC /* DTOs */,
 				249DFF282C772E4F004BA3AC /* ApiService.swift */,
 			);
@@ -2117,6 +2229,7 @@
 		249DFF2E2C772FEA004BA3AC /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				2424503E2FF7FC32006E6384 /* Error */,
 				2424501C2FF7ED12006E6384 /* DependencyInjection */,
 				249DFF322C7753A7004BA3AC /* Temp */,
 				245E05A42B9A0575005FB6E9 /* Architecture */,
@@ -2296,6 +2409,7 @@
 				249DFFAA2C775854004BA3AC /* SwiftUiCatalogColorViewModel.swift in Sources */,
 				249DFF582C775688004BA3AC /* SwiftUiTextViewModel.swift in Sources */,
 				249DFF482C775643004BA3AC /* SwiftUiManipulationViewModel.swift in Sources */,
+				242450282FF7F699006E6384 /* ServerFailure.swift in Sources */,
 				2424500B2FF7A7B6006E6384 /* RepositoryModule.swift in Sources */,
 				245E05ED2B9A1502005FB6E9 /* SwiftUiCatalogMiscellaneousView.swift in Sources */,
 				245E06702B9B04DD005FB6E9 /* SwiftUiCatalogInspectorView.swift in Sources */,
@@ -2309,6 +2423,7 @@
 				249DFF522C775675004BA3AC /* SwiftUiSpacingViewModel.swift in Sources */,
 				245E05C22B9A09BE005FB6E9 /* SwiftUiPositioningView.swift in Sources */,
 				245E06242B9B00F7005FB6E9 /* SwiftUiCatalogLabelView.swift in Sources */,
+				242450402FF7FC43006E6384 /* ErrorView.swift in Sources */,
 				245E05782B99FDCC005FB6E9 /* ApiHandlingView.swift in Sources */,
 				242450092FF7A79E006E6384 /* DatabaseModule.swift in Sources */,
 				249DFFE62C775965004BA3AC /* SwiftUiCatalogNotificationViewModel.swift in Sources */,
@@ -2322,6 +2437,7 @@
 				249D00122C7759FA004BA3AC /* HomeViewModel.swift in Sources */,
 				249DFFB62C775876004BA3AC /* SwiftUiCatalogTableViewModel.swift in Sources */,
 				249DFF942C775803004BA3AC /* SwiftUiCatalogTextViewModel.swift in Sources */,
+				242450332FF7F80C006E6384 /* DatabaseException.swift in Sources */,
 				249DFFFE2C7759B3004BA3AC /* SwiftUiBluetoothViewModel.swift in Sources */,
 				249DFF3E2C77560E004BA3AC /* ApiHandlingViewModel.swift in Sources */,
 				249DFFC02C7758E0004BA3AC /* SwiftUiCatalogNavigationStackViewModel.swift in Sources */,
@@ -2340,6 +2456,7 @@
 				245E06442B9B02C3005FB6E9 /* SwiftUiCatalogNavigationSplitView.swift in Sources */,
 				245E064A2B9B0302005FB6E9 /* SwiftUiCatalogGeometryReaderView.swift in Sources */,
 				245E05E92B9A149E005FB6E9 /* SwiftUiCatalogContainersView.swift in Sources */,
+				242450312FF7F7F5006E6384 /* ServerException.swift in Sources */,
 				249DFF7C2C775735004BA3AC /* SwiftUiCatalogContainersViewModel.swift in Sources */,
 				249DFF742C7756EB004BA3AC /* SwiftUiCatalogViewModel.swift in Sources */,
 				245E05B82B9A095C005FB6E9 /* SwiftUiAlignmentView.swift in Sources */,
@@ -2351,6 +2468,7 @@
 				249DFF4A2C775650004BA3AC /* SwiftUiLayoutViewModel.swift in Sources */,
 				242450182FF7D6EA006E6384 /* ViewModelModule.swift in Sources */,
 				249DFF682C7756BE004BA3AC /* SwiftUiFormViewModel.swift in Sources */,
+				2424502A2FF7F6B6006E6384 /* CacheFailure.swift in Sources */,
 				249DFF782C775713004BA3AC /* SwiftUiCatalogDisplayElementsViewModel.swift in Sources */,
 				249DFF402C77561E004BA3AC /* BestPracticesViewModel.swift in Sources */,
 				249842452BA3039500490FBC /* SwiftUiCatalogTextFieldView.swift in Sources */,
@@ -2382,6 +2500,7 @@
 				249DFFDA2C77593B004BA3AC /* SwiftUiCatalogGroupViewModel.swift in Sources */,
 				249DFFB82C7758C5004BA3AC /* SwiftUiCatalogStacksViewModel.swift in Sources */,
 				2424501E2FF7ED12006E6384 /* DependencyInjectionView.swiftModel.swift in Sources */,
+				2424502F2FF7F7DB006E6384 /* NetworkException.swift in Sources */,
 				249DFFE02C77594D004BA3AC /* SwiftUiCatalogViewThatFitsViewModel.swift in Sources */,
 				249DFFB22C77586C004BA3AC /* SwiftUiCatalogChartViewModel.swift in Sources */,
 				245E05842B99FE53005FB6E9 /* SwiftUiNativeFeaturesView.swift in Sources */,
@@ -2395,6 +2514,7 @@
 				249DFF5E2C77569D004BA3AC /* SwiftUiEffectsViewModel.swift in Sources */,
 				249DFF882C7757D5004BA3AC /* SwiftUiCatalogTextEditorViewModel.swift in Sources */,
 				2443B3E72B91C092000FE1FD /* IosDevelopersGuideApp.swift in Sources */,
+				242450242FF7F638006E6384 /* Failure.swift in Sources */,
 				249DFF4E2C775661004BA3AC /* SwiftUiBasicLayoutViewModel.swift in Sources */,
 				245E066A2B9B04A7005FB6E9 /* SwiftUiCatalogConfirmationDialogView.swift in Sources */,
 				245E066C2B9B04BB005FB6E9 /* SwiftUiCatalogNotificationView.swift in Sources */,
@@ -2409,7 +2529,9 @@
 				249DFFB02C775866004BA3AC /* SwiftUiCatalogDividerViewModel.swift in Sources */,
 				249B77EF2BC6912A00EFEAB7 /* SwiftUiMicrophoneView.swift in Sources */,
 				249DFFCE2C77590F004BA3AC /* SwiftUiCatalogDisclosureGroupViewModel.swift in Sources */,
+				242450212FF7F5AA006E6384 /* ResultType.swift in Sources */,
 				2443B4072B91C61A000FE1FD /* Validators.swift in Sources */,
+				242450442FF7FDC5006E6384 /* ErrorSnackbar.swift in Sources */,
 				245E06722B9B04EF005FB6E9 /* SwiftUiCatalogPopoverView.swift in Sources */,
 				249DFF3C2C775606004BA3AC /* SwiftUiOtherBasicsViewModel.swift in Sources */,
 				249DFFEA2C775971004BA3AC /* SwiftUiCatalogInspectorViewModel.swift in Sources */,
@@ -2418,6 +2540,7 @@
 				249DFEDE2C75DA73004BA3AC /* DesignSystem.swift in Sources */,
 				245E065C2B9B03A3005FB6E9 /* SwiftUiCatalogSafeAreaInsetView.swift in Sources */,
 				242450072FF7A701006E6384 /* NetworkModule.swift in Sources */,
+				242450422FF7FD32006E6384 /* ErrorBanner.swift in Sources */,
 				245E06302B9B01C2005FB6E9 /* SwiftUiCatalogCanvasView.swift in Sources */,
 				245E06542B9B0357005FB6E9 /* SwiftUiCatalogDisclosureGroupView.swift in Sources */,
 				249DFF562C775682004BA3AC /* SwiftUiAlignmentViewModel.swift in Sources */,
@@ -2425,6 +2548,7 @@
 				249D00162C775A09004BA3AC /* PageNotFoundViewModel.swift in Sources */,
 				245E060C2B9AF9F2005FB6E9 /* SwiftUiCatalogSliderView.swift in Sources */,
 				249B77F12BC6914D00EFEAB7 /* SwiftUiSpeakersView.swift in Sources */,
+				2424503B2FF7F90E006E6384 /* GuardedApiCall.swift in Sources */,
 				249D000E2C7759EE004BA3AC /* DependencyManagementViewModel.swift in Sources */,
 				249DFF422C775626004BA3AC /* IosFundamentalsViewModel.swift in Sources */,
 				249DFF2B2C772E78004BA3AC /* PostDto.swift in Sources */,
@@ -2444,8 +2568,12 @@
 				249DFF542C77567B004BA3AC /* SwiftUiColorsAndBackgroundsViewModel.swift in Sources */,
 				249DFF3A2C7755FD004BA3AC /* DatabaseHandlingViewModel.swift in Sources */,
 				242FD1F22C80705800C450FE /* SwiftUiNotificationViewModel.swift in Sources */,
+				2424502D2FF7F79B006E6384 /* AppException.swift in Sources */,
 				245E057C2B99FDFA005FB6E9 /* SwiftUiCatalogView.swift in Sources */,
+				242450352FF7F82A006E6384 /* DecodingException.swift in Sources */,
 				245E05862B99FE79005FB6E9 /* SwiftUiResponsiveDesignView.swift in Sources */,
+				242450262FF7F67C006E6384 /* NetworkFailure.swift in Sources */,
+				242450382FF7F8B3006E6384 /* ExceptionMapper.swift in Sources */,
 				249DFF622C7756AB004BA3AC /* SwiftUiVisibilityViewModel.swift in Sources */,
 				245E05C02B9A09A4005FB6E9 /* SwiftUiEffectsView.swift in Sources */,
 				245E06682B9B0498005FB6E9 /* SwiftUiCatalogAlertView.swift in Sources */,
@@ -2463,6 +2591,7 @@
 				249DFF802C775749004BA3AC /* SwiftUiCatalogMiscellaneousViewModel.swift in Sources */,
 				249DFF8A2C7757DB004BA3AC /* SwiftUiCatalogSecureFieldViewModel.swift in Sources */,
 				249DFFF22C77598D004BA3AC /* SwiftUiSupportingClassesAndEnumsViewModel.swift in Sources */,
+				2424503D2FF7F93B006E6384 /* SafeRepositoryCall.swift in Sources */,
 				245E05702B99FD6E005FB6E9 /* SwiftUiManipulationView.swift in Sources */,
 				249842472BA3078200490FBC /* SwiftUiCatalogTextEditorView.swift in Sources */,
 				245E05802B99FE19005FB6E9 /* SwiftUiTestingView.swift in Sources */,
@@ -2512,12 +2641,14 @@
 				245E05722B99FD7E005FB6E9 /* SwiftUiLifeCycleView.swift in Sources */,
 				249DFF382C7755EC004BA3AC /* ArchitectureViewModel.swift in Sources */,
 				242FD1F52C807F5D00C450FE /* SwiftUiWidgetView.swift in Sources */,
+				242450492FF8027C006E6384 /* FakeApiService.swift in Sources */,
 				245E05FA2B9AF37F005FB6E9 /* SwiftUiBasicLayoutView.swift in Sources */,
 				249DFFFA2C7759A9004BA3AC /* SwiftUiMicrophoneViewModel.swift in Sources */,
 				2443B4252B985017000FE1FD /* LinkData.swift in Sources */,
 				245E05822B99FE34005FB6E9 /* SwiftUiSupportingClassesAndEnumsView.swift in Sources */,
 				245E05F82B9AF368005FB6E9 /* SwiftUiPageLayoutView.swift in Sources */,
 				249DFF722C7756E5004BA3AC /* SwiftUiDesignSystemViewModel.swift in Sources */,
+				2424504B2FF80285006E6384 /* FakeAppDatabase.swift in Sources */,
 				245E06162B9AFED9005FB6E9 /* SwiftUiCatalogImageView.swift in Sources */,
 				245E06362B9B0200005FB6E9 /* SwiftUiCatalogChartView.swift in Sources */,
 				249DFFA82C77584F004BA3AC /* SwiftUiCatalogCanvasViewModel.swift in Sources */,
@@ -2541,6 +2672,7 @@
 				249DFFFC2C7759AE004BA3AC /* SwiftUiSpeakersViewModel.swift in Sources */,
 				249DFFC62C7758F6004BA3AC /* SwiftUiCatalogScrollViewModel.swift in Sources */,
 				245E05BA2B9A0969005FB6E9 /* SwiftUiTextView.swift in Sources */,
+				242450472FF7FE6B006E6384 /* ErrorTestingHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,5 +8,5 @@
 import Foundation
 
 protocol PostRepository {
-    func fetchPosts() async throws -> [Post]
+    func fetchPosts() async -> Result<[Post]>
 }

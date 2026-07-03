@@ -17,21 +17,27 @@ class PostRepositoryImplementation: PostRepository {
         self.context = context
     }
     
-    func fetchPosts() async throws -> [Post] {
-        do {
-            let localPosts = try fetchLocalPosts()
-            if !localPosts.isEmpty {
-                return localPosts
+    func fetchPosts() async -> Result<[Post]> {
+        return await safeRepositoryCall(
+            call: { [weak self] in
+                guard let self = self else {
+                    throw ServerException("Repository deallocated during operation")
+                }
+
+                // Directly fetch from remote (no cache for testing)
+                let remotePosts = try await self.apiService.fetchPosts()
+                try self.savePosts(remotePosts)
+                return remotePosts.map { Post(id: $0.id, title: $0.title, body: $0.body) }
+            },
+            onNetworkError: { networkException in
+                // Return failure directly (no cache fallback for testing)
+                return .failure(ExceptionMapper.mapExceptionToFailure(networkException))
+            },
+            onServerError: { serverException in
+                // Return failure directly (no cache fallback for testing)
+                return .failure(ExceptionMapper.mapExceptionToFailure(serverException))
             }
-            
-            let remotePosts = try await apiService.fetchPosts()
-            try savePosts(remotePosts)
-            return remotePosts.map { Post(id: $0.id, title: $0.title, body: $0.body) }
-        } catch let error as ErrorTypes {
-            throw error
-        } catch {
-            throw ErrorTypes.unknownError(error)
-        }
+        )
     }
     
     private func fetchLocalPosts() throws -> [Post] {
@@ -46,7 +52,7 @@ class PostRepositoryImplementation: PostRepository {
                 )
             }
         } catch {
-            throw ErrorTypes.databaseError(error)
+            throw DatabaseException.readFailed(cause: error, context: "fetchLocalPosts")
         }
     }
     
@@ -60,7 +66,7 @@ class PostRepositoryImplementation: PostRepository {
         do {
             try context.save()
         } catch {
-            throw ErrorTypes.databaseError(error)
+            throw DatabaseException.writeFailed(cause: error, context: "savePosts")
         }
     }
 }

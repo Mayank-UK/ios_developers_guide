@@ -14,7 +14,7 @@ class FetchPostsUseCase {
         self.repository = repository
     }
     
-    func execute() async throws -> [Post] {
-        return try await repository.fetchPosts()
+    func execute() async -> Result<[Post]> {
+        return await repository.fetchPosts()
     }
 }
