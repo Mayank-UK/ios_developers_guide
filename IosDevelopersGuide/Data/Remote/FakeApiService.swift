@@ -51,7 +51,8 @@ class FakeApiService: APIServiceProtocol {
     // MARK: - Initialization
     
     init(scenario: ApiScenario = .success, latency: TimeInterval = 0.6) {
-        self.scenario = scenario
+        // self.scenario = .success
+        self.scenario = .serverError
         self.latency = latency
     }
     

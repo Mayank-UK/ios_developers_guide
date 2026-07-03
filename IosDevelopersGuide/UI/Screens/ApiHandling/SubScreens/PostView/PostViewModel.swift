@@ -13,6 +13,7 @@ final class PostViewModel: ObservableObject {
     @Published var posts: [Post] = []
     @Published var currentFailure: Failure?
     @Published var isLoading: Bool = false
+    @Published var networkWarning: Failure? // For non-blocking warnings
 
     private let fetchPostsUseCase: FetchPostsUseCase
 

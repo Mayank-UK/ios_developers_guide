@@ -33,6 +33,8 @@ protocol APIServiceProtocol {
 }
 
 class APIService: APIServiceProtocol {    
+    private let baseURL = AppConfiguration.shared.apiBaseURL
+
     // Generic method for making network requests
     private func fetchData<T: Decodable>(from urlString: String, type: T.Type) async throws -> T {
         guard let url = URL(string: urlString) else {
@@ -50,9 +52,11 @@ class APIService: APIServiceProtocol {
         }
     }
 
-    // Fetch posts method using the generic fetchData
     func fetchPosts() async throws -> [PostDTO] {
-        return try await fetchData(from: "https://jsonplaceholder.typicode.com/posts", type: [PostDTO].self)
+        try await fetchData(
+            from: "\(baseURL)/posts",
+            type: [PostDTO].self
+        )
     }
 }
 

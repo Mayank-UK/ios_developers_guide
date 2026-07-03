@@ -1,130 +1,151 @@
 //
-//  FakeDatabaseService.swift
+//  FakeAppDatabase.swift
 //  IosDevelopersGuide
 //
-//  Created by [Your Name]
-//  Copyright © 2026. All rights reserved.
+//  Created by Mayank Upadhyay on 03/07/26.
 //
 
 import Foundation
-import CoreData
 
-// MARK: - Database Scenario Enum
+// MARK: - Database Scenario
 
 enum DbScenario {
-    case success              // Normal database operations
-    case empty                // No data in database
-    case readError            // Database read failure
-    case writeError           // Database write failure
-    case connectionFailed     // Database connection failure
+    case success
+    case empty
+    case readError
+    case writeError
+    case connectionFailed
 }
 
-// MARK: - Fake Database Service
+// MARK: - Fake Database
 
-/// Fake database service for testing different error scenarios
-/// This simulates CoreData operations without actual database
-///
-/// ## Usage Example
-/// ```swift
-/// let fakeDB = FakeDatabaseService(scenario: .empty)
-/// // All database operations will simulate empty database
-///
-/// // Change scenario dynamically:
-/// fakeDB.setScenario(.readError)
-/// ```
-class FakeDatabase {
-    
-    // MARK: - Properties
-    
+final class FakeAppDatabase: DatabaseServiceProtocol {
+
     private var scenario: DbScenario
     private var cachedPosts: [Post] = []
-    
-    // MARK: - Initialization
-    
+
     init(scenario: DbScenario = .success) {
-        self.scenario = scenario
-        print("🔧 [FAKE_DB] Initialized with scenario: \(scenario)")
+        // self.scenario = scenario
+        self.scenario = .readError
+
+        print("🧪 [FAKE_DB] Initialized with scenario: \(scenario)")
     }
-    
+
     // MARK: - Scenario Management
-    
-    /// Update the current scenario for testing
+
     func setScenario(_ scenario: DbScenario) {
         self.scenario = scenario
-        print("🔧 [FAKE_DB] Scenario changed to: \(scenario)")
+        print("🧪 [FAKE_DB] Scenario changed to: \(scenario)")
     }
-    
-    // MARK: - Database Operations Simulation
-    
-    /// Simulates fetching posts from database
+
+    // MARK: - DatabaseServiceProtocol
+
     func fetchPosts() throws -> [Post] {
-        print("🔧 [FAKE_DB] Simulating fetchPosts")
-        
+
+        print("🧪 [FAKE_DB] fetchPosts()")
+
         switch scenario {
+
         case .success:
-            print("✅ [FAKE_DB] Success: returning \(cachedPosts.count) cached posts")
+
+            print("✅ [FAKE_DB] Returning \(cachedPosts.count) cached posts")
             return cachedPosts
-            
+
         case .empty:
-            print("✅ [FAKE_DB] Empty scenario: returning no posts")
+
+            print("✅ [FAKE_DB] Returning empty cache")
             return []
-            
+
         case .readError:
+
             print("❌ [FAKE_DB] Simulating read error")
+
             throw DatabaseException.readFailed(
                 cause: nil,
-                context: "FakeDatabaseService read error simulation"
+                context: "FakeAppDatabase.fetchPosts"
             )
-            
+
         case .writeError:
-            print("✅ [FAKE_DB] Write error scenario: read still works")
+
+            print("✅ [FAKE_DB] Read still succeeds")
             return cachedPosts
-            
+
         case .connectionFailed:
+
             print("❌ [FAKE_DB] Simulating connection failure")
+
             throw DatabaseException.connectionFailed(
                 cause: nil,
-                context: "FakeDatabaseService connection failure simulation"
+                context: "FakeAppDatabase.fetchPosts"
             )
         }
     }
-    
-    /// Simulates saving posts to database
-    func savePosts(_ posts: [PostDTO]) throws {
-        print("🔧 [FAKE_DB] Simulating savePosts: \(posts.count) posts")
-        
+
+    func replacePosts(_ posts: [PostDTO]) throws {
+
+        print("🧪 [FAKE_DB] replacePosts(\(posts.count))")
+
         switch scenario {
-        case .success:
-            print("✅ [FAKE_DB] Success: caching posts")
-            cachedPosts = posts.map { Post(id: $0.id, title: $0.title, body: $0.body) }
-            
-        case .empty:
-            print("✅ [FAKE_DB] Empty scenario: caching posts")
-            cachedPosts = posts.map { Post(id: $0.id, title: $0.title, body: $0.body) }
-            
-        case .readError:
-            print("✅ [FAKE_DB] Read error scenario: write still works")
-            cachedPosts = posts.map { Post(id: $0.id, title: $0.title, body: $0.body) }
-            
+
+        case .success,
+             .empty,
+             .readError:
+
+            cachedPosts = posts.map {
+                Post(
+                    id: $0.id,
+                    title: $0.title,
+                    body: $0.body
+                )
+            }
+
+            print("✅ [FAKE_DB] Cache updated")
+
         case .writeError:
+
             print("❌ [FAKE_DB] Simulating write error")
+
             throw DatabaseException.writeFailed(
                 cause: nil,
-                context: "FakeDatabaseService write error simulation"
+                context: "FakeAppDatabase.replacePosts"
             )
-            
+
         case .connectionFailed:
+
             print("❌ [FAKE_DB] Simulating connection failure")
+
             throw DatabaseException.connectionFailed(
                 cause: nil,
-                context: "FakeDatabaseService connection failure simulation"
+                context: "FakeAppDatabase.replacePosts"
             )
         }
     }
-    
-    /// Clears the fake cache (useful for testing)
-    func clearCache() {
-        cachedPosts = []
-        print("🔧 [FAKE_DB] Cache cleared")
+
+    func clearPosts() throws {
+
+        print("🧪 [FAKE_DB] clearPosts()")
+
+        switch scenario {
+
+        case .success,
+             .empty,
+             .readError:
+
+            cachedPosts.removeAll()
+
+        case .writeError:
+
+            throw DatabaseException.writeFailed(
+                cause: nil,
+                context: "FakeAppDatabase.clearPosts"
+            )
+
+        case .connectionFailed:
+
+            throw DatabaseException.connectionFailed(
+                cause: nil,
+                context: "FakeAppDatabase.clearPosts"
+            )
+        }
     }
 }

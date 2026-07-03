@@ -6,67 +6,135 @@
 //
 
 import Foundation
-import CoreData
 
 class PostRepositoryImplementation: PostRepository {
+
     private let apiService: APIServiceProtocol
-    private let context: NSManagedObjectContext
-    
-    init(apiService: APIServiceProtocol, context: NSManagedObjectContext) {
+    private let database: DatabaseServiceProtocol
+
+    init(
+        apiService: APIServiceProtocol,
+        database: DatabaseServiceProtocol
+    ) {
         self.apiService = apiService
-        self.context = context
+        self.database = database
     }
-    
+
     func fetchPosts() async -> Result<[Post]> {
+
         return await safeRepositoryCall(
+
             call: { [weak self] in
-                guard let self = self else {
+
+                guard let self else {
                     throw ServerException("Repository deallocated during operation")
                 }
 
-                // Directly fetch from remote (no cache for testing)
+                print("🌐 [REPO] Fetching latest posts from API")
+
                 let remotePosts = try await self.apiService.fetchPosts()
-                try self.savePosts(remotePosts)
-                return remotePosts.map { Post(id: $0.id, title: $0.title, body: $0.body) }
+
+                print("✅ [REPO] Received \(remotePosts.count) posts from API")
+
+                try self.database.replacePosts(remotePosts)
+
+                return remotePosts.map {
+                    Post(
+                        id: $0.id,
+                        title: $0.title,
+                        body: $0.body
+                    )
+                }
             },
-            onNetworkError: { networkException in
-                // Return failure directly (no cache fallback for testing)
-                return .failure(ExceptionMapper.mapExceptionToFailure(networkException))
+
+            onNetworkError: { [weak self] networkException in
+
+                guard let self else {
+                    return .failure(
+                        ExceptionMapper.mapExceptionToFailure(networkException)
+                    )
+                }
+
+                do {
+
+                    let cachedPosts = try self.database.fetchPosts()
+
+                    if !cachedPosts.isEmpty {
+
+                        print("✅ [REPO] Network failed, using cached data: \(cachedPosts.count) posts")
+
+                        return .success(cachedPosts)
+                    }
+
+                    print("❌ [REPO] Network failed and cache empty")
+
+                    return .failure(
+                        ExceptionMapper.mapExceptionToFailure(networkException)
+                    )
+
+                } catch {
+
+                    let cacheFailure = ExceptionMapper.mapExceptionToFailure(
+                        error as? DatabaseException ??
+                        DatabaseException.readFailed()
+                    )
+
+                    let chainedFailure = NetworkFailure(
+                        "Network failed - cache also unavailable",
+                        severity: .warning,
+                        cause: cacheFailure
+                    )
+
+                    print("❌ [REPO] Both network and cache failed")
+
+                    return .failure(chainedFailure)
+                }
             },
-            onServerError: { serverException in
-                // Return failure directly (no cache fallback for testing)
-                return .failure(ExceptionMapper.mapExceptionToFailure(serverException))
+
+            onServerError: { [weak self] serverException in
+
+                guard let self else {
+                    return .failure(
+                        ExceptionMapper.mapExceptionToFailure(serverException)
+                    )
+                }
+
+                do {
+
+                    let cachedPosts = try self.database.fetchPosts()
+
+                    if !cachedPosts.isEmpty {
+
+                        print("✅ [REPO] Server failed, using cached data: \(cachedPosts.count) posts")
+
+                        return .success(cachedPosts)
+                    }
+
+                    print("❌ [REPO] Server failed and cache empty")
+
+                    return .failure(
+                        ExceptionMapper.mapExceptionToFailure(serverException)
+                    )
+
+                } catch {
+
+                    let cacheFailure = ExceptionMapper.mapExceptionToFailure(
+                        error as? DatabaseException ??
+                        DatabaseException.readFailed()
+                    )
+
+                    let chainedFailure = ServerFailure(
+                        "Server failed - cache also unavailable",
+                        severity: .critical,
+                        cause: cacheFailure,
+                        statusCode: serverException.statusCode
+                    )
+
+                    print("❌ [REPO] Both server and cache failed")
+
+                    return .failure(chainedFailure)
+                }
             }
         )
-    }
-    
-    private func fetchLocalPosts() throws -> [Post] {
-        let request: NSFetchRequest<PostEntity> = PostEntity.fetchRequest()
-        do {
-            let entities = try context.fetch(request)
-            return entities.map {
-                Post(
-                    id: Int($0.id),
-                    title: $0.title ?? "No Title",
-                    body: $0.body ?? "No Body"
-                )
-            }
-        } catch {
-            throw DatabaseException.readFailed(cause: error, context: "fetchLocalPosts")
-        }
-    }
-    
-    private func savePosts(_ posts: [PostDTO]) throws {
-        for post in posts {
-            let entity = PostEntity(context: context)
-            entity.id = Int64(post.id)
-            entity.title = post.title
-            entity.body = post.body
-        }
-        do {
-            try context.save()
-        } catch {
-            throw DatabaseException.writeFailed(cause: error, context: "savePosts")
-        }
     }
 }

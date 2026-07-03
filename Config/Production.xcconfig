@@ -1,0 +1,5 @@
+// Production Environment Configuration
+ENVIRONMENT_NAME=Production
+API_BASE_URL=https:/$()/jsonplaceholder.typicode.com
+USE_FAKE_API=NO
+USE_FAKE_DATABASE=NO

@@ -1,0 +1,5 @@
+// Development Environment Configuration
+ENVIRONMENT_NAME=Development
+API_BASE_URL=https:/$()/api.example.com
+USE_FAKE_API=YES
+USE_FAKE_DATABASE=YES

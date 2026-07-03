@@ -34,6 +34,7 @@
 		242450472FF7FE6B006E6384 /* ErrorTestingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242450462FF7FE64006E6384 /* ErrorTestingHelper.swift */; };
 		242450492FF8027C006E6384 /* FakeApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242450482FF80277006E6384 /* FakeApiService.swift */; };
 		2424504B2FF80285006E6384 /* FakeAppDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424504A2FF80282006E6384 /* FakeAppDatabase.swift */; };
+		2424504E2FF80776006E6384 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424504D2FF80771006E6384 /* AppConfiguration.swift */; };
 		242FD1F02C80702000C450FE /* SwiftUiNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242FD1EF2C80702000C450FE /* SwiftUiNotificationView.swift */; };
 		242FD1F22C80705800C450FE /* SwiftUiNotificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242FD1F12C80705800C450FE /* SwiftUiNotificationViewModel.swift */; };
 		242FD1F52C807F5D00C450FE /* SwiftUiWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242FD1F42C807F5D00C450FE /* SwiftUiWidgetView.swift */; };
@@ -355,6 +356,10 @@
 		242450462FF7FE64006E6384 /* ErrorTestingHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorTestingHelper.swift; sourceTree = "<group>"; };
 		242450482FF80277006E6384 /* FakeApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeApiService.swift; sourceTree = "<group>"; };
 		2424504A2FF80282006E6384 /* FakeAppDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeAppDatabase.swift; sourceTree = "<group>"; };
+		2424504D2FF80771006E6384 /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
+		242450512FF80846006E6384 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
+		242450522FF8085B006E6384 /* Staging.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Staging.xcconfig; sourceTree = "<group>"; };
+		242450532FF80874006E6384 /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
 		242FD1EF2C80702000C450FE /* SwiftUiNotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiNotificationView.swift; sourceTree = "<group>"; };
 		242FD1F12C80705800C450FE /* SwiftUiNotificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiNotificationViewModel.swift; sourceTree = "<group>"; };
 		242FD1F42C807F5D00C450FE /* SwiftUiWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiWidgetView.swift; sourceTree = "<group>"; };
@@ -662,6 +667,7 @@
 		2424501F2FF7F590006E6384 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				2424504C2FF8075F006E6384 /* Config */,
 				242450452FF7FE58006E6384 /* Testing */,
 				242450392FF7F906006E6384 /* Guards */,
 				242450362FF7F89F006E6384 /* Mapping */,
@@ -728,6 +734,24 @@
 			path = Testing;
 			sourceTree = "<group>";
 		};
+		2424504C2FF8075F006E6384 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				2424504D2FF80771006E6384 /* AppConfiguration.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		2424504F2FF8082E006E6384 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				242450532FF80874006E6384 /* Production.xcconfig */,
+				242450522FF8085B006E6384 /* Staging.xcconfig */,
+				242450512FF80846006E6384 /* Development.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
 		242FD1EE2C806FD500C450FE /* SwiftUiNotifications */ = {
 			isa = PBXGroup;
 			children = (
@@ -771,6 +795,7 @@
 		2443B3DA2B91C092000FE1FD = {
 			isa = PBXGroup;
 			children = (
+				2424504F2FF8082E006E6384 /* Config */,
 				2443B3E52B91C092000FE1FD /* IosDevelopersGuide */,
 				242FD2022C80819E00C450FE /* ExampleWidget */,
 				242FD1FD2C80819E00C450FE /* Frameworks */,
@@ -2476,6 +2501,7 @@
 				245E061C2B9B0016005FB6E9 /* SwiftUiCatalogStacksView.swift in Sources */,
 				249B77F52BC6917200EFEAB7 /* SwiftUiWifiView.swift in Sources */,
 				249DFFA02C775836004BA3AC /* SwiftUiCatalogGaugeViewModel.swift in Sources */,
+				2424504E2FF80776006E6384 /* AppConfiguration.swift in Sources */,
 				2443B4332B9863DB000FE1FD /* UiKitView.swift in Sources */,
 				245E06662B9B047C005FB6E9 /* SwiftUiCatalogViewThatFitsView.swift in Sources */,
 				249DFF842C7757C6004BA3AC /* SwiftUiCatalogToggleViewModel.swift in Sources */,
@@ -2687,67 +2713,9 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		242FD2122C8081A100C450FE /* Debug */ = {
+		242450542FF80AD7006E6384 /* Development */ = {
 			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = FTDU4K5UAF;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ExampleWidget/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = ExampleWidget;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mayank-upadhyay.IosDevelopersGuide.ExampleWidget";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		242FD2132C8081A100C450FE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = FTDU4K5UAF;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ExampleWidget/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = ExampleWidget;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mayank-upadhyay.IosDevelopersGuide.ExampleWidget";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		2443B3F02B91C095000FE1FD /* Debug */ = {
-			isa = XCBuildConfiguration;
+			baseConfigurationReference = 242450512FF80846006E6384 /* Development.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -2803,13 +2771,85 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEVELOPMENT;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
-			name = Debug;
+			name = Development;
 		};
-		2443B3F12B91C095000FE1FD /* Release */ = {
+		242450552FF80AD7006E6384 /* Development */ = {
 			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = IosDevelopersGuide/IosDevelopersGuide.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"IosDevelopersGuide/Preview Content\"";
+				DEVELOPMENT_TEAM = FTDU4K5UAF;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = IosDevelopersGuide/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "For camera implementation demo";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mayank-upadhyay.IosDevelopersGuide";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Development;
+		};
+		242450562FF80AD7006E6384 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FTDU4K5UAF;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ExampleWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ExampleWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mayank-upadhyay.IosDevelopersGuide.ExampleWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Development;
+		};
+		242450572FF80AFB006E6384 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 242450522FF8085B006E6384 /* Staging.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -2858,11 +2898,12 @@
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = STAGING;
 				SWIFT_COMPILATION_MODE = wholemodule;
 			};
-			name = Release;
+			name = Staging;
 		};
-		2443B3F32B91C095000FE1FD /* Debug */ = {
+		242450582FF80AFB006E6384 /* Staging */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -2902,9 +2943,131 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = Debug;
+			name = Staging;
 		};
-		2443B3F42B91C095000FE1FD /* Release */ = {
+		242450592FF80AFB006E6384 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FTDU4K5UAF;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ExampleWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ExampleWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mayank-upadhyay.IosDevelopersGuide.ExampleWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Staging;
+		};
+		242FD2122C8081A100C450FE /* Production */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FTDU4K5UAF;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ExampleWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ExampleWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mayank-upadhyay.IosDevelopersGuide.ExampleWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Production;
+		};
+		2443B3F02B91C095000FE1FD /* Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 242450532FF80874006E6384 /* Production.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = PRODUCTION;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Production;
+		};
+		2443B3F32B91C095000FE1FD /* Production */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -2944,7 +3107,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = Release;
+			name = Production;
 		};
 /* End XCBuildConfiguration section */
 
@@ -2952,29 +3115,32 @@
 		242FD2112C8081A100C450FE /* Build configuration list for PBXNativeTarget "ExampleWidgetExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				242FD2122C8081A100C450FE /* Debug */,
-				242FD2132C8081A100C450FE /* Release */,
+				242FD2122C8081A100C450FE /* Production */,
+				242450562FF80AD7006E6384 /* Development */,
+				242450592FF80AFB006E6384 /* Staging */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Production;
 		};
 		2443B3DE2B91C092000FE1FD /* Build configuration list for PBXProject "IosDevelopersGuide" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2443B3F02B91C095000FE1FD /* Debug */,
-				2443B3F12B91C095000FE1FD /* Release */,
+				2443B3F02B91C095000FE1FD /* Production */,
+				242450542FF80AD7006E6384 /* Development */,
+				242450572FF80AFB006E6384 /* Staging */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Production;
 		};
 		2443B3F22B91C095000FE1FD /* Build configuration list for PBXNativeTarget "IosDevelopersGuide" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2443B3F32B91C095000FE1FD /* Debug */,
-				2443B3F42B91C095000FE1FD /* Release */,
+				2443B3F32B91C095000FE1FD /* Production */,
+				242450552FF80AD7006E6384 /* Development */,
+				242450582FF80AFB006E6384 /* Staging */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Production;
 		};
 /* End XCConfigurationList section */
 

@@ -7,5 +7,17 @@
 		<string>fetch</string>
 		<string>processing</string>
 	</array>
+
+	<key>ENVIRONMENT_NAME</key>
+	<string>$(ENVIRONMENT_NAME)</string>
+
+	<key>API_BASE_URL</key>
+	<string>$(API_BASE_URL)</string>
+
+	<key>USE_FAKE_API</key>
+	<string>$(USE_FAKE_API)</string>
+
+	<key>USE_FAKE_DATABASE</key>
+	<string>$(USE_FAKE_DATABASE)</string>
 </dict>
 </plist>
