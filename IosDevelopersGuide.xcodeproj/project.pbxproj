@@ -35,6 +35,9 @@
 		242450492FF8027C006E6384 /* FakeApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242450482FF80277006E6384 /* FakeApiService.swift */; };
 		2424504B2FF80285006E6384 /* FakeAppDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424504A2FF80282006E6384 /* FakeAppDatabase.swift */; };
 		2424504E2FF80776006E6384 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424504D2FF80771006E6384 /* AppConfiguration.swift */; };
+		2424507A2FF8F43D006E6384 /* AppLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242450772FF8F43D006E6384 /* AppLogger.swift */; };
+		2424507B2FF8F43D006E6384 /* LogCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242450782FF8F43D006E6384 /* LogCategory.swift */; };
+		2424507D2FF8F46C006E6384 /* LoggingModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424507C2FF8F46C006E6384 /* LoggingModule.swift */; };
 		242FD1F02C80702000C450FE /* SwiftUiNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242FD1EF2C80702000C450FE /* SwiftUiNotificationView.swift */; };
 		242FD1F22C80705800C450FE /* SwiftUiNotificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242FD1F12C80705800C450FE /* SwiftUiNotificationViewModel.swift */; };
 		242FD1F52C807F5D00C450FE /* SwiftUiWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242FD1F42C807F5D00C450FE /* SwiftUiWidgetView.swift */; };
@@ -360,6 +363,10 @@
 		242450512FF80846006E6384 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
 		242450522FF8085B006E6384 /* Staging.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Staging.xcconfig; sourceTree = "<group>"; };
 		242450532FF80874006E6384 /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
+		242450772FF8F43D006E6384 /* AppLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLogger.swift; sourceTree = "<group>"; };
+		242450782FF8F43D006E6384 /* LogCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogCategory.swift; sourceTree = "<group>"; };
+		2424507C2FF8F46C006E6384 /* LoggingModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggingModule.swift; sourceTree = "<group>"; };
+		2424507E2FF8F4A6006E6384 /* IosDevelopersGuideTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IosDevelopersGuideTests.swift; sourceTree = "<group>"; };
 		242FD1EF2C80702000C450FE /* SwiftUiNotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiNotificationView.swift; sourceTree = "<group>"; };
 		242FD1F12C80705800C450FE /* SwiftUiNotificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiNotificationViewModel.swift; sourceTree = "<group>"; };
 		242FD1F42C807F5D00C450FE /* SwiftUiWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiWidgetView.swift; sourceTree = "<group>"; };
@@ -667,6 +674,7 @@
 		2424501F2FF7F590006E6384 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				242450792FF8F43D006E6384 /* Logging */,
 				2424504C2FF8075F006E6384 /* Config */,
 				242450452FF7FE58006E6384 /* Testing */,
 				242450392FF7F906006E6384 /* Guards */,
@@ -752,6 +760,23 @@
 			path = Config;
 			sourceTree = "<group>";
 		};
+		242450792FF8F43D006E6384 /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				242450772FF8F43D006E6384 /* AppLogger.swift */,
+				242450782FF8F43D006E6384 /* LogCategory.swift */,
+			);
+			path = Logging;
+			sourceTree = "<group>";
+		};
+		2424507F2FF8F4A6006E6384 /* IosDevelopersGuideTests */ = {
+			isa = PBXGroup;
+			children = (
+				2424507E2FF8F4A6006E6384 /* IosDevelopersGuideTests.swift */,
+			);
+			path = IosDevelopersGuideTests;
+			sourceTree = "<group>";
+		};
 		242FD1EE2C806FD500C450FE /* SwiftUiNotifications */ = {
 			isa = PBXGroup;
 			children = (
@@ -795,6 +820,7 @@
 		2443B3DA2B91C092000FE1FD = {
 			isa = PBXGroup;
 			children = (
+				2424507F2FF8F4A6006E6384 /* IosDevelopersGuideTests */,
 				2424504F2FF8082E006E6384 /* Config */,
 				2443B3E52B91C092000FE1FD /* IosDevelopersGuide */,
 				242FD2022C80819E00C450FE /* ExampleWidget */,
@@ -2242,6 +2268,7 @@
 		249DFF232C772DB4004BA3AC /* DI */ = {
 			isa = PBXGroup;
 			children = (
+				2424507C2FF8F46C006E6384 /* LoggingModule.swift */,
 				242450172FF7D6E5006E6384 /* ViewModelModule.swift */,
 				2424500C2FF7A7C3006E6384 /* UseCaseModule.swift */,
 				2424500A2FF7A7B3006E6384 /* RepositoryModule.swift */,
@@ -2616,6 +2643,7 @@
 				249DFF9A2C775823004BA3AC /* SwiftUiCatalogWebViewModel.swift in Sources */,
 				249DFF802C775749004BA3AC /* SwiftUiCatalogMiscellaneousViewModel.swift in Sources */,
 				249DFF8A2C7757DB004BA3AC /* SwiftUiCatalogSecureFieldViewModel.swift in Sources */,
+				2424507D2FF8F46C006E6384 /* LoggingModule.swift in Sources */,
 				249DFFF22C77598D004BA3AC /* SwiftUiSupportingClassesAndEnumsViewModel.swift in Sources */,
 				2424503D2FF7F93B006E6384 /* SafeRepositoryCall.swift in Sources */,
 				245E05702B99FD6E005FB6E9 /* SwiftUiManipulationView.swift in Sources */,
@@ -2672,6 +2700,8 @@
 				249DFFFA2C7759A9004BA3AC /* SwiftUiMicrophoneViewModel.swift in Sources */,
 				2443B4252B985017000FE1FD /* LinkData.swift in Sources */,
 				245E05822B99FE34005FB6E9 /* SwiftUiSupportingClassesAndEnumsView.swift in Sources */,
+				2424507A2FF8F43D006E6384 /* AppLogger.swift in Sources */,
+				2424507B2FF8F43D006E6384 /* LogCategory.swift in Sources */,
 				245E05F82B9AF368005FB6E9 /* SwiftUiPageLayoutView.swift in Sources */,
 				249DFF722C7756E5004BA3AC /* SwiftUiDesignSystemViewModel.swift in Sources */,
 				2424504B2FF80285006E6384 /* FakeAppDatabase.swift in Sources */,
