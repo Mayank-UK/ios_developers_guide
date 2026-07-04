@@ -16,7 +16,8 @@ extension Container {
             let config = AppConfiguration.shared
             if config.useFakeDatabase {
                 return FakeAppDatabase(
-                    scenario: .success
+                    scenario: .success,
+                    logger: self.databaseLogger()
                 ) as any DatabaseServiceProtocol
             } else {
                 return AppDatabase.shared as any DatabaseServiceProtocol

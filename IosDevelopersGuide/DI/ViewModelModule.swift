@@ -10,7 +10,7 @@ extension Container {
     @MainActor
     var homeViewModel: Factory<HomeViewModel> {
         /// Scoped and singleton — only one single instance for all injections
-        Factory(self) { HomeViewModel() }.scope(.singleton)
+        Factory(self) { HomeViewModel(logger: self.viewModelLogger()) }.scope(.singleton)
     }
 
     @MainActor

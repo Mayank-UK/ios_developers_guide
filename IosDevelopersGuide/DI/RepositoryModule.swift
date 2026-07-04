@@ -15,7 +15,8 @@ extension Container {
         Factory(self) {
             PostRepositoryImplementation(
                 apiService: self.apiService(),
-                database: self.database()
+                database: self.database(),
+                logger: self.repositoryLogger()
             )
         }
         .scope(.singleton)
