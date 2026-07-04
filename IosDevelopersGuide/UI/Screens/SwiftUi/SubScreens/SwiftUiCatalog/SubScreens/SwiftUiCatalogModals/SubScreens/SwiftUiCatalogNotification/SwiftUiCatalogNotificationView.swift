@@ -18,7 +18,6 @@ struct SwiftUiCatalogNotificationView: View {
         func requestNotificationPermission() {
             UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { success, error in
                 if success {
-                    print("Notification permission granted!")
                     scheduleLocalNotification()
                 } else if let error = error {
                     print("Error requesting permission: \(error.localizedDescription)")

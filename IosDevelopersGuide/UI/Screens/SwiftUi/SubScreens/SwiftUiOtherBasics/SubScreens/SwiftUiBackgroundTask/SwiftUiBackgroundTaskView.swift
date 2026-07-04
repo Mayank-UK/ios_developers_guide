@@ -109,7 +109,6 @@ struct SwiftUiBackgroundTaskView: View {
 
         do {
             try BGTaskScheduler.shared.submit(request)
-            print("Successfully scheduled background task")
         } catch {
             print("Failed to submit BGAppRefreshTaskRequest: \(error)")
         }
@@ -117,7 +116,6 @@ struct SwiftUiBackgroundTaskView: View {
     
     private func cancelBackgroundTask() {
         BGTaskScheduler.shared.cancel(taskRequestWithIdentifier: taskIdentifier)
-        print("Canceled background task")
     }
 }
 

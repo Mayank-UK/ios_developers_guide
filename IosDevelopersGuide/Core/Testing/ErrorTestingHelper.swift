@@ -8,13 +8,8 @@
 
 import Foundation
 
-/// Helper class for testing error handling scenarios
-/// This simulates different error conditions for testing purposes
 class ErrorTestingHelper {
     
-    // MARK: - Test Scenarios
-    
-    /// Simulates a network timeout error
     static func simulateNetworkTimeout() -> NetworkException {
         NetworkException.timeout(
             cause: URLError(.timedOut),
@@ -22,7 +17,6 @@ class ErrorTestingHelper {
         )
     }
     
-    /// Simulates a no internet connection error
     static func simulateNoConnection() -> NetworkException {
         NetworkException.noConnection(
             cause: URLError(.notConnectedToInternet),
@@ -30,7 +24,6 @@ class ErrorTestingHelper {
         )
     }
     
-    /// Simulates a server error (500)
     static func simulateServerError() -> ServerException {
         ServerException.internalServerError(
             statusCode: 500,
@@ -39,7 +32,6 @@ class ErrorTestingHelper {
         )
     }
     
-    /// Simulates a not found error (404)
     static func simulateNotFound() -> ServerException {
         ServerException.notFound(
             statusCode: 404,
@@ -48,7 +40,6 @@ class ErrorTestingHelper {
         )
     }
     
-    /// Simulates a database read error
     static func simulateDatabaseError() -> DatabaseException {
         DatabaseException.readFailed(
             cause: nil,
@@ -56,7 +47,6 @@ class ErrorTestingHelper {
         )
     }
     
-    /// Simulates a JSON decoding error
     static func simulateDecodingError() -> DecodingException {
         DecodingException.jsonDecodingFailed(
             cause: nil,

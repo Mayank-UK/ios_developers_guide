@@ -8,21 +8,9 @@
 
 import Foundation
 
-/// Maps technical exceptions to user-friendly failures.
-/// This is the bridge between the data layer (exceptions) and presentation layer (failures).
-///
-/// ## Design Philosophy
-/// - **Technical → User-Facing**: Converts debug-friendly exceptions to user-friendly failures
-/// - **Severity Assignment**: Assigns appropriate severity levels for UI behavior
-/// - **Causal Chaining**: Preserves error context through the transformation
-/// - **Centralized Mapping**: Single place for all exception-to-failure conversions
 enum ExceptionMapper {
     
-    /// Maps an exception to a failure, preserving causal chains.
-    /// - Parameter exception: The exception to map
-    /// - Returns: A user-friendly failure with appropriate severity
     static func mapExceptionToFailure(_ exception: AppException) -> Failure {
-        // First, check if there's a causal chain to preserve
         let innerCause: Failure?
         if let cause = exception.cause as? AppException {
             innerCause = mapExceptionToFailure(cause)
@@ -30,7 +18,6 @@ enum ExceptionMapper {
             innerCause = nil
         }
         
-        // Map based on exception type
         switch exception {
         case let networkException as NetworkException:
             return mapNetworkException(networkException, cause: innerCause)
@@ -49,16 +36,13 @@ enum ExceptionMapper {
         }
     }
     
-    // MARK: - Specific Mappers
-    
     private static func mapNetworkException(_ exception: NetworkException, cause: Failure?) -> NetworkFailure {
         let severity: FailureSeverity
         
-        // Determine severity based on exception type
         if exception.message.contains("timeout") || exception.message.contains("unreachable") {
             severity = .warning
         } else {
-            severity = .warning // Default network issues to warning
+            severity = .warning
         }
         
         return NetworkFailure(
@@ -72,13 +56,12 @@ enum ExceptionMapper {
     private static func mapServerException(_ exception: ServerException, cause: Failure?) -> ServerFailure {
         let severity: FailureSeverity
         
-        // Determine severity based on status code
         if let statusCode = exception.statusCode {
             switch statusCode {
             case 400...499:
-                severity = .warning // Client errors are warnings
+                severity = .warning
             case 500...599:
-                severity = .critical // Server errors are critical
+                severity = .critical
             default:
                 severity = .warning
             }
@@ -96,7 +79,7 @@ enum ExceptionMapper {
     }
     
     private static func mapDatabaseException(_ exception: DatabaseException, cause: Failure?) -> CacheFailure {
-        let severity: FailureSeverity = .info // Database issues are usually informational
+        let severity: FailureSeverity = .info
         
         return CacheFailure(
             mapDatabaseMessageToUserFriendly(exception.message),
@@ -107,7 +90,6 @@ enum ExceptionMapper {
     }
     
     private static func mapDecodingException(_ exception: DecodingException, cause: Failure?) -> ServerFailure {
-        // Decoding errors are treated as server problems (malformed response)
         return ServerFailure(
             "Server returned invalid data format",
             severity: .warning,
@@ -126,8 +108,6 @@ enum ExceptionMapper {
             statusCode: nil
         )
     }
-    
-    // MARK: - Message Mappers
     
     private static func mapNetworkMessageToUserFriendly(_ technicalMessage: String) -> String {
         if technicalMessage.contains("timeout") {
@@ -167,7 +147,6 @@ enum ExceptionMapper {
             }
         }
         
-        // Fallback based on message content
         if technicalMessage.contains("Internal server error") {
             return "Server encountered an error. Please try again later."
         } else if technicalMessage.contains("Bad request") {
@@ -194,17 +173,12 @@ enum ExceptionMapper {
     }
 }
 
-// MARK: - Convenience Extensions
-
 extension Error {
     
-    /// Converts any Error to the appropriate Failure type.
-    /// If the error is already an AppException, it maps it. Otherwise, it wraps it as an unknown failure.
     func toFailure() -> Failure {
         if let appException = self as? AppException {
             return ExceptionMapper.mapExceptionToFailure(appException)
         } else {
-            // For non-AppException errors, wrap as unknown failure
             return ServerFailure(
                 "An unexpected error occurred",
                 severity: .critical,

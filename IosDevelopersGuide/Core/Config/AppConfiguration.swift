@@ -25,7 +25,6 @@ final class AppConfiguration {
     let isDebug: Bool
 
     private init() {
-        print(Bundle.main.infoDictionary);
 
         let info = Bundle.main.infoDictionary ?? [:]
 

@@ -30,11 +30,7 @@ class PostRepositoryImplementation: PostRepository {
                     throw ServerException("Repository deallocated during operation")
                 }
 
-                print("🌐 [REPO] Fetching latest posts from API")
-
                 let remotePosts = try await self.apiService.fetchPosts()
-
-                print("✅ [REPO] Received \(remotePosts.count) posts from API")
 
                 try self.database.replacePosts(remotePosts)
 
@@ -61,12 +57,8 @@ class PostRepositoryImplementation: PostRepository {
 
                     if !cachedPosts.isEmpty {
 
-                        print("✅ [REPO] Network failed, using cached data: \(cachedPosts.count) posts")
-
                         return .success(cachedPosts)
                     }
-
-                    print("❌ [REPO] Network failed and cache empty")
 
                     return .failure(
                         ExceptionMapper.mapExceptionToFailure(networkException)
@@ -84,8 +76,6 @@ class PostRepositoryImplementation: PostRepository {
                         severity: .warning,
                         cause: cacheFailure
                     )
-
-                    print("❌ [REPO] Both network and cache failed")
 
                     return .failure(chainedFailure)
                 }
@@ -105,12 +95,8 @@ class PostRepositoryImplementation: PostRepository {
 
                     if !cachedPosts.isEmpty {
 
-                        print("✅ [REPO] Server failed, using cached data: \(cachedPosts.count) posts")
-
                         return .success(cachedPosts)
                     }
-
-                    print("❌ [REPO] Server failed and cache empty")
 
                     return .failure(
                         ExceptionMapper.mapExceptionToFailure(serverException)
@@ -129,8 +115,6 @@ class PostRepositoryImplementation: PostRepository {
                         cause: cacheFailure,
                         statusCode: serverException.statusCode
                     )
-
-                    print("❌ [REPO] Both server and cache failed")
 
                     return .failure(chainedFailure)
                 }

@@ -7,8 +7,6 @@
 
 import Foundation
 
-// MARK: - Database Scenario
-
 enum DbScenario {
     case success
     case empty
@@ -17,48 +15,34 @@ enum DbScenario {
     case connectionFailed
 }
 
-// MARK: - Fake Database
-
 final class FakeAppDatabase: DatabaseServiceProtocol {
 
     private var scenario: DbScenario
     private var cachedPosts: [Post] = []
 
     init(scenario: DbScenario = .success) {
-        // self.scenario = scenario
-        self.scenario = .readError
-
-        print("🧪 [FAKE_DB] Initialized with scenario: \(scenario)")
+         self.scenario = scenario
+//        self.scenario = .readError
     }
-
-    // MARK: - Scenario Management
 
     func setScenario(_ scenario: DbScenario) {
         self.scenario = scenario
-        print("🧪 [FAKE_DB] Scenario changed to: \(scenario)")
     }
-
-    // MARK: - DatabaseServiceProtocol
 
     func fetchPosts() throws -> [Post] {
 
-        print("🧪 [FAKE_DB] fetchPosts()")
 
         switch scenario {
 
         case .success:
 
-            print("✅ [FAKE_DB] Returning \(cachedPosts.count) cached posts")
             return cachedPosts
 
         case .empty:
-
-            print("✅ [FAKE_DB] Returning empty cache")
             return []
 
         case .readError:
 
-            print("❌ [FAKE_DB] Simulating read error")
 
             throw DatabaseException.readFailed(
                 cause: nil,
@@ -67,12 +51,9 @@ final class FakeAppDatabase: DatabaseServiceProtocol {
 
         case .writeError:
 
-            print("✅ [FAKE_DB] Read still succeeds")
             return cachedPosts
 
         case .connectionFailed:
-
-            print("❌ [FAKE_DB] Simulating connection failure")
 
             throw DatabaseException.connectionFailed(
                 cause: nil,
@@ -82,8 +63,6 @@ final class FakeAppDatabase: DatabaseServiceProtocol {
     }
 
     func replacePosts(_ posts: [PostDTO]) throws {
-
-        print("🧪 [FAKE_DB] replacePosts(\(posts.count))")
 
         switch scenario {
 
@@ -99,11 +78,7 @@ final class FakeAppDatabase: DatabaseServiceProtocol {
                 )
             }
 
-            print("✅ [FAKE_DB] Cache updated")
-
         case .writeError:
-
-            print("❌ [FAKE_DB] Simulating write error")
 
             throw DatabaseException.writeFailed(
                 cause: nil,
@@ -111,8 +86,6 @@ final class FakeAppDatabase: DatabaseServiceProtocol {
             )
 
         case .connectionFailed:
-
-            print("❌ [FAKE_DB] Simulating connection failure")
 
             throw DatabaseException.connectionFailed(
                 cause: nil,
@@ -122,8 +95,6 @@ final class FakeAppDatabase: DatabaseServiceProtocol {
     }
 
     func clearPosts() throws {
-
-        print("🧪 [FAKE_DB] clearPosts()")
 
         switch scenario {
 

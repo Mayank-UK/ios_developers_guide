@@ -9,8 +9,8 @@
 import FactoryKit
 
 extension Container {
-    /// Unscoped — a new instance per injection, like Hilt's default `@Provides`.
     var fetchPostsUseCase: Factory<FetchPostsUseCase> {
+        /// Unscoped — a new instance per injection, like Hilt's default `@Provides`.
         Factory(self) {
             FetchPostsUseCase(repository: self.postRepository())
         }

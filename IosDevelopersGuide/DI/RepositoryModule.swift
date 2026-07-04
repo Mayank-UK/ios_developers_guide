@@ -10,8 +10,8 @@
 import FactoryKit
 
 extension Container {
-    /// Domain-facing post repository, wired to the network + database modules.
     var postRepository: Factory<PostRepository> {
+        /// Scoped and singleton — only one single instance for all injections
         Factory(self) {
             PostRepositoryImplementation(
                 apiService: self.apiService(),

@@ -11,23 +11,14 @@ import FactoryKit
 extension Container {
 
     var database: Factory<any DatabaseServiceProtocol> {
-
+        /// Scoped and singleton — only one single instance for all injections
         Factory(self) {
-
             let config = AppConfiguration.shared
-
             if config.useFakeDatabase {
-
-                print("🧪 Using FakeAppDatabase")
-
                 return FakeAppDatabase(
                     scenario: .success
                 ) as any DatabaseServiceProtocol
-
             } else {
-
-                print("💾 Using AppDatabase")
-
                 return AppDatabase.shared as any DatabaseServiceProtocol
             }
         }
