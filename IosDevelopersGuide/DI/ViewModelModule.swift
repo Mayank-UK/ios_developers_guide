@@ -600,6 +600,21 @@ extension Container {
         Factory(self) { BestPracticesViewModel() }.scope(.singleton)
     }
 
+    @MainActor
+    var testingViewModel: Factory<TestingViewModel> {
+        Factory(self) { TestingViewModel() }.scope(.singleton)
+    }
+
+    @MainActor
+    var devEnvironmentViewModel: Factory<DevEnvironmentViewModel> {
+        Factory(self) { DevEnvironmentViewModel() }.scope(.singleton)
+    }
+
+    @MainActor
+    var loggingViewModel: Factory<LoggingViewModel> {
+        Factory(self) { LoggingViewModel() }.scope(.singleton)
+    }
+
     // MARK: - Fallbacks
     @MainActor
     var pageNotFoundViewModel: Factory<PageNotFoundViewModel> {

@@ -38,6 +38,12 @@
 		2424507A2FF8F43D006E6384 /* AppLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242450772FF8F43D006E6384 /* AppLogger.swift */; };
 		2424507B2FF8F43D006E6384 /* LogCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242450782FF8F43D006E6384 /* LogCategory.swift */; };
 		2424507D2FF8F46C006E6384 /* LoggingModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424507C2FF8F46C006E6384 /* LoggingModule.swift */; };
+		242450BD2FFA2E30006E6384 /* LoggingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242450BA2FFA2E30006E6384 /* LoggingView.swift */; };
+		242450BE2FFA2E30006E6384 /* LoggingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242450BB2FFA2E30006E6384 /* LoggingViewModel.swift */; };
+		242450C22FFA2E8E006E6384 /* DevEnvironmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242450BF2FFA2E8E006E6384 /* DevEnvironmentView.swift */; };
+		242450C32FFA2E8E006E6384 /* DevEnvironmentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242450C02FFA2E8E006E6384 /* DevEnvironmentViewModel.swift */; };
+		242450C72FFA2F10006E6384 /* TestingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242450C42FFA2F10006E6384 /* TestingView.swift */; };
+		242450C82FFA2F10006E6384 /* TestingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242450C52FFA2F10006E6384 /* TestingViewModel.swift */; };
 		242FD1F02C80702000C450FE /* SwiftUiNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242FD1EF2C80702000C450FE /* SwiftUiNotificationView.swift */; };
 		242FD1F22C80705800C450FE /* SwiftUiNotificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242FD1F12C80705800C450FE /* SwiftUiNotificationViewModel.swift */; };
 		242FD1F52C807F5D00C450FE /* SwiftUiWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242FD1F42C807F5D00C450FE /* SwiftUiWidgetView.swift */; };
@@ -383,6 +389,12 @@
 		2424508E2FF8F813006E6384 /* TestDataBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDataBuilder.swift; sourceTree = "<group>"; };
 		242450902FF8F813006E6384 /* PostFetchingIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostFetchingIntegrationTests.swift; sourceTree = "<group>"; };
 		242450962FF8F8B3006E6384 /* IosDevelopersGuideTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IosDevelopersGuideTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		242450BA2FFA2E30006E6384 /* LoggingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggingView.swift; sourceTree = "<group>"; };
+		242450BB2FFA2E30006E6384 /* LoggingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggingViewModel.swift; sourceTree = "<group>"; };
+		242450BF2FFA2E8E006E6384 /* DevEnvironmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevEnvironmentView.swift; sourceTree = "<group>"; };
+		242450C02FFA2E8E006E6384 /* DevEnvironmentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevEnvironmentViewModel.swift; sourceTree = "<group>"; };
+		242450C42FFA2F10006E6384 /* TestingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingView.swift; sourceTree = "<group>"; };
+		242450C52FFA2F10006E6384 /* TestingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingViewModel.swift; sourceTree = "<group>"; };
 		242FD1EF2C80702000C450FE /* SwiftUiNotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiNotificationView.swift; sourceTree = "<group>"; };
 		242FD1F12C80705800C450FE /* SwiftUiNotificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiNotificationViewModel.swift; sourceTree = "<group>"; };
 		242FD1F42C807F5D00C450FE /* SwiftUiWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiWidgetView.swift; sourceTree = "<group>"; };
@@ -890,6 +902,33 @@
 				242450902FF8F813006E6384 /* PostFetchingIntegrationTests.swift */,
 			);
 			path = Integration;
+			sourceTree = "<group>";
+		};
+		242450BC2FFA2E30006E6384 /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				242450BA2FFA2E30006E6384 /* LoggingView.swift */,
+				242450BB2FFA2E30006E6384 /* LoggingViewModel.swift */,
+			);
+			path = Logging;
+			sourceTree = "<group>";
+		};
+		242450C12FFA2E8E006E6384 /* DevEnvironment */ = {
+			isa = PBXGroup;
+			children = (
+				242450BF2FFA2E8E006E6384 /* DevEnvironmentView.swift */,
+				242450C02FFA2E8E006E6384 /* DevEnvironmentViewModel.swift */,
+			);
+			path = DevEnvironment;
+			sourceTree = "<group>";
+		};
+		242450C62FFA2F10006E6384 /* Testing */ = {
+			isa = PBXGroup;
+			children = (
+				242450C42FFA2F10006E6384 /* TestingView.swift */,
+				242450C52FFA2F10006E6384 /* TestingViewModel.swift */,
+			);
+			path = Testing;
 			sourceTree = "<group>";
 		};
 		242FD1EE2C806FD500C450FE /* SwiftUiNotifications */ = {
@@ -2398,6 +2437,9 @@
 		249DFF2E2C772FEA004BA3AC /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				242450C62FFA2F10006E6384 /* Testing */,
+				242450C12FFA2E8E006E6384 /* DevEnvironment */,
+				242450BC2FFA2E30006E6384 /* Logging */,
 				2424503E2FF7FC32006E6384 /* Error */,
 				2424501C2FF7ED12006E6384 /* DependencyInjection */,
 				249DFF322C7753A7004BA3AC /* Temp */,
@@ -2653,6 +2695,7 @@
 				249DFF3E2C77560E004BA3AC /* ApiHandlingViewModel.swift in Sources */,
 				249DFFC02C7758E0004BA3AC /* SwiftUiCatalogNavigationStackViewModel.swift in Sources */,
 				249DFFAE2C775860004BA3AC /* SwiftUiCatalogSpacerViewModel.swift in Sources */,
+				242450BE2FFA2E30006E6384 /* LoggingViewModel.swift in Sources */,
 				249DFFE42C775960004BA3AC /* SwiftUiCatalogConfirmationDialogViewModel.swift in Sources */,
 				249DFF502C77566E004BA3AC /* SwiftUiDimensionsAndConstraintsViewModel.swift in Sources */,
 				245E05BC2B9A097C005FB6E9 /* SwiftUiBordersView.swift in Sources */,
@@ -2788,6 +2831,7 @@
 				242450382FF7F8B3006E6384 /* ExceptionMapper.swift in Sources */,
 				249DFF622C7756AB004BA3AC /* SwiftUiVisibilityViewModel.swift in Sources */,
 				245E05C02B9A09A4005FB6E9 /* SwiftUiEffectsView.swift in Sources */,
+				242450C22FFA2E8E006E6384 /* DevEnvironmentView.swift in Sources */,
 				245E06682B9B0498005FB6E9 /* SwiftUiCatalogAlertView.swift in Sources */,
 				249DFF862C7757CD004BA3AC /* SwiftUiCatalogTextFieldViewModel.swift in Sources */,
 				245E061A2B9AFEFF005FB6E9 /* SwiftUiCatalogWebView.swift in Sources */,
@@ -2800,6 +2844,7 @@
 				245E05C82B9A0A50005FB6E9 /* SwiftUiWebAndAppsView.swift in Sources */,
 				245E05B22B9A08D2005FB6E9 /* SwiftUiDimensionsAndConstraintsView.swift in Sources */,
 				249DFF9A2C775823004BA3AC /* SwiftUiCatalogWebViewModel.swift in Sources */,
+				242450C82FFA2F10006E6384 /* TestingViewModel.swift in Sources */,
 				249DFF802C775749004BA3AC /* SwiftUiCatalogMiscellaneousViewModel.swift in Sources */,
 				249DFF8A2C7757DB004BA3AC /* SwiftUiCatalogSecureFieldViewModel.swift in Sources */,
 				2424507D2FF8F46C006E6384 /* LoggingModule.swift in Sources */,
@@ -2812,6 +2857,7 @@
 				245E06502B9B0335005FB6E9 /* SwiftUiCatalogBackgroundView.swift in Sources */,
 				245E05C62B9A0A37005FB6E9 /* SwiftUiInteractiveBehavioursView.swift in Sources */,
 				249DFF922C7757F5004BA3AC /* SwiftUiCatalogMenusViewModel.swift in Sources */,
+				242450C32FFA2E8E006E6384 /* DevEnvironmentViewModel.swift in Sources */,
 				249DFF662C7756B8004BA3AC /* SwiftUiWebAndAppsViewModel.swift in Sources */,
 				249DFFEC2C775976004BA3AC /* SwiftUiCatalogPopoverViewModel.swift in Sources */,
 				249DFFD62C77592A004BA3AC /* SwiftUiCatalogSafeAreaInsetViewModel.swift in Sources */,
@@ -2843,6 +2889,7 @@
 				249DFED82C75C483004BA3AC /* SwiftUiOtherBasicsView.swift in Sources */,
 				249DFF6A2C7756C5004BA3AC /* SwiftUiMediaViewModel.swift in Sources */,
 				249D000A2C7759D5004BA3AC /* SwiftUiResponsiveDesignViewModel.swift in Sources */,
+				242450BD2FFA2E30006E6384 /* LoggingView.swift in Sources */,
 				245E06122B9AFCA6005FB6E9 /* SwiftUiCatalogMenusView.swift in Sources */,
 				245E06282B9B0135005FB6E9 /* SwiftUiCatalogContentUnavailableView.swift in Sources */,
 				249D00022C7759BE004BA3AC /* SwiftUiCompassViewModel.swift in Sources */,
@@ -2881,6 +2928,7 @@
 				245E05BE2B9A098F005FB6E9 /* SwiftUiIconsAndImagesView.swift in Sources */,
 				249DFFC82C7758FC004BA3AC /* SwiftUiCatalogGeometryReaderViewModel.swift in Sources */,
 				2443B3FD2B91C5BF000FE1FD /* Constants.swift in Sources */,
+				242450C72FFA2F10006E6384 /* TestingView.swift in Sources */,
 				242FD2162C8088D900C450FE /* UIKitViewController.swift in Sources */,
 				249DFF7A2C77571E004BA3AC /* SwiftUiCatalogLayoutsViewModel.swift in Sources */,
 				249DFFCC2C775908004BA3AC /* SwiftUiCatalogOverlayViewModel.swift in Sources */,

@@ -151,7 +151,11 @@ class Router: ObservableObject {
         case deployment
         
         case bestPractices
-        
+
+        case testing
+        case devEnvironment
+        case logging
+
         case _temp
     }
     
@@ -418,7 +422,16 @@ class Router: ObservableObject {
 
             case .bestPractices:
                 BestPracticesView(viewModel: Container.shared.bestPracticesViewModel())
-            
+
+            case .testing:
+                TestingView(viewModel: Container.shared.testingViewModel())
+
+            case .devEnvironment:
+                DevEnvironmentView(viewModel: Container.shared.devEnvironmentViewModel())
+
+            case .logging:
+                LoggingView(viewModel: Container.shared.loggingViewModel())
+
             default:
                 PageNotFoundView(viewModel: Container.shared.pageNotFoundViewModel())
         }
