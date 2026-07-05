@@ -34,27 +34,27 @@ struct ServerFailure: Failure, Equatable {
                lhs.technicalDetails == rhs.technicalDetails
     }
     
-    static func internalServerError(cause: Failure? = nil) -> ServerFailure {
-        ServerFailure("Server encountered an error. Please try again later.",
-                      severity: .critical,
+    static func internalServerError(_ message: String = "Server encountered an error. Please try again later.", severity: FailureSeverity = .critical, statusCode: Int = 500, cause: Failure? = nil) -> ServerFailure {
+        ServerFailure(message,
+                      severity: severity,
                       cause: cause,
-                      statusCode: 500)
+                      statusCode: statusCode)
     }
-    
+
     static func badRequest(cause: Failure? = nil) -> ServerFailure {
         ServerFailure("Invalid request. Please check your input.",
                       severity: .warning,
                       cause: cause,
                       statusCode: 400)
     }
-    
+
     static func unauthorized(cause: Failure? = nil) -> ServerFailure {
         ServerFailure("Authentication required. Please log in.",
                       severity: .warning,
                       cause: cause,
                       statusCode: 401)
     }
-    
+
     static func notFound(cause: Failure? = nil) -> ServerFailure {
         ServerFailure("Requested resource not found.",
                       severity: .warning,

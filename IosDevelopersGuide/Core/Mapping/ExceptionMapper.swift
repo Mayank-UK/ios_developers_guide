@@ -110,7 +110,7 @@ enum ExceptionMapper {
     }
     
     private static func mapNetworkMessageToUserFriendly(_ technicalMessage: String) -> String {
-        if technicalMessage.contains("timeout") {
+        if technicalMessage.contains("timed") {
             return "Request timed out. Please check your connection and try again."
         } else if technicalMessage.contains("unreachable") {
             return "Server is unreachable. Please check your internet connection."

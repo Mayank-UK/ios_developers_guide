@@ -32,21 +32,26 @@ struct NetworkFailure: Failure, Equatable {
     }
     
     // MARK: - Common Network Failures
-    
+
     /// No internet connection available
     static func noConnection(cause: Failure? = nil) -> NetworkFailure {
         NetworkFailure("No internet connection. Please check your network settings.",
                        severity: .warning,
                        cause: cause)
     }
-    
+
+    /// Network unavailable (alias for noConnection)
+    static func networkUnavailable(_ message: String = "Network unavailable", severity: FailureSeverity = .critical, cause: Failure? = nil) -> NetworkFailure {
+        NetworkFailure(message, severity: severity, cause: cause)
+    }
+
     /// Request timed out
     static func timeout(cause: Failure? = nil) -> NetworkFailure {
         NetworkFailure("Request timed out. Please try again.",
                        severity: .warning,
                        cause: cause)
     }
-    
+
     /// Server unreachable
     static func unreachable(cause: Failure? = nil) -> NetworkFailure {
         NetworkFailure("Server is unreachable. Please check your connection.",

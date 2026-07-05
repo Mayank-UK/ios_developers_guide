@@ -30,21 +30,27 @@ enum FailureSeverity: String {
     }
 }
 
-protocol Failure: Error, CustomStringConvertible {
-    
+protocol Failure: Error, CustomStringConvertible, LocalizedError {
+
     var message: String { get }
-    
+
     var severity: FailureSeverity { get }
-    
+
     var cause: Failure? { get }
-    
+
     var technicalDetails: String? { get }
-    
+
     func isEqual(to other: Failure) -> Bool
 }
 
 extension Failure {
-    
+
+    /// Surfaces the user-facing message through `localizedDescription`
+    /// so it is displayed correctly in the UI (alerts, error banners, etc.).
+    var errorDescription: String? {
+        description
+    }
+
     var technicalDetails: String? {
         var details = "Failure: \(message)"
         if let cause = cause {

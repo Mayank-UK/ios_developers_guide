@@ -45,8 +45,8 @@ final class FakeAppDatabase: DatabaseServiceProtocol {
             return cachedPosts
 
         case .empty:
-            logger.notice("FakeAppDatabase: returning empty posts (empty scenario)")
-            return []
+            logger.notice("FakeAppDatabase: returning \(cachedPosts.count) posts (empty scenario, reflects current cache)")
+            return cachedPosts
 
         case .readError:
             logger.error("FakeAppDatabase: simulating read error")

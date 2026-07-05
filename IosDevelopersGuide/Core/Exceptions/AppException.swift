@@ -8,17 +8,23 @@
 
 import Foundation
 
-protocol AppException: Error, CustomStringConvertible {
-    
+protocol AppException: Error, CustomStringConvertible, LocalizedError {
+
     var message: String { get }
-    
+
     var cause: Error? { get }
-    
+
     var context: String? { get }
 }
 
 extension AppException {
-    
+
+    /// Surfaces the human-readable description through `localizedDescription`
+    /// so it is displayed correctly in the UI (alerts, error banners, etc.).
+    var errorDescription: String? {
+        description
+    }
+
     var context: String? {
         nil
     }

@@ -30,7 +30,7 @@ class FakeApiService: APIServiceProtocol {
     ]
     
     init(scenario: ApiScenario = .success, latency: TimeInterval = 0.6) {
-         self.scenario = .success
+         self.scenario = scenario
 //        self.scenario = .networkError
         self.latency = latency
     }
