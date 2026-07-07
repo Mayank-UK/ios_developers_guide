@@ -8,15 +8,7 @@
 
 import Foundation
 
-enum ApiScenario {
-    case success
-    case networkError
-    case timeout
-    case serverError
-    case notFound
-    case unauthorized
-    case invalidJson
-}
+// Use fakeApiService when backend is not ready yet
 
 class FakeApiService: APIServiceProtocol {
     
@@ -29,9 +21,10 @@ class FakeApiService: APIServiceProtocol {
         PostDTO(id: 3, title: "Fake Post 3", body: "Testing error handling scenarios"),
     ]
     
-    init(scenario: ApiScenario = .success, latency: TimeInterval = 0.6) {
+    // Scenario is supplied by the DI module from AppConfiguration (single source of truth) — no
+    // default here so the value can't drift.
+    init(scenario: ApiScenario, latency: TimeInterval = 0.6) {
          self.scenario = scenario
-//        self.scenario = .networkError
         self.latency = latency
     }
     

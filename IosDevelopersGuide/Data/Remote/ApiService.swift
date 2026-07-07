@@ -32,23 +32,28 @@ protocol APIServiceProtocol {
     func fetchPosts() async throws -> [PostDTO]
 }
 
-class APIService: APIServiceProtocol {    
+class APIService: APIServiceProtocol {
     private let baseURL = AppConfiguration.shared.apiBaseURL
+    private let client: HTTPClient
 
-    // Generic method for making network requests
+    init(client: HTTPClient) {
+        self.client = client
+    }
+
+    // Generic method for making network requests through the interceptor chain.
+    // Failure simulation is handled by the dev-only `FailureInjectionInterceptor`,
+    // so there are no manual `ErrorTestingHelper` lines here anymore.
     private func fetchData<T: Decodable>(from urlString: String, type: T.Type) async throws -> T {
         guard let url = URL(string: urlString) else {
             throw NetworkException("Invalid URL", context: urlString)
         }
 
         return try await guardedApiCall {
-            // UNCOMMENT ONE OF THESE TO TEST ERROR SCENARIOS:
-//             throw ErrorTestingHelper.simulateNetworkTimeout()
-            //  throw ErrorTestingHelper.simulateNoConnection()
-            // throw ErrorTestingHelper.simulateServerError()
+            var request = URLRequest(url: url)
+            request.httpMethod = "GET"
 
-            let (data, _) = try await URLSession.shared.data(from: url)
-            return try JSONDecoder().decode(T.self, from: data)
+            let response = try await self.client.send(request)
+            return try JSONDecoder().decode(T.self, from: response.data)
         }
     }
 

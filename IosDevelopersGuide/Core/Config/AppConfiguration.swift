@@ -20,6 +20,10 @@ final class AppConfiguration {
     let useFakeAPI: Bool
     let useFakeDatabase: Bool
 
+    /// Dev-only simulation knobs. No effect in production (fakes are fatal there and the interceptor only runs in development).
+    let apiScenario: ApiScenario
+    let dbScenario: DbScenario
+
     let appVersion: String
     let buildNumber: String
     let isDebug: Bool
@@ -44,6 +48,10 @@ final class AppConfiguration {
         useFakeDatabase =
             (info["USE_FAKE_DATABASE"] as? String)?
                 .uppercased() == "YES"
+
+        // simulation works in dev only
+        apiScenario = .serverError
+        dbScenario = .readError
 
         appVersion =
             info["CFBundleShortVersionString"] as? String ?? ""

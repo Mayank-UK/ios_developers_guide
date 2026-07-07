@@ -1,5 +1,5 @@
 // Development Environment Configuration
 ENVIRONMENT_NAME=Development
-API_BASE_URL=https:/$()/api.example.com
-USE_FAKE_API=YES
+API_BASE_URL=https:/$()/jsonplaceholder.typicode.com
+USE_FAKE_API=NO
 USE_FAKE_DATABASE=YES

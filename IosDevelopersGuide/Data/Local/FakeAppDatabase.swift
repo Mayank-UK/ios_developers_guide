@@ -8,13 +8,8 @@
 import Foundation
 import FactoryKit
 
-enum DbScenario {
-    case success
-    case empty
-    case readError
-    case writeError
-    case connectionFailed
-}
+// Just make it for a single feature to test the DB functionality at least once, do not maintain it for all the features
+// `DbScenario` now lives in `Core/Scenario/DbScenario.swift`.
 
 final class FakeAppDatabase: DatabaseServiceProtocol {
 
@@ -22,11 +17,12 @@ final class FakeAppDatabase: DatabaseServiceProtocol {
     private var cachedPosts: [Post] = []
     private let logger: AppLoggerProtocol
 
-    init(scenario: DbScenario = .success, logger: AppLoggerProtocol = Container.shared.databaseLogger()) {
+    // Scenario is supplied by the DI module from AppConfiguration (single source of truth) — no
+    // default here so the value can't drift.
+    init(scenario: DbScenario, logger: AppLoggerProtocol = Container.shared.databaseLogger()) {
          self.scenario = scenario
          self.logger = logger
          logger.info("FakeAppDatabase initialized with scenario: \(scenario)")
-//        self.scenario = .readError
     }
 
     func setScenario(_ scenario: DbScenario) {

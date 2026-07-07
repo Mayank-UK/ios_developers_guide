@@ -78,6 +78,14 @@
 		2443B4332B9863DB000FE1FD /* UiKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2443B4322B9863DB000FE1FD /* UiKitView.swift */; };
 		2443B4382B9864B1000FE1FD /* DeploymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2443B4372B9864B1000FE1FD /* DeploymentView.swift */; };
 		2443B4412B986CB7000FE1FD /* DependencyManagementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2443B4402B986CB7000FE1FD /* DependencyManagementView.swift */; };
+		244727492FFCE2AF00AB40CD /* ApiScenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244727472FFCE2AF00AB40CD /* ApiScenario.swift */; };
+		2447274C2FFCE2BD00AB40CD /* ConnectivityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2447274A2FFCE2BD00AB40CD /* ConnectivityService.swift */; };
+		244727532FFCE2E300AB40CD /* Interceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244727502FFCE2E300AB40CD /* Interceptor.swift */; };
+		244727542FFCE2E300AB40CD /* AuthTokenInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2447274D2FFCE2E300AB40CD /* AuthTokenInterceptor.swift */; };
+		244727552FFCE2E300AB40CD /* FailureInjectionInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2447274E2FFCE2E300AB40CD /* FailureInjectionInterceptor.swift */; };
+		244727562FFCE2E300AB40CD /* RetryInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244727512FFCE2E300AB40CD /* RetryInterceptor.swift */; };
+		244727572FFCE2E300AB40CD /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2447274F2FFCE2E300AB40CD /* HTTPClient.swift */; };
+		2447275B2FFD090A00AB40CD /* DbScenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2447275A2FFD090A00AB40CD /* DbScenario.swift */; };
 		245E05702B99FD6E005FB6E9 /* SwiftUiManipulationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E056F2B99FD6E005FB6E9 /* SwiftUiManipulationView.swift */; };
 		245E05722B99FD7E005FB6E9 /* SwiftUiLifeCycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E05712B99FD7E005FB6E9 /* SwiftUiLifeCycleView.swift */; };
 		245E05742B99FDAA005FB6E9 /* SwiftUiNavigationAndRoutingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E05732B99FDAA005FB6E9 /* SwiftUiNavigationAndRoutingView.swift */; };
@@ -432,6 +440,14 @@
 		2443B4322B9863DB000FE1FD /* UiKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiKitView.swift; sourceTree = "<group>"; };
 		2443B4372B9864B1000FE1FD /* DeploymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeploymentView.swift; sourceTree = "<group>"; };
 		2443B4402B986CB7000FE1FD /* DependencyManagementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyManagementView.swift; sourceTree = "<group>"; };
+		244727472FFCE2AF00AB40CD /* ApiScenario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiScenario.swift; sourceTree = "<group>"; };
+		2447274A2FFCE2BD00AB40CD /* ConnectivityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectivityService.swift; sourceTree = "<group>"; };
+		2447274D2FFCE2E300AB40CD /* AuthTokenInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTokenInterceptor.swift; sourceTree = "<group>"; };
+		2447274E2FFCE2E300AB40CD /* FailureInjectionInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailureInjectionInterceptor.swift; sourceTree = "<group>"; };
+		2447274F2FFCE2E300AB40CD /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		244727502FFCE2E300AB40CD /* Interceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interceptor.swift; sourceTree = "<group>"; };
+		244727512FFCE2E300AB40CD /* RetryInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetryInterceptor.swift; sourceTree = "<group>"; };
+		2447275A2FFD090A00AB40CD /* DbScenario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DbScenario.swift; sourceTree = "<group>"; };
 		245E056F2B99FD6E005FB6E9 /* SwiftUiManipulationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiManipulationView.swift; sourceTree = "<group>"; };
 		245E05712B99FD7E005FB6E9 /* SwiftUiLifeCycleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiLifeCycleView.swift; sourceTree = "<group>"; };
 		245E05732B99FDAA005FB6E9 /* SwiftUiNavigationAndRoutingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiNavigationAndRoutingView.swift; sourceTree = "<group>"; };
@@ -713,6 +729,8 @@
 		2424501F2FF7F590006E6384 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				2447274B2FFCE2BD00AB40CD /* Connectivity */,
+				244727482FFCE2AF00AB40CD /* Scenario */,
 				242450792FF8F43D006E6384 /* Logging */,
 				2424504C2FF8075F006E6384 /* Config */,
 				242450452FF7FE58006E6384 /* Testing */,
@@ -1164,6 +1182,35 @@
 				249D00152C775A09004BA3AC /* PageNotFoundViewModel.swift */,
 			);
 			path = PageNotFound;
+			sourceTree = "<group>";
+		};
+		244727482FFCE2AF00AB40CD /* Scenario */ = {
+			isa = PBXGroup;
+			children = (
+				2447275A2FFD090A00AB40CD /* DbScenario.swift */,
+				244727472FFCE2AF00AB40CD /* ApiScenario.swift */,
+			);
+			path = Scenario;
+			sourceTree = "<group>";
+		};
+		2447274B2FFCE2BD00AB40CD /* Connectivity */ = {
+			isa = PBXGroup;
+			children = (
+				2447274A2FFCE2BD00AB40CD /* ConnectivityService.swift */,
+			);
+			path = Connectivity;
+			sourceTree = "<group>";
+		};
+		244727522FFCE2E300AB40CD /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				2447274D2FFCE2E300AB40CD /* AuthTokenInterceptor.swift */,
+				2447274E2FFCE2E300AB40CD /* FailureInjectionInterceptor.swift */,
+				2447274F2FFCE2E300AB40CD /* HTTPClient.swift */,
+				244727502FFCE2E300AB40CD /* Interceptor.swift */,
+				244727512FFCE2E300AB40CD /* RetryInterceptor.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		245E059F2B9A0523005FB6E9 /* SwiftUiManipulation */ = {
@@ -2347,6 +2394,7 @@
 		249DFEFF2C76E97D004BA3AC /* Remote */ = {
 			isa = PBXGroup;
 			children = (
+				244727522FFCE2E300AB40CD /* Networking */,
 				242450482FF80277006E6384 /* FakeApiService.swift */,
 				249DFF062C76EA66004BA3AC /* DTOs */,
 				249DFF282C772E4F004BA3AC /* ApiService.swift */,
@@ -2744,6 +2792,7 @@
 				249DFF702C7756DA004BA3AC /* SwiftUiStateManagementViewModel.swift in Sources */,
 				249DFFEE2C775980004BA3AC /* SwiftUiDebuggingViewModel.swift in Sources */,
 				245E060E2B9AF9FE005FB6E9 /* SwiftUiCatalogPickersView.swift in Sources */,
+				2447274C2FFCE2BD00AB40CD /* ConnectivityService.swift in Sources */,
 				249B77FB2BC691B000EFEAB7 /* SwiftUiProximitySensorView.swift in Sources */,
 				249D00042C7759C4004BA3AC /* SwiftUiAccelerometerViewModel.swift in Sources */,
 				245E06222B9B00AE005FB6E9 /* SwiftUiCatalogGaugeView.swift in Sources */,
@@ -2751,6 +2800,7 @@
 				245E05742B99FDAA005FB6E9 /* SwiftUiNavigationAndRoutingView.swift in Sources */,
 				2498424B2BA308B100490FBC /* SwiftUiCatalogSecureFieldView.swift in Sources */,
 				249DFFD22C77591B004BA3AC /* SwiftUiCatalogToolbarViewModel.swift in Sources */,
+				2447275B2FFD090A00AB40CD /* DbScenario.swift in Sources */,
 				245E05EB2B9A14D0005FB6E9 /* SwiftUiCatalogModalsView.swift in Sources */,
 				249DFFDA2C77593B004BA3AC /* SwiftUiCatalogGroupViewModel.swift in Sources */,
 				249DFFB82C7758C5004BA3AC /* SwiftUiCatalogStacksViewModel.swift in Sources */,
@@ -2827,8 +2877,14 @@
 				245E057C2B99FDFA005FB6E9 /* SwiftUiCatalogView.swift in Sources */,
 				242450352FF7F82A006E6384 /* DecodingException.swift in Sources */,
 				245E05862B99FE79005FB6E9 /* SwiftUiResponsiveDesignView.swift in Sources */,
+				244727492FFCE2AF00AB40CD /* ApiScenario.swift in Sources */,
 				242450262FF7F67C006E6384 /* NetworkFailure.swift in Sources */,
 				242450382FF7F8B3006E6384 /* ExceptionMapper.swift in Sources */,
+				244727532FFCE2E300AB40CD /* Interceptor.swift in Sources */,
+				244727542FFCE2E300AB40CD /* AuthTokenInterceptor.swift in Sources */,
+				244727552FFCE2E300AB40CD /* FailureInjectionInterceptor.swift in Sources */,
+				244727562FFCE2E300AB40CD /* RetryInterceptor.swift in Sources */,
+				244727572FFCE2E300AB40CD /* HTTPClient.swift in Sources */,
 				249DFF622C7756AB004BA3AC /* SwiftUiVisibilityViewModel.swift in Sources */,
 				245E05C02B9A09A4005FB6E9 /* SwiftUiEffectsView.swift in Sources */,
 				242450C22FFA2E8E006E6384 /* DevEnvironmentView.swift in Sources */,
