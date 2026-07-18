@@ -31,16 +31,16 @@ extension Container {
         .scope(.singleton)
     }
     
-    // USE_FAKE_API variable inside config files to switch between FakeApiService and ApiService, keep the wiring here
-    var apiService: Factory<any APIServiceProtocol> {
+    // USE_FAKE_API variable inside config files to switch between FakeApiService and the real data source, keep the wiring here
+    var postRemoteDataSource: Factory<any PostRemoteDataSource> {
         Factory(self) {
             let config = AppConfiguration.shared
             if config.useFakeAPI {
                 return FakeApiService(
                     scenario: config.apiScenario
-                ) as any APIServiceProtocol
+                ) as any PostRemoteDataSource
             } else {
-                return APIService(client: self.httpClient()) as any APIServiceProtocol
+                return PostRemoteDataSourceImpl(client: self.httpClient()) as any PostRemoteDataSource
             }
         }
         .scope(.singleton)

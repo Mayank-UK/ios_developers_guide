@@ -24,8 +24,8 @@ struct PostRepositoryImplTests {
 
         // Inject test data by accessing internals
         let repository = PostRepositoryImplementation(
-            apiService: fakeApi,
-            database: fakeDb,
+            remote: fakeApi,
+            local: fakeDb,
             logger: logger
         )
 
@@ -48,8 +48,8 @@ struct PostRepositoryImplTests {
         let logger = Container.shared.repositoryLogger()
 
         let repository = PostRepositoryImplementation(
-            apiService: fakeApi,
-            database: fakeDb,
+            remote: fakeApi,
+            local: fakeDb,
             logger: logger
         )
 
@@ -79,8 +79,8 @@ struct PostRepositoryImplTests {
 
         let logger = Container.shared.repositoryLogger()
         let repository = PostRepositoryImplementation(
-            apiService: fakeApi,
-            database: fakeDb,
+            remote: fakeApi,
+            local: fakeDb,
             logger: logger
         )
 
@@ -106,8 +106,8 @@ struct PostRepositoryImplTests {
 
         let logger = Container.shared.repositoryLogger()
         let repository = PostRepositoryImplementation(
-            apiService: fakeApi,
-            database: fakeDb,
+            remote: fakeApi,
+            local: fakeDb,
             logger: logger
         )
 
@@ -129,8 +129,8 @@ struct PostRepositoryImplTests {
         let logger = Container.shared.repositoryLogger()
 
         let repository = PostRepositoryImplementation(
-            apiService: fakeApi,
-            database: fakeDb,
+            remote: fakeApi,
+            local: fakeDb,
             logger: logger
         )
 
@@ -149,8 +149,8 @@ struct PostRepositoryImplTests {
         let logger = Container.shared.repositoryLogger()
 
         let repository = PostRepositoryImplementation(
-            apiService: fakeApi,
-            database: fakeDb,
+            remote: fakeApi,
+            local: fakeDb,
             logger: logger
         )
 
@@ -169,8 +169,8 @@ struct PostRepositoryImplTests {
         let logger = Container.shared.repositoryLogger()
 
         let repository = PostRepositoryImplementation(
-            apiService: fakeApi,
-            database: fakeDb,
+            remote: fakeApi,
+            local: fakeDb,
             logger: logger
         )
 
@@ -196,8 +196,8 @@ struct PostRepositoryImplTests {
 
         let logger = Container.shared.repositoryLogger()
         let repository = PostRepositoryImplementation(
-            apiService: fakeApi,
-            database: fakeDb,
+            remote: fakeApi,
+            local: fakeDb,
             logger: logger
         )
 
@@ -217,8 +217,8 @@ struct PostRepositoryImplTests {
         let logger = Container.shared.repositoryLogger()
 
         let repository = PostRepositoryImplementation(
-            apiService: fakeApi,
-            database: fakeDb,
+            remote: fakeApi,
+            local: fakeDb,
             logger: logger
         )
 
@@ -243,8 +243,8 @@ struct PostRepositoryImplTests {
 
         let logger = Container.shared.repositoryLogger()
         let repository = PostRepositoryImplementation(
-            apiService: fakeApi,
-            database: fakeDb,
+            remote: fakeApi,
+            local: fakeDb,
             logger: logger
         )
 

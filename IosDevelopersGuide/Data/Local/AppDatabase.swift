@@ -2,23 +2,36 @@
 //  AppDatabase.swift
 //  IosDevelopersGuide
 //
-//  Created by Mayank Upadhyay on 22/08/24.
+//  The single local store engine (Core Data here). One shared instance backs
+//  every feature's local data source: a database is one engine, not one per
+//  feature.
+//
+//  Feature access is segregated through narrow protocols (PostLocalDataSource)
+//  so a repository only sees the slice it needs. `LocalDataStore` is the union
+//  the concrete store conforms to; the DI module resolves it once and hands out
+//  the narrow views.
 //
 
 import Foundation
 import CoreData
 import FactoryKit
 
-protocol DatabaseServiceProtocol {
+// MARK: - Feature-narrow local data source protocols
 
+protocol PostLocalDataSource {
     func fetchPosts() throws -> [Post]
-
     func replacePosts(_ posts: [PostDTO]) throws
-
     func clearPosts() throws
 }
 
-final class AppDatabase: DatabaseServiceProtocol {
+/// Union of every feature's local-data-source protocol — what a concrete store
+/// (AppDatabase, FakeAppDatabase) conforms to. Resolved once in `DatabaseModule`;
+/// repositories receive the narrow slice they depend on.
+protocol LocalDataStore: PostLocalDataSource {}
+
+// MARK: - Concrete Core Data store
+
+final class AppDatabase: LocalDataStore {
 
     static let shared = AppDatabase()
     private let logger: AppLoggerProtocol

@@ -11,7 +11,7 @@ import FactoryKit
 // Just make it for a single feature to test the DB functionality at least once, do not maintain it for all the features
 // `DbScenario` now lives in `Core/Scenario/DbScenario.swift`.
 
-final class FakeAppDatabase: DatabaseServiceProtocol {
+final class FakeAppDatabase: LocalDataStore {
 
     private var scenario: DbScenario
     private var cachedPosts: [Post] = []

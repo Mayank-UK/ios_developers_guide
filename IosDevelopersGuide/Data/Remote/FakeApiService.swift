@@ -10,7 +10,7 @@ import Foundation
 
 // Use fakeApiService when backend is not ready yet
 
-class FakeApiService: APIServiceProtocol {
+class FakeApiService: PostRemoteDataSource {
     
     private var scenario: ApiScenario
     private var latency: TimeInterval = 0.6

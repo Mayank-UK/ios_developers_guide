@@ -85,6 +85,7 @@
 		244727552FFCE2E300AB40CD /* FailureInjectionInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2447274E2FFCE2E300AB40CD /* FailureInjectionInterceptor.swift */; };
 		244727562FFCE2E300AB40CD /* RetryInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244727512FFCE2E300AB40CD /* RetryInterceptor.swift */; };
 		244727572FFCE2E300AB40CD /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2447274F2FFCE2E300AB40CD /* HTTPClient.swift */; };
+		244727612FFCE2E300AB40CD /* HTTPClient+Decoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244727602FFCE2E300AB40CD /* HTTPClient+Decoding.swift */; };
 		2447275B2FFD090A00AB40CD /* DbScenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2447275A2FFD090A00AB40CD /* DbScenario.swift */; };
 		245E05702B99FD6E005FB6E9 /* SwiftUiManipulationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E056F2B99FD6E005FB6E9 /* SwiftUiManipulationView.swift */; };
 		245E05722B99FD7E005FB6E9 /* SwiftUiLifeCycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E05712B99FD7E005FB6E9 /* SwiftUiLifeCycleView.swift */; };
@@ -215,7 +216,7 @@
 		249DFF202C772D5D004BA3AC /* PostRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249DFF1F2C772D5D004BA3AC /* PostRepositoryImpl.swift */; };
 		249DFF222C772D94004BA3AC /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249DFF212C772D94004BA3AC /* Post.swift */; };
 		249DFF272C772DF8004BA3AC /* PostRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249DFF262C772DF8004BA3AC /* PostRepository.swift */; };
-		249DFF292C772E4F004BA3AC /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249DFF282C772E4F004BA3AC /* ApiService.swift */; };
+		249DFF292C772E4F004BA3AC /* PostRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249DFF282C772E4F004BA3AC /* PostRemoteDataSource.swift */; };
 		249DFF2B2C772E78004BA3AC /* PostDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249DFF2A2C772E78004BA3AC /* PostDto.swift */; };
 		249DFF2D2C772E99004BA3AC /* AppDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249DFF2C2C772E99004BA3AC /* AppDatabase.swift */; };
 		249DFF342C7753E0004BA3AC /* TempView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249DFF332C7753E0004BA3AC /* TempView.swift */; };
@@ -445,6 +446,7 @@
 		2447274D2FFCE2E300AB40CD /* AuthTokenInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTokenInterceptor.swift; sourceTree = "<group>"; };
 		2447274E2FFCE2E300AB40CD /* FailureInjectionInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailureInjectionInterceptor.swift; sourceTree = "<group>"; };
 		2447274F2FFCE2E300AB40CD /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		244727602FFCE2E300AB40CD /* HTTPClient+Decoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPClient+Decoding.swift"; sourceTree = "<group>"; };
 		244727502FFCE2E300AB40CD /* Interceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interceptor.swift; sourceTree = "<group>"; };
 		244727512FFCE2E300AB40CD /* RetryInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetryInterceptor.swift; sourceTree = "<group>"; };
 		2447275A2FFD090A00AB40CD /* DbScenario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DbScenario.swift; sourceTree = "<group>"; };
@@ -577,7 +579,7 @@
 		249DFF1F2C772D5D004BA3AC /* PostRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRepositoryImpl.swift; sourceTree = "<group>"; };
 		249DFF212C772D94004BA3AC /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		249DFF262C772DF8004BA3AC /* PostRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRepository.swift; sourceTree = "<group>"; };
-		249DFF282C772E4F004BA3AC /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		249DFF282C772E4F004BA3AC /* PostRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRemoteDataSource.swift; sourceTree = "<group>"; };
 		249DFF2A2C772E78004BA3AC /* PostDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDto.swift; sourceTree = "<group>"; };
 		249DFF2C2C772E99004BA3AC /* AppDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDatabase.swift; sourceTree = "<group>"; };
 		249DFF332C7753E0004BA3AC /* TempView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempView.swift; sourceTree = "<group>"; };
@@ -1207,6 +1209,7 @@
 				2447274D2FFCE2E300AB40CD /* AuthTokenInterceptor.swift */,
 				2447274E2FFCE2E300AB40CD /* FailureInjectionInterceptor.swift */,
 				2447274F2FFCE2E300AB40CD /* HTTPClient.swift */,
+				244727602FFCE2E300AB40CD /* HTTPClient+Decoding.swift */,
 				244727502FFCE2E300AB40CD /* Interceptor.swift */,
 				244727512FFCE2E300AB40CD /* RetryInterceptor.swift */,
 			);
@@ -2397,7 +2400,7 @@
 				244727522FFCE2E300AB40CD /* Networking */,
 				242450482FF80277006E6384 /* FakeApiService.swift */,
 				249DFF062C76EA66004BA3AC /* DTOs */,
-				249DFF282C772E4F004BA3AC /* ApiService.swift */,
+				249DFF282C772E4F004BA3AC /* PostRemoteDataSource.swift */,
 			);
 			path = Remote;
 			sourceTree = "<group>";
@@ -2885,6 +2888,7 @@
 				244727552FFCE2E300AB40CD /* FailureInjectionInterceptor.swift in Sources */,
 				244727562FFCE2E300AB40CD /* RetryInterceptor.swift in Sources */,
 				244727572FFCE2E300AB40CD /* HTTPClient.swift in Sources */,
+				244727612FFCE2E300AB40CD /* HTTPClient+Decoding.swift in Sources */,
 				249DFF622C7756AB004BA3AC /* SwiftUiVisibilityViewModel.swift in Sources */,
 				245E05C02B9A09A4005FB6E9 /* SwiftUiEffectsView.swift in Sources */,
 				242450C22FFA2E8E006E6384 /* DevEnvironmentView.swift in Sources */,
@@ -2896,7 +2900,7 @@
 				242FD1F02C80702000C450FE /* SwiftUiNotificationView.swift in Sources */,
 				245E063A2B9B021B005FB6E9 /* SwiftUiCatalogTableView.swift in Sources */,
 				245E06522B9B0346005FB6E9 /* SwiftUiCatalogOverlayView.swift in Sources */,
-				249DFF292C772E4F004BA3AC /* ApiService.swift in Sources */,
+				249DFF292C772E4F004BA3AC /* PostRemoteDataSource.swift in Sources */,
 				245E05C82B9A0A50005FB6E9 /* SwiftUiWebAndAppsView.swift in Sources */,
 				245E05B22B9A08D2005FB6E9 /* SwiftUiDimensionsAndConstraintsView.swift in Sources */,
 				249DFF9A2C775823004BA3AC /* SwiftUiCatalogWebViewModel.swift in Sources */,
