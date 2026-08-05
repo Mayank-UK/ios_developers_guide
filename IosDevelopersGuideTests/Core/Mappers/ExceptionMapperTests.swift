@@ -225,4 +225,37 @@ struct ExceptionMapperTests {
         #expect((connectionFailure as? CacheFailure)?.severity == .info)
         #expect((readFailure as? CacheFailure)?.severity == .info)
     }
+
+    // MARK: - Error.toFailure() Extension Tests
+
+    @Test("Error.toFailure should route AppExceptions through ExceptionMapper")
+    func toFailure_routesAppExceptions() throws {
+        // Arrange
+        let exception: any Error = NetworkException.timeout(
+            cause: URLError(.timedOut),
+            context: "Test timeout"
+        )
+
+        // Act
+        let failure = exception.toFailure()
+
+        // Assert
+        #expect(failure is NetworkFailure)
+        #expect(failure.severity == .warning)
+    }
+
+    @Test("Error.toFailure should wrap unknown errors as critical ServerFailure")
+    func toFailure_wrapsUnknownErrors() throws {
+        // Arrange
+        struct UnknownError: Error {}
+        let unknown: any Error = UnknownError()
+
+        // Act
+        let failure = unknown.toFailure()
+
+        // Assert
+        let serverFailure = try #require(failure as? ServerFailure)
+        #expect(serverFailure.severity == .critical)
+        #expect(serverFailure.statusCode == nil)
+    }
 }

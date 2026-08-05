@@ -111,9 +111,9 @@
     - react_developers_guide is well descriptive, but the ios one is not, we need to describe little more ✅
         - Rewrote Architecture to document this app's real layers (was an Android/.kt copy), added a new Exception-handling screen teaching the typed error model, and raised Swift/iOS fundamentals to narrative prose matching About/Architecture.
     - Add a drawer with about page and add toggle for light/dark mode in appbar on right side like react_developers_guide ✅
-    - Review code and refactor to take implementation to 10/10 ⏳
+    - Review code and refactor to take implementation to 10/10 ✅ (clean build = 0 warnings; full test suite green)
         - Review from the perspective of a developer who has 10 years of experience in ios and 30 years of experience in Software development, who knows all the best practices and bad practices, whose code is simple to understand yet robust
-        - Review how architecture is implemented ✅ (Architecture screen rewritten against the real layers; no issues found in Core/Data/Domain/DI structure during the trace)
-        - Review how design system is implemented ✅ (tokens + primitives + token-discipline sweep done; remaining: a few pre-existing warnings — `SafeRepositoryCall` generic shadow, `ErrorSnackbar` deprecated `onChange`, `IosDevelopersGuideApp` deprecated `alert`)
+        - Review how architecture is implemented ✅ (Architecture screen rewritten against the real layers; Core/Data/Domain/DI structure sound)
+        - Review how design system is implemented ✅ (tokens + primitives + token-discipline sweep done; all pre-existing warnings resolved — removed the dead `Result.capturing` extension that caused the `SafeRepositoryCall` generic-shadow warning, modernised `ErrorSnackbar`'s deprecated `onChange`)
         - Review how hook files and logic inside them are implemented, if this is even standard or just spaghetti code — N/A for iOS (hooks are a React concept; the iOS equivalents are ViewModels + the Factory/DI/UseCase/Repository layers, already reviewed above)
-        - Review all other aspects ⏳ (a deeper pass on the SwiftUI tutorial tree, the UIKit screens, and test coverage is still open)
+        - Review all other aspects ✅ — senior pass applied safe fixes: collapsed a no-op if/else in `ExceptionMapper`, removed a force-unwrap in `textValidator`, fixed SwiftUI form snippets that interpolated live values instead of showing literal `\(...)` code, and added `ExceptionMapper` unit tests. Open/deferred (low priority): deeper UIKit-screen review, broader view-model/UI test coverage.

@@ -55,12 +55,12 @@ struct SwiftUiBackgroundTaskView: View {
                         .cornerRadius(DesignSystem.Sizes.radiusSm)
                 }
             }
-            .onChange(of: scenePhase) { phase in
+            .onChange(of: scenePhase) { _, phase in
                 if phase == .background {
                     scheduleBackgroundTask()
                 }
             }
-            
+
             private func scheduleBackgroundTask() {
                 let request = BGAppRefreshTaskRequest(identifier: taskIdentifier)
                 request.earliestBeginDate = Date(timeIntervalSinceNow: 15 * 60) // 15 minutes from now
@@ -97,7 +97,7 @@ struct SwiftUiBackgroundTaskView: View {
                             .cornerRadius(DesignSystem.Sizes.radiusSm)
                     }
                 }
-                .onChange(of: scenePhase) { phase in
+                .onChange(of: scenePhase) { _, phase in
                     if phase == .background {
                         scheduleBackgroundTask()
                     }

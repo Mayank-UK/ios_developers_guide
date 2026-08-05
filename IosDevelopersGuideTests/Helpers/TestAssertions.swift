@@ -57,6 +57,9 @@ enum TestAssertions {
         case .success:
             throw TestError(message: "Expected failure but got success")
         case .failure(let error):
+            guard type(of: error) == expectedType else {
+                throw TestError(message: "Expected failure type \(expectedType) but got \(type(of: error))")
+            }
             return error
         }
     }

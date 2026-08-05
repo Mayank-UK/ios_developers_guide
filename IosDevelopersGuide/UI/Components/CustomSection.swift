@@ -18,8 +18,8 @@ struct CustomSection<DemoView: View>: View {
 
     init(snippetTitle: String, snippetDescription: String? = nil, snippetCode: String? = nil, @ViewBuilder demoView: @escaping () -> DemoView = { EmptyView() }) {
         self.snippetTitle = snippetTitle
-        self.snippetDescription = snippetDescription ?? nil
-        self.snippetCode = snippetCode ?? nil
+        self.snippetDescription = snippetDescription
+        self.snippetCode = snippetCode
         self.demoView = demoView()
     }
 
@@ -30,8 +30,8 @@ struct CustomSection<DemoView: View>: View {
                 .font(designSystem.types.titleLarge)
                 .foregroundColor(designSystem.colorScheme.onSurface)
             Spacer().frame(height: 8)
-            if(snippetDescription != nil) {
-                Text(snippetDescription!)
+            if let snippetDescription {
+                Text(snippetDescription)
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .font(designSystem.types.bodyLarge)
                     .kerning(0.5)
@@ -44,10 +44,10 @@ struct CustomSection<DemoView: View>: View {
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .background(designSystem.colorScheme.surface)
             Spacer().frame(height: 8)
-            if (snippetCode != nil) {
+            if let snippetCode {
                 DisclosureGroup("\(isExpanded ? "Hide Code" : "Show Code")", isExpanded: $isExpanded) {
                     ScrollView(.horizontal) {
-                        Text(snippetCode!)
+                        Text(snippetCode)
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .padding()
                             .font(.system(size: 14, design: .monospaced))

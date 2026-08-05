@@ -8,13 +8,13 @@
 import Foundation
 
 func textValidator(text: String?) -> String? {
-    if (text == nil) {
+    guard let text else {
         return "Input is empty"
     }
-    
-    if (text!.count < 3) {
+
+    if text.count < 3 {
         return "Input must be 3 characters"
     }
-    
+
     return nil
 }

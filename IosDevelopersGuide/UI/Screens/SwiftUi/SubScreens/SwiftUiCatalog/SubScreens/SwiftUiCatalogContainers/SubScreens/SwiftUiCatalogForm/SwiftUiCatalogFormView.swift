@@ -35,8 +35,8 @@ struct SwiftUiCatalogFormView: View {
             @State private var formSubmitStatus = false
             
             Form {
-                Text("Form validity status: \\(formValidityStatus)")
-                Text("Submit status: \\(formSubmitStatus)")
+                Text("Form validity status: \\(String(formValidityStatus))")
+                Text("Submit status: \\(String(formSubmitStatus))")
                 Section(header: Text("Section 1")) {
                     TextField("Input text", text: $inputText)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
@@ -68,8 +68,8 @@ struct SwiftUiCatalogFormView: View {
             """,
             demoView: {
                 Form {
-                    Text("Form validity status: \(formValidityStatus)")
-                    Text("Submit status: \(formSubmitStatus)")
+                    Text("Form validity status: \(String(formValidityStatus))")
+                    Text("Submit status: \(String(formSubmitStatus))")
                     Section(header: Text("Section 1")) {
                         TextField("Input text", text: $inputText)
                             .textFieldStyle(RoundedBorderTextFieldStyle())

@@ -37,14 +37,10 @@ enum ExceptionMapper {
     }
     
     private static func mapNetworkException(_ exception: NetworkException, cause: Failure?) -> NetworkFailure {
-        let severity: FailureSeverity
-        
-        if exception.message.contains("timeout") || exception.message.contains("unreachable") {
-            severity = .warning
-        } else {
-            severity = .warning
-        }
-        
+        // All network exceptions are user-recoverable connectivity issues, so
+        // they surface at `warning` severity regardless of the specific cause.
+        let severity: FailureSeverity = .warning
+
         return NetworkFailure(
             mapNetworkMessageToUserFriendly(exception.message),
             severity: severity,

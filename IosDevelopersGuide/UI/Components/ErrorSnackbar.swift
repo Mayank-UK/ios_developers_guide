@@ -93,7 +93,7 @@ struct ErrorSnackbar: View {
         .onDisappear {
             workItem?.cancel()
         }
-        .onChange(of: failure.message) { _ in
+        .onChange(of: failure.message) {
             // Reset animation when failure changes
             isVisible = false
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
