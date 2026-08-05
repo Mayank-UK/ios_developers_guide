@@ -1,4 +1,7 @@
 //
+
+// intentional: raw Color.* literals in this file are demo content that teaches
+// SwiftUI concepts (e.g. what Color.green looks like) and must read literally.
 //  SwiftUiText.swift
 //  IosDevelopersGuide
 //
@@ -42,7 +45,7 @@ struct SwiftUiTextView: View {
                     .lineSpacing(8)
                     .foregroundColor(.black)
                     .background(Color.black.opacity(0.1))
-                    .cornerRadius(8)
+                    .cornerRadius(DesignSystem.Sizes.radiusSm)
             }
                 .font(.system(size: 14, design: .monospaced))
             """,
@@ -54,7 +57,7 @@ struct SwiftUiTextView: View {
                         .kerning(0.5)
                         .lineSpacing(8)
                         .foregroundColor(.black)
-                        .cornerRadius(8)
+                        .cornerRadius(DesignSystem.Sizes.radiusSm)
                 }
                     .font(.system(size: 14, design: .monospaced))
             }

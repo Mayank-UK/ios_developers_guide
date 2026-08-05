@@ -1,4 +1,7 @@
 //
+
+// intentional: raw Color.* literals in this file are demo content that teaches
+// SwiftUI concepts (e.g. what Color.green looks like) and must read literally.
 //  SwiftUiVisibility.swift
 //  IosDevelopersGuide
 //
@@ -78,7 +81,7 @@ struct SwiftUiVisibilityView: View {
                         .padding()
                         .background(Color.black)
                         .foregroundColor(.white)
-                        .cornerRadius(8)
+                        .cornerRadius(DesignSystem.Sizes.radiusSm)
                 }
 
             }
@@ -97,7 +100,7 @@ struct SwiftUiVisibilityView: View {
                             .padding()
                             .background(Color.black)
                             .foregroundColor(.white)
-                            .cornerRadius(8)
+                            .cornerRadius(DesignSystem.Sizes.radiusSm)
                     }
 
                 }

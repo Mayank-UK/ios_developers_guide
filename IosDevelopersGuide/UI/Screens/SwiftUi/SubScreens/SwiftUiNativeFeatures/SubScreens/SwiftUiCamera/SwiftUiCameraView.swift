@@ -1,4 +1,7 @@
 //
+
+// intentional: raw Color.* literals in this file are demo content that teaches
+// SwiftUI concepts (e.g. what Color.green looks like) and must read literally.
 //  SwiftUICameraView.swift
 //  IosDevelopersGuide
 //
@@ -32,7 +35,7 @@ struct CameraView: View {
                     .foregroundColor(.white)
                     .padding()
                     .background(Color.blue)
-                    .cornerRadius(10)
+                    .cornerRadius(DesignSystem.Sizes.radiusSm)
             }
             .sheet(isPresented: $isShowingCamera) {
                 ImagePicker(sourceType: .camera, selectedImage: $capturedImage)
@@ -136,7 +139,7 @@ struct SwiftUICameraView: View {
                                 .foregroundColor(.white)
                                 .padding()
                                 .background(Color.blue)
-                                .cornerRadius(10)
+                                .cornerRadius(DesignSystem.Sizes.radiusSm)
                         }
                         .sheet(isPresented: $isShowingCamera) {
                             ImagePicker(sourceType: .camera, selectedImage: $capturedImage)

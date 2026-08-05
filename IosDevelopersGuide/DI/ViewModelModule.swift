@@ -14,6 +14,11 @@ extension Container {
     }
 
     @MainActor
+    var aboutViewModel: Factory<AboutViewModel> {
+        Factory(self) { AboutViewModel(logger: self.viewModelLogger()) }.scope(.singleton)
+    }
+
+    @MainActor
     var iosFundamentalsViewModel: Factory<IosFundamentalsViewModel> {
         Factory(self) { IosFundamentalsViewModel() }.scope(.singleton)
     }
@@ -578,6 +583,11 @@ extension Container {
     @MainActor
     var architectureViewModel: Factory<ArchitectureViewModel> {
         Factory(self) { ArchitectureViewModel() }.scope(.singleton)
+    }
+
+    @MainActor
+    var exceptionHandlingViewModel: Factory<ExceptionHandlingViewModel> {
+        Factory(self) { ExceptionHandlingViewModel(logger: self.viewModelLogger()) }.scope(.singleton)
     }
     
     @MainActor

@@ -1,4 +1,7 @@
 //
+
+// intentional: raw Color.* literals in this file are demo content that teaches
+// SwiftUI concepts (e.g. what Color.green looks like) and must read literally.
 //  SwiftUiStateManagement.swift
 //  IosDevelopersGuide
 //
@@ -44,7 +47,7 @@ struct SwiftUiStateManagementView: View {
                 .padding()
                 .foregroundColor(.white)
                 .background(Color.black.opacity(0.8))
-                .cornerRadius(8)
+                .cornerRadius(DesignSystem.Sizes.radiusSm)
         }
     }
     
@@ -74,7 +77,7 @@ struct SwiftUiStateManagementView: View {
                 .padding()
                 .foregroundColor(.white)
                 .background(Color.black.opacity(0.8))
-                .cornerRadius(8)
+                .cornerRadius(DesignSystem.Sizes.radiusSm)
                 .onTapGesture {
                     tapCount += 1
                 }
@@ -84,7 +87,7 @@ struct SwiftUiStateManagementView: View {
                     .padding()
                     .foregroundColor(.white)
                     .background(Color.black.opacity(0.8))
-                    .cornerRadius(8)
+                    .cornerRadius(DesignSystem.Sizes.radiusSm)
                     .onTapGesture {
                         tapCount += 1
                     }
@@ -161,7 +164,7 @@ struct SwiftUiStateManagementView: View {
                 .padding()
                 .foregroundColor(.white)
                 .background(Color.black.opacity(0.8))
-                .cornerRadius(8)
+                .cornerRadius(DesignSystem.Sizes.radiusSm)
                 .onTapGesture {
                     observableExample.count += 1
                  }
@@ -171,7 +174,7 @@ struct SwiftUiStateManagementView: View {
                     .padding()
                     .foregroundColor(.white)
                     .background(Color.black.opacity(0.8))
-                    .cornerRadius(8)
+                    .cornerRadius(DesignSystem.Sizes.radiusSm)
                     .onTapGesture {
                         observableExample.count += 1
                     }
@@ -198,7 +201,7 @@ struct SwiftUiStateManagementView: View {
                         .padding()
                         .foregroundColor(.white)
                         .background(Color.black.opacity(0.8))
-                        .cornerRadius(8)
+                        .cornerRadius(DesignSystem.Sizes.radiusSm)
                 }
             }
             

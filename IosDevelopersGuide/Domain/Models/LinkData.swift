@@ -13,4 +13,8 @@ struct LinkData: Hashable {
     var id = UUID()
     var title: String
     var routePath: Router.routePaths
+    // One-line description shown beneath the title on a navigation card. Defaults
+    // to empty so screens that don't supply copy (Phase 3 scope) still compile;
+    // the home screen always sets it.
+    var description: String = ""
 }

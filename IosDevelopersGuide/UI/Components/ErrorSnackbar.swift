@@ -35,27 +35,22 @@ import SwiftUI
 /// - **Info-Focused**: Best for non-critical informational messages
 /// - **Tap to Dismiss**: Easy to dismiss if desired
 struct ErrorSnackbar: View {
-    
+
     // MARK: - Properties
-    
+
+    @EnvironmentObject private var designSystem: DesignSystem
+
     let failure: Failure
     let onDismiss: () -> Void
     var dismissAfter: Double = 3.0
-    
+
     @State private var isVisible = false
     @State private var workItem: DispatchWorkItem?
-    
+
     // MARK: - Computed Properties
-    
+
     private var backgroundColor: Color {
-        switch failure.severity {
-        case .info:
-            return .blue
-        case .warning:
-            return .orange
-        case .critical:
-            return .red
-        }
+        designSystem.colorScheme.severity(failure.severity)
     }
     
     // MARK: - Body
@@ -69,20 +64,20 @@ struct ErrorSnackbar: View {
                     // Message
                     Text(failure.message)
                         .font(.subheadline)
-                        .foregroundColor(.white)
+                        .foregroundColor(designSystem.colorScheme.onSeverity(failure.severity))
                         .lineLimit(2)
-                    
+
                     Spacer(minLength: 8)
-                    
+
                     // Dismiss indicator
                     Image(systemName: "xmark")
-                        .foregroundColor(.white.opacity(0.7))
+                        .foregroundColor(designSystem.colorScheme.onSeverity(failure.severity).opacity(0.7))
                         .font(.caption)
                 }
                 .padding(.horizontal, 16)
                 .padding(.vertical, 12)
                 .background(backgroundColor)
-                .cornerRadius(8)
+                .cornerRadius(DesignSystem.Sizes.radiusSm)
                 .shadow(color: .black.opacity(0.2), radius: 8, x: 0, y: 4)
                 .padding(.horizontal, 16)
                 .padding(.bottom, 20) // Above safe area
@@ -168,9 +163,9 @@ extension View {
 
 #Preview("Info Snackbar") {
     ZStack {
-        Color.gray.opacity(0.1)
+        ColorScheme.light.surface
             .ignoresSafeArea()
-        
+
         VStack {
             Text("Main Content Here")
                 .font(.title)
@@ -181,13 +176,14 @@ extension View {
             onDismiss: { print("Dismissed") }
         )
     }
+    .environmentObject(DesignSystem(colorScheme: .light))
 }
 
 #Preview("Warning Snackbar") {
     ZStack {
-        Color.gray.opacity(0.1)
+        ColorScheme.light.surface
             .ignoresSafeArea()
-        
+
         VStack {
             Text("Main Content Here")
                 .font(.title)
@@ -198,4 +194,5 @@ extension View {
             onDismiss: { print("Dismissed") }
         )
     }
+    .environmentObject(DesignSystem(colorScheme: .light))
 }

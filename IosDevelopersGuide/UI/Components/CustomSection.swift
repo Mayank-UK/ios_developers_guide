@@ -8,40 +8,41 @@
 import SwiftUI
 
 struct CustomSection<DemoView: View>: View {
+    @EnvironmentObject var designSystem: DesignSystem
     @State private var isExpanded: Bool = false
-    
+
     let snippetTitle: String
     let snippetDescription: String?
     let snippetCode: String?
     let demoView: DemoView
-    
+
     init(snippetTitle: String, snippetDescription: String? = nil, snippetCode: String? = nil, @ViewBuilder demoView: @escaping () -> DemoView = { EmptyView() }) {
         self.snippetTitle = snippetTitle
         self.snippetDescription = snippetDescription ?? nil
         self.snippetCode = snippetCode ?? nil
         self.demoView = demoView()
     }
-    
+
     var body: some View {
         VStack {
             Text(snippetTitle)
                 .frame(maxWidth: .infinity, alignment: .leading)
-                .bold()
-                .font(.system(size: 20))
+                .font(designSystem.types.titleLarge)
+                .foregroundColor(designSystem.colorScheme.onSurface)
             Spacer().frame(height: 8)
             if(snippetDescription != nil) {
                 Text(snippetDescription!)
                     .frame(maxWidth: .infinity, alignment: .leading)
-                    .font(.system(size: 16))
+                    .font(designSystem.types.bodyLarge)
                     .kerning(0.5)
                     .lineSpacing(4)
-                    .foregroundColor(Color.black.opacity(0.9))
+                    .foregroundColor(designSystem.colorScheme.onSurface.opacity(0.9))
             }
             Spacer().frame(height: 8)
             demoView
                 .padding()
                 .frame(maxWidth: .infinity, alignment: .leading)
-                .background(Color.black.opacity(0.1))
+                .background(designSystem.colorScheme.surface)
             Spacer().frame(height: 8)
             if (snippetCode != nil) {
                 DisclosureGroup("\(isExpanded ? "Hide Code" : "Show Code")", isExpanded: $isExpanded) {
@@ -52,15 +53,17 @@ struct CustomSection<DemoView: View>: View {
                             .font(.system(size: 14, design: .monospaced))
                             .kerning(0.5)
                             .lineSpacing(8)
-                            .foregroundColor(.white)
-                            .background(Color.black.opacity(0.8))
-                            .cornerRadius(8)
+                            .foregroundColor(designSystem.colorScheme.onSurface)
+                            .background(designSystem.colorScheme.surface)
+                            .cornerRadius(DesignSystem.Sizes.radiusSm)
                     }
                 }
+                .tint(designSystem.colorScheme.onSurface)
             }
         }
             .padding()
-            .background(Color.black.opacity(0.05))
+            .background(designSystem.colorScheme.surface.opacity(0.5))
+            .cornerRadius(DesignSystem.Sizes.radiusSm)
     }
 }
 
@@ -75,4 +78,5 @@ struct CustomSection<DemoView: View>: View {
             Text("This is a demo view passed to this snippet")
         }
     )
+    .environmentObject(DesignSystem(colorScheme: ColorScheme(.light)))
 }

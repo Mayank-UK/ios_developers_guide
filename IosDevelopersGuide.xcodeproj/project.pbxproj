@@ -40,6 +40,17 @@
 		2424507D2FF8F46C006E6384 /* LoggingModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424507C2FF8F46C006E6384 /* LoggingModule.swift */; };
 		242450BD2FFA2E30006E6384 /* LoggingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242450BA2FFA2E30006E6384 /* LoggingView.swift */; };
 		242450BE2FFA2E30006E6384 /* LoggingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242450BB2FFA2E30006E6384 /* LoggingViewModel.swift */; };
+		FF0000000000000000000001 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0000000000000000000011 /* ThemeManager.swift */; };
+		FF0000000000000000000002 /* DrawerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0000000000000000000012 /* DrawerState.swift */; };
+		FF0000000000000000000003 /* AppDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0000000000000000000013 /* AppDrawer.swift */; };
+		FF0000000000000000000004 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0000000000000000000014 /* AboutView.swift */; };
+		FF0000000000000000000005 /* AboutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0000000000000000000015 /* AboutViewModel.swift */; };
+		FF0000000000000000000006 /* SectionWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0000000000000000000016 /* SectionWrapper.swift */; };
+		FF0000000000000000000007 /* ContentGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0000000000000000000017 /* ContentGroup.swift */; };
+		FF0000000000000000000008 /* TextBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0000000000000000000018 /* TextBlock.swift */; };
+		FF0000000000000000000009 /* CodeBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0000000000000000000019 /* CodeBlock.swift */; };
+		FF0000000000000000000025 /* ExceptionHandlingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0000000000000000000027 /* ExceptionHandlingView.swift */; };
+		FF0000000000000000000026 /* ExceptionHandlingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0000000000000000000028 /* ExceptionHandlingViewModel.swift */; };
 		242450C22FFA2E8E006E6384 /* DevEnvironmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242450BF2FFA2E8E006E6384 /* DevEnvironmentView.swift */; };
 		242450C32FFA2E8E006E6384 /* DevEnvironmentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242450C02FFA2E8E006E6384 /* DevEnvironmentViewModel.swift */; };
 		242450C72FFA2F10006E6384 /* TestingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242450C42FFA2F10006E6384 /* TestingView.swift */; };
@@ -400,6 +411,17 @@
 		242450962FF8F8B3006E6384 /* IosDevelopersGuideTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IosDevelopersGuideTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		242450BA2FFA2E30006E6384 /* LoggingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggingView.swift; sourceTree = "<group>"; };
 		242450BB2FFA2E30006E6384 /* LoggingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggingViewModel.swift; sourceTree = "<group>"; };
+		FF0000000000000000000011 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		FF0000000000000000000012 /* DrawerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerState.swift; sourceTree = "<group>"; };
+		FF0000000000000000000013 /* AppDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDrawer.swift; sourceTree = "<group>"; };
+		FF0000000000000000000014 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		FF0000000000000000000015 /* AboutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewModel.swift; sourceTree = "<group>"; };
+		FF0000000000000000000016 /* SectionWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionWrapper.swift; sourceTree = "<group>"; };
+		FF0000000000000000000017 /* ContentGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentGroup.swift; sourceTree = "<group>"; };
+		FF0000000000000000000018 /* TextBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextBlock.swift; sourceTree = "<group>"; };
+		FF0000000000000000000019 /* CodeBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeBlock.swift; sourceTree = "<group>"; };
+		FF0000000000000000000027 /* ExceptionHandlingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExceptionHandlingView.swift; sourceTree = "<group>"; };
+		FF0000000000000000000028 /* ExceptionHandlingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExceptionHandlingViewModel.swift; sourceTree = "<group>"; };
 		242450BF2FFA2E8E006E6384 /* DevEnvironmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevEnvironmentView.swift; sourceTree = "<group>"; };
 		242450C02FFA2E8E006E6384 /* DevEnvironmentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevEnvironmentViewModel.swift; sourceTree = "<group>"; };
 		242450C42FFA2F10006E6384 /* TestingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingView.swift; sourceTree = "<group>"; };
@@ -1062,6 +1084,11 @@
 				2443B4182B972CF2000FE1FD /* PageScaffold.swift */,
 				2443B4262B9850FA000FE1FD /* Links.swift */,
 				245E06A72B9B2B44005FB6E9 /* CustomSection.swift */,
+				FF0000000000000000000013 /* AppDrawer.swift */,
+				FF0000000000000000000016 /* SectionWrapper.swift */,
+				FF0000000000000000000017 /* ContentGroup.swift */,
+				FF0000000000000000000018 /* TextBlock.swift */,
+				FF0000000000000000000019 /* CodeBlock.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -2488,6 +2515,8 @@
 		249DFF2E2C772FEA004BA3AC /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				FF0000000000000000000021 /* About */,
+				FF0000000000000000000029 /* ExceptionHandling */,
 				242450C62FFA2F10006E6384 /* Testing */,
 				242450C12FFA2E8E006E6384 /* DevEnvironment */,
 				242450BC2FFA2E30006E6384 /* Logging */,
@@ -2515,6 +2544,7 @@
 			isa = PBXGroup;
 			children = (
 				2443B4022B91C5F8000FE1FD /* Router.swift */,
+				FF0000000000000000000012 /* DrawerState.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -2523,8 +2553,27 @@
 			isa = PBXGroup;
 			children = (
 				249DFEDD2C75DA73004BA3AC /* DesignSystem.swift */,
+				FF0000000000000000000011 /* ThemeManager.swift */,
 			);
 			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		FF0000000000000000000021 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				FF0000000000000000000014 /* AboutView.swift */,
+				FF0000000000000000000015 /* AboutViewModel.swift */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
+		FF0000000000000000000029 /* ExceptionHandling */ = {
+			isa = PBXGroup;
+			children = (
+				FF0000000000000000000027 /* ExceptionHandlingView.swift */,
+				FF0000000000000000000028 /* ExceptionHandlingViewModel.swift */,
+			);
+			path = ExceptionHandling;
 			sourceTree = "<group>";
 		};
 		249DFF322C7753A7004BA3AC /* Temp */ = {
@@ -2747,6 +2796,17 @@
 				249DFFC02C7758E0004BA3AC /* SwiftUiCatalogNavigationStackViewModel.swift in Sources */,
 				249DFFAE2C775860004BA3AC /* SwiftUiCatalogSpacerViewModel.swift in Sources */,
 				242450BE2FFA2E30006E6384 /* LoggingViewModel.swift in Sources */,
+				FF0000000000000000000001 /* ThemeManager.swift in Sources */,
+				FF0000000000000000000002 /* DrawerState.swift in Sources */,
+				FF0000000000000000000003 /* AppDrawer.swift in Sources */,
+				FF0000000000000000000004 /* AboutView.swift in Sources */,
+				FF0000000000000000000005 /* AboutViewModel.swift in Sources */,
+				FF0000000000000000000006 /* SectionWrapper.swift in Sources */,
+				FF0000000000000000000007 /* ContentGroup.swift in Sources */,
+				FF0000000000000000000008 /* TextBlock.swift in Sources */,
+				FF0000000000000000000009 /* CodeBlock.swift in Sources */,
+				FF0000000000000000000025 /* ExceptionHandlingView.swift in Sources */,
+				FF0000000000000000000026 /* ExceptionHandlingViewModel.swift in Sources */,
 				249DFFE42C775960004BA3AC /* SwiftUiCatalogConfirmationDialogViewModel.swift in Sources */,
 				249DFF502C77566E004BA3AC /* SwiftUiDimensionsAndConstraintsViewModel.swift in Sources */,
 				245E05BC2B9A097C005FB6E9 /* SwiftUiBordersView.swift in Sources */,

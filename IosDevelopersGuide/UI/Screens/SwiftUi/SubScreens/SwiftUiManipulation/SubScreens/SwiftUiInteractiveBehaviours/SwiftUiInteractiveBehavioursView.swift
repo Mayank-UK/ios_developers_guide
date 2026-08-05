@@ -1,4 +1,7 @@
 //
+
+// intentional: raw Color.* literals in this file are demo content that teaches
+// SwiftUI concepts (e.g. what Color.green looks like) and must read literally.
 //  SwiftUiInteractiveBehaviours.swift
 //  IosDevelopersGuide
 //
@@ -27,7 +30,7 @@ struct SwiftUiInteractiveBehavioursView: View {
                 .padding()
                 .foregroundColor(.white)
                 .background(Color.black.opacity(0.8))
-                .cornerRadius(8)
+                .cornerRadius(DesignSystem.Sizes.radiusSm)
                 .onTapGesture {
                     tapCount += 1
                 }
@@ -37,7 +40,7 @@ struct SwiftUiInteractiveBehavioursView: View {
                     .padding()
                     .foregroundColor(.white)
                     .background(Color.black.opacity(0.8))
-                    .cornerRadius(8)
+                    .cornerRadius(DesignSystem.Sizes.radiusSm)
                     .onTapGesture {
                         tapCount += 1
                     }
@@ -56,7 +59,7 @@ struct SwiftUiInteractiveBehavioursView: View {
                 .padding()
                 .foregroundColor(.white)
                 .background(Color.black.opacity(0.8))
-                .cornerRadius(8)
+                .cornerRadius(DesignSystem.Sizes.radiusSm)
                 .onHover { isHovering in
                     hoverStatus = isHovering
                 }
@@ -66,7 +69,7 @@ struct SwiftUiInteractiveBehavioursView: View {
                     .padding()
                     .foregroundColor(.white)
                     .background(Color.black.opacity(0.8))
-                    .cornerRadius(8)
+                    .cornerRadius(DesignSystem.Sizes.radiusSm)
                     .onHover { isHovering in
                         hoverStatus = isHovering
                     }
@@ -93,7 +96,7 @@ struct SwiftUiInteractiveBehavioursView: View {
                     .padding()
                     .foregroundColor(.white)
                     .background(Color.black.opacity(0.8))
-                    .cornerRadius(8)
+                    .cornerRadius(DesignSystem.Sizes.radiusSm)
                     .onTapGesture {
                         isInputActive = !isInputActive
                     }
@@ -109,7 +112,7 @@ struct SwiftUiInteractiveBehavioursView: View {
                         .padding()
                         .foregroundColor(.white)
                         .background(Color.black.opacity(0.8))
-                        .cornerRadius(8)
+                        .cornerRadius(DesignSystem.Sizes.radiusSm)
                         .onTapGesture {
                             isInputActive = !isInputActive
                         }

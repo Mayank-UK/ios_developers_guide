@@ -14,7 +14,7 @@ struct HomeView: View {
     
     var body: some View {
         PageScaffold(
-            pageTitle: "IOS developer's guide",
+            pageTitle: "iOS Developer's Guide",
             content: {
                 Links(links: viewModel.links)
             }

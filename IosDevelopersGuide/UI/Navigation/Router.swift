@@ -13,7 +13,8 @@ class Router: ObservableObject {
     
     enum routePaths: Hashable {
         case home
-        
+        case about
+
         case iosFundamentals
         
         case swiftFundamentals
@@ -143,7 +144,9 @@ class Router: ObservableObject {
         case databaseHandling
         
         case architecture
-        
+
+        case exceptionHandling
+
         case dependencyInjection
         
         case dependencyManagement
@@ -165,6 +168,9 @@ class Router: ObservableObject {
         switch route {
             case .home:
                 HomeView(viewModel: Container.shared.homeViewModel())
+
+            case .about:
+                AboutView(viewModel: Container.shared.aboutViewModel())
 
             case .iosFundamentals:
                 IosFundamentalsView(viewModel: Container.shared.iosFundamentalsViewModel())
@@ -409,7 +415,9 @@ class Router: ObservableObject {
 
             case .architecture:
                 ArchitectureView(viewModel: Container.shared.architectureViewModel())
-            
+
+            case .exceptionHandling:
+                ExceptionHandlingView(viewModel: Container.shared.exceptionHandlingViewModel())
 
             case .dependencyInjection:
                 DependencyInjectionView(viewModel: Container.shared.dependencyInjectionViewModel())

@@ -1,4 +1,7 @@
 //
+
+// intentional: raw Color.* literals in this file are demo content that teaches
+// SwiftUI concepts (e.g. what Color.green looks like) and must read literally.
 //  SwiftUiMedia.swift
 //  IosDevelopersGuide
 //
@@ -74,7 +77,7 @@ struct VideoPlayerView: View {
         VStack {
             VideoPlayer(player: player)
                 .frame(height: 336)
-                .cornerRadius(8)
+                .cornerRadius(DesignSystem.Sizes.radiusSm)
                 .padding()
 
             Button(action: {
@@ -196,7 +199,7 @@ struct SwiftUiMediaView: View {
                     VStack {
                         VideoPlayer(player: player)
                             .frame(height: 336)
-                            .cornerRadius(8)
+                            .cornerRadius(DesignSystem.Sizes.radiusSm)
                             .padding()
 
                         Button(action: {

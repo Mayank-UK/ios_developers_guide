@@ -1,4 +1,7 @@
 //
+
+// intentional: raw Color.* literals in this file are demo content that teaches
+// SwiftUI concepts (e.g. what Color.green looks like) and must read literally.
 //  BackgroundTaskView.swift
 //  IosDevelopersGuide
 //
@@ -41,7 +44,7 @@ struct SwiftUiBackgroundTaskView: View {
                         .padding()
                         .background(Color.blue)
                         .foregroundColor(.white)
-                        .cornerRadius(8)
+                        .cornerRadius(DesignSystem.Sizes.radiusSm)
                 }
                 
                 Button(action: cancelBackgroundTask) {
@@ -49,7 +52,7 @@ struct SwiftUiBackgroundTaskView: View {
                         .padding()
                         .background(Color.red)
                         .foregroundColor(.white)
-                        .cornerRadius(8)
+                        .cornerRadius(DesignSystem.Sizes.radiusSm)
                 }
             }
             .onChange(of: scenePhase) { phase in
@@ -83,7 +86,7 @@ struct SwiftUiBackgroundTaskView: View {
                             .padding()
                             .background(Color.blue)
                             .foregroundColor(.white)
-                            .cornerRadius(8)
+                            .cornerRadius(DesignSystem.Sizes.radiusSm)
                     }
                     
                     Button(action: cancelBackgroundTask) {
@@ -91,7 +94,7 @@ struct SwiftUiBackgroundTaskView: View {
                             .padding()
                             .background(Color.red)
                             .foregroundColor(.white)
-                            .cornerRadius(8)
+                            .cornerRadius(DesignSystem.Sizes.radiusSm)
                     }
                 }
                 .onChange(of: scenePhase) { phase in

@@ -1,4 +1,7 @@
 //
+
+// intentional: raw Color.* literals in this file are demo content that teaches
+// SwiftUI concepts (e.g. what Color.green looks like) and must read literally.
 //  SwiftUiNotification.swift
 //  IosDevelopersGuide
 //
@@ -37,7 +40,7 @@ struct SwiftUiNotificationView: View {
                             .padding()
                             .background(Color.blue)
                             .foregroundColor(.white)
-                            .cornerRadius(8)
+                            .cornerRadius(DesignSystem.Sizes.radiusSm)
                     }
                 } else {
                     Text(notificationMessage)
@@ -51,7 +54,7 @@ struct SwiftUiNotificationView: View {
                             .padding()
                             .background(Color.gray)
                             .foregroundColor(.white)
-                            .cornerRadius(8)
+                            .cornerRadius(DesignSystem.Sizes.radiusSm)
                     }
                 }
             }
@@ -124,7 +127,7 @@ struct SwiftUiNotificationView: View {
                                 .padding()
                                 .background(Color.blue)
                                 .foregroundColor(.white)
-                                .cornerRadius(8)
+                                .cornerRadius(DesignSystem.Sizes.radiusSm)
                         }
                     } else {
                         Text(notificationMessage)
@@ -138,7 +141,7 @@ struct SwiftUiNotificationView: View {
                                 .padding()
                                 .background(Color.gray)
                                 .foregroundColor(.white)
-                                .cornerRadius(8)
+                                .cornerRadius(DesignSystem.Sizes.radiusSm)
                         }
                     }
                 }

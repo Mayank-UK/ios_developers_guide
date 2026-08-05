@@ -36,28 +36,23 @@ import SwiftUI
 /// - **Swipe to Dismiss**: User can swipe away or tap to dismiss
 /// - **Severity-Based Styling**: Colors adapt to error severity
 struct ErrorBanner: View {
-    
+
     // MARK: - Properties
-    
+
+    @EnvironmentObject private var designSystem: DesignSystem
+
     let failure: Failure
     let onDismiss: () -> Void
     var autoDismiss: Bool = true
     var dismissAfter: Double = 5.0
-    
+
     @State private var isVisible = false
     @State private var dragOffset: CGFloat = 0
-    
+
     // MARK: - Computed Properties
-    
+
     private var backgroundColor: Color {
-        switch failure.severity {
-        case .info:
-            return .blue.opacity(0.9)
-        case .warning:
-            return .orange.opacity(0.9)
-        case .critical:
-            return .red.opacity(0.9)
-        }
+        designSystem.colorScheme.severity(failure.severity).opacity(0.9)
     }
     
     private var iconName: String {
@@ -79,21 +74,21 @@ struct ErrorBanner: View {
                 HStack(spacing: 12) {
                     // Icon
                     Image(systemName: iconName)
-                        .foregroundColor(.white)
+                        .foregroundColor(designSystem.colorScheme.onSeverity(failure.severity))
                         .font(.title3)
-                    
+
                     // Message
                     Text(failure.message)
                         .font(.subheadline)
-                        .foregroundColor(.white)
+                        .foregroundColor(designSystem.colorScheme.onSeverity(failure.severity))
                         .lineLimit(2)
-                    
+
                     Spacer(minLength: 8)
-                    
+
                     // Dismiss Button
                     Button(action: onDismiss) {
                         Image(systemName: "xmark.circle.fill")
-                            .foregroundColor(.white.opacity(0.8))
+                            .foregroundColor(designSystem.colorScheme.onSeverity(failure.severity).opacity(0.8))
                             .font(.title3)
                     }
                     .accessibilityLabel("Dismiss")
@@ -101,7 +96,7 @@ struct ErrorBanner: View {
                 .padding(.horizontal, 16)
                 .padding(.vertical, 12)
                 .background(backgroundColor)
-                .cornerRadius(12)
+                .cornerRadius(DesignSystem.Sizes.radiusMd)
                 .shadow(color: .black.opacity(0.1), radius: 8, x: 0, y: 4)
                 .padding(.horizontal, 16)
                 .offset(x: dragOffset)
@@ -159,26 +154,28 @@ struct ErrorBanner: View {
 
 #Preview("Warning Banner") {
     ZStack {
-        Color.gray.opacity(0.1)
+        ColorScheme.light.surface
             .ignoresSafeArea()
-        
+
         ErrorBanner(
             failure: NetworkFailure.timeout(),
             onDismiss: { print("Dismissed") }
         )
         .padding(.top, 50)
     }
+    .environmentObject(DesignSystem(colorScheme: .light))
 }
 
 #Preview("Info Banner") {
     ZStack {
-        Color.gray.opacity(0.1)
+        ColorScheme.light.surface
             .ignoresSafeArea()
-        
+
         ErrorBanner(
             failure: CacheFailure.writeFailed(),
             onDismiss: { print("Dismissed") }
         )
         .padding(.top, 50)
     }
+    .environmentObject(DesignSystem(colorScheme: .light))
 }

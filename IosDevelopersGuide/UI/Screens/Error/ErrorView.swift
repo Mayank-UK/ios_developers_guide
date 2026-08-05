@@ -30,27 +30,22 @@ import SwiftUI
 /// - **Action-Oriented**: Provides retry functionality for recovery
 /// - **Professional Design**: Consistent with iOS design patterns
 struct ErrorView: View {
-    
+
     // MARK: - Properties
-    
+
+    @EnvironmentObject private var designSystem: DesignSystem
+
     let failure: Failure
     let onRetry: () -> Void
-    
+
     // MARK: - Computed Properties
-    
+
     private var iconName: String {
         failure.severity.iconName
     }
-    
+
     private var iconColor: Color {
-        switch failure.severity {
-        case .info:
-            return .blue
-        case .warning:
-            return .orange
-        case .critical:
-            return .red
-        }
+        designSystem.colorScheme.severity(failure.severity)
     }
     
     private var title: String {
@@ -72,6 +67,8 @@ struct ErrorView: View {
             
             // Error Icon
             Image(systemName: iconName)
+                // intentional: oversized SF Symbol; the type tokens target text,
+                // and displayLarge (57) shrinks the icon's visual weight.
                 .font(.system(size: 64))
                 .foregroundColor(iconColor)
                 .accessibilityLabel("Error icon")
@@ -105,8 +102,8 @@ struct ErrorView: View {
                         .frame(maxWidth: .infinity, alignment: .leading)
                 }
                 .padding(12)
-                .background(Color.gray.opacity(0.1))
-                .cornerRadius(8)
+                .background(designSystem.colorScheme.surface)
+                .cornerRadius(DesignSystem.Sizes.radiusSm)
                 .padding(.horizontal, 32)
             }
             #endif
@@ -120,11 +117,11 @@ struct ErrorView: View {
                     Text("Retry")
                 }
                 .font(.headline)
-                .foregroundColor(.white)
+                .foregroundColor(designSystem.colorScheme.onSeverity(failure.severity))
                 .frame(maxWidth: .infinity)
                 .padding()
                 .background(iconColor)
-                .cornerRadius(12)
+                .cornerRadius(DesignSystem.Sizes.radiusMd)
             }
             .padding(.horizontal, 32)
             .accessibilityLabel("Retry button")
@@ -145,6 +142,7 @@ struct ErrorView: View {
         failure: NetworkFailure.timeout(),
         onRetry: { print("Retry tapped") }
     )
+    .environmentObject(DesignSystem(colorScheme: ColorScheme(.light)))
 }
 
 #Preview("Server Error") {
@@ -152,6 +150,7 @@ struct ErrorView: View {
         failure: ServerFailure.internalServerError(),
         onRetry: { print("Retry tapped") }
     )
+    .environmentObject(DesignSystem(colorScheme: ColorScheme(.light)))
 }
 
 #Preview("Cache Error") {
@@ -159,4 +158,5 @@ struct ErrorView: View {
         failure: CacheFailure.notFound(),
         onRetry: { print("Retry tapped") }
     )
+    .environmentObject(DesignSystem(colorScheme: ColorScheme(.light)))
 }
